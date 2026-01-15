@@ -51,16 +51,11 @@ NOTE: A commit is like a snapshot of your project. You can revert your project b
 <br>
 1. Whenever you want to work on the project, first sync your local repo with the remote repo (the one on GitHub):
 <br>
-<br>
-   `git pull`
+<br>`git pull`
 
 2. Before you plan to make major changes or upload your changes, *especially ones that may break your code:*
 <br>
-<br>
-`git add -A`
-<br>
-`git commit -m "What ever message you want in these quotes"`
+<br>`git add -A`
+<br>`git commit -m "What ever message you want in these quotes"`
 
-3. Uploading the latest commit
-
-`git push`
+3. Uploading the latest commit<br>`git push`
