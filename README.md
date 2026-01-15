@@ -35,11 +35,7 @@ Branches allow you to work on your own module without messing up somebody else's
 
 I have created branches for each module.
 
-1. Switching between branches
-<br>
-    `git checkout main` -- switch to the main branch
-<br>
-    `git checkout controller_board` -- switch to the controller_board branch
+1. Switching between branches<br>`git checkout main` -- switch to the main branch<br>`git checkout controller_board` -- switch to the controller_board branch
 
 Commits and pushes will only apply to your respective branch. 
 
