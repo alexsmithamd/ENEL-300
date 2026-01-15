@@ -37,9 +37,9 @@ I have created branches for each module.
 
 1. Switching between branches
 <br>
-`git checkout main` -- switch to the main branch
+    `git checkout main` -- switch to the main branch
 <br>
-`git checkout controller_board` -- switch to the controller_board branch
+    `git checkout controller_board` -- switch to the controller_board branch
 
 Commits and pushes will only apply to your respective branch. 
 
@@ -62,6 +62,5 @@ NOTE: A commit is like a snapshot of your project. You can revert your project b
 `git commit -m "What ever message you want in these quotes"`
 
 3. Uploading the latest commit
-<br>
-<br>
+
 `git push`
