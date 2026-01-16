@@ -53,3 +53,5 @@ NOTE: A commit is like a snapshot of your project. You can revert your project b
 <br>`git commit -m "What ever message you want in these quotes"`
 
 3. Uploading the latest commit<br>`git push`
+
+<br>`git checkout -b controller_board origin/controller_board`
