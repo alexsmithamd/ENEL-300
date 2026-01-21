@@ -2,9 +2,10 @@ import math as m
 import numpy as np
 from matplotlib import pyplot as plt
 import pandas as pd
-import component_functions as cf
 from datetime import datetime
 import os
+
+import component_functions as cf
 
 def save_results(name_list, number_list):
     now = datetime.now()
@@ -16,21 +17,31 @@ def save_results(name_list, number_list):
     df = pd.DataFrame({'name' : name_list, 'values': number_list})
     df.to_csv(f"{path}/{name}", index = False)
 
-def function():
-    x = np.arange(100)
-    y = np.atan(x)
     
-def test():
-    function()
-    arr = np.array([1,2,3,4])
-    names = ["a", 'b', 'c', 'd']
+def buck_converter_calcs():
+    soft_start_cap = 12e-9
+    bottom_resistor = 22.1e3
+    indcutor = 3.3e-6
+    VOUT = 5
+    max_input_voltage = 14
+
+
+    soft_start_time = cf.buck_eq_1_soft_start_cap(soft_start_cap)
+    top_resistor = cf.buck_eq_2_feedback_resistors(bottom_resistor, VOUT)
+    value_array = np.array(cf.buck_eq_4_5_6_inductor_current(indcutor, VOUT, max_input_voltage))
+    cap_rms_current = cf.buck_eq_7_rms_out_cap_current_rating(indcutor, VOUT, max_input_voltage)
+
+    arr = np.array([soft_start_time, top_resistor, cap_rms_current])
+    arr = np.ndarray.flatten(arr)
+    arr = np.append(arr, value_array)
+    names = ["soft start", "top resistor", "cap rms I", "L pk-pk", "L pk", "L rms"]
     save_results(names, arr)
 
 
 def main():
-    test()
+    buck_converter_calcs()
 
 
 if __name__ == "__main__":
     main()
-    print(2 + 4 + 7 + 1 + 1 + 1 + 9 + 4 + 5 + 1 + 3 + 1 + 8 + 7 + 8 + 2 + 1)
+    #print(2 + 4 + 7 + 1 + 1 + 1 + 9 + 4 + 5 + 1 + 3 + 1 + 8 + 7 + 8 + 2 + 1)
