@@ -19,7 +19,7 @@ def save_results(name_list, number_list):
 
     
 def buck_converter_calcs():
-    soft_start_cap = 12e-9
+    soft_start_cap = 10e-9
     bottom_resistor = 22.1e3
     indcutor = 3.3e-6
     VOUT = 5
