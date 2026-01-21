@@ -34,7 +34,7 @@ def buck_converter_calcs():
     arr = np.array([soft_start_time, top_resistor, cap_rms_current])
     arr = np.ndarray.flatten(arr)
     arr = np.append(arr, value_array)
-    names = ["soft start", "top resistor", "cap rms I", "L pk-pk", "L pk", "L rms"]
+    names = ["soft start T", "top resistor R", "cap rms I", "L pk-pk I", "L max pk I", "L rms I"]
     save_results(names, arr)
 
 
@@ -44,4 +44,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    #print(2 + 4 + 7 + 1 + 1 + 1 + 9 + 4 + 5 + 1 + 3 + 1 + 8 + 7 + 8 + 2 + 1)
