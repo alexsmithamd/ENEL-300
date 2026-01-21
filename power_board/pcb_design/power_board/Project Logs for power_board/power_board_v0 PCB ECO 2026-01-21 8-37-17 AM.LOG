@@ -1,0 +1,3 @@
+Change Class Name : Old Net Name=U_voltage_sensor New Net Name=U_ldo_3v3
+Added Member To Class: ClassName=top_level Member=Component TP6 TP - 5008 (Compact)
+Added Room: Name=U_ldo_3v3
