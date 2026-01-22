@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -40,7 +41,7 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-UART_HandleTypeDef huart2;
+UART_HandleTypeDef huart2; // initializes debug uart
 
 /* USER CODE BEGIN PV */
 
@@ -89,14 +90,24 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+
+
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint8_t *msg = "hello world";
+  uint8_t *buff[strlen(msg) + 12]; // room for a 10 digit interger + \n\0
+  uint32_t i = 0;
+
   while (1)
   {
+	 strcpy(buff, msg)
+	 HAL_UART_Transmit(&huart2, msg, strlen(msg) + 1, 100);
+	 i++;
+	 HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
