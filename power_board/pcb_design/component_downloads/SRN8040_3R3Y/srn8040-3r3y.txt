@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-13062022-067501";"";
+"REFERENCE";"SRN8040-3R3Y";"";
+"TraceParts.PartTitle";"Power Inductor semi-shielded SMD 3.3uH";"";
+"TraceParts.InstanceId";"90-13062022-0675012N3XX9WWY2MK673V115V3T3RA";"";
+"DESIGN";"Power Inductor semi-shielded SMD 3.3uH";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"BOURNS";"";
+"TraceParts.PartVersion";"1.0.0";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"BOURNS:90-13062022-067501";"";

@@ -1,0 +1,19 @@
+Added Component: Designator=DNP?(DNP 0603)
+Added Component: Designator=DNP?(DNP 0603)
+Added Component: Designator=DNP?(DNP 0603)
+Added Component: Designator=DNP?(DNP 0603)
+Added Component: Designator=TH?(M3 Mounting)
+Added Component: Designator=TH?(M3 Mounting)
+Added Component: Designator=TH?(M3 Mounting)
+Added Component: Designator=TH?(M3 Mounting)
+Added Pin To Net: NetName=GND Pin=DNP?-2
+Added Pin To Net: NetName=GND Pin=DNP?-2
+Added Pin To Net: NetName=GND Pin=DNP?-2
+Added Pin To Net: NetName=GND Pin=DNP?-2
+Added Pin To Net: NetName=NetDNP?_1 Pin=DNP?-1
+Added Pin To Net: NetName=NetDNP?_1 Pin=TH?-1
+Added Net: Name=NetDNP?_1
+Add Net: Net with name "NetDNP?_1" already exists
+Add Net: Net with name "NetDNP?_1" already exists
+Add Net: Net with name "NetDNP?_1" already exists
+Added Class: Name=top_level

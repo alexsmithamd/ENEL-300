@@ -1,0 +1,7 @@
+Added Net: Name=+5V
+Added Net: Name=+VBATT
+Added Net: Name=GND
+Added Class: Name=buck_converter
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
