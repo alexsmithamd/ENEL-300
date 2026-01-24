@@ -1,0 +1,55 @@
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=GND Pin=DNP?-1
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=+5V Pin=L?-1
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=+5V Pin=TP?-1
+Removed Pin From Net: NetName=GND Pin=TP?-1
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Failed to remove Pin
+Remove Pin from Net: Unknown Pin: Pin U?-9
+Change Component Footprint: Designator=TP? Old Footprint=TP - SMD Pad Testpoint New Footprint=5008 - Keystone Compact Footprint
+Change Component Comment : Designator=TP? Old Comment=TP - SMD Pad Testpoint-Symbol-1 New Comment=TP - 5008 (Compact)
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=+VBATT Pin=TP?-1
+Added Pin To Net: NetName=GND Pin=TP?-1
+Added Pin To Net: NetName=NetC?_1 Pin=U?-4
+Add Net: Net with name "NetD?_1" already exists
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component C? CAP CER 220nF 50V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=top_level Member=Component D? D - General 5mm THT LED
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component J? Copy of SMTC-TSW-106-07-X-D_1
+Added Member To Class: ClassName=top_level Member=Component R? R - General THT Resistor
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component TP? TP - 5008 (Compact)
