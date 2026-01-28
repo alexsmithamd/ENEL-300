@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=D? NewDesignator=D7
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=J? NewDesignator=J4
+Change Component Designator: OldDesignator=J? NewDesignator=J5
+Added Member To Class: ClassName=top_level Member=Component J1 J - 691137710002
+Added Member To Class: ClassName=top_level Member=Component J3 J - 691137710002
+Added Member To Class: ClassName=top_level Member=Component J4 Copy of SMTC-TSW-106-07-X-D_1

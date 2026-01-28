@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=+VBATT Pin=J3-1
+Removed Pin From Net: NetName=+VBATT Pin=J3-2
+Removed Pin From Net: NetName=GND Pin=J3-3
+Removed Pin From Net: NetName=GND Pin=J3-4
+Removed Member From Class: ClassName=top_level Member=J1
+Removed Member From Class: ClassName=top_level Member=J3
+Removed Member From Class: ClassName=top_level Member=J4
+Added Component: Designator=D?(D - SMAJ15CA)
+Added Component: Designator=J?(J - 61300411121)
+Added Pin To Net: NetName=GND Pin=D?-1
+Added Pin To Net: NetName=+VIN Pin=D?-2
+Added Pin To Net: NetName=+VBATT Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=+VBATT Pin=J?-2
+Added Pin To Net: NetName=+VIN Pin=J?-2
+Added Pin To Net: NetName=GND Pin=J?-3
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Member To Class: ClassName=top_level Member=Component D? D - SMAJ15CA
+Added Member To Class: ClassName=top_level Member=Component J? Copy of SMTC-TSW-106-07-X-D_1
+Added Member To Class: ClassName=top_level Member=Component J? Copy of SMTC-TSW-106-07-X-D_1
+Added Member To Class: ClassName=top_level Member=Component J? J - 691137710002
