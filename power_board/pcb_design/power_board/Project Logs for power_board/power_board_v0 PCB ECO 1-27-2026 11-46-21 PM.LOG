@@ -1,0 +1,9 @@
+Change Net Name : Old Net Name=NetBCEN_1 New Net Name=BC_EN
+Change Net Name : Old Net Name=NetC1_1 New Net Name=BC_BST
+Change Net Name : Old Net Name=NetC1_2 New Net Name=BC_SWN
+Change Net Name : Old Net Name=NetC7_2 New Net Name=BC_VREG
+Change Net Name : Old Net Name=NetC8_2 New Net Name=BC_SS
+Change Net Name : Old Net Name=NetC14_1 New Net Name=RPP_VC
+Change Net Name : Old Net Name=NetDNP7_1 New Net Name=BC_FB
+Change Net Name : Old Net Name=NetDNP11_2 New Net Name=LDO_EN
+Change Net Name : Old Net Name=NetM1_4 New Net Name=RPP_G
