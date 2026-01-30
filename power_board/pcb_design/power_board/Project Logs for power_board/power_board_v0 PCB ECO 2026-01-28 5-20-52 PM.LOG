@@ -1,0 +1,5 @@
+Added Component: Designator=+5V(5008 - Keystone Compact Footprint)
+Added Pin To Net: NetName=+5V Pin=+5V-1
+Added Member To Class: ClassName=U_buck_converter Member=Component +5V TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component GND4 TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component GND5 TP - 5008 (Compact)

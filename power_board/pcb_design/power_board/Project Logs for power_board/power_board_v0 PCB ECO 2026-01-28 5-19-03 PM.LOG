@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+VIN Pin=+VIN2-1
+Removed Pin From Net: NetName=GND Pin=GND4-1
+Removed Member From Class: ClassName=top_level Member=+VIN2
+Removed Member From Class: ClassName=top_level Member=GND6
+Change Component Designator: OldDesignator=GND5 NewDesignator=GND4
+Change Component Designator: OldDesignator=GND6 NewDesignator=GND5
