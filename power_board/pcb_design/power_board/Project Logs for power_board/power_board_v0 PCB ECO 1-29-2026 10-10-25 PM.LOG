@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=+VBATT_F Pin=U3-1
+Added Component: Designator=R?(RES 0603)
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+VBATT_F Pin=R?-1
+Added Pin To Net: NetName=RPP_EN Pin=R?-2
+Added Pin To Net: NetName=RPP_EN Pin=U3-1
+Added Net: Name=RPP_EN
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component R? R - RES 0R 0.1W N/A% 0603
