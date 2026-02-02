@@ -1,0 +1,130 @@
+Removed Pin From Net: NetName=GND Pin=C?-1
+Removed Pin From Net: NetName=NetC?_1 Pin=C?-1
+Removed Pin From Net: NetName=+3V3 Pin=C?-2
+Removed Pin From Net: NetName=+5V Pin=C?-2
+Removed Pin From Net: NetName=+5V Pin=C?-2
+Removed Pin From Net: NetName=+VBATT_PROT Pin=C?-2
+Removed Pin From Net: NetName=+VBATT_PROT Pin=C?-2
+Removed Pin From Net: NetName=NetC?_2 Pin=C?-2
+Removed Pin From Net: NetName=+5V Pin=DNP?-1
+Removed Pin From Net: NetName=GND Pin=DNP?-1
+Removed Pin From Net: NetName=+3V3 Pin=DNP?-2
+Removed Pin From Net: NetName=+5V Pin=DNP?-2
+Removed Pin From Net: NetName=NetDNP?_2 Pin=DNP?-2
+Removed Pin From Net: NetName=NetDNP?_2 Pin=R?-1
+Removed Pin From Net: NetName=+5V Pin=R?-2
+Removed Pin From Net: NetName=+VBATT_PROT Pin=R?-2
+Removed Pin From Net: NetName=+3V3 Pin=TP?-1
+Removed Pin From Net: NetName=GND Pin=TP?-1
+Removed Pin From Net: NetName=GND Pin=TP?-1
+Removed Pin From Net: NetName=NetDNP?_2 Pin=TP?-1
+Removed Pin From Net: NetName=NetC?_2 Pin=U?-3
+Change Component Footprint: Designator=TP? Old Footprint=5008 - Keystone Compact Footprint New Footprint=TP - SMD Pad Testpoint
+Change Component Footprint: Designator=C? Old Footprint=CAP 0805 New Footprint=CAP_0603
+Change Component Footprint: Designator=C? Old Footprint=CAP 0805 New Footprint=CAP_0603
+Change Component Footprint: Designator=C? Old Footprint=CAP_0603 New Footprint=CAP 0805
+Change Component Footprint: Designator=C? Old Footprint=CAP_0603 New Footprint=CAP 0805
+Change Component Footprint: Designator=TP? Old Footprint=TP - SMD Pad Testpoint New Footprint=5008 - Keystone Compact Footprint
+Change Component Comment : Designator=C? Old Comment=C - CAP CER 10nF 100V 10% 0603 New Comment=CAP CER 220nF 50V 10% 0603
+Change Component Comment : Designator=C? Old Comment=C - CAP CER 100nF 100V 10% 0603 New Comment=CAP CER 220nF 50V 10% 0603
+Change Component Comment : Designator=C? Old Comment=C - CAP CER 100nF 100V 10% 0603 New Comment=CAP CER 220nF 50V 10% 0603
+Change Component Comment : Designator=C? Old Comment=CAP CER 220nF 50V 10% 0603 New Comment=C - CAP CER 100nF 100V 10% 0603
+Change Component Comment : Designator=C? Old Comment=CAP CER 220nF 50V 10% 0603 New Comment=GRM21BR61E106KA73L
+Change Component Comment : Designator=C? Old Comment=CAP CER 220nF 50V 10% 0603 New Comment=GRM21BR61E226ME44L
+Change Component Comment : Designator=C? Old Comment=GRM21BR61E106KA73L New Comment=GRM21BR61E226ME44L
+Change Component Comment : Designator=C? Old Comment=GRM21BR61E226ME44L New Comment=C - CAP CER 10nF 100V 10% 0603
+Change Component Comment : Designator=C? Old Comment=GRM21BR61E226ME44L New Comment=C - CAP CER 100nF 100V 10% 0603
+Change Component Comment : Designator=R? Old Comment=R - RES 10kR 0.1W 1% 0603 New Comment=RC0603FR-07121KL
+Change Component Comment : Designator=R? Old Comment=RC0603FR-07121KL New Comment=R - RES 10kR 0.1W 1% 0603
+Change Component Comment : Designator=TP? Old Comment=TP - 5008 (Compact) New Comment=TP - SMD Pad Testpoint-Symbol-1
+Change Component Comment : Designator=TP? Old Comment=TP - SMD Pad Testpoint-Symbol-1 New Comment=TP - 5008 (Compact)
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP_0603"; UniqueID = "\KPXKQSAA\XHKDVWIW" ("\KPXKQSAA\XHKDVWIW")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP 0805"; UniqueID = "\KPXKQSAA\XPKOUAOW" ("\KPXKQSAA\XPKOUAOW")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP 0805"; UniqueID = "\KPXKQSAA\CBJMOIHR" ("\KPXKQSAA\CBJMOIHR")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP_0603"; UniqueID = "\KPXKQSAA\JFTNIKFE" ("\KPXKQSAA\JFTNIKFE")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP_0603"; UniqueID = "\KPXKQSAA\CXZGTZEV" ("\KPXKQSAA\CXZGTZEV")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP_0603"; UniqueID = "\KPXKQSAA\ADQYVLNM" ("\KPXKQSAA\ADQYVLNM")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP 0805"; UniqueID = "\KPXKQSAA\XMGWOHCJ" ("\KPXKQSAA\XMGWOHCJ")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP_0603"; UniqueID = "\GNLLQBDW\JAMIVRJP" ("\GNLLQBDW\JAMIVRJP")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP_0603"; UniqueID = "\GNLLQBDW\FWDKRDQJ" ("\GNLLQBDW\FWDKRDQJ")
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "RES 0603"; UniqueID = "\KPXKQSAA\NYRQZSST" ("\KPXKQSAA\NYRQZSST")
+Change component parameters (AddParameter): Name = "Value"; Value = "121k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R?" ("R?"); Footprint = "RES 0603"; UniqueID = "\GNLLQBDW\WYSIYOOJ" ("\GNLLQBDW\WYSIYOOJ")
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=+3V3 Pin=C?-2
+Added Pin To Net: NetName=+5V Pin=C?-2
+Added Pin To Net: NetName=+5V Pin=C?-2
+Added Pin To Net: NetName=+VBATT_PROT Pin=C?-2
+Added Pin To Net: NetName=+VBATT_PROT Pin=C?-2
+Added Pin To Net: NetName=NetC?_2 Pin=C?-2
+Added Pin To Net: NetName=+5V Pin=DNP?-1
+Added Pin To Net: NetName=GND Pin=DNP?-1
+Added Pin To Net: NetName=+3V3 Pin=DNP?-2
+Added Pin To Net: NetName=+5V Pin=DNP?-2
+Added Pin To Net: NetName=NetDNP?_2 Pin=DNP?-2
+Added Pin To Net: NetName=NetC?_2 Pin=L?-2
+Added Pin To Net: NetName=NetDNP?_2 Pin=R?-1
+Added Pin To Net: NetName=+5V Pin=R?-2
+Added Pin To Net: NetName=+VBATT_PROT Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=TP?-1
+Added Pin To Net: NetName=GND Pin=TP?-1
+Added Pin To Net: NetName=GND Pin=TP?-1
+Added Pin To Net: NetName=NetDNP?_2 Pin=TP?-1
+Added Pin To Net: NetName=NetC?_2 Pin=U?-6
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetDNP?_1" already exists
+Add Net: Net with name "NetDNP?_1" already exists
+Add Net: Net with name "NetDNP?_1" already exists
+Add Net: Net with name "NetDNP?_1" already exists
+Add Net: Net with name "NetDNP?_2" already exists
+Change Class Name : Old Net Name=ldo_3v3 New Net Name=U_buck_converter
+Added Class: Name=U_ldo_3v3
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 10nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? CAP CER 220nF 50V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E106KA73L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_buck_converter Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component L? SRN8040-3R3Y
+Added Member To Class: ClassName=U_buck_converter Member=Component R? R - RES 10kR 0.1W 1% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component R? ERJ-3EKF2212V
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - SMD Pad Testpoint-Symbol-1
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Change Room Name: Old Name=ldo_3v3 New Name=U_ldo_3v3
+Change Room Scope: Old Scope=InComponentClass('ldo_3v3') New Scope=InComponentClass('U_ldo_3v3')
+Added Room: Name=U_buck_converter
