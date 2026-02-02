@@ -1,0 +1,4 @@
+Added Component: Designator=DNP1(DNP 0603)
+Added Pin To Net: NetName=GND Pin=DNP1-1
+Added Pin To Net: NetName=+VBATT_F Pin=DNP1-2
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component DNP1 DNP - DNP PAD 0603
