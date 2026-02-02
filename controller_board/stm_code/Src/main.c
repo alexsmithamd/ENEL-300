@@ -107,9 +107,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+	 HAL_UART_Transmit(&huart2, "hello world\n", 15, 100);
+    HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }
@@ -360,8 +359,24 @@ static void MX_GPIO_Init(void)
   /* USER CODE END MX_GPIO_Init_2 */
 }
 
+int i = 1;
 /* USER CODE BEGIN 4 */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+  if(GPIO_Pin == GPIO_PIN_13) {
+	  if(i){
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+		  i = 0;
+	  }
+	  else{
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+		  i = 1;
+	  }
 
+  } else {
+      __NOP();
+  }
+}
 /* USER CODE END 4 */
 
 /**
