@@ -1,0 +1,47 @@
+Added Component: Designator=C1_U_motor_driver1(C - 860020574012)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "220uF"; VariantName = "[No Variations]"
+Added Component: Designator=C1_U_motor_driver2(C - 860020574012)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "220uF"; VariantName = "[No Variations]"
+Added Component: Designator=J1(J - 1990009)
+Added Component: Designator=J2(J - 1990009)
+Added Component: Designator=J3(J - 1990009)
+Added Component: Designator=U1_U_motor_driver1(U - DRV8251ADDAR)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2026 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://www.ti.com/lit/gpn/drv8251a"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "DRV8251ADDAR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Component: Designator=U1_U_motor_driver2(U - DRV8251ADDAR)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2026 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://www.ti.com/lit/gpn/drv8251a"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "DRV8251ADDAR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=U1_U_motor_driver1-7
+Added Pin To Net: NetName=GND Pin=U1_U_motor_driver2-7
+Added Net: Name=GND
+Added Pin To Net: NetName=NetU1_U_motor_driver1_2 Pin=U1_U_motor_driver1-2
+Added Net: Name=NetU1_U_motor_driver1_2
+Added Pin To Net: NetName=NetU1_U_motor_driver1_3 Pin=U1_U_motor_driver1-3
+Added Net: Name=NetU1_U_motor_driver1_3
+Added Pin To Net: NetName=NetU1_U_motor_driver1_6 Pin=U1_U_motor_driver1-6
+Added Net: Name=NetU1_U_motor_driver1_6
+Added Pin To Net: NetName=NetU1_U_motor_driver1_8 Pin=U1_U_motor_driver1-8
+Added Net: Name=NetU1_U_motor_driver1_8
+Added Pin To Net: NetName=NetU1_U_motor_driver2_2 Pin=U1_U_motor_driver2-2
+Added Net: Name=NetU1_U_motor_driver2_2
+Added Pin To Net: NetName=NetU1_U_motor_driver2_3 Pin=U1_U_motor_driver2-3
+Added Net: Name=NetU1_U_motor_driver2_3
+Added Pin To Net: NetName=NetU1_U_motor_driver2_6 Pin=U1_U_motor_driver2-6
+Added Net: Name=NetU1_U_motor_driver2_6
+Added Pin To Net: NetName=NetU1_U_motor_driver2_8 Pin=U1_U_motor_driver2-8
+Added Net: Name=NetU1_U_motor_driver2_8
+Added Class: Name=top_level
+Added Class: Name=U_motor_driver1
+Added Class: Name=U_motor_driver2
+Added Class: Name=motor_driver
+Added Rule: Name=Schematic Supply Nets

@@ -1,0 +1,20 @@
+Removed Member From Class: ClassName=motor_driver Member=U_motor_driverA
+Removed Member From Class: ClassName=motor_driver Member=U_motor_driverB
+Change Component Designator: OldDesignator=C1_U_motor_driverA NewDesignator=C1_1
+Change Component Designator: OldDesignator=C1_U_motor_driverB NewDesignator=C1_2
+Change Component Designator: OldDesignator=U1_U_motor_driverA NewDesignator=U1_1
+Change Component Designator: OldDesignator=U1_U_motor_driverB NewDesignator=U1_2
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Change Net Name : Old Net Name=NetU1_U_motor_driverA_2 New Net Name=NetU1_1_2
+Change Net Name : Old Net Name=NetU1_U_motor_driverA_3 New Net Name=NetU1_1_3
+Change Net Name : Old Net Name=NetU1_U_motor_driverA_6 New Net Name=NetU1_1_6
+Change Net Name : Old Net Name=NetU1_U_motor_driverA_8 New Net Name=NetU1_1_8
+Change Net Name : Old Net Name=NetU1_U_motor_driverB_2 New Net Name=NetU1_2_2
+Change Net Name : Old Net Name=NetU1_U_motor_driverB_3 New Net Name=NetU1_2_3
+Change Net Name : Old Net Name=NetU1_U_motor_driverB_6 New Net Name=NetU1_2_6
+Change Net Name : Old Net Name=NetU1_U_motor_driverB_8 New Net Name=NetU1_2_8
+Change Class Name : Old Net Name=U_motor_driverA New Net Name=U_motor_driver1
+Change Class Name : Old Net Name=U_motor_driverB New Net Name=U_motor_driver2
+Added Member To Class: ClassName=motor_driver Member=U_motor_driver (motor_driver.SchDoc)
+Added Member To Class: ClassName=motor_driver Member=U_motor_driver (motor_driver.SchDoc)
