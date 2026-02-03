@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=top_level.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=top_level.SchDoc|Designator=U_adc|SchDesignator=U_adc|FileName=adc.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=adc.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=top_level.SchDoc|Designator=U_motor_driver|SchDesignator=U_motor_driver|FileName=motor_driver.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=motor_driver.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=top_level.SchDoc|Designator=U_motor_driver|SchDesignator=U_motor_driver|FileName=motor_driver.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=motor_driver.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
