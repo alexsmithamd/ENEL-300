@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=D3 Old Footprint=D - ESD321DYAR New Footprint=D - DF2B5M4CT,L3F
+Change Component Comment : Designator=D3 Old Comment=D - ESD321DYAR New Comment=D - DF2B5M4CT,L3F
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RES 0603"; UniqueID = "\DAGMQARZ" ("\DAGMQARZ")
+Change component parameters (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"

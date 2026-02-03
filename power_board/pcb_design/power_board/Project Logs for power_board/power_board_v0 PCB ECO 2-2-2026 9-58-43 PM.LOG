@@ -1,0 +1,6 @@
+Added Component: Designator=J7(J - 61300411121)
+Added Pin To Net: NetName=+VIN Pin=J7-1
+Added Pin To Net: NetName=+VIN Pin=J7-2
+Added Pin To Net: NetName=GND Pin=J7-3
+Added Pin To Net: NetName=GND Pin=J7-4
+Added Member To Class: ClassName=top_level Member=Component J7 Copy of SMTC-TSW-106-07-X-D_1
