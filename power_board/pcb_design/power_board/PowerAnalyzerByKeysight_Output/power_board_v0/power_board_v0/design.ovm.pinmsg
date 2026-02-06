@@ -1,0 +1,14 @@
+PinList size is 11
+Found 11 pins, 0 pins overlapped
+
+5	J7-3	Found,growthperc=0,findBufferLength=55,preferential=1, layerId=1, stackId=3, position= (0.02404,0.0445,0.000550062), inputPosition= (0.02404,0.0445,0.000567842), area= 7.85712e-07
+6	J7-4	Found,growthperc=0,findBufferLength=55,preferential=1, layerId=1, stackId=3, position= (0.0215,0.0445,0.000550062), inputPosition= (0.0215,0.0445,0.000567842), area= 7.85712e-07
+7	J1-2	Found,growthperc=0,findBufferLength=232,preferential=1, layerId=1, stackId=3, position= (0.0345,0.04475,0.000550062), inputPosition= (0.0345,0.04475,0.000567842), area= 1.26793e-06
+8	J1-1	Found,growthperc=0,findBufferLength=60,preferential=1, layerId=1, stackId=3, position= (0.0395,0.04475,0.000550062), inputPosition= (0.0395,0.04475,0.000567842), area= 1.09713e-06
+9	U1-8	Found,growthperc=0,findBufferLength=167,preferential=1, layerId=1, stackId=3, position= (0.0264,0.0276,0.000550062), inputPosition= (0.0264,0.0276,0.000567842), area= 7.96068e-07
+11	U1-9	Found,growthperc=0,findBufferLength=66,preferential=1, layerId=1, stackId=3, position= (0.024495,0.030475,0.000550062), inputPosition= (0.024495,0.030475,0.000567842), area= 2.27641e-06
+10	U1-5	Found,growthperc=0,findBufferLength=62,preferential=1, layerId=1, stackId=3, position= (0.02259,0.0276,0.000550062), inputPosition= (0.02259,0.0276,0.000567842), area= 2.15703e-06
+4	M1-8	Found,growthperc=0,findBufferLength=102,preferential=1, layerId=1, stackId=3, position= (0.035525,0.0206002,0.000550062), inputPosition= (0.035525,0.0206002,0.000567842), area= 3.10244e-07
+3	M1-7	Found,growthperc=0,findBufferLength=103,preferential=1, layerId=1, stackId=3, position= (0.036175,0.0206002,0.000550062), inputPosition= (0.036175,0.0206002,0.000567842), area= 3.02177e-07
+2	M1-6	Found,growthperc=0,findBufferLength=111,preferential=1, layerId=1, stackId=3, position= (0.036825,0.0206002,0.000550062), inputPosition= (0.036825,0.0206002,0.000567842), area= 3.22604e-07
+1	M1-5	Found,growthperc=0,findBufferLength=107,preferential=1, layerId=1, stackId=3, position= (0.037475,0.0206002,0.000550062), inputPosition= (0.037475,0.0206002,0.000567842), area= 2.95011e-07
