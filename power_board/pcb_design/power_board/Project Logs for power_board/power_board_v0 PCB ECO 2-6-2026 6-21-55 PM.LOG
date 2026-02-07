@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+VBATT_F Pin=M1-1
+Removed Pin From Net: NetName=+VBATT_F Pin=M1-2
+Removed Pin From Net: NetName=+VBATT_F Pin=M1-3
+Removed Pin From Net: NetName=RPP_G Pin=M1-4
+Removed Pin From Net: NetName=+VIN Pin=M1-5
+Removed Pin From Net: NetName=+VIN Pin=M1-6
+Removed Pin From Net: NetName=+VIN Pin=M1-7
+Removed Pin From Net: NetName=+VIN Pin=M1-8
+Removed Member From Class: ClassName=U_reverse_polarity_protection Member=M1
