@@ -1,4 +1,4 @@
-Started on Thu Feb  5 18:59:06 2026
+Started on Tue Feb 10 20:08:51 2026
 
 emprvem: v1.0.0
 Invoking vmesh...
@@ -13,11 +13,11 @@ Building Surface Mesh
  Checking face descriptors
 Generating Solver Files
 Generated: 
-  172157 mesh elements
+  258766 mesh elements
 
 Invoking VemEngine...
 
-Starting the DC solver at Thu Feb  5 18:59:15 2026
+Starting the DC solver at Tue Feb 10 20:09:02 2026
 Creating the DC design
 ..parsing the options file 
 ..using NUMBER_OF_PROCESSORS = 16
@@ -28,7 +28,7 @@ Creating the DC design
 Initializing electric analysis
 Electric analysis
 ..loading the electric component models
-..electric matrix size: 238478
+..electric matrix size: 362611
 ..loading the electric matrix equation
 ..solving the electric matrix equation
 .........|.........|.........|.........|
@@ -37,17 +37,17 @@ Electric analysis
 Electric N-port analysis
 ..number of ports: 3
 ..loading the electric component models
-..electric matrix size: 238478
+..electric matrix size: 362611
 ..loading the electric matrix equation
 ..solving the electric matrix equation
 .........|.........|.........|.........|
 ..writing the model file
 DC solver resources
-..elapsed time: 7.0 s
-..user time: 19.3 s
-..physical memory: 451 MB
-..virtual memory: 695 MB
+..elapsed time: 9.8 s
+..user time: 26.3 s
+..physical memory: 672 MB
+..virtual memory: 965 MB
 
-Finished on Thu Feb  5 18:59:23 2026
+Finished on Tue Feb 10 20:09:12 2026
 
-Total Elapsed Time : 16.6277s
+Total Elapsed Time : 21.1372s

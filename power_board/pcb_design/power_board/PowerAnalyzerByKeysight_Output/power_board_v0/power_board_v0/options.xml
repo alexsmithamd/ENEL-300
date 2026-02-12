@@ -19,7 +19,7 @@
     <option>
       <name>useTargetMeshSize</name>
       <initialValue>False</initialValue>
-      <value>False</value>
+      <value>True</value>
     </option>
     <option>
       <name>autoTargetMeshSize</name>
