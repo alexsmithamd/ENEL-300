@@ -241,86 +241,138 @@ DocumentPath=Project Outputs for power_board\Design Rule Check - power_board_v0.
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0-Plated.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0.EXTREP
+DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0.REP
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.G1
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.G2
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_1.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_2.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Bot.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Top.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GM
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Bot.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Top.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_NPTH_Drill.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Bot.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Top.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Profile.gbr
+DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_PTH_Drill.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.REP
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Soldermask_Bot.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument22]
+DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_2.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_NPTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_PTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument35]
 DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Soldermask_Top.gbr
 DItemRevisionGUID=
 
