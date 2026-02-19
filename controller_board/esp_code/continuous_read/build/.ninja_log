@@ -1,0 +1,830 @@
+# ninja log v5
+9477	10240	1771534031290100100	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/tasks.c.obj	7f1d7fd3413a6f43
+13450	13470	1771534034530512900	esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a	baebe29f1d90abcf
+15035	15310	1771534036366394400	esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_platform.c.obj	bf3b9c5aae7e5c33
+177	204	1771540590615542300	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+16794	17861	1771534038908355700	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj	6d6cf7639758fe72
+818	1044	1771534022101624500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.obj	7bf3194ab66779e7
+9624	9804	1771534030862066000	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c.obj	9932ffed79fef5c0
+10100	10233	1771534031291010700	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/port/esp_time_impl.c.obj	b3544b57cc87d67a
+13489	13654	1771534034703724000	esp-idf/mbedtls/x509_crt_bundle	87a3b784d82daca6
+17586	18029	1771534039086350600	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj	57dc688b040b2fc8
+14138	14700	1771534035756608700	esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/src/pulse_cnt.c.obj	3904811d7c274e9f
+5297	5636	1771534026686081700	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.obj	f5cdca12d3ad1ef9
+13489	13654	1771534034703724000	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/mbedtls/x509_crt_bundle	87a3b784d82daca6
+3477	3644	1771534024701303400	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	761aa1b8369e6a60
+13181	13450	1771534034509594900	esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a	99bd64df414fafd0
+6897	7150	1771534028205306700	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_gpspi.c.obj	2ba05dbd34d2cbdb
+14145	14539	1771534035594833000	esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/src/gptimer.c.obj	7d61a568e8b1f2e2
+5959	6093	1771534027150592900	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj	ed079197f7b31fa8
+7893	7950	1771534029006439200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj	54b8d4e4436746a1
+2698	3062	1771534024118118800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj	5a6904528c0ae1f5
+4467	4719	1771534025767609600	esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache_utils.c.obj	9ac12cbc12b69ad7
+13786	14535	1771534035587025600	esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio.c.obj	cbffa90368aca93
+3345	3475	1771534024533104600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.obj	57e3482573ae0b91
+5285	5460	1771534026518282400	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj	e49042e7a550383b
+9968	10003	1771534031059140500	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/termios.c.obj	950790bb54e02ab7
+13784	13829	1771534034887692000	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj	fec1978d76f83894
+1729	1839	1771534022892503200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.obj	cc90597bd3182396
+14912	15513	1771534036569234000	esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_common.c.obj	f23fca8f12ad28b8
+3484	4001	1771534025058667700	esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_ops.c.obj	efbc53c05b405b78
+7537	7612	1771534028662564500	esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj	cefd73e632670a18
+11247	11492	1771534032551808500	esp-idf/freertos/libfreertos.a	1334dc5bd00f735a
+168	177	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+89	281	1771534021327916000	esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.obj	659fed581eec8950
+16771	17592	1771534038646817600	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj	e443bb30398cefe0
+15265	15534	1771534036585542900	esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj	b8b3b0b0791f3a4c
+13471	13489	1771534034549049500	esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a	73d41b6926451dea
+7846	7880	1771534028938201000	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj	c491fdea1ebd0c8e
+17	23655	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/menuconfig	a529ce28261b7e0c
+3406	3694	1771534024752196900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/mbedtls_debug.c.obj	113d3f2dcf77e4dd
+3515	3546	1771534024605119400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-download	d9e9c7decae087b1
+13961	14261	1771534035317377900	esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_systimer.c.obj	ef9697f27927fe02
+15596	15883	1771534036937845200	esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder.c.obj	b711edb1048b1096
+7850	7910	1771534028968234600	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj	73c3a6591511bc9e
+12864	12920	1771534033979721300	esp-idf/bootloader_support/libbootloader_support.a	693772f693b7db0
+4249	4391	1771534025448355300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj	9e4a11650849f0ae
+15641	15987	1771534037043947500	esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_bytes.c.obj	3ad1dabbdfecfde6
+16674	17245	1771534038301189700	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj	c5b5864910a42bc8
+549	751	1771534021809686800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.obj	9fe98710c3bda95f
+6111	6261	1771540590001999800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/.bin_timestamp	ce0819414619c4bf
+2542	2895	1771534023952814700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj	4404a1643b492aa6
+7739	7779	1771534028834860200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj	289e36c2624552a6
+6528	6644	1771534027701972900	esp-idf/hal/CMakeFiles/__idf_hal.dir/uhci_hal.c.obj	623c7d1974f753e8
+91	166	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+6797	6957	1771534028015612500	esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj	244e173ea89cce87
+6141	6339	1771534027395371200	esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj	6ca34ebaa7292ff2
+218	236	1771540583977951500	esp-idf/main/libmain.a	3e6ae9447260c2e4
+7897	8069	1771534029127730300	esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj	d3025d0e0d3c6384
+6624	6867	1771534027922856900	esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj	241a6b3e0af9977
+6647	6887	1771534027940949100	esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj	3aff67bcf99b0911
+6739	6890	1771534027943527900	esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj	43522870df047961
+820	1097	1771534022154493900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lmots.c.obj	594f9539e6633f05
+15822	16573	1771534037620186900	esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_tx.c.obj	1ce27f76ef1ba6b9
+6575	6794	1771534027851298600	esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal_ahb_v1.c.obj	7cf1032ec2444169
+6843	7021	1771534028078952200	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj	d789b4f362a21100
+11492	12017	1771534033075670800	esp-idf/esp_hw_support/libesp_hw_support.a	5929373a3d1f2485
+16334	16687	1771534037744970900	esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai.c.obj	bc04e38b0b81ed45
+6082	6141	1771534027199215400	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj	d3ded2879397fa1e
+1068	1213	1771534022270047100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj	c29074015e7286af
+6954	7081	1771534028135631300	esp-idf/hal/CMakeFiles/__idf_hal.dir/hmac_hal.c.obj	a83cd3993ec4ae3e
+6868	7251	1771534028303252900	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj	4f7989f0f63bed9d
+16575	16771	1771534037829889200	esp-idf/esp_driver_rmt/libesp_driver_rmt.a	ccdbeaf74c01b1b8
+6541	6801	1771534027855818300	esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_sja1000.c.obj	8b9812b65d586586
+64	73	1771534021132224700	project_elf_src_esp32s3.c	3b18f036b02dfc41
+7022	7337	1771534028394921600	esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_dwc_hal.c.obj	975cc739b2df0216
+13786	13873	1771534034930949800	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_vectors.S.obj	c28ae3fa5c2f75a1
+5722	5779	1771534026835450300	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers_asm.S.obj	663007936039d64f
+6961	7142	1771534028197874800	esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_serial_jtag_hal.c.obj	c6e6293de4377a6
+17593	17972	1771534039030652200	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj	15152c0c40503ad4
+1116	1479	1771534022535881400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.obj	d64f79d8f51e9d7f
+2983	3104	1771534024160692000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.obj	7e4ed4bd7d83a5f1
+5851	6044	1771534027102181700	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/apb_backup_dma.c.obj	3e3f6af8828340eb
+6593	6694	1771534027751890700	esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj	a110dd07ed214045
+8111	8186	1771534029239823800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/revision.c.obj	34bd5f4a35b30201
+12601	12630	1771534033690411000	esp-idf/esp_rom/libesp_rom.a	9bc4f6dd43c1d3
+1747	1870	1771534022927484500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj	3651ede080a4fec0
+7210	7424	1771534028479716500	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj	ee1998c583716a09
+8358	8682	1771534029738369400	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/spi_bus_lock.c.obj	2b24a06c5fef9520
+8552	8605	1771534029662168800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_usb.c.obj	1804c5c3ba9542a9
+13831	14096	1771534035150055900	esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio_pin_glitch_filter.c.obj	a08cd2847170bb20
+7315	7434	1771534028489924300	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj	d293db6cfa188940
+14912	15321	1771534036376749800	esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_std.c.obj	91506fa851d64162
+6050	6167	1771534027222752400	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj	6f4c1f6823bdc6c2
+5304	5395	1771534026451572000	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj	a0c515f1e0c9a858
+8760	8825	1771534029882549100	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.obj	14704a149b8c1852
+7355	7465	1771534028520714600	esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_write.c.obj	a214d81c2f6998bb
+7426	7566	1771534028622037700	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/cache/log_binary_heap.c.obj	e9f3411f4dd69687
+6088	6191	1771534027249621800	esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj	704cb48cdcb96ae7
+13968	14176	1771534035232518600	esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_locks.c.obj	764a185059967ce7
+1157	1464	1771534022520590000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.obj	a64d9176d938b979
+3098	3733	1771534024787422700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj	fea7068bf8bbbba3
+12387	12435	1771534033494481900	esp-idf/log/liblog.a	fec372cf4fe54adb
+437	625	1771534021680339700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/constant_time.c.obj	8325761fbe4cf3df
+8259	8513	1771534029570153900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.obj	4b79f1efa5b98cb3
+5684	5888	1771534026943700200	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.obj	6f290af042c790ab
+938	1050	1771534022103445300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj	e43edc4b4321ee9f
+4741	4975	1771534026033497700	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic_opi.c.obj	3f3281b3714a928a
+417	533	1771534021591376100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chachapoly.c.obj	2f8856faa88d5035
+6342	6562	1771534027615961700	esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj	7cd9aa78795ab89e
+208	472	1771534021529797100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/base64.c.obj	1669fb2c6b204a78
+6288	6441	1771534027496930500	esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj	2cec26e7d1687fef
+4482	4553	1771534025609853200	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_brownout_hook.c.obj	7748efd3b0c1a09c
+91	415	1771534021469594500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aria.c.obj	5e25832217e61b01
+3105	3425	1771534024482509800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj	baf54ab9c4cdc716
+8396	8554	1771534029611366000	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_clk_tree_common.c.obj	b35835f855cf0603
+2434	2672	1771534023727149900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/sha/core/esp_sha1.c.obj	3014277bc4ea0fd6
+4978	5115	1771534026170928700	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj	ceab077b700c88f8
+15311	15657	1771534036714478800	esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj	4c0c92f7d8478658
+4157	4321	1771534025380143100	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj	ad91bd149bad1c97
+752	1140	1771534022196548600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.obj	5a186de9ac216fda
+7687	7750	1771534028806733800	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj	ecc291d3ca7e0fe0
+13874	14017	1771534035070192400	esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/system_time.c.obj	644cde008e88cfee
+4004	4187	1771534025245106800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj	abb656b3d3cf333
+2294	2685	1771534023740014400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/sha/core/sha.c.obj	9411d64324eed3ef
+6036	6137	1771534027194317100	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj	219e0831c06805ac
+3335	3450	1771534024506332200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj	46697882a77e22c7
+9252	9410	1771534030466704000	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.obj	df4d4c2aa8b1a6de
+6432	6622	1771534027676563400	esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj	71c9cfda15f77f17
+6957	7103	1771534028160585100	esp-idf/hal/CMakeFiles/__idf_hal.dir/ds_hal.c.obj	600d3a451f29b89f
+8303	8551	1771534029607114900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_dma_utils.c.obj	3b45a497084498b8
+4629	4974	1771534026028062700	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_generic.c.obj	79829f8c5bd3085
+9989	10294	1771534031350846400	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/stdatomic.c.obj	918ac12070091b4b
+4971	5282	1771534026337870400	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_app.c.obj	da6ea76260029a4a
+5645	5729	1771534026787457800	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj	ad4b8d12abdaecd1
+18094	18133	1771534039192626300	esp-idf/esp_adc/libesp_adc.a	85af2f14fc63467
+17032	17321	1771534038373933300	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj	165395f222f5071e
+2552	3130	1771534024186471100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj	eba3d3d3c1566092
+88	175	1771534021233180400	esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/x25519.c.obj	1d6762d023f4c3dd
+14177	14710	1771534035767449500	esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_common.c.obj	b91cd65409ee019d
+15270	15640	1771534036697909900	esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj	420fedeed8c0710b
+4843	5107	1771534026162430100	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_mmap.c.obj	317017363877c77
+4326	4547	1771534025604403600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj	d62acbd3e3f3fdc5
+5383	5599	1771534026655318700	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.obj	68d093a13ff4e9c1
+1766	2011	1771534023065751500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_util.c.obj	7bcb6eba310ebdbb
+5464	5665	1771534026722222000	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.obj	5e931eb319bb7584
+4859	5062	1771534026118250400	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj	7e739e81db608dbe
+5953	6081	1771534027138883500	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj	c29e71de2137cccc
+7437	7811	1771534028864639800	esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj	33905e177d5e2e1a
+7812	7895	1771534028952732200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj	8271f8a1cb79a623
+9784	9988	1771534031044856700	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions_event_groups.c.obj	b692747584cd919f
+9054	9334	1771534030389699000	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj	deb34b968c48d8d0
+785	900	1771534021955948200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.obj	ec4699d58128130a
+4712	4868	1771534025925372500	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_gd.c.obj	92a3389fa8e29b25
+5396	5761	1771534026817313600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.obj	83521761d1ed48
+2344	2716	1771534023773957700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/bignum/esp_bignum.c.obj	45db5c25b2c615ec
+16269	16315	1771534037374554600	esp-idf/esp_driver_sdm/libesp_driver_sdm.a	c57b9e8507205cc7
+6484	6596	1771534027654212600	esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj	e43af63c9f6045ff
+14588	14716	1771534035773370200	esp-idf/esp_driver_gpio/libesp_driver_gpio.a	e00243332a2ce6cd
+15990	16141	1771534037197971400	esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj	46d9442fd3da1633
+316	434	1771534021490625500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.obj	28cbc7c1ef035e6c
+16177	16271	1771534037331228400	esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a	cf79bcb3e0534a74
+6893	7180	1771534028235390900	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hd_hal.c.obj	89137d2287935dde
+4516	4709	1771534025766461200	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/spi_flash_oct_flash_init.c.obj	d2900de4fa419a5
+14538	14911	1771534035960468900	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cmpr.c.obj	acf594c112d988bc
+4554	4658	1771534025714588500	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_drivers.c.obj	df7fec6abcdbec4b
+8688	8930	1771534029988166800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.obj	5b5bde705e18b7d1
+4134	4356	1771534025407275500	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj	785a2bbc3e2991d7
+16705	16793	1771534037847495100	esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a	b4e2f396cd06e748
+90	316	1771534021372141400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aes.c.obj	2769419ac4befd3c
+1465	1714	1771534022764466800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.obj	acc03181df5b1dd8
+1561	1765	1771534022817688500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.obj	a649b578c5567d63
+4662	4836	1771534025892211900	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic.c.obj	f01ab2783a76baae
+7726	7808	1771534028865159900	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj	10239ae61edf13fe
+535	662	1771534021718428700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/dhm.c.obj	a281adbc5df2a0df
+498	630	1771534021686504700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/des.c.obj	6b37f9194eb26d99
+3295	3910	1771534024962303100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.obj	2226970fb06d9eaa
+12435	12600	1771534033660067900	esp-idf/hal/libhal.a	40576c15f04f2294
+1046	1184	1771534022241206200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.obj	b2099928621e973e
+15543	15809	1771534036862205200	esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_transaction.c.obj	d79ff19ea1cf36ac
+7280	7354	1771534028412865400	esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj	3c2f3d4b249cfd11
+3859	4152	1771534025207489700	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj	95823496d777aca4
+2897	3036	1771534024091604100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.obj	8b53d6023b271651
+10235	10473	1771534031531196000	esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_cond_var.c.obj	67606248580d883a
+3515	3546	1771534024605119400	bootloader-prefix/src/bootloader-stamp/bootloader-download	d9e9c7decae087b1
+6597	6738	1771534027795806200	esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj	6d786db2970afeef
+2262	2532	1771534023589427000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/aes/dma/esp_aes.c.obj	c485c856b971fe8a
+3646	3854	1771534024911146300	esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj	d6bdffa7c5683b28
+2741	3097	1771534024152925100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj	f03040d0788d6170
+6327	6498	1771534027556299600	esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj	8e63217517c20f8f
+685	937	1771534021993929700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.obj	d61aea2ee96c11df
+107	218	1771540583958540800	esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj	dbf128a4be8d1cf5
+5403	5672	1771534026727963600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.obj	e2be9861d4d729e2
+1843	2044	1771534023096414100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.obj	9ba39fa51728bc37
+14104	14583	1771534035637513700	esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/ringbuf.c.obj	be6bf3705140514b
+3590	3700	1771534024755893100	esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_app_desc.c.obj	11fa803f73cf1395
+3482	3588	1771534024643057600	esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj	cfff1bcaf78eff0
+3453	3512	1771534024570452000	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir	dfe8a8dbae6d1cad
+9336	9594	1771534030649519100	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_systick.c.obj	24000a25d50a44df
+3039	3402	1771534024458932400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.obj	add93258b5ba29c2
+7765	7850	1771534028908015700	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj	46e8b4df826143b7
+6696	6843	1771534027899138700	esp-idf/hal/CMakeFiles/__idf_hal.dir/lcd_hal.c.obj	9190f2d50e0f2627
+6171	6242	1771534027298043900	esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj	e627e70e54fb5899
+17761	17857	1771534038911395000	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj	5decefa783975309
+12961	12985	1771534034044628200	esp-idf/esp_partition/libesp_partition.a	7d04169713e5b52e
+91	166	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+9569	9622	1771534030680683600	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/portasm.S.obj	f7ca15572f05450
+14817	14889	1771534035947528200	esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a	43d3f24820b20c6f
+14093	14362	1771534035418319900	esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj	c4921821b1ec5e80
+4357	4739	1771534025796116500	esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj	d7cdf1fccba08cfa
+10037	10179	1771534031234237200	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/sysconf.c.obj	fef0fa597654683
+4738	4847	1771534025904755800	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_boya.c.obj	e729fef4bef4dc47
+9953	10073	1771534031129861900	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/random.c.obj	85e9e97c176bd02f
+285	424	1771534021481230200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/block_cipher.c.obj	ed86c0cb2ffde472
+734	932	1771534021990126400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.obj	38518381acac2c12
+5126	5432	1771534026489017100	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj	75ff484c06803e68
+10242	10455	1771534031513154300	esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_local_storage.c.obj	89ea99965cf4f22a
+225	782	1771534021838035900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum.c.obj	96e26e8a9f4d5e83
+10282	10908	1771534031965862700	esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_guards.cpp.obj	5ff3f7263f7f7f70
+5600	5720	1771534026775782000	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.obj	b4f932dc6bd47fb0
+7951	8102	1771534029157519700	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj	93a13586e23458cb
+1501	1728	1771534022782053200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ffdh.c.obj	ed23f4a648003932
+7901	8110	1771534029164640300	esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj	d26976aa71db432b
+7779	7852	1771534028906948100	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj	25c52eecc158fd02
+13906	14092	1771534035149107100	esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_common.c.obj	7bc9061d90ff1a2d
+4548	4746	1771534025804316600	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_hpm_enable.c.obj	51e20f31913ca90f
+3962	4249	1771534025307114800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj	af9bfe3411f84361
+9288	9494	1771534030550003100	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/app_startup.c.obj	30773408fa0cbb8c
+7712	7815	1771534028867123300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj	96c815d38a4d9552
+17978	18093	1771534039153225900	esp-idf/driver/libdriver.a	3191e8ec68ca2c6b
+3603	3877	1771534024931248700	esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj	43d348079592d576
+14889	15265	1771534036320343900	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_sync.c.obj	47649781310c3e1
+16272	16705	1771534037762368400	esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src/usb_serial_jtag.c.obj	e634146ac6d010ad
+7339	7460	1771534028515040800	esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj	c095ad8a5b6388e0
+9045	9272	1771534030325740300	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj	d70fbbd0aea80c52
+15794	15894	1771534036953581000	esp-idf/sdmmc/libsdmmc.a	34815e05c7628c96
+205	5193	0	CMakeFiles/flash	dea38c21469c64b5
+7609	7723	1771534028781087300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj	3eb2a28f8825f762
+5915	5958	1771534027016950300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj	eb4daab2e7fe6b49
+239	359	1771534021417836700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod.c.obj	e3a011f5f0ba1eaa
+10175	10277	1771534031332882400	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/flockfile.c.obj	c33994d909141d23
+14408	14956	1771534036011627500	esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave_hd.c.obj	88502deec58f5736
+432	684	1771534021740511400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.obj	7b9daceae25b8a8
+427	819	1771534021874320000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher.c.obj	7722a5bee8dd7eb3
+17537	17760	1771534038817436200	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj	ea8ea6abfa68460c
+3547	3580	1771534024638732300	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-update	19b25a33bbb9f36b
+3910	4099	1771534025153970100	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_startup.c.obj	d4e810ae0d9bb25d
+9830	9951	1771534031009263800	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/assert.c.obj	1fd73f9398091340
+16913	17584	1771534038639814900	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj	754190e292cedd5a
+1255	1604	1771534022661726400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.obj	431e262b5a816166
+7104	7261	1771534028319494600	esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj	5adaf810755a0c2a
+8998	9315	1771534030368955200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj	4b5bb4dd2a539430
+2044	2196	1771534023253760300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.obj	53149ae30e9dce2f
+8902	9286	1771534030338424800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj	a8cdb9f9c89944b7
+7078	7208	1771534028266693700	esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_wrap_hal.c.obj	2ec40b6e6d5f9188
+92	131	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+236	5319	1771540589030752600	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esp_system/ld/sections.ld	7b70563da8ac6318
+13655	13784	1771534034842555400	x509_crt_bundle.S	3a247d2fd84c5cc6
+9274	9479	1771534030534028100	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.obj	151345fccdb37805
+13025	13042	1771534034102181200	esp-idf/esp_app_format/libesp_app_format.a	867dc71cccb879e5
+15887	16186	1771534037239674900	esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj	d8ffcdbd05b63729
+3453	3512	1771534024570452000	bootloader-prefix/src/bootloader-stamp/bootloader-mkdir	dfe8a8dbae6d1cad
+91	166	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+935	1115	1771534022172753500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj	90e83f648a971a0f
+14263	14814	1771534035869018700	esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave.c.obj	f7a18d332a40082d
+15577	15965	1771534037017423700	esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_common.c.obj	808224374ef50ed5
+7815	7900	1771534028951995900	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj	cbbc59d979d96e74
+8606	9175	1771534030230141400	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma.c.obj	4936a2800cc5f1ae
+8003	8106	1771534029161891400	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj	d3a541420ff0034e
+17752	18034	1771534039092853500	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj	3dcbd302fae55bdc
+3695	3864	1771534024922576300	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj	63962b43f9f9dee9
+3426	3599	1771534024652787700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/esp_platform_time.c.obj	62ecbc7aa2cac49d
+16246	17179	1771534038227862300	esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj	fce41baaca48ceb
+3875	4133	1771534025190931700	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj	9237fcad7ac28497
+17744	17973	1771534039031202100	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj	48f5231a640b1bb4
+8474	8788	1771534029844632100	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/spi_share_hw_ctrl.c.obj	eb61bf037290b280
+17186	17537	1771534038591341400	esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj	f038c279705412d3
+2452	2692	1771534023749422400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/sha/core/esp_sha256.c.obj	726949cf50c486e
+1605	1882	1771534022938433400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.obj	656839d7943d6a0f
+7272	7450	1771534028507597800	esp-idf/log/CMakeFiles/__idf_log.dir/src/os/util.c.obj	f674b88510a273a6
+9316	9487	1771534030543203900	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_common.c.obj	7e1a1ab373f9f458
+1854	2053	1771534023108629800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.obj	1f0e82ad5d774e17
+9430	9829	1771534030885690000	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/queue.c.obj	a7e3e0f7455d217e
+7515	7628	1771534028685894200	esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32s3/memory_layout.c.obj	aba98509ea7ce834
+3584	3626	1771534024681967800	bootloader-prefix/src/bootloader-stamp/bootloader-patch	31b318b085cd815f
+7910	8181	1771534029238409700	esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj	d817f95c60f6c5ac
+8533	9276	1771534030323795800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj	3261aaaec4cf3bd1
+91	206	1771534021263481900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesce.c.obj	8c24f6dc2d9f0c5e
+16994	17977	1771534039030972000	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj	8bbc14d133420d86
+5886	6033	1771534027090836700	esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj	b87f7f44bd11c4a7
+761	1155	1771534022208295400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.obj	77bd4414b86b6063
+15160	15542	1771534036599413200	esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj	da652ae31de6e984
+89	271	1771534021328747200	esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.obj	1822f9fa8d829a41
+4721	4912	1771534025969244200	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_winbond.c.obj	6aad4b655302d3e
+2371	2539	1771534023594429900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/bignum/bignum_alt.c.obj	a7d5939e1a1ac401
+14714	15158	1771534036214624700	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_oper.c.obj	a9adb12aa99d3631
+7146	7271	1771534028325865700	esp-idf/hal/CMakeFiles/__idf_hal.dir/xt_wdt_hal.c.obj	9a7083ec5c7720ac
+17	23655	0	CMakeFiles/menuconfig	a529ce28261b7e0c
+613	895	1771534021952344100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdsa.c.obj	d20e4f7f780fbdea
+7854	7954	1771534029006407000	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj	289fee7fc9137958
+9805	9947	1771534031002066200	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/init.c.obj	20ef1c32533f47fc
+5344	5510	1771534026567771400	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.obj	1d68da911a678e59
+2056	2259	1771534023309873600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/aes/dma/esp_aes_gdma_impl.c.obj	47b6a556bed42eba
+236	5319	1771540589030752600	esp-idf/esp_system/ld/sections.ld	7b70563da8ac6318
+14585	15032	1771534036089818800	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_fault.c.obj	ea6ba987e9880256
+9962	10071	1771534031126207100	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/getentropy.c.obj	92d9d1cc688d07cc
+3724	3914	1771534024968176700	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj	aca693ca3c78aae4
+4236	4751	1771534025805644600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj	162bbd58145996bd
+22528	22543	1771534043602438500	CMakeFiles/continuous_read.elf.dir/project_elf_src_esp32s3.c.obj	f7257d4a998eba30
+233	611	1771534021668043700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_core.c.obj	50acdb3692714453
+5674	5750	1771534026806451600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj	2c7eb34f8f083b12
+9853	10099	1771534031155814600	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/locks.c.obj	c70c86cef2ecb46
+14957	15071	1771534036129696600	esp-idf/esp_driver_spi/libesp_driver_spi.a	22583a357538eee6
+168	177	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+13787	13906	1771534034963298100	esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/gpio_glitch_filter_ops.c.obj	7129ff6e2bf5555b
+6372	6527	1771534027584441000	esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj	9766913805a59818
+91	166	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+9484	9788	1771534030845831300	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/timers.c.obj	cae4efb23886c3f1
+4852	5138	1771534026193055500	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_ops.c.obj	5035cc4cb5719208
+91	166	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+4747	4858	1771534025917058000	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_th.c.obj	c463438def15ec56
+8932	9145	1771534030201137200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj	69ef36129e75e026
+6181	6420	1771534027473029100	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj	3f2e2443f2a82059
+7943	8125	1771534029181171700	esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.obj	3bbe71bc7305bc5f
+5896	6049	1771534027105817600	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj	d1506c3f9c0f0e06
+10042	10175	1771534031232041800	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/realpath.c.obj	2336094ccc8df13b
+14848	14912	1771534035968775500	esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a	38233ad007e6be92
+12630	12648	1771534033707815100	esp-idf/esp_common/libesp_common.a	9af19fbf8e5069a6
+9147	9837	1771534030890573900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.obj	31a4fccfea83da55
+91	166	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+1266	1444	1771534022502222300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.obj	dd134a34c8afe5dc
+14172	14488	1771534035546398100	esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/src/gptimer_common.c.obj	d9d29dfa0d7aadef
+15324	15793	1771534036845359700	esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj	ad5e85ca90a7ef46
+13655	13784	1771534034842555400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/x509_crt_bundle.S	3a247d2fd84c5cc6
+6888	7089	1771534028143458800	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj	87513c89922b2cb4
+10259	10479	1771534031538170400	esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_rwlock.c.obj	cf5c57c6ba871ce6
+6094	6222	1771534027277281700	esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj	e717c50e0f7d996f
+8104	8295	1771534029351381900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj	e38882e0edf945a8
+12083	12245	1771534033304559500	esp-idf/soc/libsoc.a	225b573318b037d
+631	1266	1771534022321006200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp.c.obj	d4275423d02845a6
+6034	6144	1771534027201015100	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj	60fc3d9e39656ecc
+10075	10202	1771534031259917800	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/syscalls.c.obj	ed81b481b32f0e4
+12920	12961	1771534034021032700	esp-idf/efuse/libefuse.a	dae4795e83c3b99c
+6804	6951	1771534028009696600	esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj	2fcc4e8bea46097f
+13847	13965	1771534035019525900	esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_init.c.obj	36df8b44c963984c
+6453	6592	1771534027650754700	esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj	34985323ebdfdbd8
+12017	12082	1771534033141077400	esp-idf/esp_security/libesp_security.a	d42427eeae18941
+17098	17186	1771534038245833900	esp-idf/esp_driver_uart/libesp_driver_uart.a	3abe97797ca133d
+65	87	1771534021145559800	esp-idf/esp_system/ld/memory.ld	bb8cef6c8ad67f4b
+10072	10207	1771534031265786600	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/scandir.c.obj	efebfd427c2cdb6f
+17766	17903	1771534038961439900	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj	c7085d40f801a29d
+4033	4200	1771534025257934000	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj	44cbe782caff8ecd
+14433	14484	1771534035542645500	esp-idf/esp_pm/libesp_pm.a	c501446f70c3538a
+6418	6540	1771534027597654800	esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj	db4c89478bb77a0
+2677	3010	1771534024061756000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj	b609b306ba450252
+5120	5342	1771534026398658800	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj	cabbcfe3b48ae1b4
+663	817	1771534021869945000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves_new.c.obj	ababf500b00ba1b3
+13131	13181	1771534034240583700	esp-idf/mbedtls/mbedtls/library/libmbedx509.a	3e051cc91810d4bc
+1366	1560	1771534022617558200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.obj	903777579dcf12c8
+9597	9691	1771534030749664800	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c.obj	ba8827a44a6ec436
+3132	4020	1771534025070250700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj	23582ac7313b8cb3
+177	204	1771540590615542300	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+1836	2550	1771534023604966500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.obj	eeef433c163266ad
+8126	8361	1771534029418456200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_module.c.obj	43cf6f7f493b4de2
+9905	10036	1771534031093926300	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/poll.c.obj	f3201597e568485
+9495	9824	1771534030880757000	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/stream_buffer.c.obj	caba20ec871afa8d
+6109	6235	1771534027290229500	esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj	f353c29c19d2774b
+9412	9565	1771534030622859400	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/list.c.obj	9bdeec8f8cd3b7dc
+1716	1833	1771534022890719200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.obj	aba67958bceb1f4e
+2278	2493	1771534023548996100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/sha/esp_sha.c.obj	71af47eae3da46a1
+2873	3194	1771534024252809300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj	79b70293baf62dbd
+91	166	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+9949	10086	1771534031142169700	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/pthread.c.obj	1c58acea416636ec
+9694	9902	1771534030958887000	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/freertos_compatibility.c.obj	9b12693754b7b06f
+2090	2428	1771534023485123800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.obj	40f0609330300498
+2495	2740	1771534023797054600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/sha/core/esp_sha512.c.obj	b45a552a985b674e
+5780	5914	1771534026971009000	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/reset_reason.c.obj	992c5d80dda30d9a
+17077	17439	1771534038497129100	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj	5f3a3a9a3ef472a6
+15529	15595	1771534036649830600	esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_crc.c.obj	3cf86aaa55a48321
+4914	5299	1771534026355445600	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_spi_init.c.obj	41435900aeee7d82
+6045	6086	1771534027140998800	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj	c26d563332284700
+5752	5892	1771534026944307900	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.obj	678a784d9579675d
+3547	3580	1771534024638732300	bootloader-prefix/src/bootloader-stamp/bootloader-update	19b25a33bbb9f36b
+9825	9966	1771534031021211300	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/abort.c.obj	f703420295226bae
+8536	8690	1771534029745468200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_console.c.obj	7c5ee3cc1ba563a3
+8249	8529	1771534029583696100	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sar_periph_ctrl_common.c.obj	b7b0872535fe2b4a
+3079	3292	1771534024346256400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_debug_helpers_generated.c.obj	3bb5aae3ba927d9f
+14716	14776	1771534035836044300	esp-idf/xtensa/libxtensa.a	1be818d88f24260b
+8339	8568	1771534029625467600	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma_link.c.obj	9d8554434d436832
+14780	14847	1771534035907136100	esp-idf/esp_ringbuf/libesp_ringbuf.a	bab66519ccd7153c
+7257	7430	1771534028488879200	esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_lock.c.obj	1f636e55661d6d7b
+16988	17075	1771534038134855600	esp-idf/esp_driver_twai/libesp_driver_twai.a	5f99ecbdab709007
+360	643	1771534021696668300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ccm.c.obj	34947a75abd0c0c4
+379	497	1771534021554804700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chacha20.c.obj	1b92ef83a02779b1
+17477	17565	1771534038622482000	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj	db0834f1016be553
+9112	9251	1771534030308939800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj	965d075286fcd5f
+8691	8796	1771534029855286100	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_async_memcpy.c.obj	77692bc2a2e657eb
+7467	8093	1771534029141695800	esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj	da10f7a2e8662104
+64	238	1771534021178961800	partition_table/partition-table.bin	784bb38cd3a9b99c
+8703	9052	1771534030104010100	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/async_memcpy_gdma.c.obj	30bf840b425327bb
+13008	13025	1771534034085010600	esp-idf/esp_bootloader_format/libesp_bootloader_format.a	e3207d191380e6ef
+7818	7928	1771534028983551400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj	d1ddff047f6478e3
+10913	10983	1771534032042631400	esp-idf/cxx/libcxx.a	550a04e4e5d66d15
+16143	16672	1771534037728919200	esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uhci.c.obj	91ae41196f21639a
+15962	16789	1771534037843037000	esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_master.c.obj	aa4bc405b249161d
+899	1211	1771534022265175100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/lms.c.obj	d8ac910d937cd8ae
+2131	2276	1771534023333181700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/esp_hardware.c.obj	f00dc7866aad0fe
+8297	8471	1771534029524702000	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_clk_tree.c.obj	19274c6e08b8b5c0
+4409	4737	1771534025794260800	esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache_msync.c.obj	e6df153f342b89f6
+15812	16400	1771534037456623100	esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_rx.c.obj	7c572e798863976d
+3339	3480	1771534024536070300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj	d5b758a0cc4ab2f5
+9124	9427	1771534030482649900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/sar_periph_ctrl.c.obj	f3744dc78034ee89
+12759	12832	1771534033892317300	esp-idf/spi_flash/libspi_flash.a	a96555544dc45b53
+278	378	1771534021436307000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod_raw.c.obj	329b7596465298ab
+17322	17750	1771534038804576400	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj	9656c76532a348dc
+15515	15665	1771534036722610300	esp-idf/esp_driver_i2s/libesp_driver_i2s.a	a237b73f1840cbd3
+5319	6111	1771540589845901200	continuous_read.elf	f1df374d309fc08
+5890	6035	1771534027093916400	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj	aa0cd3f4e25007f
+8791	8996	1771534030054060300	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/mspi_timing_tuning.c.obj	a16cdfa53832ecae
+16317	16617	1771534037673715400	esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src/usb_serial_jtag_connection_monitor.c.obj	4a801cd6da37c02d
+17269	17789	1771534038843228800	esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj	af75c78c79fe12e
+4642	4775	1771534025825881000	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_issi.c.obj	2d0ce49028443adf
+438	548	1771534021605803800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cmac.c.obj	e654e785638fd692
+2689	3078	1771534024135423700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj	38b08ea8e2c1b440
+5730	5836	1771534026891120900	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj	54f49e65204feca1
+16790	16913	1771534037972402000	esp-idf/esp_driver_i2c/libesp_driver_i2c.a	5a7ebcc5f4444c97
+13785	13864	1771534034922179800	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj	85d6816b09af6fab
+473	758	1771534021812592700	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj	f0cf6962fd2ea18
+4870	5382	1771534026438797200	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj	fe34891fc827332a
+16472	16993	1771534038049044600	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj	86a456009a619089
+3351	3483	1771534024541116500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.obj	89d5a549430a65e5
+5073	5302	1771534026357505500	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj	f6c02b54b9feed2
+7262	7413	1771534028467528300	esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj	8454c60712bc0474
+8826	9110	1771534030168638400	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/power_supply/brownout.c.obj	a9e2ac7c5875017c
+5435	5655	1771534026711929300	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.obj	ae64828cc17c249c
+15659	15961	1771534037018368500	esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_copy.c.obj	5da337845de613fb
+10004	10280	1771534031337679600	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/time.c.obj	3d8b239e7c35ac86
+5837	6063	1771534027120679600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/cache_err_int.c.obj	5b99ca3f368770cb
+5825	6106	1771534027160972900	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/system_internal.c.obj	2a44c4cbb445d8
+6564	6701	1771534027751487300	esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal_top.c.obj	2258e2d48500290b
+14905	15384	1771534036440595900	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_timer.c.obj	f49646ccf398b464
+21	4439	1771543761300959400	build.ninja	14164cc27ca78360
+4473	4623	1771534025674511500	esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj	351df9489e7b9fe8
+65	88	1771534021146192700	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esp_system/ld/sections.ld.in	1e0b3d12ef0a75b
+1143	1367	1771534022420479800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_ecc.c.obj	b32afd0e6797a962
+15665	15969	1771534037024725100	esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src/rmt_encoder_simple.c.obj	718a06125aca5d1e
+2535	2696	1771534023746873900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/md/esp_md.c.obj	344991650057f7c1
+16619	17032	1771534038089159300	esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj	b8a80f878a49f0b0
+7092	7279	1771534028334933900	esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj	1fb0d740e9d12895
+7334	7421	1771534028479257600	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj	ed47aa9f3ef70070
+10204	10328	1771534031385776000	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/newlib_init.c.obj	d92177891b1483b5
+7692	7817	1771534028872671500	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj	4cfdd8fbb21f9738
+6245	6452	1771534027508930600	esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj	692d41de774e1d43
+3007	3342	1771534024395944400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj	b6e95922664c2541
+6192	6483	1771534027540595100	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj	edae59811f240e4
+15971	16471	1771534037527985900	esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_slave.c.obj	cec94d12718dfab3
+6222	6428	1771534027486100200	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/clk_tree_hal.c.obj	8d7cceecfdb21289
+13788	14172	1771534035229184100	esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/rtc_io.c.obj	4991149ccf026cec
+6069	6197	1771534027253269200	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj	e38f0498dc0de0fe
+7614	7690	1771534028747987800	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj	1398563311d0f6b3
+15988	17097	1771534038147484300	esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj	6982d0c7b0cd296f
+2157	2289	1771534023347216500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/esp_mem.c.obj	c3afb7858ace0c1e
+17566	17766	1771534038818582300	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj	8d9b619027f6f5d9
+14969	15421	1771534036477616500	esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_tdm.c.obj	890957f16192cbff
+7086	7333	1771534028390794900	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj	330519df8df888b1
+3915	4225	1771534025275356700	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj	4ad3589e35ee971b
+8570	8756	1771534029813859800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_event.c.obj	7af4b43478d0ae1e
+7568	7604	1771534028661982700	esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj	51dfeb1f788ce1e3
+9536	9850	1771534030905466400	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/port.c.obj	dcbc28d03c419c92
+6704	6883	1771534027940610600	esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj	adf17f5c4ab865e8
+14049	14432	1771534035484682500	esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_impl.c.obj	7c27e2a95de9b926
+2198	2368	1771534023425765000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/aes/esp_aes_xts.c.obj	6f0eca28db86265a
+14192	14941	1771534035994077400	esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_master.c.obj	17dd5e246f9090d5
+15072	15527	1771534036583212900	esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj	923e1eb8bd5ca972
+13785	13846	1771534034904263700	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_context.S.obj	e0e669d68a808f2
+9789	10040	1771534031096232400	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/idf_additions.c.obj	33cad2b8353b03d7
+1445	1721	1771534022775922600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.obj	1c1d3a0ae0419fde
+65	88	1771534021146192700	esp-idf/esp_system/ld/sections.ld.in	1e0b3d12ef0a75b
+3866	4030	1771534025087588400	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj	d81244d86f1b9cba
+1723	2059	1771534023111032600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.obj	ce9f94e61483b4da
+628	733	1771534021788671900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecjpake.c.obj	29fe9ca607897412
+3878	4160	1771534025215951400	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj	d6ee5fd5de1f9ddc
+6198	6326	1771534027384012700	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj	ba691607a8a776e0
+15387	15576	1771534036634182100	esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a	385704c25e413209
+7957	8079	1771534029137877400	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj	3e458db9b19d6186
+15423	15520	1771534036575995200	esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl/sd_pwr_ctrl.c.obj	7948a2495f1673e5
+2718	2982	1771534024037382800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write.c.obj	2f60c96c64d24ba4
+15967	16333	1771534037390899300	esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/i2c_common.c.obj	681cb418f9e50344
+17249	17867	1771534038914790500	esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj	59f0dc03cddb7e3e
+6064	6181	1771534027238520900	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj	deeaaa1c1ea78fd
+14492	14969	1771534036019344800	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_cap.c.obj	1a9f749bff7d74aa
+3703	3873	1771534024929141100	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj	6348f85121aceefa
+14702	15270	1771534036325253000	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_gen.c.obj	3933d5a63166aeaa
+2012	2130	1771534023187769800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.obj	12afc4f9cbf6c66a
+8100	8532	1771534029586209300	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/intr_alloc.c.obj	169e90ab84dc68a7
+4975	5125	1771534026180340300	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj	dcf610f19c02856b
+11076	11247	1771534032306444700	esp-idf/newlib/libnewlib.a	d4331f2cc23c842d
+177	204	1771540590615542300	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+6885	7075	1771534028130255000	esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj	f2d3e2b9c8ae7780
+5713	5952	1771534027009975000	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.obj	97fc34724f65e939
+10208	10545	1771534031603452200	esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread.c.obj	2c23906444f0cdf8
+8799	9044	1771534030098995100	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_wake_stub.c.obj	88b2228ba9192bfa
+5763	6069	1771534027125753000	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/clk.c.obj	7e47921591520ceb
+15487	15821	1771534036877560000	esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj	52891a98aab434da
+13785	13837	1771534034893622000	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr_asm.S.obj	569a292f4d27517c
+10295	10435	1771534031493200600	esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_init.cpp.obj	fe473123090d8779
+64	238	1771534021178961800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/partition_table/partition-table.bin	784bb38cd3a9b99c
+2040	2175	1771534023232637100	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.obj	61f7485e0ee314fe
+2038	2155	1771534023212904600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.obj	d127b27717cdc2ca
+5429	5819	1771534026875488100	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj	b5382739b9fefa28
+1185	1424	1771534022482649000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.obj	c1bac682df41a403
+4200	4466	1771534025518852200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj	1d71f024e9b10ba7
+3626	10676	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure	ecc4407e7b004e41
+6111	6261	1771540590001999800	.bin_timestamp	ce0819414619c4bf
+65	87	1771534021145559800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esp_system/ld/memory.ld	bb8cef6c8ad67f4b
+6442	6572	1771534027630232900	esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj	4a4d47606f616c04
+5656	5711	1771534026769746600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj	844ed96c3b32c85
+6673	6960	1771534028017589400	esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj	e7bfc868924f80e0
+8362	8535	1771534029589214200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_utils.c.obj	d979ecf3e49860e1
+6236	6416	1771534027469154600	esp-idf/hal/CMakeFiles/__idf_hal.dir/systimer_hal.c.obj	4d67fe23531d37e1
+13788	14103	1771534035161234200	esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src/dedic_gpio.c.obj	1351eb3c4fb4fe9a
+4261	4641	1771534025698879000	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj	804de191559a441d
+5490	5682	1771534026737456800	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.obj	148b4a0b8965c460
+5142	5427	1771534026485414600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj	5ead7f321fab498d
+1871	2088	1771534023145025300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.obj	a88aec81b82ea3c1
+1211	1500	1771534022555795600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.obj	fff62e35fc9ad3ce
+13042	13131	1771534034191239200	esp-idf/mbedtls/mbedtls/library/libmbedtls.a	635df8c04ab53ced
+4101	4261	1771534025318816600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj	1d26e1d77af4dd0b
+15917	15989	1771534037048968000	esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a	c00664f4558d7267
+7414	7512	1771534028568650500	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/tag_log_level.c.obj	ae518bfa902d88ce
+185	431	1771534021488711900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1write.c.obj	c71e0fe3458aa2ee
+205	5193	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/flash	dea38c21469c64b5
+13785	13960	1771534035018697000	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr.c.obj	4c38179631ee784d
+902	1254	1771534022310799500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj	d9994065fd89d965
+7629	7711	1771534028761139500	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj	93d507f20871905b
+4023	4155	1771534025210343500	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj	63270ef16493260c
+12648	12758	1771534033818174300	esp-idf/esp_system/libesp_system.a	d0626448b7983b73
+644	1067	1771534022123214800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.obj	284a4dab86681c16
+4394	4470	1771534025525578000	esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj	f473aeed44666c3e
+1480	1708	1771534022766089900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers_no_static.c.obj	c6a113f28f591ff7
+3010	3338	1771534024393296800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj	bbcd3d4fcec6f568
+13837	14144	1771534035200921200	esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer.c.obj	1c6e2b0bf944ea50
+10273	10471	1771534031529014400	esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_semaphore.c.obj	96e2c651ff6e2adb
+88	229	1771534021282725200	esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/everest.c.obj	3748916143b0e794
+1448	1746	1771534022803850800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.obj	1118b4d9c95b60b6
+5512	5691	1771534026746886200	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.obj	bbe913db99e2addf
+91	166	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+1498	1811	1771534022868668800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.obj	56ab77aba7c6cb3e
+1368	1497	1771534022553480600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.obj	4abf3fc717aba0b6
+1215	1628	1771534022684778000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.obj	b157cc27a1739ee8
+7451	7725	1771534028781433800	esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj	40aa2aa808c6a6
+1712	2040	1771534023095433400	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.obj	69fd47d9883d75ed
+1051	1447	1771534022504171000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj	d436724bfeb8fff3
+1883	2047	1771534023096081800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.obj	35cedccd9b810e02
+5229	5400	1771534026455573900	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj	4624e6786754c495
+15895	16267	1771534037324246400	esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/src/sdm.c.obj	55b4557ffff2d1a1
+3584	3626	1771534024681967800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch	31b318b085cd815f
+3064	3331	1771534024389456300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj	fb268f486b30300c
+6421	6577	1771534027633088100	esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj	c413b9fd315c5cb2
+6578	6895	1771534027949420300	esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj	abe2e810c126faa1
+2176	2340	1771534023396209600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/esp_timing.c.obj	e90d711aed235756
+16192	16244	1771534037302110100	esp-idf/esp_driver_tsens/libesp_driver_tsens.a	feb4cae00b6af0b
+9278	9534	1771534030592183000	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s3/sleep_cpu.c.obj	d35095f6657d5d33
+7656	7738	1771534028797158600	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj	554b1d1575da71c8
+2064	2503	1771534023550071800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/aes/dma/esp_aes_dma_core.c.obj	315b83f33524ba3b
+7383	7473	1771534028526254300	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/log_level.c.obj	639fcdd874ab5199
+1935	2036	1771534023090746600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha3.c.obj	9f02206162fdab5a
+17180	17268	1771534038327755800	esp-idf/esp_driver_ledc/libesp_driver_ledc.a	44362f45a8f00eaf
+10278	10485	1771534031544169700	esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_exception_stubs.cpp.obj	9ef8bdcd270d1c6
+9176	9283	1771534030331349300	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.obj	24ab5117f9d074cb
+5300	5489	1771534026546465400	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.obj	b924acfcc98f17f9
+1815	1933	1771534022991500600	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.obj	12fd8d3b141d4fda
+4189	4409	1771534025464904800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj	9473f682d62764c3
+2048	2251	1771534023307746800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.obj	7c22ba981738af64
+5110	5228	1771534026287163000	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system_console.c.obj	461ac895478745cb
+1101	1365	1771534022420726300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.obj	bfa399ace05dd3eb
+90	224	1771534021279875500	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.obj	3e30a2010c2b60cf
+64	73	1771534021132224700	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/project_elf_src_esp32s3.c	3b18f036b02dfc41
+5065	5294	1771534026351976300	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj	771119aa8175cc75
+4153	4351	1771534025408503300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj	d826bd2c0998c16a
+16404	16986	1771534038039582000	esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir/esp_twai_onchip.c.obj	73ddac3a6361070
+6145	6368	1771534027421018200	esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj	576ad42b7c26f497
+9284	9473	1771534030532088000	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/heap_idf.c.obj	f2ae36d33fe0a346
+17440	17743	1771534038801630600	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj	bec0b2123db1d4a2
+5759	5849	1771534026906499500	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/highint_hdl.S.obj	1fe89a720357e8df
+2256	2448	1771534023505709000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/aes/esp_aes_common.c.obj	7a5a88646b002e39
+7724	7801	1771534028858897300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj	b9ff93ef3b1a5fda
+14944	15487	1771534036542926700	esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_pdm.c.obj	17b6ee17ebeeda33
+89	184	1771534021234012000	esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/Hacl_Curve25519_joined.c.obj	7c311b2aadfa4903
+4776	5073	1771534026130706000	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj	6f3c8636f0d6fd4
+3197	3722	1771534024775813800	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.obj	795c8aa3f07ebdd6
+12833	12863	1771534033923461100	esp-idf/esp_mm/libesp_mm.a	eb48606a724d63ef
+2507	2878	1771534023933349900	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/home/marcus/esp/esp-idf-v5.5/components/mbedtls/port/aes/esp_aes_gcm.c.obj	a5c998089348a64e
+6139	6285	1771534027342240800	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj	de6e440c7dd5b2e7
+4754	4969	1771534026025669600	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/memspi_host_driver.c.obj	1db90a144ed14cf9
+10181	10271	1771534031327944500	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/reent_init.c.obj	2e5a59afe6a114d6
+14364	14407	1771534035463390600	esp-idf/mbedtls/libmbedtls.a	4aaa3f8b1ab256ec
+1425	2869	1771534023911765200	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.obj	e16d85390a404da
+7605	7655	1771534028709785700	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj	7387450061870c20
+7461	7764	1771534028819889000	esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj	2f21286763c74d2a
+4352	4515	1771534025572497600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/secure_boot_secure_features.c.obj	dd55e34d34a65f9d
+7422	7535	1771534028588594700	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/linked_list/log_linked_list.c.obj	aaf893cd90f5b60e
+8514	8810	1771534029867241200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/adc_share_hw_ctrl.c.obj	3f5e9a54669b82d
+9838	9959	1771534031014969600	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/heap.c.obj	832d7defbc3524a6
+7151	7314	1771534028372266800	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/rtc_cntl_hal.c.obj	361a9df25ed27abe
+12246	12386	1771534033444556100	esp-idf/heap/libheap.a	8fcda967abea5b30
+4161	4481	1771534025538702700	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj	365c11bb9ea52211
+182	438	1771534021494342000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1parse.c.obj	8943a931d5c1d0f1
+6499	6672	1771534027727936900	esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj	674a8b06dc38fa4
+7802	7893	1771534028951436100	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj	34851cba53386e3a
+14018	14137	1771534035195208800	esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj	1ec0d84bf1a56c6d
+15536	15916	1771534036974550100	esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src/sdspi_host.c.obj	84df7db53d2e1965
+14487	14588	1771534035643985900	esp-idf/esp_timer/libesp_timer.a	6ab58c9de38fa505
+8556	8901	1771534029956599700	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_gpio.c.obj	85b518137c39de4e
+2694	3350	1771534024401525300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj	cac9de8b53eaef13
+14098	14191	1771534035248654100	esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj	af29e2a07445ccad
+8080	8301	1771534029354071900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_ctrl_os.c.obj	464a251062347339
+2879	3005	1771534024062288300	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj	bfc809e30dde1f15
+3626	10676	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-configure	ecc4407e7b004e41
+8811	9123	1771534030181189200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clock_output.c.obj	403fe84071e70ea1
+8182	8393	1771534029451680600	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/regi2c_ctrl.c.obj	de465e924a5985a5
+13865	14047	1771534035105126000	esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/ets_timer_legacy.c.obj	18e6d83921f6395d
+8095	8249	1771534029306027500	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/hw_random.c.obj	e2d77be846ed554f
+8069	8336	1771534029392646600	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clk.c.obj	6a723685e40fffbb
+7809	7876	1771534028933302800	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj	3cfc6c3620e56263
+8187	8257	1771534029313455600	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_gpio_reserve.c.obj	f60a63bb1ec0d23c
+177	204	1771540590615542300	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+10983	11075	1771534032132907100	esp-idf/pthread/libpthread.a	8728ebc7fb01b8c7
+7180	7382	1771534028440437000	esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_timestamp.c.obj	4c25ad4d6c2dfd8e
+12985	13008	1771534034067764200	esp-idf/app_update/libapp_update.a	454f15f6e44ce1e9
+8531	8701	1771534029758729200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modem.c.obj	3524ef8171ac5645
+5666	5885	1771534026943617600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj	cf5a77e58536a
+7879	7943	1771534028999405500	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_dwc_periph.c.obj	dac99de78bca5141
+8107	8357	1771534029415200200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/periph_ctrl.c.obj	6a16fb1d6048ea3a
+92	131	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+3734	3960	1771534025012254300	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj	8515b1776538cfac
+15521	16176	1771534037230300500	esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj	6b3bbe1f15348caf
+7884	7979	1771534029030826400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj	499c3990a416079a
+9488	9784	1771534030841055600	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/event_groups.c.obj	b2b64b65d9e2cc4e
+5694	5756	1771534026808916600	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack_asm.S.obj	1329ad22d87f0786
+7751	7844	1771534028899925100	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj	e730bdb2a7847ebc
+1629	1850	1771534022908685000	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_pake.c.obj	371f4758ae11e1ae
+7931	8002	1771534029058339900	esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj	e07c6e3308083659
+7980	8099	1771534029155441200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj	1a32aa1cf78b40e
+10090	10258	1771534031315686800	esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/reent_syscalls.c.obj	34ffe4e6c14b060b
+16688	17473	1771534038528690200	esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj	51f481c6e1875916
+7475	7607	1771534028662880700	esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj	30fcad34ccc3565f
+7431	7686	1771534028739727600	esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_base.c.obj	348e56a71ab68115
+14539	14903	1771534035957679200	esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src/mcpwm_com.c.obj	b6e5f4c0dcf986c4
+104	195	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+104	195	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+104	195	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+104	195	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+104	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+104	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+104	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+104	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+196	207	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+196	207	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+116	209	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+116	209	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+116	209	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+116	209	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+116	209	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+116	209	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+116	209	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+116	209	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+210	227	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+210	227	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+100	178	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+100	178	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+100	178	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+100	178	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+100	178	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+100	178	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+100	178	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+100	178	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+179	195	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+179	195	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+105	183	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+105	183	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+105	183	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+105	183	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+184	195	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+184	195	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+121	199	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+121	199	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+121	199	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+121	199	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+121	199	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+121	199	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+121	199	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+121	199	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+200	216	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+200	216	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+111	200	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+111	200	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+111	200	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+111	200	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+111	200	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+111	200	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+111	200	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+111	200	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+201	211	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+201	211	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+112	230	1771543936103454700	esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj	dbf128a4be8d1cf5
+211	249	1771543936122683800	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+211	249	1771543936122683800	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+211	249	1771543936122683800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+211	249	1771543936122683800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+230	250	1771543936124608800	esp-idf/main/libmain.a	3e6ae9447260c2e4
+250	4952	1771543940800816900	esp-idf/esp_system/ld/sections.ld	7b70563da8ac6318
+250	4952	1771543940800816900	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esp_system/ld/sections.ld	7b70563da8ac6318
+4953	5725	1771543941591746500	continuous_read.elf	f1df374d309fc08
+5725	5883	1771543941757684700	.bin_timestamp	ce0819414619c4bf
+5725	5883	1771543941757684700	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/.bin_timestamp	ce0819414619c4bf
+5884	5922	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+5884	5922	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+118	157	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+118	157	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+117	189	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+117	189	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+117	189	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+117	189	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+117	189	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+117	189	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+117	189	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+117	189	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+191	200	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+191	200	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+201	231	1771543942401131600	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+201	231	1771543942401131600	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+201	231	1771543942401131600	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+201	231	1771543942401131600	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+232	5384	0	CMakeFiles/flash	dea38c21469c64b5
+232	5384	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/flash	dea38c21469c64b5
+105	183	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+105	183	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+105	183	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+105	183	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+105	183	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+184	194	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+184	194	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+105	225	1771544005489866700	esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj	dbf128a4be8d1cf5
+195	226	1771544005490633500	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+195	226	1771544005490633500	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+195	226	1771544005490633500	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+195	226	1771544005490633500	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+225	243	1771544005508722100	esp-idf/main/libmain.a	3e6ae9447260c2e4
+243	4879	1771544010118956600	esp-idf/esp_system/ld/sections.ld	7b70563da8ac6318
+243	4879	1771544010118956600	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esp_system/ld/sections.ld	7b70563da8ac6318
+4880	5673	1771544010931516300	continuous_read.elf	f1df374d309fc08
+5673	5824	1771544011089260300	.bin_timestamp	ce0819414619c4bf
+5673	5824	1771544011089260300	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/.bin_timestamp	ce0819414619c4bf
+5824	5863	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+5824	5863	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+109	158	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+109	158	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+108	186	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+108	186	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+108	186	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+108	186	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+108	186	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+108	186	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+108	186	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+108	186	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+188	197	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+188	197	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+198	227	1771544011725977400	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+198	227	1771544011725977400	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+198	227	1771544011725977400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+198	227	1771544011725977400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+227	5382	0	CMakeFiles/flash	dea38c21469c64b5
+227	5382	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/flash	dea38c21469c64b5
+110	160	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+110	160	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+109	194	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+109	194	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+109	194	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+109	194	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+109	194	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+109	194	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+109	194	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+109	194	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+195	204	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+195	204	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+205	231	1771544569135302400	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+205	231	1771544569135302400	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+205	231	1771544569135302400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+205	231	1771544569135302400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+115	157	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+115	157	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+115	193	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+115	193	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+115	193	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+115	193	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+115	193	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+115	193	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+115	193	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+115	193	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+194	203	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+194	203	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+204	231	1771544578431440800	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+204	231	1771544578431440800	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+204	231	1771544578431440800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+204	231	1771544578431440800	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+117	158	0	esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+117	158	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/esp-idf/esptool_py/CMakeFiles/app_check_size	2c096185a83ca183
+116	195	1771534031735264400	bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+116	195	1771534031735264400	bootloader/bootloader.elf	9326d65a8e6ab96e
+116	195	1771534031735264400	bootloader/bootloader.bin	9326d65a8e6ab96e
+116	195	1771534031735264400	bootloader/bootloader.map	9326d65a8e6ab96e
+116	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9326d65a8e6ab96e
+116	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf	9326d65a8e6ab96e
+116	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin	9326d65a8e6ab96e
+116	195	1771534031735264400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.map	9326d65a8e6ab96e
+196	206	0	bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+196	206	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	9dac9a3f11187022
+206	233	1771544578888678400	CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+206	233	1771544578888678400	bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+206	233	1771544578888678400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/bootloader-complete	ab3248bc4dbb7bc2
+206	233	1771544578888678400	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	ab3248bc4dbb7bc2
+234	5386	0	CMakeFiles/flash	dea38c21469c64b5
+234	5386	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/CMakeFiles/flash	dea38c21469c64b5

@@ -1,0 +1,459 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/continuous_read.elf /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x159c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f48
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Feb 19 2026 13:47:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09f78h ( 40824) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=00019fa0 vaddr=3fc93b00 size=02978h ( 10616) load[0m
+[0;32mI (96) esp_image: segment 2: paddr=0001c920 vaddr=40374000 size=036f8h ( 14072) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17ed8h ( 98008) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=00037f00 vaddr=403776f8 size=0c3f4h ( 50164) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=000442fc vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (144) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Multicore app[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (164) app_init: Application information:[0m
+[0;32mI (164) app_init: Project name:     continuous_read[0m
+[0;32mI (169) app_init: App version:      0b20aa1[0m
+[0;32mI (173) app_init: Compile time:     Feb 19 2026 13:47:04[0m
+[0;32mI (178) app_init: ELF file SHA256:  d7cbff964...[0m
+[0;32mI (182) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 3FC96D30 len 000529E0 (330 KiB): RAM[0m
+[0;32mI (209) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (220) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (226) spi_flash: detected chip: boya[0m
+[0;32mI (229) spi_flash: flash io: dio[0m
+[0;33mW (232) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (244) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (250) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (257) main_task: Started on CPU0[0m
+[0;32mI (267) main_task: Calling app_main()[0m
+[0;32mI (267) EXAMPLE: adc_pattern[0].atten   : 3[0m
+[0;32mI (267) EXAMPLE: adc_pattern[0].channel : 3[0m
+[0;32mI (267) EXAMPLE: adc_pattern[0].unit    : 0[0m
+[0;32mI (277) EXAMPLE: adc_pattern[1].atten   : 3[0m
+[0;32mI (277) EXAMPLE: adc_pattern[1].channel : 4[0m
+[0;32mI (287) EXAMPLE: adc_pattern[1].unit    : 0[0m
+[0;32mI (367) EXAMPLE: X_Value: 1932 Y_Value: 879[0m
+[0;32mI (447) EXAMPLE: X_Value: 1929 Y_Value: 396[0m
+[0;32mI (527) EXAMPLE: X_Value: 1927 Y_Value: 409[0m
+[0;32mI (607) EXAMPLE: X_Value: 1931 Y_Value: 672[0m
+[0;32mI (687) EXAMPLE: X_Value: 1931 Y_Value: 727[0m
+[0;32mI (767) EXAMPLE: X_Value: 1933 Y_Value: 563[0m
+[0;32mI (847) EXAMPLE: X_Value: 1929 Y_Value: 395[0m
+[0;32mI (927) EXAMPLE: X_Value: 1931 Y_Value: 409[0m
+[0;32mI (1007) EXAMPLE: X_Value: 1932 Y_Value: 667[0m
+[0;32mI (1087) EXAMPLE: X_Value: 1931 Y_Value: 718[0m
+[0;32mI (1167) EXAMPLE: X_Value: 1931 Y_Value: 557[0m
+[0;32mI (1247) EXAMPLE: X_Value: 1933 Y_Value: 399[0m
+[0;32mI (1327) EXAMPLE: X_Value: 1934 Y_Value: 413[0m
+[0;32mI (1407) EXAMPLE: X_Value: 1932 Y_Value: 675[0m
+[0;32mI (1487) EXAMPLE: X_Value: 1933 Y_Value: 730[0m
+[0;32mI (1567) EXAMPLE: X_Value: 1932 Y_Value: 543[0m
+[0;32mI (1647) EXAMPLE: X_Value: 1934 Y_Value: 391[0m
+[0;32mI (1727) EXAMPLE: X_Value: 1934 Y_Value: 408[0m
+[0;32mI (1807) EXAMPLE: X_Value: 1933 Y_Value: 669[0m
+[0;32mI (1887) EXAMPLE: X_Value: 1931 Y_Value: 727[0m
+[0;32mI (1967) EXAMPLE: X_Value: 1931 Y_Value: 549[0m
+[0;32mI (2047) EXAMPLE: X_Value: 1931 Y_Value: 389[0m
+[0;32mI (2127) EXAMPLE: X_Value: 1931 Y_Value: 409[0m
+[0;32mI (2207) EXAMPLE: X_Value: 1933 Y_Value: 667[0m
+[0;32mI (2287) EXAMPLE: X_Value: 1933 Y_Value: 723[0m
+[0;32mI (2367) EXAMPLE: X_Value: 1935 Y_Value: 550[0m
+[0;32mI (2447) EXAMPLE: X_Value: 1933 Y_Value: 392[0m
+[0;32mI (2527) EXAMPLE: X_Value: 1931 Y_Value: 409[0m
+[0;32mI (2607) EXAMPLE: X_Value: 1930 Y_Value: 667[0m
+[0;32mI (2687) EXAMPLE: X_Value: 1933 Y_Value: 725[0m
+[0;32mI (2767) EXAMPLE: X_Value: 1933 Y_Value: 553[0m
+[0;32mI (2847) EXAMPLE: X_Value: 1933 Y_Value: 381[0m
+[0;32mI (2927) EXAMPLE: X_Value: 1931 Y_Value: 410[0m
+[0;32mI (3007) EXAMPLE: X_Value: 1932 Y_Value: 667[0m
+[0;32mI (3087) EXAMPLE: X_Value: 1932 Y_Value: 724[0m
+[0;32mI (3167) EXAMPLE: X_Value: 1931 Y_Value: 549[0m
+[0;32mI (3247) EXAMPLE: X_Value: 1931 Y_Value: 397[0m
+[0;32mI (3327) EXAMPLE: X_Value: 1931 Y_Value: 411[0m
+[0;32mI (3407) EXAMPLE: X_Value: 1931 Y_Value: 662[0m
+[0;32mI (3487) EXAMPLE: X_Value: 1931 Y_Value: 727[0m
+[0;32mI (3567) EXAMPLE: X_Value: 1931 Y_Value: 566[0m
+[0;32mI (3647) EXAMPLE: X_Value: 1931 Y_Value: 399[0m
+[0;32mI (3727) EXAMPLE: X_Value: 1931 Y_Value: 486[0m
+[0;32mI (3807) EXAMPLE: X_Value: 1933 Y_Value: 552[0m
+[0;32mI (3887) EXAMPLE: X_Value: 1931 Y_Value: 585[0m
+[0;32mI (3967) EXAMPLE: X_Value: 1931 Y_Value: 533[0m
+[0;32mI (4047) EXAMPLE: X_Value: 1932 Y_Value: 455[0m
+[0;32mI (4127) EXAMPLE: X_Value: 1932 Y_Value: 434[0m
+[0;32mI (4207) EXAMPLE: X_Value: 1934 Y_Value: 645[0m
+[0;32mI (4287) EXAMPLE: X_Value: 1933 Y_Value: 811[0m
+[0;32mI (4367) EXAMPLE: X_Value: 1931 Y_Value: 537[0m
+[0;32mI (4447) EXAMPLE: X_Value: 1931 Y_Value: 319[0m
+[0;32mI (4527) EXAMPLE: X_Value: 1931 Y_Value: 389[0m
+[0;32mI (4607) EXAMPLE: X_Value: 1931 Y_Value: 668[0m
+[0;32mI (4687) EXAMPLE: X_Value: 1932 Y_Value: 893[0m
+[0;32mI (4767) EXAMPLE: X_Value: 1931 Y_Value: 539[0m
+[0;32mI (4847) EXAMPLE: X_Value: 1931 Y_Value: 315[0m
+[0;32mI (4927) EXAMPLE: X_Value: 1932 Y_Value: 357[0m
+[0;32mI (5007) EXAMPLE: X_Value: 1931 Y_Value: 751[0m
+[0;32mI (5087) EXAMPLE: X_Value: 1931 Y_Value: 831[0m
+[0;32mI (5167) EXAMPLE: X_Value: 1933 Y_Value: 542[0m
+[0;32mI (5247) EXAMPLE: X_Value: 1932 Y_Value: 363[0m
+[0;32mI (5327) EXAMPLE: X_Value: 4095 Y_Value: 602[0m
+[0;32mI (5407) EXAMPLE: X_Value: 4095 Y_Value: 1127[0m
+[0;32mI (5487) EXAMPLE: X_Value: 4095 Y_Value: 1210[0m
+[0;32mI (5567) EXAMPLE: X_Value: 4095 Y_Value: 736[0m
+[0;32mI (5647) EXAMPLE: X_Value: 4095 Y_Value: 495[0m
+[0;32mI (5727) EXAMPLE: X_Value: 4095 Y_Value: 607[0m
+[0;32mI (5807) EXAMPLE: X_Value: 1931 Y_Value: 760[0m
+[0;32mI (5887) EXAMPLE: X_Value: 1931 Y_Value: 957[0m
+[0;32mI (5967) EXAMPLE: X_Value: 1931 Y_Value: 557[0m
+[0;32mI (6047) EXAMPLE: X_Value: 1368 Y_Value: 267[0m
+[0;32mI (6127) EXAMPLE: X_Value: 829 Y_Value: 213[0m
+[0;32mI (6207) EXAMPLE: X_Value: 203 Y_Value: 648[0m
+[0;32mI (6287) EXAMPLE: X_Value: 0 Y_Value: 760[0m
+[0;32mI (6367) EXAMPLE: X_Value: 0 Y_Value: 416[0m
+[0;32mI (6447) EXAMPLE: X_Value: 0 Y_Value: 181[0m
+[0;32mI (6527) EXAMPLE: X_Value: 0 Y_Value: 127[0m
+[0;32mI (6607) EXAMPLE: X_Value: 0 Y_Value: 603[0m
+[0;32mI (6687) EXAMPLE: X_Value: 0 Y_Value: 755[0m
+[0;32mI (6767) EXAMPLE: X_Value: 0 Y_Value: 409[0m
+[0;32mI (6847) EXAMPLE: X_Value: 0 Y_Value: 175[0m
+[0;32mI (6927) EXAMPLE: X_Value: 0 Y_Value: 125[0m
+[0;32mI (7007) EXAMPLE: X_Value: 0 Y_Value: 597[0m
+[0;32mI (7087) EXAMPLE: X_Value: 0 Y_Value: 732[0m
+[0;32mI (7167) EXAMPLE: X_Value: 0 Y_Value: 410[0m
+[0;32mI (7247) EXAMPLE: X_Value: 0 Y_Value: 204[0m
+[0;32mI (7327) EXAMPLE: X_Value: 0 Y_Value: 151[0m
+[0;32mI (7407) EXAMPLE: X_Value: 0 Y_Value: 552[0m
+[0;32mI (7487) EXAMPLE: X_Value: 0 Y_Value: 719[0m
+[0;32mI (7567) EXAMPLE: X_Value: 54 Y_Value: 428[0m
+[0;32mI (7647) EXAMPLE: X_Value: 1641 Y_Value: 287[0m
+[0;32mI (7727) EXAMPLE: X_Value: 1933 Y_Value: 335[0m
+[0;32mI (7807) EXAMPLE: X_Value: 1932 Y_Value: 847[0m
+[0;32mI (7887) EXAMPLE: X_Value: 1933 Y_Value: 955[0m
+[0;32mI (7967) EXAMPLE: X_Value: 1933 Y_Value: 556[0m
+[0;32mI (8047) EXAMPLE: X_Value: 1933 Y_Value: 303[0m
+[0;32mI (8127) EXAMPLE: X_Value: 1933 Y_Value: 333[0m
+[0;32mI (8207) EXAMPLE: X_Value: 1933 Y_Value: 853[0m
+[0;32mI (8287) EXAMPLE: X_Value: 1933 Y_Value: 951[0m
+[0;32mI (8367) EXAMPLE: X_Value: 2744 Y_Value: 607[0m
+[0;32mI (8447) EXAMPLE: X_Value: 3293 Y_Value: 407[0m
+[0;32mI (8527) EXAMPLE: X_Value: 4095 Y_Value: 589[0m
+[0;32mI (8607) EXAMPLE: X_Value: 4095 Y_Value: 1113[0m
+[0;32mI (8687) EXAMPLE: X_Value: 4095 Y_Value: 1178[0m
+[0;32mI (8767) EXAMPLE: X_Value: 4095 Y_Value: 733[0m
+[0;32mI (8847) EXAMPLE: X_Value: 4095 Y_Value: 499[0m
+[0;32mI (8927) EXAMPLE: X_Value: 4095 Y_Value: 603[0m
+[0;32mI (9007) EXAMPLE: X_Value: 4095 Y_Value: 1113[0m
+[0;32mI (9087) EXAMPLE: X_Value: 4095 Y_Value: 1176[0m
+[0;32mI (9167) EXAMPLE: X_Value: 4095 Y_Value: 733[0m
+[0;32mI (9247) EXAMPLE: X_Value: 2599 Y_Value: 383[0m
+[0;32mI (9327) EXAMPLE: X_Value: 1933 Y_Value: 355[0m
+[0;32mI (9407) EXAMPLE: X_Value: 1930 Y_Value: 861[0m
+[0;32mI (9487) EXAMPLE: X_Value: 1929 Y_Value: 955[0m
+[0;32mI (9567) EXAMPLE: X_Value: 1932 Y_Value: 543[0m
+[0;32mI (9647) EXAMPLE: X_Value: 1929 Y_Value: 302[0m
+[0;32mI (9727) EXAMPLE: X_Value: 1932 Y_Value: 359[0m
+[0;32mI (9807) EXAMPLE: X_Value: 1930 Y_Value: 858[0m
+[0;32mI (9887) EXAMPLE: X_Value: 1931 Y_Value: 948[0m
+[0;32mI (9967) EXAMPLE: X_Value: 1931 Y_Value: 543[0m
+[0;32mI (10047) EXAMPLE: X_Value: 1933 Y_Value: 307[0m
+[0;32mI (10127) EXAMPLE: X_Value: 1931 Y_Value: 361[0m
+[0;32mI (10207) EXAMPLE: X_Value: 617 Y_Value: 670[0m
+[0;32mI (10287) EXAMPLE: X_Value: 0 Y_Value: 697[0m
+[0;32mI (10367) EXAMPLE: X_Value: 0 Y_Value: 402[0m
+[0;32mI (10447) EXAMPLE: X_Value: 0 Y_Value: 183[0m
+[0;32mI (10527) EXAMPLE: X_Value: 0 Y_Value: 155[0m
+[0;32mI (10607) EXAMPLE: X_Value: 1242 Y_Value: 765[0m
+[0;32mI (10687) EXAMPLE: X_Value: 1931 Y_Value: 935[0m
+[0;32mI (10767) EXAMPLE: X_Value: 1932 Y_Value: 539[0m
+[0;32mI (10847) EXAMPLE: X_Value: 1931 Y_Value: 307[0m
+[0;32mI (10927) EXAMPLE: X_Value: 1931 Y_Value: 367[0m
+[0;32mI (11007) EXAMPLE: X_Value: 1931 Y_Value: 851[0m
+[0;32mI (11087) EXAMPLE: X_Value: 1931 Y_Value: 931[0m
+[0;32mI (11167) EXAMPLE: X_Value: 1932 Y_Value: 540[0m
+[0;32mI (11247) EXAMPLE: X_Value: 1932 Y_Value: 311[0m
+[0;32mI (11327) EXAMPLE: X_Value: 1931 Y_Value: 371[0m
+[0;32mI (11407) EXAMPLE: X_Value: 1933 Y_Value: 851[0m
+[0;32mI (11487) EXAMPLE: X_Value: 1930 Y_Value: 944[0m
+[0;32mI (11567) EXAMPLE: X_Value: 1931 Y_Value: 534[0m
+[0;32mI (11647) EXAMPLE: X_Value: 1931 Y_Value: 307[0m
+[0;32mI (11727) EXAMPLE: X_Value: 1931 Y_Value: 377[0m
+[0;32mI (11807) EXAMPLE: X_Value: 1933 Y_Value: 861[0m
+[0;32mI (11887) EXAMPLE: X_Value: 1931 Y_Value: 939[0m
+[0;32mI (11967) EXAMPLE: X_Value: 1932 Y_Value: 521[0m
+[0;32mI (12047) EXAMPLE: X_Value: 1931 Y_Value: 295[0m
+[0;32mI (12127) EXAMPLE: X_Value: 1933 Y_Value: 376[0m
+[0;32mI (12207) EXAMPLE: X_Value: 1932 Y_Value: 863[0m
+[0;32mI (12287) EXAMPLE: X_Value: 1932 Y_Value: 943[0m
+[0;32mI (12367) EXAMPLE: X_Value: 1933 Y_Value: 527[0m
+[0;32mI (12447) EXAMPLE: X_Value: 1934 Y_Value: 297[0m
+[0;32mI (12527) EXAMPLE: X_Value: 1933 Y_Value: 394[0m
+[0;32mI (12607) EXAMPLE: X_Value: 1931 Y_Value: 876[0m
+[0;32mI (12687) EXAMPLE: X_Value: 1931 Y_Value: 948[0m
+[0;32mI (12767) EXAMPLE: X_Value: 1932 Y_Value: 526[0m
+[0;32mI (12847) EXAMPLE: X_Value: 1932 Y_Value: 299[0m
+[0;32mI (12927) EXAMPLE: X_Value: 1933 Y_Value: 404[0m
+[0;32mI (13007) EXAMPLE: X_Value: 1932 Y_Value: 876[0m
+[0;32mI (13087) EXAMPLE: X_Value: 1932 Y_Value: 949[0m
+[0;32mI (13167) EXAMPLE: X_Value: 1931 Y_Value: 523[0m
+[0;32mI (13247) EXAMPLE: X_Value: 1932 Y_Value: 298[0m
+[0;32mI (13327) EXAMPLE: X_Value: 1931 Y_Value: 413[0m
+[0;32mI (13407) EXAMPLE: X_Value: 1932 Y_Value: 879[0m
+[0;32mI (13487) EXAMPLE: X_Value: 1931 Y_Value: 950[0m
+[0;32mI (13567) EXAMPLE: X_Value: 1932 Y_Value: 509[0m
+[0;32mI (13647) EXAMPLE: X_Value: 1930 Y_Value: 295[0m
+[0;32mI (13727) EXAMPLE: X_Value: 1931 Y_Value: 423[0m
+[0;32mI (13807) EXAMPLE: X_Value: 1932 Y_Value: 883[0m
+[0;32mI (13887) EXAMPLE: X_Value: 1931 Y_Value: 943[0m
+[0;32mI (13967) EXAMPLE: X_Value: 1932 Y_Value: 505[0m
+[0;32mI (14047) EXAMPLE: X_Value: 1933 Y_Value: 294[0m
+[0;32mI (14127) EXAMPLE: X_Value: 1931 Y_Value: 435[0m
+[0;32mI (14207) EXAMPLE: X_Value: 1931 Y_Value: 883[0m
+[0;32mI (14287) EXAMPLE: X_Value: 1933 Y_Value: 887[0m
+[0;32mI (14367) EXAMPLE: X_Value: 1931 Y_Value: 502[0m
+[0;32mI (14447) EXAMPLE: X_Value: 1932 Y_Value: 331[0m
+[0;32mI (14527) EXAMPLE: X_Value: 1933 Y_Value: 445[0m
+[0;32mI (14607) EXAMPLE: X_Value: 1929 Y_Value: 847[0m
+[0;32mI (14687) EXAMPLE: X_Value: 1931 Y_Value: 917[0m
+[0;32mI (14767) EXAMPLE: X_Value: 1933 Y_Value: 500[0m
+[0;32mI (14847) EXAMPLE: X_Value: 1931 Y_Value: 325[0m
+[0;32mI (14927) EXAMPLE: X_Value: 1932 Y_Value: 463[0m
+[0;32mI (15007) EXAMPLE: X_Value: 1930 Y_Value: 743[0m
+[0;32mI (15087) EXAMPLE: X_Value: 1932 Y_Value: 821[0m
+[0;32mI (15167) EXAMPLE: X_Value: 1932 Y_Value: 493[0m
+[0;32mI (15247) EXAMPLE: X_Value: 1931 Y_Value: 338[0m
+[0;32mI (15327) EXAMPLE: X_Value: 1931 Y_Value: 475[0m
+[0;32mI (15407) EXAMPLE: X_Value: 1931 Y_Value: 775[0m
+[0;32mI (15487) EXAMPLE: X_Value: 1932 Y_Value: 827[0m
+[0;32mI (15567) EXAMPLE: X_Value: 1929 Y_Value: 489[0m
+[0;32mI (15647) EXAMPLE: X_Value: 1932 Y_Value: 334[0m
+[0;32mI (15727) EXAMPLE: X_Value: 1931 Y_Value: 492[0m
+[0;32mI (15807) EXAMPLE: X_Value: 1931 Y_Value: 803[0m
+[0;32mI (15887) EXAMPLE: X_Value: 1932 Y_Value: 855[0m
+[0;32mI (15967) EXAMPLE: X_Value: 1934 Y_Value: 469[0m
+[0;32mI (16047) EXAMPLE: X_Value: 1933 Y_Value: 287[0m
+[0;32mI (16127) EXAMPLE: X_Value: 1933 Y_Value: 539[0m
+[0;32mI (16207) EXAMPLE: X_Value: 1931 Y_Value: 909[0m
+[0;32mI (16287) EXAMPLE: X_Value: 1933 Y_Value: 939[0m
+[0;32mI (16367) EXAMPLE: X_Value: 1933 Y_Value: 458[0m
+[0;32mI (16447) EXAMPLE: X_Value: 1933 Y_Value: 285[0m
+[0;32mI (16527) EXAMPLE: X_Value: 1933 Y_Value: 559[0m
+[0;32mI (16607) EXAMPLE: X_Value: 1931 Y_Value: 797[0m
+[0;32mI (16687) EXAMPLE: X_Value: 1932 Y_Value: 808[0m
+[0;32mI (16767) EXAMPLE: X_Value: 1933 Y_Value: 479[0m
+[0;32mI (16847) EXAMPLE: X_Value: 1932 Y_Value: 366[0m
+[0;32mI (16927) EXAMPLE: X_Value: 1932 Y_Value: 531[0m
+[0;32mI (17007) EXAMPLE: X_Value: 1931 Y_Value: 749[0m
+[0;32mI (17087) EXAMPLE: X_Value: 1931 Y_Value: 879[0m
+[0;32mI (17167) EXAMPLE: X_Value: 1932 Y_Value: 441[0m
+[0;32mI (17247) EXAMPLE: X_Value: 1930 Y_Value: 281[0m
+[0;32mI (17327) EXAMPLE: X_Value: 1932 Y_Value: 605[0m
+[0;32mI (17407) EXAMPLE: X_Value: 1931 Y_Value: 915[0m
+[0;32mI (17487) EXAMPLE: X_Value: 1931 Y_Value: 798[0m
+[0;32mI (17567) EXAMPLE: X_Value: 1932 Y_Value: 453[0m
+[0;32mI (17647) EXAMPLE: X_Value: 1931 Y_Value: 359[0m
+[0;32mI (17727) EXAMPLE: X_Value: 1932 Y_Value: 539[0m
+[0;32mI (17807) EXAMPLE: X_Value: 1932 Y_Value: 743[0m
+[0;32mI (17887) EXAMPLE: X_Value: 1932 Y_Value: 829[0m
+[0;32mI (17967) EXAMPLE: X_Value: 1933 Y_Value: 424[0m
+[0;32mI (18047) EXAMPLE: X_Value: 1932 Y_Value: 283[0m
+[0;32mI (18127) EXAMPLE: X_Value: 1931 Y_Value: 547[0m
+[0;32mI (18207) EXAMPLE: X_Value: 1932 Y_Value: 712[0m
+[0;32mI (18287) EXAMPLE: X_Value: 1931 Y_Value: 887[0m
+[0;32mI (18367) EXAMPLE: X_Value: 1933 Y_Value: 411[0m
+[0;32mI (18447) EXAMPLE: X_Value: 1933 Y_Value: 313[0m
+[0;32mI (18527) EXAMPLE: X_Value: 1932 Y_Value: 611[0m
+[0;32mI (18607) EXAMPLE: X_Value: 1700 Y_Value: 810[0m
+[0;32mI (18687) EXAMPLE: X_Value: 1866 Y_Value: 845[0m
+[0;32mI (18767) EXAMPLE: X_Value: 1933 Y_Value: 427[0m
+[0;32mI (18847) EXAMPLE: X_Value: 1932 Y_Value: 295[0m
+[0;32mI (18927) EXAMPLE: X_Value: 3141 Y_Value: 767[0m
+[0;32mI (19007) EXAMPLE: X_Value: 4095 Y_Value: 1160[0m
+[0;32mI (19087) EXAMPLE: X_Value: 4095 Y_Value: 1055[0m
+[0;32mI (19167) EXAMPLE: X_Value: 4095 Y_Value: 575[0m
+[0;32mI (19247) EXAMPLE: X_Value: 4095 Y_Value: 490[0m
+[0;32mI (19327) EXAMPLE: X_Value: 4095 Y_Value: 927[0m
+[0;32mI (19407) EXAMPLE: X_Value: 4095 Y_Value: 1151[0m
+[0;32mI (19487) EXAMPLE: X_Value: 4095 Y_Value: 1033[0m
+[0;32mI (19567) EXAMPLE: X_Value: 4095 Y_Value: 565[0m
+[0;32mI (19647) EXAMPLE: X_Value: 4095 Y_Value: 494[0m
+[0;32mI (19727) EXAMPLE: X_Value: 4095 Y_Value: 947[0m
+[0;32mI (19807) EXAMPLE: X_Value: 4095 Y_Value: 1163[0m
+[0;32mI (19887) EXAMPLE: X_Value: 4095 Y_Value: 1000[0m
+[0;32mI (19967) EXAMPLE: X_Value: 4095 Y_Value: 556[0m
+[0;32mI (20047) EXAMPLE: X_Value: 4095 Y_Value: 531[0m
+[0;32mI (20127) EXAMPLE: X_Value: 4095 Y_Value: 879[0m
+[0;32mI (20207) EXAMPLE: X_Value: 3772 Y_Value: 986[0m
+[0;32mI (20287) EXAMPLE: X_Value: 3108 Y_Value: 804[0m
+[0;32mI (20367) EXAMPLE: X_Value: 1931 Y_Value: 410[0m
+[0;32mI (20447) EXAMPLE: X_Value: 1932 Y_Value: 349[0m
+[0;32mI (20527) EXAMPLE: X_Value: 1933 Y_Value: 597[0m
+[0;32mI (20607) EXAMPLE: X_Value: 1932 Y_Value: 751[0m
+[0;32mI (20687) EXAMPLE: X_Value: 1931 Y_Value: 701[0m
+[0;32mI (20767) EXAMPLE: X_Value: 1933 Y_Value: 350[0m
+[0;32mI (20847) EXAMPLE: X_Value: 1931 Y_Value: 263[0m
+[0;32mI (20927) EXAMPLE: X_Value: 1930 Y_Value: 723[0m
+[0;32mI (21007) EXAMPLE: X_Value: 1940 Y_Value: 925[0m
+[0;32mI (21087) EXAMPLE: X_Value: 1933 Y_Value: 713[0m
+[0;32mI (21167) EXAMPLE: X_Value: 1933 Y_Value: 331[0m
+[0;32mI (21247) EXAMPLE: X_Value: 1934 Y_Value: 261[0m
+[0;32mI (21327) EXAMPLE: X_Value: 1933 Y_Value: 743[0m
+[0;32mI (21407) EXAMPLE: X_Value: 1933 Y_Value: 936[0m
+[0;32mI (21487) EXAMPLE: X_Value: 1933 Y_Value: 685[0m
+[0;32mI (21567) EXAMPLE: X_Value: 1931 Y_Value: 337[0m
+[0;32mI (21647) EXAMPLE: X_Value: 1931 Y_Value: 263[0m
+[0;32mI (21727) EXAMPLE: X_Value: 1931 Y_Value: 746[0m
+[0;32mI (21807) EXAMPLE: X_Value: 2845 Y_Value: 1017[0m
+[0;32mI (21887) EXAMPLE: X_Value: 3869 Y_Value: 803[0m
+[0;32mI (21967) EXAMPLE: X_Value: 4095 Y_Value: 511[0m
+[0;32mI (22047) EXAMPLE: X_Value: 4095 Y_Value: 499[0m
+[0;32mI (22127) EXAMPLE: X_Value: 4095 Y_Value: 1032[0m
+[0;32mI (22207) EXAMPLE: X_Value: 4095 Y_Value: 1175[0m
+[0;32mI (22287) EXAMPLE: X_Value: 4095 Y_Value: 824[0m
+[0;32mI (22367) EXAMPLE: X_Value: 4095 Y_Value: 508[0m
+[0;32mI (22447) EXAMPLE: X_Value: 4095 Y_Value: 507[0m
+[0;32mI (22527) EXAMPLE: X_Value: 4095 Y_Value: 1045[0m
+[0;32mI (22607) EXAMPLE: X_Value: 4095 Y_Value: 1174[0m
+[0;32mI (22687) EXAMPLE: X_Value: 1932 Y_Value: 596[0m
+[0;32mI (22767) EXAMPLE: X_Value: 1931 Y_Value: 361[0m
+[0;32mI (22847) EXAMPLE: X_Value: 1933 Y_Value: 313[0m
+[0;32mI (22927) EXAMPLE: X_Value: 603 Y_Value: 521[0m
+[0;32mI (23007) EXAMPLE: X_Value: 280 Y_Value: 632[0m
+[0;32mI (23087) EXAMPLE: X_Value: 201 Y_Value: 439[0m
+[0;32mI (23167) EXAMPLE: X_Value: 0 Y_Value: 231[0m
+[0;32mI (23247) EXAMPLE: X_Value: 0 Y_Value: 125[0m
+[0;32mI (23327) EXAMPLE: X_Value: 0 Y_Value: 463[0m
+[0;32mI (23407) EXAMPLE: X_Value: 0 Y_Value: 635[0m
+[0;32mI (23487) EXAMPLE: X_Value: 0 Y_Value: 424[0m
+[0;32mI (23567) EXAMPLE: X_Value: 0 Y_Value: 212[0m
+[0;32mI (23647) EXAMPLE: X_Value: 0 Y_Value: 115[0m
+[0;32mI (23727) EXAMPLE: X_Value: 0 Y_Value: 523[0m
+[0;32mI (23807) EXAMPLE: X_Value: 0 Y_Value: 675[0m
+[0;32mI (23887) EXAMPLE: X_Value: 0 Y_Value: 420[0m
+[0;32mI (23967) EXAMPLE: X_Value: 0 Y_Value: 197[0m
+[0;32mI (24047) EXAMPLE: X_Value: 0 Y_Value: 116[0m
+[0;32mI (24127) EXAMPLE: X_Value: 0 Y_Value: 550[0m
+[0;32mI (24207) EXAMPLE: X_Value: 0 Y_Value: 692[0m
+[0;32mI (24287) EXAMPLE: X_Value: 0 Y_Value: 399[0m
+[0;32mI (24367) EXAMPLE: X_Value: 0 Y_Value: 179[0m
+[0;32mI (24447) EXAMPLE: X_Value: 0 Y_Value: 134[0m
+[0;32mI (24527) EXAMPLE: X_Value: 0 Y_Value: 549[0m
+[0;32mI (24607) EXAMPLE: X_Value: 0 Y_Value: 671[0m
+[0;32mI (24687) EXAMPLE: X_Value: 0 Y_Value: 393[0m
+[0;32mI (24767) EXAMPLE: X_Value: 1931 Y_Value: 304[0m
+[0;32mI (24847) EXAMPLE: X_Value: 1931 Y_Value: 375[0m
+[0;32mI (24927) EXAMPLE: X_Value: 1933 Y_Value: 778[0m
+[0;32mI (25007) EXAMPLE: X_Value: 1933 Y_Value: 861[0m
+[0;32mI (25087) EXAMPLE: X_Value: 1931 Y_Value: 527[0m
+[0;32mI (25167) EXAMPLE: X_Value: 1933 Y_Value: 327[0m
+[0;32mI (25247) EXAMPLE: X_Value: 1931 Y_Value: 407[0m
+[0;32mI (25327) EXAMPLE: X_Value: 1931 Y_Value: 811[0m
+[0;32mI (25407) EXAMPLE: X_Value: 1931 Y_Value: 885[0m
+[0;32mI (25487) EXAMPLE: X_Value: 1934 Y_Value: 509[0m
+[0;32mI (25567) EXAMPLE: X_Value: 1931 Y_Value: 329[0m
+[0;32mI (25647) EXAMPLE: X_Value: 1932 Y_Value: 435[0m
+[0;32mI (25727) EXAMPLE: X_Value: 1932 Y_Value: 809[0m
+[0;32mI (25807) EXAMPLE: X_Value: 1931 Y_Value: 859[0m
+[0;32mI (25887) EXAMPLE: X_Value: 1932 Y_Value: 501[0m
+[0;32mI (25967) EXAMPLE: X_Value: 1931 Y_Value: 294[0m
+[0;32mI (26047) EXAMPLE: X_Value: 1932 Y_Value: 471[0m
+[0;32mI (26127) EXAMPLE: X_Value: 1931 Y_Value: 901[0m
+[0;32mI (26207) EXAMPLE: X_Value: 1933 Y_Value: 939[0m
+[0;32mI (26287) EXAMPLE: X_Value: 1931 Y_Value: 485[0m
+[0;32mI (26367) EXAMPLE: X_Value: 1933 Y_Value: 291[0m
+[0;32mI (26447) EXAMPLE: X_Value: 1933 Y_Value: 499[0m
+[0;32mI (26527) EXAMPLE: X_Value: 1931 Y_Value: 905[0m
+[0;32mI (26607) EXAMPLE: X_Value: 1934 Y_Value: 933[0m
+[0;32mI (26687) EXAMPLE: X_Value: 1931 Y_Value: 471[0m
+[0;32mI (26767) EXAMPLE: X_Value: 1931 Y_Value: 285[0m
+[0;32mI (26847) EXAMPLE: X_Value: 1930 Y_Value: 527[0m
+[0;32mI (26927) EXAMPLE: X_Value: 1933 Y_Value: 887[0m
+[0;32mI (27007) EXAMPLE: X_Value: 1931 Y_Value: 907[0m
+[0;32mI (27087) EXAMPLE: X_Value: 1933 Y_Value: 473[0m
+[0;32mI (27167) EXAMPLE: X_Value: 1933 Y_Value: 340[0m
+[0;32mI (27247) EXAMPLE: X_Value: 1932 Y_Value: 519[0m
+[0;32mI (27327) EXAMPLE: X_Value: 1932 Y_Value: 712[0m
+[0;32mI (27407) EXAMPLE: X_Value: 1931 Y_Value: 921[0m
+[0;32mI (27487) EXAMPLE: X_Value: 1934 Y_Value: 443[0m
+[0;32mI (27567) EXAMPLE: X_Value: 1934 Y_Value: 293[0m
+[0;32mI (27647) EXAMPLE: X_Value: 1932 Y_Value: 548[0m
+[0;32mI (27727) EXAMPLE: X_Value: 1932 Y_Value: 796[0m
+[0;32mI (27807) EXAMPLE: X_Value: 1932 Y_Value: 797[0m
+[0;32mI (27887) EXAMPLE: X_Value: 1933 Y_Value: 447[0m
+[0;32mI (27967) EXAMPLE: X_Value: 1933 Y_Value: 317[0m
+[0;32mI (28047) EXAMPLE: X_Value: 1932 Y_Value: 582[0m
+[0;32mI (28127) EXAMPLE: X_Value: 1931 Y_Value: 878[0m
+[0;32mI (28207) EXAMPLE: X_Value: 1932 Y_Value: 877[0m
+[0;32mI (28287) EXAMPLE: X_Value: 1933 Y_Value: 423[0m
+[0;32mI (28367) EXAMPLE: X_Value: 1934 Y_Value: 281[0m
+[0;32mI (28447) EXAMPLE: X_Value: 1931 Y_Value: 622[0m
+[0;32mI (28527) EXAMPLE: X_Value: 1933 Y_Value: 901[0m
+[0;32mI (28607) EXAMPLE: X_Value: 1933 Y_Value: 870[0m
+[0;32mI (28687) EXAMPLE: X_Value: 1933 Y_Value: 407[0m
+[0;32mI (28767) EXAMPLE: X_Value: 1933 Y_Value: 277[0m
+[0;32mI (28847) EXAMPLE: X_Value: 1933 Y_Value: 647[0m
+[0;32mI (28927) EXAMPLE: X_Value: 1933 Y_Value: 907[0m
+[0;32mI (29007) EXAMPLE: X_Value: 1933 Y_Value: 839[0m
+[0;32mI (29087) EXAMPLE: X_Value: 1931 Y_Value: 407[0m
+[0;32mI (29167) EXAMPLE: X_Value: 1933 Y_Value: 299[0m
+[0;32mI (29247) EXAMPLE: X_Value: 1932 Y_Value: 647[0m
+[0;32mI (29327) EXAMPLE: X_Value: 1931 Y_Value: 902[0m
+[0;32mI (29407) EXAMPLE: X_Value: 1933 Y_Value: 782[0m
+[0;32mI (29487) EXAMPLE: X_Value: 1932 Y_Value: 397[0m
+[0;32mI (29567) EXAMPLE: X_Value: 1933 Y_Value: 300[0m
+[0;32mI (29647) EXAMPLE: X_Value: 1933 Y_Value: 653[0m
+[0;32mI (29727) EXAMPLE: X_Value: 1933 Y_Value: 875[0m
+[0;32mI (29807) EXAMPLE: X_Value: 1931 Y_Value: 739[0m
+[0;32mI (29887) EXAMPLE: X_Value: 1932 Y_Value: 383[0m
+[0;32mI (29967) EXAMPLE: X_Value: 1930 Y_Value: 287[0m
+[0;32mI (30047) EXAMPLE: X_Value: 1932 Y_Value: 626[0m
+[0;32mI (30127) EXAMPLE: X_Value: 1931 Y_Value: 905[0m
+[0;32mI (30207) EXAMPLE: X_Value: 1932 Y_Value: 754[0m
+[0;32mI (30287) EXAMPLE: X_Value: 1933 Y_Value: 359[0m
+[0;32mI (30367) EXAMPLE: X_Value: 1933 Y_Value: 271[0m
+[0;32mI (30447) EXAMPLE: X_Value: 1931 Y_Value: 628[0m
+[0;32mI (30527) EXAMPLE: X_Value: 1930 Y_Value: 875[0m
+[0;32mI (30607) EXAMPLE: X_Value: 1932 Y_Value: 796[0m
+[0;32mI (30687) EXAMPLE: X_Value: 1930 Y_Value: 419[0m
+[0;32mI (30767) EXAMPLE: X_Value: 1935 Y_Value: 789[0m
+[0;32mI (30847) EXAMPLE: X_Value: 1933 Y_Value: 1095[0m
+[0;32mI (30927) EXAMPLE: X_Value: 1929 Y_Value: 1671[0m
+[0;32mI (31007) EXAMPLE: X_Value: 1934 Y_Value: 851[0m
+[0;32mI (31087) EXAMPLE: X_Value: 1934 Y_Value: 378[0m
+[0;32mI (31167) EXAMPLE: X_Value: 1931 Y_Value: 277[0m
+[0;32mI (31247) EXAMPLE: X_Value: 1931 Y_Value: 730[0m
+[0;32mI (31327) EXAMPLE: X_Value: 1932 Y_Value: 927[0m
+[0;32mI (31407) EXAMPLE: X_Value: 1931 Y_Value: 687[0m
+[0;32mI (31487) EXAMPLE: X_Value: 1932 Y_Value: 339[0m
+[0;32mI (31567) EXAMPLE: X_Value: 1933 Y_Value: 253[0m
+[0;32mI (31647) EXAMPLE: X_Value: 1931 Y_Value: 751[0m
+[0;32mI (31727) EXAMPLE: X_Value: 1931 Y_Value: 951[0m
+[0;32mI (31807) EXAMPLE: X_Value: 1929 Y_Value: 652[0m
+[0;32mI (31887) EXAMPLE: X_Value: 1931 Y_Value: 332[0m
+[0;32mI (31967) EXAMPLE: X_Value: 1931 Y_Value: 265[0m

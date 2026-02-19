@@ -1,0 +1,63 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/continuous_read.elf /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x159c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f48
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Feb 19 2026 13:47:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09f58h ( 40792) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=00019f80 vaddr=3fc93b00 size=02978h ( 10616) load[0m
+[0;32mI (96) esp_image: segment 2: paddr=0001c900 vaddr=40374000 size=03718h ( 14104) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17e70h ( 97904) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=00037e98 vaddr=40377718 size=0c3d4h ( 50132) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=00044274 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (144) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Multicore app[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (164) app_init: Application information:[0m
+[0;32mI (164) app_init: Project name:     continuous_read[0m
+[0;32mI (169) app_init: App version:      0b20aa1[0m
+[0;32mI (173) app_init: Compile time:     Feb 19 2026 13:47:04[0m
+[0;32mI (178) app_init: ELF file SHA256:  29759b89e...[0m
+[0;32mI (182) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 3FC96D28 len 000529E8 (330 KiB): RAM[0m
+[0;32mI (210) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (220) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (226) spi_flash: detected chip: boya[0m
+[0;32mI (229) spi_flash: flash io: dio[0m
+[0;33mW (232) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (244) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (250) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (257) main_task: Started on CPU0[0m
+[0;32mI (267) main_task: Calling app_main()[0m
+[0;32mI (267) EXAMPLE: adc_pattern[0].atten   : 3[0m
+[0;32mI (267) EXAMPLE: adc_pattern[0].channel : 3[0m
+[0;32mI (267) EXAMPLE: adc_pattern[0].unit    : 0[0m
+[0;32mI (277) EXAMPLE: adc_pattern[1].atten   : 3[0m
+[0;32mI (277) EXAMPLE: adc_pattern[1].channel : 4[0m
+[0;32mI (287) EXAMPLE: adc_pattern[1].unit    : 0[0m
