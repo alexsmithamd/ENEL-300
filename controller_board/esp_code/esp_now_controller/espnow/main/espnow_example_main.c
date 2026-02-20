@@ -30,6 +30,8 @@
 #include "esp_crc.h"
 #include "espnow_example.h"
 
+#include "read_adc.h"
+
 #define ESPNOW_MAXDELAY 512
 
 static const char *TAG = "espnow_example";
@@ -41,6 +43,17 @@ static uint8_t s_example_broadcast_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0
 static uint16_t s_example_espnow_seq[EXAMPLE_ESPNOW_DATA_MAX] = { 0, 0 };
 
 static void example_espnow_deinit(example_espnow_send_param_t *send_param);
+
+typedef struct {
+    float raw[4];
+    float control[2];
+} adc_snap_t;
+
+// for locking the adc_struct between threads
+static portMUX_TYPE adc_struct_mux = portMUX_INITIALIZER_UNLOCKED; 
+
+
+adc_snap_t adc_struct = {{-1.0, -1.0, -1.0, -1.0}, {-1.0, -1.0}}; // init as neg
 
 /* WiFi should start before using ESPNOW */
 static void example_wifi_init(void)
@@ -117,6 +130,8 @@ static void example_espnow_recv_cb(const esp_now_recv_info_t *recv_info, const u
     }
 }
 
+
+
 /* Parse received ESPNOW data. */
 int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, uint16_t *seq, uint32_t *magic)
 {
@@ -158,9 +173,16 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
     //esp_fill_random(buf->payload, send_param->len - sizeof(example_espnow_data_t));
 
     // we will sample the ADC before a transf then transf
-    
-    
-    float control_data[3] = {55.5, 66.5, 33.3}; // go forward/back type shit, do the calcs onboard
+
+
+    adc_snap_t snap_copy;
+
+    taskENTER_CRITICAL(&adc_struct_mux);
+    snap_copy = adc_struct;
+    taskEXIT_CRITICAL(&adc_struct_mux);
+
+    float control_data[4] = {snap_copy.raw[0], snap_copy.raw[1], snap_copy.raw[2], snap_copy.raw[3]}; // go forward/back type shit, do the calcs onboard
+
     uint8_t payload[sizeof(control_data)]; // make a byte array to send
 
     memcpy(payload, control_data, sizeof(control_data));
@@ -169,6 +191,106 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
     //buf->payload = payload;
     
     buf->crc = esp_crc16_le(UINT16_MAX, (uint8_t const *)buf, send_param->len);
+}
+
+
+// basically below we create a global struct that will hold the latest adc values
+// we pin the adc_task() function to it's own thread so the adc doesn't throw a ADC_TIMEOUT
+// error
+
+
+
+
+static void adc_task(void* arg){ // argument must be a void pointer, why?
+    adc_snap_t *snap = (adc_snap_t *)arg; // cast the void pointer to the struct pointer
+    assert(snap != NULL);
+
+    esp_err_t ret_adc;
+
+    uint32_t ret_num = 0;
+    uint8_t result[EXAMPLE_READ_LEN] = {0};
+    memset(result, 0xcc, EXAMPLE_READ_LEN);
+
+    s_task_handle = xTaskGetCurrentTaskHandle();
+
+    adc_continuous_handle_t handle = NULL;
+    continuous_adc_init(channel, 4, &handle);   // 4 channels alllowed
+
+    adc_continuous_evt_cbs_t cbs = {
+        .on_conv_done = s_conv_done_cb,
+    };
+
+
+    ESP_ERROR_CHECK(adc_continuous_register_event_callbacks(handle, &cbs, NULL));
+    ESP_ERROR_CHECK(adc_continuous_start(handle));
+
+    char unit[] = EXAMPLE_ADC_UNIT_STR(EXAMPLE_ADC_UNIT);
+
+    
+    
+    while(1){ // thread can never return or else kernel panick
+        vTaskDelay(pdMS_TO_TICKS(10));
+        ret_adc = adc_continuous_read(handle, result, EXAMPLE_READ_LEN, &ret_num, pdMS_TO_TICKS(200));
+
+    if (ret_adc == ESP_OK) {
+        uint32_t values[4] = {-1, -1, -1, -1};
+        int j = 0;
+
+     for (int i = 0; i < ret_num; i += SOC_ADC_DIGI_RESULT_BYTES, j++) {
+            adc_digi_output_data_t *p = (adc_digi_output_data_t*)&result[i];
+            uint32_t chan_num = EXAMPLE_ADC_GET_CHANNEL(p);
+            uint32_t data = EXAMPLE_ADC_GET_DATA(p) & 0xFFF;
+            if(j < 4){
+                values[j] = data;
+            }
+    }
+
+    static int64_t last_print_us = 0;
+    int64_t now_us = esp_timer_get_time();
+
+                if (now_us - last_print_us >= 10 * 1000) {  // some amount of hz or ms
+                    last_print_us = now_us;
+                    
+                    // we create a copy of the snapshot then modify values in that copy, 
+                    // then lock, then copy back to the global struct
+
+                    adc_snap_t temp = *snap;
+
+                    float Vref = 3.3;
+
+                    float voltage_x1 = ((float)values[0] / 4095.0) * Vref;
+                    temp.raw[0] = voltage_x1;
+
+                    float voltage_y1 = ((float)values[1] / 4095.0) * Vref;
+                    temp.raw[1] = voltage_y1;
+
+                    float voltage_x2 = ((float)values[2] / 4095.0) * Vref;
+                    temp.raw[2] = voltage_x2;
+
+                    float voltage_y2 = ((float)values[3] / 4095.0) * Vref;
+                    temp.raw[3] = voltage_y2;
+
+                    taskENTER_CRITICAL(&adc_struct_mux);
+                    adc_struct = temp; // copy back, the mux protects the code in between these statements from accessing dependent resources
+                    taskEXIT_CRITICAL(&adc_struct_mux);
+                    
+                    //ESP_LOGI("ADC Snapshot Values: ", "%f %f %f %f", snap->raw[0], snap->raw[1], snap->raw[2], snap->raw[3]);
+                    //ESP_LOGI("", "JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"  JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32"", values[0], values[1], values[2], values[3]);
+                }
+    }
+
+    else if (ret_adc == ESP_ERR_TIMEOUT) {
+        //ESP_LOGI("ERROR: ", "ADC TIMEOUT");        
+        // we should tune ADC timing parameters to avoid timeouts, later....
+    }
+
+
+    }
+
+    // these must never run unless thread terminates
+    ESP_ERROR_CHECK(adc_continuous_stop(handle));
+    ESP_ERROR_CHECK(adc_continuous_deinit(handle));
+
 }
 
 static void example_espnow_task(void *pvParameter)
@@ -360,7 +482,6 @@ static esp_err_t example_espnow_init(void)
     memset(send_param, 0, sizeof(example_espnow_send_param_t));
     send_param->unicast = false;
     send_param->broadcast = true;
-    send_param->state = 0;
     send_param->magic = esp_random();
     send_param->count = CONFIG_ESPNOW_SEND_COUNT;
     send_param->delay = CONFIG_ESPNOW_SEND_DELAY;
@@ -381,7 +502,8 @@ static esp_err_t example_espnow_init(void)
     memcpy(send_param->dest_mac, s_example_broadcast_mac, ESP_NOW_ETH_ALEN);
     example_espnow_data_prepare(send_param);
 
-    xTaskCreate(example_espnow_task, "example_espnow_task", 2560, send_param, 4, NULL);
+    //xTaskCreate(example_espnow_task, "example_espnow_task", 2560, send_param, 4, NULL);
+    xTaskCreatePinnedToCore(example_espnow_task, "comms_task", 4096, send_param, 1, NULL, 0);
 
     return ESP_OK;
 }
@@ -395,10 +517,10 @@ static void example_espnow_deinit(example_espnow_send_param_t *send_param)
     esp_now_deinit();
 }
 
-void app_main(void)
-{
-    // Initialize NVS
+static void comms_task(){
     esp_err_t ret = nvs_flash_init();
+
+    // this is checking to see if we are out of ram (or money)
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK( nvs_flash_erase() );
         ret = nvs_flash_init();
@@ -407,4 +529,14 @@ void app_main(void)
 
     example_wifi_init();
     example_espnow_init();
+}
+
+void app_main(void)
+{
+    
+    
+    xTaskCreatePinnedToCore(adc_task, "adc_task", 4096, &adc_struct, 5, NULL, 1);
+    
+    comms_task();
+    
 }

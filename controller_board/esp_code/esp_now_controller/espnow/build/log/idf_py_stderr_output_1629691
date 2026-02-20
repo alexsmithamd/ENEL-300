@@ -1,0 +1,526 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5.3/tools/idf_monitor.py -p /dev/ttyACM1 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/espnow_example.elf /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5.3/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyACM1 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d910: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m193[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8db: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m181[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8d8: [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m496[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8ed: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m183[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8f3: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m190[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8f3: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m190[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d910: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m193[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8f3: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m190[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40376d60: [0;33m_lock_acquire[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/locks.c[0m[0m:[1;31m170[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x403740cf: [0;33m_WindowUnderflow8[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2148[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8f3: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m190[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8ed: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m183[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8f3: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m190[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8f0: [0;33mxt_utils_get_raw_core_id[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/xtensa/include/xt_utils.h[0m[0m:[1;31m52[0m
+[0m--- (inlined by) [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8ed: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m183[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d917: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m194[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d8ed: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m183[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d90a: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m191[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4037c98d: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037c955: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40384ea9: [0;33m__assert_func[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4200a945: [0;33madc_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/espnow_example_main.c[0m[0m:[1;31m194[0m
+[0m--- 0x4037d60d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d932: [0;33mspinlock_release[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m200[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m501[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m

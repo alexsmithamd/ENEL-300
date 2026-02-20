@@ -1,0 +1,761 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5.3/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5.3/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Feb 19 2026 21:02:27[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=18458h ( 99416) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00028480 vaddr=3fc9a100 size=04db8h ( 19896) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0002d240 vaddr=40374000 size=02dd8h ( 11736) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=7e1d4h (516564) map[0m
+[0;32mI (206) esp_image: segment 4: paddr=000ae1fc vaddr=40376dd8 size=13288h ( 78472) load[0m
+[0;32mI (224) esp_image: segment 5: paddr=000c148c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (233) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (233) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Multicore app[0m
+[0;32mI (251) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (254) app_init: Application information:[0m
+[0;32mI (257) app_init: Project name:     espnow_example[0m
+[0;32mI (262) app_init: App version:      11c91a6-dirty[0m
+[0;32mI (266) app_init: Compile time:     Feb 19 2026 23:36:37[0m
+[0;32mI (271) app_init: ELF file SHA256:  0e7fcabb1...[0m
+[0;32mI (276) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (280) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (283) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (287) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (298) heap_init: At 3FCA2BA0 len 00046B70 (282 KiB): RAM[0m
+[0;32mI (303) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (308) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (313) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (319) spi_flash: detected chip: boya[0m
+[0;32mI (322) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (337) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (343) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (350) main_task: Started on CPU0[0m
+[0;32mI (370) main_task: Calling app_main()[0m
+[0;32mI (380) pp: pp rom version: e7ae62f[0m
+[0;32mI (380) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (390) wifi:wifi driver task: 3fceea18, prio:23, stack:6656, core=0[0m
+[0;32mI (390) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (390) wifi:wifi certification version: v7.0[0m
+[0;32mI (390) wifi:config NVS flash: enabled[0m
+[0;32mI (390) wifi:config nano formatting: disabled[0m
+[0;32mI (400) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (400) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (410) wifi:Init management short buffer num: 32[0m
+[0;32mI (410) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (410) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (420) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (420) wifi:Init static rx buffer num: 10[0m
+[0;32mI (430) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (430) wifi_init: rx ba win: 6[0m
+[0;32mI (430) wifi_init: accept mbox: 6[0m
+[0;32mI (440) wifi_init: tcpip mbox: 32[0m
+[0;32mI (440) wifi_init: udp mbox: 6[0m
+[0;32mI (440) wifi_init: tcp mbox: 6[0m
+[0;32mI (440) wifi_init: tcp tx win: 5760[0m
+[0;32mI (450) wifi_init: tcp rx win: 5760[0m
+[0;32mI (450) wifi_init: tcp mss: 1440[0m
+[0;32mI (450) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (460) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (460) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (530) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (590) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (590) wifi:enable tsf[0m
+[0;32mI (590) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (590) main_task: Returned from app_main()[0m
+[0;32mI (5590) espnow_example: Start sending broadcast data[0m
+[0;32mI (5650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (5690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (5740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (5800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (5850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (5890) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (5960) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6000) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6140) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6290) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6360) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6820) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (6990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7340) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7380) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7540) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7790) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (7980) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8030) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8060) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8220) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8400) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8510) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8680) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8720) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8900) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8940) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (8990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9060) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9140) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9360) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9470) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9560) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9730) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (9960) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10040) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10080) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10360) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10400) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10460) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10600) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (10990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11080) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11240) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11340) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11380) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11470) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11510) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11600) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11680) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11720) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11820) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11870) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (11970) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12040) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12240) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12290) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12620) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12670) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12730) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (12930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13060) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13290) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13460) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13600) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13750) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13790) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (13910) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14000) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14070) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14290) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14480) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14560) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14620) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14680) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14760) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (14990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15340) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15500) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15580) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15620) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15820) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (15940) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16000) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16280) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16330) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16400) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16440) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16560) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16600) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16640) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16720) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (16950) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17280) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17530) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17750) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (17970) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18070) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18130) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18480) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18530) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18590) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18730) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18830) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18870) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (18940) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19480) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19670) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19730) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (19980) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20040) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20100) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20140) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20190) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20230) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20280) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20320) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20380) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20500) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20540) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20580) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20710) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20750) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20810) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20910) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (20950) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21010) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21100) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21230) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21330) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21410) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21710) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21900) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (21990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22320) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22470) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22620) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22890) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (22980) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23080) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23270) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23400) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23470) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23640) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23680) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23830) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23870) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (23960) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24070) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24270) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24320) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24500) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24560) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24640) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (24900) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25060) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25240) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25320) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25360) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25540) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (25980) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26030) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26220) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26310) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26530) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26680) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (26990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27190) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27320) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27460) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27500) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27540) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27580) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27720) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27760) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27830) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27870) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (27930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28010) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28230) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28270) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28310) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28460) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28500) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28530) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28640) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28680) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28720) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28760) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28950) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (28990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29060) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29100) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29140) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29180) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29220) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29290) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29330) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29360) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29400) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29440) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29480) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29590) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29750) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29840) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29910) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29950) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (29980) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30130) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30240) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30270) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30310) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30380) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30460) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30530) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30720) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30760) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30830) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30890) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (30970) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31010) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31130) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31340) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31380) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31530) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31600) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31810) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31890) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (31960) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32000) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32040) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32080) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32240) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32280) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32310) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32460) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32510) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32590) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32670) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32710) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32750) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32820) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32900) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (32970) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33010) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33040) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33080) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33240) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33280) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33320) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33460) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33500) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33540) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33580) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33620) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33810) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33890) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (33960) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34000) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34040) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34080) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34220) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34310) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34410) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34540) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34730) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34860) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (34970) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35010) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35090) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35130) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35170) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35210) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35250) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35290) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35330) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35480) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35600) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35640) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35680) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35790) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35830) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35870) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35920) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35950) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (35990) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36020) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36060) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36310) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36350) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36390) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36420) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36490) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36570) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36610) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36650) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36690) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36720) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36760) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36800) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36890) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (36970) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37010) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37050) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37080) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37120) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37160) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37200) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37240) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37280) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37320) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37360) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37400) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37430) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37470) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37540) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37580) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37620) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37780) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37820) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37890) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37930) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (37960) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38000) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38040) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38070) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38110) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38150) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38190) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38230) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38260) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38300) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38340) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38370) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38410) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38450) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38480) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38520) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38550) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38590) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38630) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38660) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38700) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38740) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38770) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38810) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38850) espnow_example: send data to dc:b4:d9:0b:64:5c[0m
+[0;32mI (38880) espnow_example: send data to dc:b4:d9:0b:64:5c[0m

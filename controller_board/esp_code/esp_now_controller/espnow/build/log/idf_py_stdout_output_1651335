@@ -1,0 +1,497 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5.3/tools/idf_monitor.py -p /dev/ttyACM1 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/espnow_example.elf /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5.3/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Feb 20 2026 00:49:15[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=199e4h (104932) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00029a0c vaddr=3fc9b300 size=04each ( 20140) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0002e8c0 vaddr=40374000 size=01758h (  5976) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=80d68h (527720) map[0m
+[0;32mI (209) esp_image: segment 4: paddr=000b0d90 vaddr=40375758 size=15b88h ( 88968) load[0m
+[0;32mI (229) esp_image: segment 5: paddr=000c6920 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Multicore app[0m
+[0;32mI (257) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) app_init: Application information:[0m
+[0;32mI (263) app_init: Project name:     espnow_example[0m
+[0;32mI (268) app_init: App version:      11c91a6-dirty[0m
+[0;32mI (272) app_init: Compile time:     Feb 20 2026 00:49:08[0m
+[0;32mI (277) app_init: ELF file SHA256:  649965642...[0m
+[0;32mI (281) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (285) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (289) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (293) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (297) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FCA3EF0 len 00045820 (278 KiB): RAM[0m
+[0;32mI (308) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (313) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (319) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (325) spi_flash: detected chip: boya[0m
+[0;32mI (327) spi_flash: flash io: dio[0m
+[0;32mI (331) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (384) main_task: Calling app_main()[0m
+[0;32mI (394) pp: pp rom version: e7ae62f[0m
+[0;32mI (394) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (404) wifi:wifi driver task: 3fcaa6a4, prio:23, stack:6656, core=0[0m
+[0;32mI (404) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (404) wifi:wifi certification version: v7.0[0m
+[0;32mI (404) wifi:config NVS flash: enabled[0m
+[0;32mI (404) wifi:config nano formatting: disabled[0m
+[0;32mI (414) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (414) ERROR: : ADC TIMEOUT[0m
+[0;32mI (414) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (424) wifi:Init management short buffer num: 32[0m
+[0;32mI (424) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (434) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (434) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (434) wifi:Init static rx buffer num: 10[0m
+[0;32mI (444) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (444) ERROR: : ADC TIMEOUT[0m
+[0;32mI (444) wifi_init: rx ba win: 6[0m
+[0;32mI (454) wifi_init: accept mbox: 6[0m
+[0;32mI (454) wifi_init: tcpip mbox: 32[0m
+[0;32mI (454) wifi_init: udp mbox: 6[0m
+[0;32mI (464) wifi_init: tcp mbox: 6[0m
+[0;32mI (464) wifi_init: tcp tx win: 5760[0m
+[0;32mI (464) wifi_init: tcp rx win: 5760[0m
+[0;32mI (464) ADC Snapshot Values: : 1.565788 1.572234 1.581905 1.531136[0m
+[0;32mI (474) wifi_init: tcp mss: 1440[0m
+[0;32mI (474) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (484) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (484) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (504) ERROR: : ADC TIMEOUT[0m
+[0;32mI (534) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (534) ERROR: : ADC TIMEOUT[0m
+[0;32mI (574) ADC Snapshot Values: : 1.564176 1.572234 1.582711 1.531136[0m
+[0;32mI (594) wifi:mode : sta (dc:b4:d9:09:f9:80)[0m
+[0;32mI (594) wifi:enable tsf[0m
+[0;32mI (594) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (594) main_task: Returned from app_main()[0m
+[0;32mI (604) ERROR: : ADC TIMEOUT[0m
+[0;32mI (624) ADC Snapshot Values: : 1.564982 1.570623 1.581905 1.528718[0m
+[0;32mI (664) ERROR: : ADC TIMEOUT[0m
+[0;32mI (694) ERROR: : ADC TIMEOUT[0m
+[0;32mI (704) ADC Snapshot Values: : 1.564176 1.571429 1.581905 1.527106[0m
+[0;32mI (734) ERROR: : ADC TIMEOUT[0m
+[0;32mI (764) ERROR: : ADC TIMEOUT[0m
+[0;32mI (784) ADC Snapshot Values: : 1.564176 1.571429 1.582711 1.527912[0m
+[0;32mI (814) ERROR: : ADC TIMEOUT[0m
+[0;32mI (844) ERROR: : ADC TIMEOUT[0m
+[0;32mI (864) ADC Snapshot Values: : 1.563370 1.570623 1.581905 1.528718[0m
+[0;32mI (894) ERROR: : ADC TIMEOUT[0m
+[0;32mI (924) ERROR: : ADC TIMEOUT[0m
+[0;32mI (944) ADC Snapshot Values: : 1.564176 1.572234 1.583516 1.530330[0m
+[0;32mI (974) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1004) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1024) ADC Snapshot Values: : 1.564176 1.572234 1.581905 1.528718[0m
+[0;32mI (1054) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1084) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1104) ADC Snapshot Values: : 1.565788 1.571429 1.581905 1.529524[0m
+[0;32mI (1134) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1164) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1184) ADC Snapshot Values: : 1.564982 1.573040 1.583516 1.527912[0m
+[0;32mI (1214) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1244) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1264) ADC Snapshot Values: : 1.564176 1.571429 1.582711 1.530330[0m
+[0;32mI (1294) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1324) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1344) ADC Snapshot Values: : 1.565788 1.572234 1.583516 1.530330[0m
+[0;32mI (1374) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1404) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1424) ADC Snapshot Values: : 1.564176 1.572234 1.582711 1.531941[0m
+[0;32mI (1454) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1484) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1504) ADC Snapshot Values: : 1.563370 1.572234 1.583516 1.531941[0m
+[0;32mI (1534) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1564) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1584) ADC Snapshot Values: : 1.565788 1.572234 1.582711 1.529524[0m
+[0;32mI (1614) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1644) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1664) ADC Snapshot Values: : 1.564176 1.572234 1.582711 1.530330[0m
+[0;32mI (1694) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1724) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1744) ADC Snapshot Values: : 1.564176 1.572234 1.585128 1.530330[0m
+[0;32mI (1774) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1804) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1824) ADC Snapshot Values: : 1.564176 1.572234 1.583516 1.530330[0m
+[0;32mI (1854) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1884) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1904) ADC Snapshot Values: : 1.564176 1.572234 1.588352 1.528718[0m
+[0;32mI (1934) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1964) ERROR: : ADC TIMEOUT[0m
+[0;32mI (1984) ADC Snapshot Values: : 1.565788 1.572234 1.581905 1.530330[0m
+[0;32mI (2014) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2044) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2064) ADC Snapshot Values: : 1.564176 1.570623 1.581905 1.530330[0m
+[0;32mI (2094) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2124) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2144) ADC Snapshot Values: : 1.564176 1.571429 1.581905 1.530330[0m
+[0;32mI (2174) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2204) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2224) ADC Snapshot Values: : 1.565788 1.572234 1.583516 1.529524[0m
+[0;32mI (2254) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2284) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2304) ADC Snapshot Values: : 1.564176 1.575458 1.583516 1.530330[0m
+[0;32mI (2334) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2364) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2384) ADC Snapshot Values: : 1.564176 1.570623 1.581905 1.530330[0m
+[0;32mI (2414) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2444) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2464) ADC Snapshot Values: : 1.563370 1.571429 1.583516 1.531941[0m
+[0;32mI (2494) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2524) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2544) ADC Snapshot Values: : 1.565788 1.572234 1.581905 1.528718[0m
+[0;32mI (2574) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2604) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2624) ADC Snapshot Values: : 1.564982 1.572234 1.583516 1.531941[0m
+[0;32mI (2654) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2684) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2704) ADC Snapshot Values: : 1.564982 1.572234 1.581905 3.300000[0m
+[0;32mI (2734) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2764) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2784) ADC Snapshot Values: : 1.565788 1.572234 1.620586 3.300000[0m
+[0;32mI (2814) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2844) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2864) ADC Snapshot Values: : 1.564982 1.571429 1.631868 3.300000[0m
+[0;32mI (2894) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2924) ERROR: : ADC TIMEOUT[0m
+[0;32mI (2944) ADC Snapshot Values: : 1.564982 1.571429 3.300000 3.300000[0m
+[0;32mI (2974) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3004) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3024) ADC Snapshot Values: : 1.564982 1.572234 3.300000 2.504615[0m
+[0;32mI (3054) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3084) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3104) ADC Snapshot Values: : 1.565788 1.575458 3.300000 0.892088[0m
+[0;32mI (3134) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3164) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3184) ADC Snapshot Values: : 1.565788 1.571429 3.300000 0.000000[0m
+[0;32mI (3214) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3244) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3264) ADC Snapshot Values: : 1.564176 1.570623 2.349890 0.000000[0m
+[0;32mI (3294) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3324) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3344) ADC Snapshot Values: : 1.564982 1.572234 1.580293 0.000000[0m
+[0;32mI (3374) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3404) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3424) ADC Snapshot Values: : 1.564982 1.572234 1.190256 0.000000[0m
+[0;32mI (3454) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3484) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3504) ADC Snapshot Values: : 1.564176 1.572234 0.280440 0.000000[0m
+[0;32mI (3534) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3564) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3584) ADC Snapshot Values: : 1.565788 1.573040 0.000000 0.695458[0m
+[0;32mI (3614) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3644) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3664) ADC Snapshot Values: : 1.564176 1.572234 0.000000 2.239487[0m
+[0;32mI (3694) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3724) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3744) ADC Snapshot Values: : 1.564176 1.572234 0.000000 3.300000[0m
+[0;32mI (3774) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3804) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3824) ADC Snapshot Values: : 1.564982 1.572234 0.000000 3.300000[0m
+[0;32mI (3854) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3884) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3904) ADC Snapshot Values: : 1.564176 1.571429 0.521392 3.300000[0m
+[0;32mI (3934) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3964) ERROR: : ADC TIMEOUT[0m
+[0;32mI (3984) ADC Snapshot Values: : 1.564176 1.570623 1.101612 3.300000[0m
+[0;32mI (4014) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4044) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4064) ADC Snapshot Values: : 1.564176 1.572234 1.133846 3.300000[0m
+[0;32mI (4094) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4124) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4144) ADC Snapshot Values: : 1.565788 1.570623 1.072601 3.300000[0m
+[0;32mI (4174) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4204) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4224) ADC Snapshot Values: : 1.564982 1.572234 0.000000 3.270989[0m
+[0;32mI (4254) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4284) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4304) ADC Snapshot Values: : 1.564982 1.572234 0.000000 2.573919[0m
+[0;32mI (4334) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4364) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4384) ADC Snapshot Values: : 1.564176 1.572234 0.000000 1.528718[0m
+[0;32mI (4414) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4444) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4464) ADC Snapshot Values: : 1.564176 1.572234 0.000000 1.372381[0m
+[0;32mI (4494) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4524) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4544) ADC Snapshot Values: : 1.563370 1.572234 0.000000 1.146740[0m
+[0;32mI (4574) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4604) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4624) ADC Snapshot Values: : 1.564176 1.572234 1.585128 1.530330[0m
+[0;32mI (4654) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4684) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4704) ADC Snapshot Values: : 1.564982 1.571429 1.588352 1.530330[0m
+[0;32mI (4734) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4764) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4784) ADC Snapshot Values: : 1.562564 1.575458 1.593993 1.541612[0m
+[0;32mI (4814) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4844) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4864) ADC Snapshot Values: : 1.564982 1.572234 1.593187 1.538388[0m
+[0;32mI (4894) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4924) ERROR: : ADC TIMEOUT[0m
+[0;32mI (4944) ADC Snapshot Values: : 1.564176 1.572234 1.587546 1.528718[0m
+[0;32mI (4974) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5004) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5024) ADC Snapshot Values: : 1.565788 1.572234 2.186300 1.523883[0m
+[0;32mI (5054) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5084) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5104) ADC Snapshot Values: : 1.564982 1.573040 2.261245 1.530330[0m
+[0;32mI (5134) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5164) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5184) ADC Snapshot Values: : 1.564982 1.572234 3.006667 1.540000[0m
+[0;32mI (5214) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5244) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5264) ADC Snapshot Values: : 1.565788 1.572234 3.139634 1.533553[0m
+[0;32mI (5294) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5324) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5344) ADC Snapshot Values: : 1.564176 1.572234 3.254872 1.529524[0m
+[0;32mI (5374) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5404) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5424) ADC Snapshot Values: : 1.565788 1.571429 3.300000 1.513407[0m
+[0;32mI (5454) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5484) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5504) ADC Snapshot Values: : 1.563370 1.570623 3.300000 1.491648[0m
+[0;32mI (5534) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5564) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5584) ADC Snapshot Values: : 1.564176 1.571429 1.580293 1.528718[0m
+[0;32mI (5594) espnow_example: Start sending broadcast data[0m
+[0;32mI (5614) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5634) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5644) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5664) ADC Snapshot Values: : 1.564982 1.567399 1.577875 1.524689[0m
+[0;32mI (5674) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5704) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5714) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5734) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5744) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5744) ADC Snapshot Values: : 1.564176 1.569817 1.577070 1.524689[0m
+[0;32mI (5784) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5784) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5814) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5824) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5824) ADC Snapshot Values: : 1.556923 1.568205 1.580293 1.530330[0m
+[0;32mI (5854) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5864) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5894) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5894) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5904) ADC Snapshot Values: : 1.558535 1.567399 1.552894 1.523883[0m
+[0;32mI (5934) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5944) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5974) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5974) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5984) ADC Snapshot Values: : 1.565788 1.564176 0.000000 2.315238[0m
+[0;32mI (6014) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6024) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6044) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6054) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6064) ADC Snapshot Values: : 1.563370 1.569011 0.000000 2.371648[0m
+[0;32mI (6084) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6104) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6124) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6134) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6144) ADC Snapshot Values: : 1.559341 1.567399 0.000000 2.382124[0m
+[0;32mI (6154) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6184) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6194) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6214) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6224) ADC Snapshot Values: : 1.567399 1.569011 0.000000 2.484469[0m
+[0;32mI (6234) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6264) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6294) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6294) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6304) ADC Snapshot Values: : 1.566593 1.569817 0.000000 3.300000[0m
+[0;32mI (6334) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6344) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6364) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6374) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6384) ADC Snapshot Values: : 1.559341 1.569817 0.199853 3.300000[0m
+[0;32mI (6404) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6424) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6444) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6454) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6464) ADC Snapshot Values: : 1.558535 1.566593 1.572234 1.525494[0m
+[0;32mI (6474) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6504) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6534) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6544) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6544) ADC Snapshot Values: : 1.565788 1.573040 1.582711 1.526300[0m
+[0;32mI (6584) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6584) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6614) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6624) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6624) ADC Snapshot Values: : 1.559341 1.571429 1.577875 1.527912[0m
+[0;32mI (6654) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6664) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6694) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6694) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6704) ADC Snapshot Values: : 1.558535 1.569011 0.326374 1.526300[0m
+[0;32mI (6734) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6744) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6764) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6774) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6784) ADC Snapshot Values: : 1.557729 1.575458 0.000000 1.528718[0m
+[0;32mI (6804) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6824) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6844) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6854) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6864) ADC Snapshot Values: : 1.561758 1.567399 0.000000 1.533553[0m
+[0;32mI (6874) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6904) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6914) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6934) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6944) ADC Snapshot Values: : 1.565788 1.569011 0.000000 1.528718[0m
+[0;32mI (6954) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6984) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6994) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7014) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7024) ADC Snapshot Values: : 1.565788 1.569817 0.000000 1.527106[0m
+[0;32mI (7054) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7064) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7094) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7104) ADC Snapshot Values: : 1.565788 1.571429 1.283736 1.531941[0m
+[0;32mI (7124) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7144) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7174) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7184) ADC Snapshot Values: : 1.565788 1.569011 1.511795 1.526300[0m
+[0;32mI (7194) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7224) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7234) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7254) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7264) ADC Snapshot Values: : 1.566593 1.568205 1.578681 1.528718[0m
+[0;32mI (7274) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7304) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7314) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7334) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7344) ADC Snapshot Values: : 1.567399 1.568205 0.332821 1.531941[0m
+[0;32mI (7354) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7384) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7394) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7414) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7424) ADC Snapshot Values: : 1.566593 1.569817 0.000000 1.570623[0m
+[0;32mI (7434) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7464) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7474) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7494) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7504) ADC Snapshot Values: : 1.566593 1.569011 0.000000 1.567399[0m
+[0;32mI (7514) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7544) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7554) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7574) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7584) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7584) ADC Snapshot Values: : 1.565788 1.568205 0.000000 1.567399[0m
+[0;32mI (7624) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7624) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7654) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7664) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7664) ADC Snapshot Values: : 1.559341 1.567399 1.587546 1.528718[0m
+[0;32mI (7704) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7714) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7734) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7744) ADC Snapshot Values: : 1.561758 1.569011 1.580293 1.524689[0m
+[0;32mI (7754) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7784) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7784) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7814) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7824) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7824) ADC Snapshot Values: : 1.567399 1.568205 1.768864 1.515824[0m
+[0;32mI (7864) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7864) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7894) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7894) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7904) ADC Snapshot Values: : 1.556117 1.572234 3.300000 1.527106[0m
+[0;32mI (7934) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7944) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7974) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7974) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7984) ADC Snapshot Values: : 1.561758 1.569011 3.300000 1.519853[0m
+[0;32mI (8004) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8024) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8044) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8054) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8064) ADC Snapshot Values: : 1.564176 1.568205 1.581905 1.527912[0m
+[0;32mI (8084) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8104) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8124) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8134) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8144) ADC Snapshot Values: : 1.558535 1.569011 0.920293 1.552894[0m
+[0;32mI (8164) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8184) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8194) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8214) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8224) ADC Snapshot Values: : 1.561758 1.567399 0.000000 2.157289[0m
+[0;32mI (8234) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8264) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8284) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8294) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8304) ADC Snapshot Values: : 1.565788 1.567399 0.000000 2.229817[0m
+[0;32mI (8314) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8344) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8374) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8384) ADC Snapshot Values: : 1.566593 1.569817 1.428791 1.533553[0m
+[0;32mI (8394) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8424) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8434) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8454) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8464) ADC Snapshot Values: : 1.565788 1.571429 1.578681 1.527106[0m
+[0;32mI (8474) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8504) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8514) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8534) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8544) ADC Snapshot Values: : 1.567399 1.576264 1.581099 1.528718[0m
+[0;32mI (8554) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8584) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8604) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8614) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8624) ADC Snapshot Values: : 1.565788 1.577070 1.588352 1.531941[0m
+[0;32mI (8644) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8664) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8684) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8694) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8704) ADC Snapshot Values: : 1.564176 1.568205 1.579487 1.530330[0m
+[0;32mI (8724) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8744) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8764) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8774) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8784) ADC Snapshot Values: : 1.565788 1.572234 1.588352 1.531941[0m
+[0;32mI (8804) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8824) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8844) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8854) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8864) ADC Snapshot Values: : 1.559341 1.577070 1.586740 1.534359[0m
+[0;32mI (8884) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8904) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8914) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8934) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8944) ADC Snapshot Values: : 1.559341 1.575458 1.585128 1.536777[0m
+[0;32mI (8954) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8984) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8994) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9014) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9024) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9024) ADC Snapshot Values: : 1.566593 1.576264 1.581905 1.526300[0m

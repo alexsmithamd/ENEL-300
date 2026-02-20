@@ -1,0 +1,1534 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5.3/tools/idf_monitor.py -p /dev/ttyACM1 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/espnow_example.elf /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5.3/tools/idf.py'
+"���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Feb 19 2026 23:29:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=19a0ch (104972) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00029a34 vaddr=3fc9b300 size=04e9ch ( 20124) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0002e8d8 vaddr=40374000 size=01740h (  5952) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=80eb4h (528052) map[0m
+[0;32mI (209) esp_image: segment 4: paddr=000b0edc vaddr=40375740 size=15ba8h ( 89000) load[0m
+[0;32mI (229) esp_image: segment 5: paddr=000c6a8c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Multicore app[0m
+[0;32mI (257) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) app_init: Application information:[0m
+[0;32mI (263) app_init: Project name:     espnow_example[0m
+[0;32mI (268) app_init: App version:      11c91a6-dirty[0m
+[0;32mI (272) app_init: Compile time:     Feb 19 2026 23:29:57[0m
+[0;32mI (277) app_init: ELF file SHA256:  4088f5044...[0m
+[0;32mI (281) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (285) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (289) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (293) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (297) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FCA3EE0 len 00045830 (278 KiB): RAM[0m
+[0;32mI (308) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (313) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (319) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (325) spi_flash: detected chip: boya[0m
+[0;32mI (327) spi_flash: flash io: dio[0m
+[0;33mW (330) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (343) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (349) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (356) main_task: Started on CPU0[0m
+[0;32mI (376) main_task: Calling app_main()[0m
+[0;32mI (386) pp: pp rom version: e7ae62f[0m
+[0;32mI (386) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (396) wifi:wifi driver task: 3fceea9c, prio:23, stack:6656, core=0[0m
+[0;32mI (396) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (396) wifi:wifi certification version: v7.0[0m
+[0;32mI (396) wifi:config NVS flash: enabled[0m
+[0;32mI (396) wifi:config nano formatting: disabled[0m
+[0;32mI (406) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (406) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (416) wifi:Init management short buffer num: 32[0m
+[0;32mI (416) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (416) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (426) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (426) wifi:Init static rx buffer num: 10[0m
+[0;32mI (436) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (436) wifi_init: rx ba win: 6[0m
+[0;32mI (436) wifi_init: accept mbox: 6[0m
+[0;32mI (446) wifi_init: tcpip mbox: 32[0m
+[0;32mI (446) wifi_init: udp mbox: 6[0m
+[0;32mI (446) wifi_init: tcp mbox: 6[0m
+[0;32mI (446) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (456) wifi_init: tcp mss: 1440[0m
+[0;32mI (456) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (466) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (466) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (536) wifi:mode : sta (dc:b4:d9:09:f9:80)[0m
+[0;32mI (536) wifi:enable tsf[0m
+[0;32mI (536) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (546) main_task: Returned from app_main()[0m
+[0;32mI (5546) espnow_example: Start sending broadcast data[0m
+[0;32mI (5616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5706) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5706) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (5896) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (5896) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6146) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6146) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6366) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6366) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6506) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6506) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6576) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6576) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6686) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6686) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (6926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (6926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7186) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7186) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7256) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7256) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7366) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7366) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7586) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7586) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7706) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7706) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7766) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7766) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (7986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (7986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8226) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8226) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8276) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8276) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8316) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8316) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8376) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8376) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8476) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8476) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8566) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8566) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8656) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8656) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8816) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8816) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (8966) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (8966) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9066) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9066) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9176) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9176) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9246) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9246) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9346) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9346) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9566) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9566) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9666) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9666) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9936) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9936) ERROR: : ADC TIMEOUT[0m
+[0;32mI (9996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (9996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10356) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10356) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10506) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10506) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10626) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10626) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10686) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10686) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10836) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10836) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10946) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10946) ERROR: : ADC TIMEOUT[0m
+[0;32mI (10986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (10986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11126) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11126) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11286) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11286) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11346) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11346) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11436) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11436) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11496) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11496) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11566) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11566) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11656) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11656) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (11986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (11986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12226) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12226) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12346) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12346) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12396) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12396) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12436) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12436) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12686) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12686) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12766) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12766) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12826) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12826) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12876) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12876) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (12996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (12996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13206) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13206) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13366) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13366) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13716) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13716) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (13936) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (13936) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14176) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14176) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14216) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14216) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14356) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14356) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14496) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14496) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14656) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14656) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (14956) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (14956) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15016) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15016) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15156) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15156) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15366) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15366) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15556) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15556) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15596) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15596) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15956) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15956) ERROR: : ADC TIMEOUT[0m
+[0;32mI (15996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (15996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16076) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16076) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16116) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16116) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (16996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (16996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17216) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17216) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17286) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17286) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17376) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17376) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17476) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17476) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17596) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17596) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17656) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17656) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17816) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17816) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (17926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (17926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18006) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18006) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18156) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18156) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18226) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18226) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18436) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18436) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18676) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18676) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18746) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18746) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18896) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18896) ERROR: : ADC TIMEOUT[0m
+[0;32mI (18946) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (18946) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19156) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19156) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19356) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19356) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19576) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19576) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19686) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19686) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19836) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19836) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (19966) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (19966) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20156) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20156) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20256) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20256) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20316) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20316) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20596) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20596) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20666) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20666) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (20966) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (20966) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21126) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21126) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21276) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21276) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21376) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21376) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21566) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21566) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21816) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21816) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21876) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21876) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (21986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (21986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22066) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22066) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22206) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22206) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22246) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22246) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22316) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22316) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22396) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22396) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22576) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22576) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22716) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22716) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (22986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (22986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23146) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23146) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23206) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23206) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23356) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23356) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23546) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23546) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23596) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23596) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23706) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23706) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (23976) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (23976) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24176) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24176) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24246) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24246) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24366) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24366) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24596) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24596) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24666) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24666) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (24996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (24996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25076) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25076) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25116) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25116) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25176) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25176) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25396) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25396) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25546) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25546) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25636) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25636) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25716) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25716) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (25986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (25986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26226) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26226) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26406) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26406) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26586) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26586) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26676) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26676) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26896) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26896) ERROR: : ADC TIMEOUT[0m
+[0;32mI (26956) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (26956) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27006) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27006) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27066) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27066) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27176) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27176) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27256) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27256) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27406) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27406) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27546) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27546) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (27996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (27996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28186) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28186) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28246) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28246) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28356) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28356) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28626) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28626) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28716) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28716) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (28946) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (28946) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29146) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29146) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29366) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29366) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29496) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29496) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29566) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29566) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29686) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29686) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (29996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (29996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30586) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30586) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30636) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30636) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30686) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30686) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (30956) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (30956) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31006) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31006) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31086) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31086) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31146) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31146) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31206) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31206) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31296) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31296) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31396) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31396) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31556) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31556) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31676) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31676) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31716) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31716) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (31956) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (31956) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32066) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32066) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32126) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32126) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32186) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32186) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32336) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32336) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32546) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32546) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32636) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32636) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32706) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32706) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32766) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32766) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32826) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32826) ERROR: : ADC TIMEOUT[0m
+[0;32mI (32906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (32906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33006) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33006) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33256) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33256) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33316) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33316) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33556) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33556) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33676) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33676) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33826) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33826) ERROR: : ADC TIMEOUT[0m
+[0;32mI (33916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (33916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34036) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34036) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34186) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34186) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34576) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34576) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (34946) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (34946) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35086) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35086) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35436) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35436) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35676) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35676) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (35916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (35916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36016) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36016) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36076) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36076) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36226) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36226) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36356) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36356) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36666) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36666) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36826) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36826) ERROR: : ADC TIMEOUT[0m
+[0;32mI (36896) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (36896) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37176) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37176) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37356) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37356) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37436) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37436) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37506) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37506) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37876) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37876) ERROR: : ADC TIMEOUT[0m
+[0;32mI (37976) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (37976) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38206) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38206) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38296) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38296) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38566) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38566) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38836) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38836) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (38936) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (38936) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39036) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39036) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39086) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39086) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39216) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39216) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39556) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39556) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39626) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39626) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39716) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39716) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39886) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39886) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39936) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39936) ERROR: : ADC TIMEOUT[0m
+[0;32mI (39976) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (39976) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40146) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40146) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40246) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40246) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40416) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40416) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40556) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40556) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40706) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40706) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40936) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40936) ERROR: : ADC TIMEOUT[0m
+[0;32mI (40996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (40996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41086) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41086) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41896) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41896) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41956) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41956) ERROR: : ADC TIMEOUT[0m
+[0;32mI (41996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (41996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42086) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42086) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42226) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42226) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42296) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42296) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42556) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42556) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42636) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42636) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42706) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42706) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42836) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42836) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (42976) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (42976) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43336) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43336) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43406) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43406) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43576) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43576) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43636) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43636) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43826) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43826) ERROR: : ADC TIMEOUT[0m
+[0;32mI (43916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (43916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44006) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44006) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44566) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44566) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44876) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44876) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (44986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (44986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45066) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45066) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45286) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45286) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45346) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45346) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45506) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45506) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45596) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45596) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (45936) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (45936) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46016) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46016) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46216) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46216) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46296) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46296) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46376) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46376) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46496) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46496) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46586) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46586) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46676) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46676) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (46996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (46996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47126) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47126) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47236) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47236) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47316) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47316) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47626) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47626) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47736) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47736) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47876) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47876) ERROR: : ADC TIMEOUT[0m
+[0;32mI (47996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (47996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48046) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48046) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48116) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48116) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48216) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48216) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48276) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48276) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48506) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48506) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48546) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48546) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48856) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48856) ERROR: : ADC TIMEOUT[0m
+[0;32mI (48946) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (48946) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49076) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49076) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49136) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49136) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49246) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49246) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49376) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49376) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49666) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49666) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49836) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49836) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (49996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (49996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50126) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50126) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50196) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50196) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50276) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50276) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50346) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50346) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50586) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50586) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50656) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50656) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50836) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50836) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50896) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50896) ERROR: : ADC TIMEOUT[0m
+[0;32mI (50976) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (50976) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51036) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51036) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51096) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51096) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51186) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51186) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51286) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51286) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51446) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51446) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51526) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51526) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51636) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51636) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51686) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51686) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51726) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51726) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51786) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51786) ERROR: : ADC TIMEOUT[0m
+[0;32mI (51906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (51906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52026) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52026) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52116) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52116) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52186) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52186) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52296) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52296) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52336) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52336) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52436) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52436) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52486) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52486) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52776) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52776) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52876) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52876) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52936) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52936) ERROR: : ADC TIMEOUT[0m
+[0;32mI (52996) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (52996) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53146) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53146) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53216) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53216) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53296) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53296) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53336) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53336) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53456) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53456) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53576) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53576) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53846) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53846) ERROR: : ADC TIMEOUT[0m
+[0;32mI (53906) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (53906) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54006) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54006) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54066) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54066) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54176) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54176) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54246) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54246) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54346) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54346) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54496) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54496) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54616) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54616) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54706) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54706) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (54926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (54926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55016) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55016) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55076) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55076) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55306) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55306) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55426) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55426) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55476) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55476) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55516) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55516) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55586) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55586) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55646) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55646) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55716) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55716) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55796) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55796) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (55916) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (55916) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56006) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56006) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56076) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56076) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56126) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56126) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56266) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56266) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56396) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56396) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56496) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56496) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56556) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56556) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56636) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56636) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56696) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56696) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56746) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56746) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56826) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56826) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56866) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56866) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56926) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56926) ERROR: : ADC TIMEOUT[0m
+[0;32mI (56986) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (56986) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57106) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57106) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57146) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57146) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57206) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57206) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57256) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57256) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57386) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57386) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57466) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57466) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57536) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57536) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57606) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57606) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57666) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57666) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57756) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57756) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57806) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57806) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57896) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57896) ERROR: : ADC TIMEOUT[0m
+[0;32mI (57966) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (57966) ERROR: : ADC TIMEOUT[0m
+[0;32mI (58056) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (58056) ERROR: : ADC TIMEOUT[0m
+[0;32mI (58166) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (58166) ERROR: : ADC TIMEOUT[0m
+[0;32mI (58226) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (58226) ERROR: : ADC TIMEOUT[0m
+[0;32mI (58326) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (58326) ERROR: : ADC TIMEOUT[0m
+[0;32mI (58396) espnow_example: send data to dc:b4:d9:09:f9:80[0m
+[0;32mI (58396) ERROR: : ADC TIMEOUT[0m
