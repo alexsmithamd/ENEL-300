@@ -6,6 +6,7 @@
 #include "freertos/task.h"
 
 #include "driver/gpio.h"
+#include "esp_timer.h"
 #include "esp_rom_sys.h"                 
 #include "esp_adc/adc_oneshot.h"         
 #include "hal/adc_types.h"
@@ -14,14 +15,19 @@
 #define COIL_DRV_PIN   GPIO_NUM_10   // GPIO driving pulse for 430Ω->coil->GND
 #define LED_PIN        GPIO_NUM_8    // LED
 #define ADC_GPIO       GPIO_NUM_0    // GPIO0 is ADC reader for coil
-
-// -------- Tuning knobs --------
+// Ultrasonic pins 
+#define US_TRIG_PIN   GPIO_NUM_4
+#define US_ECHO_PIN   GPIO_NUM_5
+//  Tuning knobs 
+#define SOUND_CM_PER_US  0.0343f
 #define PULSE_ON_US    8//70//20//1            // ms coil is at high state
 #define PULSE_OFF_US   14//130//80            // ms coil is LOW state
 #define SAMPLES_PER_MEAS  400//200        // more samples = less noise, slower response based off mapleaf config
-
+// timeouts
+#define ECHO_RISE_TIMEOUT_US   50000   // 30 ms (covers > 5m, but safe)
+#define ECHO_FALL_TIMEOUT_US   50000
 #define BASELINE_MS    800//1500          // baseline averaging time on boot
-#define THRESHOLD      3//10            // ADC counts; adjust after you see readings
+#define THRESHOLD      5//10            // ADC counts; adjust after you see readings
 
 static adc_oneshot_unit_handle_t adc_handle;
 
@@ -60,6 +66,54 @@ static int read_metric_once(void) {
     return sum / SAMPLES_PER_MEAS;
 }
 
+static void ultrasonic_init(void) {
+    gpio_reset_pin(US_TRIG_PIN);
+    gpio_set_direction(US_TRIG_PIN, GPIO_MODE_OUTPUT);
+    gpio_set_level(US_TRIG_PIN, 0);
+
+    gpio_reset_pin(US_ECHO_PIN);
+    gpio_set_direction(US_ECHO_PIN, GPIO_MODE_INPUT);
+}
+
+static int64_t pulse_in_us(gpio_num_t pin, int level, int64_t timeout_us) {
+    int64_t start = esp_timer_get_time();
+    while (gpio_get_level(pin) != level) {
+        if ((esp_timer_get_time() - start) > timeout_us) return -1;
+    }
+    int64_t t0 = esp_timer_get_time();
+    while (gpio_get_level(pin) == level) {
+        if ((esp_timer_get_time() - t0) > timeout_us) return -1;
+    }
+    return esp_timer_get_time() - t0;
+}
+
+static float ultrasonic_read_cm(void) {
+
+    // Ensure low
+    gpio_set_level(US_TRIG_PIN, 0);
+    esp_rom_delay_us(2);
+
+    // 10us trigger pulse
+    gpio_set_level(US_TRIG_PIN, 1);
+    esp_rom_delay_us(10);
+    gpio_set_level(US_TRIG_PIN, 0);
+
+    // Wait for echo HIGH then measure HIGH width
+    // First wait for rising edge (echo goes high)
+    int64_t start = esp_timer_get_time();
+    while (gpio_get_level(US_ECHO_PIN) == 0) {
+        if (esp_timer_get_time() - start > ECHO_RISE_TIMEOUT_US) return -1.0f;
+    }
+
+    // Now measure high pulse width
+    int64_t width = pulse_in_us(US_ECHO_PIN, 1, ECHO_FALL_TIMEOUT_US);
+    if (width < 0) return -1.0f;
+
+    // distance = (time * speed) / 2
+    float cm = (width * SOUND_CM_PER_US) / 2.0f;
+    return cm;
+}
+
 void app_main(void)
 {
     gpio_reset_pin(LED_PIN);
@@ -73,7 +127,10 @@ void app_main(void)
     // ADC setup
     adc_init();
 
-    //Baseline calibration to compare to init phase shift
+    // Ultrasonic setup  <-- IMPORTANT
+    ultrasonic_init();
+
+    // Baseline calibration
     int baseline_sum = 0;
     int baseline_count = 0;
 
@@ -89,7 +146,6 @@ void app_main(void)
     printf("Baseline metric = %d\n", baseline);
     printf("THRESHOLD=%d SAMPLES=%d\n", THRESHOLD, SAMPLES_PER_MEAS);
 
-    //phase shift detector main loop
     while (1) {
         int gooner = read_metric_once();
         int diff = gooner - baseline;
@@ -98,8 +154,29 @@ void app_main(void)
         bool detected = (diff >= THRESHOLD);
         gpio_set_level(LED_PIN, detected ? 1 : 0);
 
+        // Small gap so ultrasonic isn't triggered right on switching noise
+        vTaskDelay(pdMS_TO_TICKS(2));
+        printf("ECHO=%d\n", gpio_get_level(US_ECHO_PIN));
+
+        gpio_set_level(COIL_DRV_PIN, 0);
+        vTaskDelay(pdMS_TO_TICKS(3));   // quiet time
+
+        float d = ultrasonic_read_cm();
+        if (d < 0) {
+            vTaskDelay(pdMS_TO_TICKS(20));
+            d = ultrasonic_read_cm();
+        }
+
+        if (d < 0) {
+            printf("Ultrasonic: timeout\n");
+        } else {
+            printf("Ultrasonic: %.1f cm\n", d);
+        }
+
         printf("metric=%d diff=%d detected=%d\n", gooner, diff, detected);
 
-        vTaskDelay(pdMS_TO_TICKS(100));
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
+
+
