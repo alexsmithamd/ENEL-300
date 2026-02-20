@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "espnow_example",
-    "project_version":    "a57ea42-dirty",
+    "project_version":    "7c0f07e-dirty",
     "project_path":       "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow",
     "idf_path":           "/home/marcus/esp/esp-idf-v5.5.3",
     "build_dir":          "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build",
