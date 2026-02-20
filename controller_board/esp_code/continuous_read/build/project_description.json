@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "continuous_read",
-    "project_version":    "0b20aa1",
+    "project_version":    "8210e39-dirty",
     "project_path":       "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read",
     "idf_path":           "/home/marcus/esp/esp-idf-v5.5",
     "build_dir":          "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build",

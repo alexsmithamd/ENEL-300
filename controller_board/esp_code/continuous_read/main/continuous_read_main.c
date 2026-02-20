@@ -126,7 +126,7 @@ void app_main(void)
 
                 if (now_us - last_print_us >= 3 * 1000) {  // 20 ms = 50 Hz
                     last_print_us = now_us;
-                    ESP_LOGI("", "JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32"", values[0], values[1], values[2], values[3]);
+                    ESP_LOGI("", "JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"  JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32"", values[0], values[1], values[2], values[3]);
                 }
                 
             } else if (ret == ESP_ERR_TIMEOUT) {
