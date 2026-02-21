@@ -13,7 +13,9 @@
    ESPNOW data.
 */
 #include <stdlib.h>
+#include <math.h>
 #include <time.h>
+#include <complex.h>
 #include <string.h>
 #include <assert.h>
 #include "freertos/FreeRTOS.h"
@@ -30,6 +32,36 @@
 #include "esp_crc.h"
 #include "espnow_example.h"
 
+#include "driver/gpio.h"
+#include <driver/ledc.h>
+
+#define L_Y_OFFSET 1.56
+#define R_X_OFFSET 1.59
+
+// these are the direction pins
+#define IN1 GPIO_NUM_7
+#define IN2 GPIO_NUM_6
+#define IN3 GPIO_NUM_5
+#define IN4 GPIO_NUM_4
+
+// these are the PWM pins
+#define PWM_L GPIO_NUM_15
+#define PWM_R GPIO_NUM_16
+
+#define LED_PIN 15           
+#define LEDC_CHANNEL LEDC_CHANNEL_0
+#define LEDC_TIMER LEDC_TIMER_0
+#define LEDC_MODE LEDC_LOW_SPEED_MODE
+#define LEDC_DUTY_RES LEDC_TIMER_10_BIT // 10-bit resolution (0-1023)
+#define LEDC_FREQUENCY 3000   
+
+typedef struct {
+    float raw[4];
+} adc_snap_t;
+
+adc_snap_t adc_struct = {{-1.0, -1.0, -1.0, -1.0}};
+
+
 #define ESPNOW_MAXDELAY 512
 
 static const char *TAG = "espnow_example";
@@ -42,6 +74,11 @@ static uint8_t s_example_broadcast_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0
 static uint16_t s_example_espnow_seq[EXAMPLE_ESPNOW_DATA_MAX] = { 0, 0 };
 
 static void example_espnow_deinit(example_espnow_send_param_t *send_param);
+
+
+int map(double x, double in_min, double in_max, int out_min, int out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 
 /* WiFi should start before using ESPNOW */
 static void example_wifi_init(void)
@@ -119,6 +156,10 @@ static void example_espnow_recv_cb(const esp_now_recv_info_t *recv_info, const u
 }
 
 /* Parse received ESPNOW data. */
+
+// lock
+static portMUX_TYPE adc_struct_mux = portMUX_INITIALIZER_UNLOCKED; 
+
 int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, uint16_t *seq, uint32_t *magic)
 {
     example_espnow_data_t *buf = (example_espnow_data_t *)data;
@@ -139,7 +180,17 @@ int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, 
     float control_data[4] = {-1.0, -1.0, -1.0, -1.0};
     memcpy(control_data, buf->payload, sizeof(control_data));
 
-    ESP_LOGI("RECIEVED ADC DATA", "%f %f %f %f", control_data[0], control_data[1], control_data[2], control_data[3]);
+    adc_snap_t temp = {{-1.0, -1.0, -1.0, -1.0}};
+    memcpy(temp.raw, control_data, sizeof(control_data));
+
+    taskENTER_CRITICAL(&adc_struct_mux);
+        adc_struct = temp;
+    taskEXIT_CRITICAL(&adc_struct_mux);
+
+    //ESP_LOGI("RECIEVED ADC DATA", "%f %f %f %f", temp.raw[0], temp.raw[1], temp.raw[2], temp.raw[3]);
+
+
+
     if (crc_cal == crc) {
         return buf->type;
     }
@@ -163,6 +214,8 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
     esp_fill_random(buf->payload, send_param->len - sizeof(example_espnow_data_t));
     buf->crc = esp_crc16_le(UINT16_MAX, (uint8_t const *)buf, send_param->len);
 }
+
+
 
 static void example_espnow_task(void *pvParameter)
 {
@@ -369,7 +422,9 @@ static esp_err_t example_espnow_init(void)
     memcpy(send_param->dest_mac, s_example_broadcast_mac, ESP_NOW_ETH_ALEN);
     example_espnow_data_prepare(send_param);
 
-    xTaskCreate(example_espnow_task, "example_espnow_task", 2560, send_param, 4, NULL);
+
+    xTaskCreatePinnedToCore(example_espnow_task, "comms_task", 4096, send_param, 1, NULL, 0);
+    //xTaskCreate(example_espnow_task, "example_espnow_task", 2560, send_param, 4, NULL);
 
     return ESP_OK;
 }
@@ -383,8 +438,132 @@ static void example_espnow_deinit(example_espnow_send_param_t *send_param)
     esp_now_deinit();
 }
 
+static void configure_PWM(void){
+    gpio_reset_pin(IN1);
+    gpio_reset_pin(IN2);
+    gpio_reset_pin(IN3);
+    gpio_reset_pin(IN4);
+
+    gpio_set_direction(IN1, GPIO_MODE_OUTPUT);
+    gpio_set_direction(IN2, GPIO_MODE_OUTPUT);
+    gpio_set_direction(IN3, GPIO_MODE_OUTPUT);
+    gpio_set_direction(IN4, GPIO_MODE_OUTPUT);
+
+    ledc_timer_config_t ledc_timer = {
+        .speed_mode = LEDC_MODE,
+        .duty_resolution = LEDC_DUTY_RES,
+        .timer_num = LEDC_TIMER,
+        .freq_hz = LEDC_FREQUENCY
+    };
+    ledc_timer_config(&ledc_timer);
+
+    // Configure LEDC channel
+    ledc_channel_config_t ledc_channel = {
+        .gpio_num = LED_PIN,
+        .speed_mode = LEDC_MODE,
+        .channel = LEDC_CHANNEL,
+        .timer_sel = LEDC_TIMER,
+        .duty = 0
+    };
+
+    ledc_channel_config(&ledc_channel);
+
+    return;
+}
+
+static void pwm_task(void * arg){
+    adc_snap_t *adc_struct = (adc_snap_t *) arg;
+    assert(adc_struct != NULL);
+
+    //s_task_handle = xTaskGetCurrentTaskHandle();
+
+    // ** NOTE **
+    // Direction is uncertain at the momentprintf("LED duty cycle: %d\n", duty);
+
+    // for setting directionadc_struct
+
+    // Motor_L Clockwise
+    gpio_set_level(IN1, 1);
+    gpio_set_level(IN2, 0);
+
+    // Motor_L Counter-Clockwise
+    //gpio_set_level(IN1, 0);
+    //gpio_set_level(IN2, 1);
+
+    // Motor_R Clockwise
+    gpio_set_level(IN3, 1);
+    gpio_set_level(IN4, 0);
+
+    // Motor_R Counter-Clockwise
+    //gpio_set_level(IN3, 0);
+    //gpio_set_level(IN4, 1);
+
+    // waiting for command, if negs then we don't start
+    while (1){
+        int count = 0;
+        // check to make ALL values are not -1.0
+        for(int i = 0; i < sizeof(adc_struct->raw)/sizeof(float); i++){
+            if (adc_struct->raw[i] != -1.0)
+                count++;
+        }
+        if(count == 4)
+            break; 
+
+        vTaskDelay(1);
+    }
+
+    double complex z = 0 + 0*I;
+
+    while (1) {
+
+        adc_snap_t temp = *adc_struct; // copy the struct
+        // now we need to write the code that copies the values from esp now into this struct
+
+        double z_real =  adc_struct->raw[2] - R_X_OFFSET;
+        if(fabsf(z_real) < 0.02)
+            z_real = 0.00;
+        
+        double z_imm = -1 * adc_struct->raw[1] + L_Y_OFFSET; 
+        if(fabsf(z_imm) < 0.02)
+            z_imm = 0.00;
+
+        z = z_real + z_imm*I;
+
+        
+
+        ESP_LOGI("","COMPLEX Values: %f %f", creal(z), cimag(z));
+
+        int duty = map(cimag(z), 0, 1.56, 0, 1023);
+        ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, duty);
+        ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+
+        /*
+        for (int duty = 0; duty <= 1023; duty += 10) {
+            ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+            vTaskDelay(20 / portTICK_PERIOD_MS);
+            
+        }
+        
+        for (int duty = 1023; duty >= 0; duty -= 10) {
+            ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+            vTaskDelay(20 / portTICK_PERIOD_MS);
+            
+        }
+            */
+        vTaskDelay(20 / portTICK_PERIOD_MS);
+    }
+
+}
+
+
+
 void app_main(void)
 {
+    configure_PWM();
+    xTaskCreatePinnedToCore(pwm_task, "pwm_task", 4096, &adc_struct, 5, NULL, 1);
+
     // Initialize NVS
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
@@ -395,4 +574,6 @@ void app_main(void)
 
     example_wifi_init();
     example_espnow_init();
+
+    
 }

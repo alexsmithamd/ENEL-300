@@ -442,6 +442,13 @@
 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_wifi/CMakeFiles/install.dir
 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_wifi/CMakeFiles/install/local.dir
 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_wifi/CMakeFiles/install/strip.dir
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_driver_ledc/CMakeFiles/edit_cache.dir
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_driver_ledc/CMakeFiles/rebuild_cache.dir
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_driver_ledc/CMakeFiles/list_install_components.dir
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_driver_ledc/CMakeFiles/install.dir
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_driver_ledc/CMakeFiles/install/local.dir
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/esp_driver_ledc/CMakeFiles/install/strip.dir
 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

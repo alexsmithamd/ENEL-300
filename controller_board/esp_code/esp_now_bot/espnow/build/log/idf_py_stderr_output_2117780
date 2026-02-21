@@ -1,0 +1,27 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5.3/tools/idf_monitor.py -p /dev/ttyACM1 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/espnow_example.elf /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5.3/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyACM1 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4200721b: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/hal/esp32s3/include/hal/uart_ll.h[0m[0m:[1;31m427[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40376b5f: [0;33mlock_acquire_generic[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/locks.c[0m[0m:[1;31m145[0m
+[0m--- 0x4037b9bd: [0;33mpanic_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037b985: [0;33mesp_system_abort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40383d3d: [0;33mabort[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40376b5f: [0;33mlock_acquire_generic[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/locks.c[0m[0m:[1;31m145[0m
+[0m--- 0x40376c75: [0;33m_lock_acquire_recursive[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/locks.c[0m[0m:[1;31m174[0m
+[0m--- 0x40376d3f: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/newlib/src/locks.c[0m[0m:[1;31m333[0m
+[0m--- 0x420739b3: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m846[0m
+[0m--- 0x4206fe3d: [0;33mvprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c[0m[0m:[1;31m34[0m
+[0m--- 0x40382c77: [0;33mesp_log_va[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/log/src/log.c[0m[0m:[1;31m43[0m
+[0m--- (inlined by) [0;33mesp_log[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/log/src/log.c[0m[0m:[1;31m88[0m
+[0m--- 0x4200acc2: [0;33mexample_espnow_data_parse[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main.c[0m[0m:[1;31m180[0m
+[0m--- 0x4200b09b: [0;33mexample_espnow_task[0m[0m at [0;32m/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main.c[0m[0m:[1;31m274[0m
+[0m--- 0x4037c63d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037bb0c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

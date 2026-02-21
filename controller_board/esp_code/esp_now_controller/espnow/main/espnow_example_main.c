@@ -47,14 +47,13 @@ static void example_espnow_deinit(example_espnow_send_param_t *send_param);
 
 typedef struct {
     float raw[4];
-    float control[2];
 } adc_snap_t;
 
 // for locking the adc_struct between threads
 static portMUX_TYPE adc_struct_mux = portMUX_INITIALIZER_UNLOCKED; 
 
 
-adc_snap_t adc_struct = {{-1.0, -1.0, -1.0, -1.0}, {-1.0, -1.0}}; // init as neg
+adc_snap_t adc_struct = {{-1.0, -1.0, -1.0, -1.0}}; // init as neg
 
 /* WiFi should start before using ESPNOW */
 static void example_wifi_init(void)
@@ -533,9 +532,7 @@ static void comms_task(){
 }
 
 void app_main(void)
-{
-    
-    
+{   
     xTaskCreatePinnedToCore(adc_task, "adc_task", 4096, &adc_struct, 5, NULL, 1);
     
     comms_task();
