@@ -48,6 +48,9 @@
 #define PWM_L GPIO_NUM_15
 #define PWM_R GPIO_NUM_16
 
+#define PWM_L_CHANNEL LEDC_CHANNEL_0
+#define PWM_R_CHANNEL LEDC_CHANNEL_1
+
 #define LED_PIN 15           
 #define LEDC_CHANNEL LEDC_CHANNEL_0
 #define LEDC_TIMER LEDC_TIMER_0
@@ -449,24 +452,43 @@ static void configure_PWM(void){
     gpio_set_direction(IN3, GPIO_MODE_OUTPUT);
     gpio_set_direction(IN4, GPIO_MODE_OUTPUT);
 
-    ledc_timer_config_t ledc_timer = {
+    ledc_timer_config_t motora_timer = {
         .speed_mode = LEDC_MODE,
         .duty_resolution = LEDC_DUTY_RES,
         .timer_num = LEDC_TIMER,
         .freq_hz = LEDC_FREQUENCY
     };
-    ledc_timer_config(&ledc_timer);
 
-    // Configure LEDC channel
-    ledc_channel_config_t ledc_channel = {
-        .gpio_num = LED_PIN,
+    ledc_timer_config_t motorb_timer = {
         .speed_mode = LEDC_MODE,
-        .channel = LEDC_CHANNEL,
+        .duty_resolution = LEDC_DUTY_RES,
+        .timer_num = LEDC_TIMER,
+        .freq_hz = LEDC_FREQUENCY
+    };
+
+    ledc_timer_config(&motora_timer);
+    ledc_timer_config(&motorb_timer);
+
+
+
+    ledc_channel_config_t motora_channel = {
+        .gpio_num = PWM_L,
+        .speed_mode = LEDC_MODE,
+        .channel = PWM_L_CHANNEL,
         .timer_sel = LEDC_TIMER,
         .duty = 0
     };
 
-    ledc_channel_config(&ledc_channel);
+    ledc_channel_config_t motorb_channel = {
+        .gpio_num = PWM_R,
+        .speed_mode = LEDC_MODE,
+        .channel = PWM_R_CHANNEL,
+        .timer_sel = LEDC_TIMER,
+        .duty = 0
+    };
+
+    ledc_channel_config(&motora_channel);
+    ledc_channel_config(&motorb_channel);
 
     return;
 }
@@ -529,13 +551,49 @@ static void pwm_task(void * arg){
 
         z = z_real + z_imm*I;
 
-        
+        int duty;
 
         ESP_LOGI("","COMPLEX Values: %f %f", creal(z), cimag(z));
 
-        int duty = map(cimag(z), 0, 1.56, 0, 1023);
-        ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, duty);
-        ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+        // for the immaginary axis
+        if(cimag(z) >= 0.00){
+            // move forward
+            duty = map(cimag(z), 0, 1.56, 0, 1023);
+            gpio_set_level(IN1, 1);
+            gpio_set_level(IN2, 0);
+
+            gpio_set_level(IN3, 0);
+            gpio_set_level(IN4, 1);
+
+    
+        } else{
+            // move backwards
+            duty = map(cimag(z), 0, -1.74, 0, 1023);
+            gpio_set_level(IN1, 0);
+            gpio_set_level(IN2, 1);
+
+            gpio_set_level(IN3, 1);
+            gpio_set_level(IN4, 0);
+        }
+
+        int turn_duty_r = 0, turn_duty_l = 0;
+
+        // for the REAL axis (not fake)
+        if (creal(z) >= 0){ // turning right
+           turn_duty_r = -1.0 * map(creal(z) * 0.5, 0, 1.56, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+        } else{ // turning left
+            turn_duty_l = -1.0 * map(creal(z) * 0.5, 0, -1.74, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+        }
+        
+
+        ledc_set_duty(LEDC_MODE, PWM_L_CHANNEL, duty + turn_duty_l);
+        ledc_update_duty(LEDC_MODE, PWM_L_CHANNEL);
+
+        ledc_set_duty(LEDC_MODE, PWM_R_CHANNEL, duty + turn_duty_r);
+        ledc_update_duty(LEDC_MODE, PWM_R_CHANNEL);
+
+
+
 
         /*
         for (int duty = 0; duty <= 1023; duty += 10) {
