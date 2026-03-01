@@ -1,0 +1,10 @@
+Added Component: Designator=M1(M - DMT6007LFG-7)
+Added Pin To Net: NetName=+VBATT_F Pin=M1-1
+Added Pin To Net: NetName=+VBATT_F Pin=M1-2
+Added Pin To Net: NetName=+VBATT_F Pin=M1-3
+Added Pin To Net: NetName=RPP_G Pin=M1-4
+Added Pin To Net: NetName=+VIN Pin=M1-5
+Added Pin To Net: NetName=+VIN Pin=M1-6
+Added Pin To Net: NetName=+VIN Pin=M1-7
+Added Pin To Net: NetName=+VIN Pin=M1-8
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component M1 M - DMT6007LFG-7

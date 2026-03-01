@@ -1,0 +1,44 @@
+Change Component Designator: OldDesignator=D1 NewDesignator=D?
+Change Component Designator: OldDesignator=D2 NewDesignator=D?
+Change Component Designator: OldDesignator=DNP1 NewDesignator=DNP?
+Change Component Designator: OldDesignator=DNP2 NewDesignator=DNP?
+Change Component Designator: OldDesignator=DNP3 NewDesignator=DNP?
+Change Component Designator: OldDesignator=DNP4 NewDesignator=DNP?
+Change Component Designator: OldDesignator=F1 NewDesignator=F?
+Change Component Designator: OldDesignator=J1 NewDesignator=J?
+Change Component Designator: OldDesignator=J2 NewDesignator=J?
+Change Component Designator: OldDesignator=R1 NewDesignator=R?
+Change Component Designator: OldDesignator=R2 NewDesignator=R?
+Change Component Designator: OldDesignator=TH1 NewDesignator=TH?
+Change Component Designator: OldDesignator=TH2 NewDesignator=TH?
+Change Component Designator: OldDesignator=TH3 NewDesignator=TH?
+Change Component Designator: OldDesignator=TH4 NewDesignator=TH?
+Change Component Designator: OldDesignator=TP1 NewDesignator=TP?
+Change Component Designator: OldDesignator=TP2 NewDesignator=TP?
+Change Component Designator: OldDesignator=TP3 NewDesignator=TP?
+Change Component Designator: OldDesignator=TP4 NewDesignator=TP?
+Change Component Designator: OldDesignator=TP5 NewDesignator=TP?
+Change Component Designator: OldDesignator=TP6 NewDesignator=TP?
+Change Component Designator: OldDesignator=TP7 NewDesignator=TP?
+Change Component Designator: OldDesignator=TP8 NewDesignator=TP?
+Added Component: Designator=F?(F - 3568)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=F?(F - 3568)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=NetD1_1 New Net Name=NetD?_1
+Change Net Name : Old Net Name=NetD2_1 New Net Name=NetD?_1
+Change Net Name : Old Net Name=NetDNP1_1 New Net Name=NetDNP?_1
+Change Net Name : Old Net Name=NetDNP2_1 New Net Name=NetDNP?_1
+Change Net Name : Old Net Name=NetDNP3_1 New Net Name=NetDNP?_1
+Change Net Name : Old Net Name=NetDNP4_1 New Net Name=NetDNP?_1
+Added Pin To Net: NetName=NetF?_1 Pin=F?-1
+Added Pin To Net: NetName=NetF?_1 Pin=F?-3
+Added Net: Name=NetF?_1
+Add Net: Net with name "NetF?_1" already exists
+Added Pin To Net: NetName=NetF?_2 Pin=F?-2
+Added Pin To Net: NetName=NetF?_2 Pin=F?-4
+Added Net: Name=NetF?_2
+Add Net: Net with name "NetF?_2" already exists
+Added Member To Class: ClassName=top_level Member=Component F? F -3568
+Added Member To Class: ClassName=top_level Member=Component F? F -3568
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole

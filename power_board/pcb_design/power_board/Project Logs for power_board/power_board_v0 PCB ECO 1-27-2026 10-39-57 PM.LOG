@@ -1,0 +1,51 @@
+Change Footprint: Footprint Not Found D - ESD321DYAR
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetD?_2" already exists
+Add Net: Net with name "NetF?_1" already exists
+Add Net: Net with name "NetF?_2" already exists
+Change Class Name : Old Net Name=U_ldo_3v3 New Net Name=U_buck_converter
+Added Class: Name=U_ldo_3v3
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 10nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? CAP CER 220nF 50V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E106KA73L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=top_level Member=Component D? D - CUHZ5V6,H3F
+Added Member To Class: ClassName=top_level Member=Component D? D - ESD321DYAR
+Added Member To Class: ClassName=top_level Member=Component D? D - LTST-C193KRKT-5A
+Added Member To Class: ClassName=top_level Member=Component D? D - LTST-C193KRKT-5A
+Added Member To Class: ClassName=top_level Member=Component D? D - LTST-C193KRKT-5A
+Added Member To Class: ClassName=top_level Member=Component D? D - SMAJ15CA
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component F? F -3568
+Added Member To Class: ClassName=top_level Member=Component F? F -3568
+Added Member To Class: ClassName=top_level Member=Component J? Copy of SMTC-TSW-106-07-X-D_1
+Added Member To Class: ClassName=top_level Member=Component J? Copy of SMTC-TSW-106-07-X-D_1
+Added Member To Class: ClassName=U_buck_converter Member=Component L? SRN8040-3R3Y
+Added Member To Class: ClassName=top_level Member=Component R? ERJ-PB3B1001V
+Added Member To Class: ClassName=top_level Member=Component R? R - RES 100R 0.33W 5% 0603
+Added Member To Class: ClassName=top_level Member=Component R? R - RES 100R 0.33W 5% 0603
+Added Member To Class: ClassName=top_level Member=Component R? R - RES 100R 0.33W 5% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component R? RC0603FR-07121KL
+Added Member To Class: ClassName=U_buck_converter Member=Component R? ERJ-3EKF2212V
+Added Member To Class: ClassName=U_buck_converter Member=Component R? R - RES 10kR 0.1W 1% 0603
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)

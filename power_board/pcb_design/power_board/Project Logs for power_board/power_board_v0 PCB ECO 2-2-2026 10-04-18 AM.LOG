@@ -1,0 +1,7 @@
+Added Component: Designator=U3(U - LM74500QDDFRQ1)
+Added Pin To Net: NetName=RPP_EN Pin=U3-1
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=RPP_VC Pin=U3-4
+Added Pin To Net: NetName=+VBATT_F Pin=U3-5
+Added Pin To Net: NetName=RPP_G Pin=U3-6
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component U3 U - LM74500QDDFRQ1

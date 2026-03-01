@@ -1,0 +1,186 @@
+Added Component: Designator=C?(CAP_0603)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP_0603)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP_0603)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP_0603)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP 0805)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP 0805)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP 0805)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP 0805)
+Add component (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Added Component: Designator=DNP?(DNP 0603)
+Added Component: Designator=DNP?(DNP 0603)
+Added Component: Designator=L?(L - SRN8040-3R3Y)
+Add component (AddParameter): Name = "Value"; Value = "3.3uH"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RES 0603)
+Add component (AddParameter): Name = "Value"; Value = "22.1k"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RES 0603)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RES 0603)
+Add component (AddParameter): Name = "Value"; Value = "121k"; VariantName = "[No Variations]"
+Added Component: Designator=TP?(TP - SMD Pad Testpoint)
+Added Component: Designator=TP?(5008 - Keystone Compact Footprint)
+Added Component: Designator=TP?(5008 - Keystone Compact Footprint)
+Added Component: Designator=TP?(5008 - Keystone Compact Footprint)
+Added Component: Designator=U?(U - TPS54327DDAR MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "SOIC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Voltage Regulators - Switching"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://sigma.octopart.com:443/104526336/technical_drawing/Texas-Instruments-TPS54327DDAR.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://sigma.octopart.com:443/104526336/technical_drawing/Texas-Instruments-TPS54327DDAR.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://octopart.com:443/opatz8j6/c1?t=__oNFOOaapSnVhz0JflxbbROEjMn8qx0VggcesLOsXVm1qBAI6HAgPyurjCw25N1bkmQFW9yPGBgGx0-OV6a1qCNd9haLjfDrSeyB36yHi6CHhDXm-X7AM3shTtTS0K4ufWLPGM9035tvF3WY9KNnW27Vhg7gZVrUz3zgjZoNzKmWPY3h9s6FdGiccB1hjyl0IMgFUWajN9-O9PJGonuZiqlYX9N7MFFrv_aEWgd4nLGzrjzb1ZMCAGS7na2gkf_w1DNitacGewcJ7_jjdbNMF49miKa1GomPL32h1pk-zJMmO4U7WZEuJMSZzz263ggCOI6NALWkgBSsXKod034_KSXhjmHQ1neP2H1Fy7hs0iEIe6iEpO48cB1RbMREqoeTuPL-udS&src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://octopart.com:443/opatz8j6/c1?t=__oNFOOaapSnVhz0JflxbbROEjMn8qx0VggcesLOsXVm1qBAI6HAgPyurjCw25N1bkmQFW9yPGBgGx0-OV6a1qCNd9haLjfDrSeyB36yHi6CHhDXm-X7AM3shTtTS0K4ufWLPGM9035tvF3WY9KNnW27Vhg7gZVrUz3zgjZoNzKmWPY3h9s6FdGiccB1hjyl0IMgFUWajN9-O9PJGonuZiqlYX9N7MFFrv_aEWgd4nLGzrjzb1ZMCAGS7na2gkf_w1DNitacGewcJ7_jjdbNMF49miKa1GomPL32h1pk-zJMmO4U7WZEuJMSZzz263ggCOI6NALWkgBSsXKod034_KSXhjmHQ1neP2H1Fy7hs0iEIe6iEpO48cB1RbMREqoeTuPL-udS&src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-37740753.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-37740753.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-16054356.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-16054356.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-10669736.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-10669736.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://sigma.octopart.com:443/49250132/technical_drawing/Texas-Instruments-TPS54327DDAR.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://sigma.octopart.com:443/49250132/technical_drawing/Texas-Instruments-TPS54327DDAR.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-10254758.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-10254758.pdf?src-supplier=Texas+Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-33022096.pdf?src-supplier=Upverter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-33022096.pdf?src-supplier=Upverter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-17023036.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-17023036.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-62089011.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-62089011.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-62336983.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-62336983.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-66617763.pdf?src-supplier=element14+APAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-66617763.pdf?src-supplier=element14+APAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-62292587.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-62292587.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink14Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-165804759.pdf?src-supplier=LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink14URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-165804759.pdf?src-supplier=LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink15Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-159590145.pdf?src-supplier=LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink15URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-159590145.pdf?src-supplier=LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink16Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-137316104.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink16URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-137316104.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink17Description"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-14168096.pdf?src-supplier=iiiC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink17URL"; Value = "https://datasheet.octopart.com:443/TPS54327DDAR-Texas-Instruments-datasheet-14168096.pdf?src-supplier=iiiC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink18Description"; Value = "http://sigma.octopart.com:80/reach_statement/Texas-Instruments-company-64.pdf?src-supplier=Compliance+Statements"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink18URL"; Value = "http://sigma.octopart.com:80/reach_statement/Texas-Instruments-company-64.pdf?src-supplier=Compliance+Statements"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink19Description"; Value = "http://sigma.octopart.com:80/conflict_mineral_statement/Texas-Instruments-company-63.pdf?src-supplier=Compliance+Statements"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink19URL"; Value = "http://sigma.octopart.com:80/conflict_mineral_statement/Texas-Instruments-company-63.pdf?src-supplier=Compliance+Statements"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "4.89mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Lifecycle Status"; Value = "ACTIVE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "TPS54327DDAR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Duty Cycle"; Value = "65%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Junction Temperature (Tj)"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Output current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Output Voltage"; Value = "7V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "18V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Input Voltage"; Value = "4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Output Voltage"; Value = "760mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Supply Voltage"; Value = "4.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Outputs"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "18V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Adjustable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "7V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing"; Value = "1=0.6794, 10=0.6274, 25=0.6062, 100=0.5869, 250=0.5746, 500=0.5667, 1000=0.5659 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Quiescent Current"; Value = "800µA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schedule B"; Value = "8542390000, 8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|8542390000|85"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock"; Value = "1279"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Arrow Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number"; Value = "TPS54327DDAR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switching Frequency"; Value = "700kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Synchronous Rectifier"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "1.48mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Topology"; Value = "Buck"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "3.9mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=+5V Pin=C?-2
+Added Pin To Net: NetName=+5V Pin=C?-2
+Added Pin To Net: NetName=+VIN Pin=C?-2
+Added Pin To Net: NetName=+VIN Pin=C?-2
+Added Pin To Net: NetName=+VIN Pin=C?-2
+Added Pin To Net: NetName=GND Pin=DNP?-1
+Added Pin To Net: NetName=GND Pin=DNP?-1
+Added Pin To Net: NetName=+5V Pin=DNP?-2
+Added Pin To Net: NetName=+5V Pin=L?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=+5V Pin=R?-2
+Added Pin To Net: NetName=+VIN Pin=R?-2
+Added Pin To Net: NetName=+5V Pin=TP?-1
+Added Pin To Net: NetName=GND Pin=TP?-1
+Added Pin To Net: NetName=GND Pin=U?-5
+Added Pin To Net: NetName=+VIN Pin=U?-8
+Added Pin To Net: NetName=GND Pin=U?-9
+Add Net: Net with name "NetC?_1" already exists
+Added Pin To Net: NetName=NetC?_2 Pin=C?-2
+Added Pin To Net: NetName=NetC?_2 Pin=U?-4
+Added Net: Name=NetC?_2
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetC?_2" already exists
+Add Net: Net with name "NetD?_1" already exists
+Add Net: Net with name "NetDNP?_1" already exists
+Add Net: Net with name "NetDNP?_2" already exists
+Added Class: Name=U_buck_converter
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component C? CAP CER 220nF 50V 10% 0603
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component C? CAP CER 220nF 50V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=top_level Member=Component D? D - General 5mm THT LED
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component J? Copy of SMTC-TSW-106-07-X-D_1
+Added Member To Class: ClassName=top_level Member=Component R? R - General THT Resistor
+Added Member To Class: ClassName=top_level Member=Component R? R - General THT Resistor
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component R? R - RES 10kR 0.1W 1% 0603
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component TP? TP - SMD Pad Testpoint-Symbol-1
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component U? TLV75733PDBVR
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component U? U - LM74500QDDFRQ1

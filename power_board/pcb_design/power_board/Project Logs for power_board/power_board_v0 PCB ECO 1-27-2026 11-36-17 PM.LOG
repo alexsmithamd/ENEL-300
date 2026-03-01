@@ -1,0 +1,12 @@
+Removed Member From Class: ClassName=top_level Member=+3V3
+Removed Member From Class: ClassName=U_reverse_polarity_protection Member=C4
+Removed Member From Class: ClassName=U_ldo_3v3 Member=DNP3
+Removed Member From Class: ClassName=U_buck_converter Member=R5
+Removed Member From Class: ClassName=U_reverse_polarity_protection Member=U1
+Added Member To Class: ClassName=top_level Member=Component +3V3F TP - 5008 (Compact)
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C11 C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component DNP11 DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component J1 Copy of SMTC-TSW-106-07-X-D_1
+Added Member To Class: ClassName=U_buck_converter Member=Component R3 RC0603FR-07121KL
+Added Member To Class: ClassName=top_level Member=Component TH4 TH - M3 Mounting Hole
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component U3 U - LM74500QDDFRQ1

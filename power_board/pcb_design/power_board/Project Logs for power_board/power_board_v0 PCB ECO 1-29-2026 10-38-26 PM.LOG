@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=+VBATT_F Pin=RPEN?-1
+Removed Member From Class: ClassName=U_reverse_polarity_protection Member=RPEN?
+Added Component: Designator=RPEN(TP - SMD Pad Testpoint)
+Added Pin To Net: NetName=+VBATT_F Pin=RPEN-1
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component RPEN TP - SMD Pad Testpoint-Symbol-1

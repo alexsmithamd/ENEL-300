@@ -23,7 +23,7 @@ def buck_converter_calcs():
     bottom_resistor = 22.1e3
     indcutor = 3.3e-6
     VOUT = 5
-    max_input_voltage = 14
+    max_input_voltage = 14 # 
 
 
     soft_start_time = cf.buck_eq_1_soft_start_cap(soft_start_cap)

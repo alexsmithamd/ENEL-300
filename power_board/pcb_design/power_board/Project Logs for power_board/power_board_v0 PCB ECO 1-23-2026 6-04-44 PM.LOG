@@ -1,0 +1,31 @@
+Added Component: Designator=TP?(TP - SMD Pad Testpoint)
+Added Pin To Net: NetName=NetM?_4 Pin=TP?-1
+Change Class Name : Old Net Name=U_ldo_3v3 New Net Name=U_buck_converter
+Added Class: Name=U_ldo_3v3
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 10nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? CAP CER 220nF 50V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E106KA73L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component L? SRN8040-3R3Y
+Added Member To Class: ClassName=U_buck_converter Member=Component R? R - RES 10kR 0.1W 1% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component R? ERJ-3EKF2212V
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - SMD Pad Testpoint-Symbol-1
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component TP? TP - SMD Pad Testpoint-Symbol-1

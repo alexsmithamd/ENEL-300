@@ -1,0 +1,48 @@
+Added Component: Designator=D?(D - General 5mm LED footprint)
+Added Component: Designator=D?(D - General 5mm LED footprint)
+Added Component: Designator=R?(R - General THT Resistor)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R?(R - General THT Resistor)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D?-2
+Added Pin To Net: NetName=GND Pin=D?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-1
+Added Pin To Net: NetName=+5V Pin=R?-1
+Add Net: Net with name "NetC?_1" already exists
+Added Pin To Net: NetName=NetD?_1 Pin=D?-1
+Added Pin To Net: NetName=NetD?_1 Pin=R?-2
+Added Net: Name=NetD?_1
+Add Net: Net with name "NetD?_1" already exists
+Change Class Name : Old Net Name=U_ldo_3v3 New Net Name=U_buck_converter
+Added Class: Name=U_ldo_3v3
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? C - CAP CER 10nF 100V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? CAP CER 220nF 50V 10% 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E106KA73L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_buck_converter Member=Component C? GRM21BR61E226ME44L
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=U_reverse_polarity_protection Member=Component C? C - CAP CER 100nF 100V 10% 0603
+Added Member To Class: ClassName=top_level Member=Component D? D - General 5mm THT LED
+Added Member To Class: ClassName=top_level Member=Component D? D - General 5mm THT LED
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=top_level Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component DNP? DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_buck_converter Member=Component L? SRN8040-3R3Y
+Added Member To Class: ClassName=top_level Member=Component R? R - General THT Resistor
+Added Member To Class: ClassName=top_level Member=Component R? R - General THT Resistor
+Added Member To Class: ClassName=U_buck_converter Member=Component R? ERJ-3EKF2212V
+Added Member To Class: ClassName=U_buck_converter Member=Component R? R - RES 10kR 0.1W 1% 0603
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TH? TH - M3 Mounting Hole
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - 5008 (Compact)
+Added Member To Class: ClassName=U_buck_converter Member=Component TP? TP - SMD Pad Testpoint-Symbol-1

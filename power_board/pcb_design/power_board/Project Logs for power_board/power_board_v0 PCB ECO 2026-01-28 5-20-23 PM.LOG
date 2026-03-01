@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=+3V3F NewDesignator=+3V3O
+Change Component Designator: OldDesignator=+5VF NewDesignator=+5VO
+Added Pin To Net: NetName=+3V3 Pin=+3V3O-1
+Added Pin To Net: NetName=+5V Pin=+5VO-1
+Added Member To Class: ClassName=top_level Member=Component GND4 TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component GND5 TP - 5008 (Compact)

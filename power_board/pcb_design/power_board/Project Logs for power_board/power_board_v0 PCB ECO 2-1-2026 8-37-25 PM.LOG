@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=LDO_EN Pin=LDEN-1
+Removed Member From Class: ClassName=U_ldo_3v3 Member=LDEN
+Added Component: Designator=LDOEN(TP - SMD Pad Testpoint)
+Added Pin To Net: NetName=LDO_EN Pin=LDOEN-1
+Added Member To Class: ClassName=U_ldo_3v3 Member=Component LDOEN TP - SMD Pad Testpoint-Symbol-1

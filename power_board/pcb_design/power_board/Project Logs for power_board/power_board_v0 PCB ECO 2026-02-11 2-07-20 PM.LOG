@@ -1,0 +1,3 @@
+Added Component: Designator=GND6(5008 - Keystone Compact Footprint)
+Added Pin To Net: NetName=GND Pin=GND6-1
+Added Member To Class: ClassName=top_level Member=Component GND6 TP - 5008 (Compact)

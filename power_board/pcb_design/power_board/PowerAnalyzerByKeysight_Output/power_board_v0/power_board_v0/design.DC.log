@@ -1,0 +1,32 @@
+
+Starting the DC solver at Tue Feb 10 20:09:02 2026
+Creating the DC design
+..parsing the options file 
+..using NUMBER_OF_PROCESSORS = 16
+..parsing the layout file 
+..parsing the stimulus file 
+..extracting the connectivity 
+..extracting the substrate 
+Initializing electric analysis
+Electric analysis
+..loading the electric component models
+..electric matrix size: 362611
+..loading the electric matrix equation
+..solving the electric matrix equation
+.........|.........|.........|.........|
+..max voltage: 10.9935
+..writing the output files
+Electric N-port analysis
+..number of ports: 3
+..loading the electric component models
+..electric matrix size: 362611
+..loading the electric matrix equation
+..solving the electric matrix equation
+.........|.........|.........|.........|
+..writing the model file
+DC solver resources
+..elapsed time: 9.8 s
+..user time: 26.3 s
+..physical memory: 672 MB
+..virtual memory: 965 MB
+

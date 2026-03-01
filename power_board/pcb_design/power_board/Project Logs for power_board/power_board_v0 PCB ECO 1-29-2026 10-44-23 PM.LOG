@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=GND7-1
+Removed Pin From Net: NetName=GND Pin=GND8-1
+Removed Member From Class: ClassName=U_ldo_3v3 Member=+3V3
+Removed Member From Class: ClassName=U_buck_converter Member=+5V
+Removed Member From Class: ClassName=U_buck_converter Member=GND7
+Removed Member From Class: ClassName=U_ldo_3v3 Member=GND8
+Added Component: Designator=GND4(5008 - Keystone Compact Footprint)
+Added Component: Designator=GND5(5008 - Keystone Compact Footprint)
+Added Pin To Net: NetName=GND Pin=GND4-1
+Added Pin To Net: NetName=GND Pin=GND5-1
+Added Member To Class: ClassName=top_level Member=Component +3V3 TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component +5V TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component GND4 TP - 5008 (Compact)
+Added Member To Class: ClassName=top_level Member=Component GND5 TP - 5008 (Compact)
