@@ -77,7 +77,7 @@ AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -150,6 +150,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SHHCOATY
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for motor_board\Move Component(s) Origin To Grid - motor_board.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -1112,7 +1116,7 @@ GlobalIndexSortLocation=0
 
 [PrjClassGen]
 CompClassManualEnabled=1
-CompClassManualRoomEnabled=1
+CompClassManualRoomEnabled=0
 NetClassAutoBusEnabled=1
 NetClassAutoCompEnabled=0
 NetClassAutoNamedHarnessEnabled=0

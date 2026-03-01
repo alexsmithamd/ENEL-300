@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_1 Pin=J3-1
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_1 Pin=J3-2
+Removed Pin From Net: NetName=MOTOR_2_OUT_2_1 Pin=J6-1
+Removed Pin From Net: NetName=MOTOR_2_OUT_1_1 Pin=J6-2
+Add component: Footprint Not Found D - DF2B5M4CT,L3F
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Added Pin To Net: NetName=MOTOR_1_OUT_1_1 Pin=J3-1
+Added Pin To Net: NetName=MOTOR_1_OUT_2_1 Pin=J3-2
+Added Pin To Net: NetName=MOTOR_2_OUT_1_1 Pin=J6-1
+Added Pin To Net: NetName=MOTOR_2_OUT_2_1 Pin=J6-2
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Add Class Member: Failed to add class member : Component D1 D - DF2B5M4CT,L3F

@@ -1,0 +1,59 @@
+Move Component(s) Origin to Grid
+Filename     : E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc
+Date         : 3/1/2026
+Time         : 3:06:23 PM
+Time Elapsed : 00:00:00
+
+
+    Component U1_2-DRV8251ADDAR (10675mil,1545mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Component U1_1-DRV8251ADDAR (10495mil,2045mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component TH4-TH - M3 Mounting Hole (12595mil,1145mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component TH3-TH - M3 Mounting Hole (12260mil,1145mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component TH2-TH - M3 Mounting Hole (11930mil,1145mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component TH1-TH - M3 Mounting Hole (11595mil,1145mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R3_2-R - RES 620R 0.33W 1% 0603 (8485mil,1495mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R3_1-R - RES 620R 0.33W 1% 0603 (8405mil,1995mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R2-R - RES 220R 0.33W 1% 0603 (11345mil,1035mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R1-ERJ-PB3B1001V (11175mil,1035mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MO2_2-TP - SMD Pad Test Point Circular (9190mil,1460mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MO2_1-TP - SMD Pad Test Point Circular (9090mil,1960mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MO1_2-TP - SMD Pad Test Point Circular (10900mil,1460mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MO1_1-TP - SMD Pad Test Point Circular (10720mil,1960mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MIS_2-SMD Pad Testpoint Rectangular (Signal) (9520mil,1455mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MIS_1-SMD Pad Testpoint Rectangular (Signal) (9400mil,1955mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MI2_2-SMD Pad Testpoint Rectangular (Signal) (9865mil,1455mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MI2_1-SMD Pad Testpoint Rectangular (Signal) (9725mil,1955mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MI1_2-SMD Pad Testpoint Rectangular (Signal) (10205mil,1455mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component MI1_1-SMD Pad Testpoint Rectangular (Signal) (10045mil,1955mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component J6-J - 1990009 (12970mil,1015mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component J5-Copy of SMTC-TSW-106-07-X-D_1 (12850mil,1235mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component J4-J - 1990009 (13295mil,1015mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component J3-J - 1990009 (13810mil,1015mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component J2-Copy of SMTC-TSW-106-07-X-D_1 (14360mil,1235mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component J1-Copy of SMTC-TSW-106-07-X-D_1 (14190mil,1235mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component GND?-TP - 5008 (Compact) (7520mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component GND3-TP - 5008 (Compact) (8200mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component GND2-TP - 5008 (Compact) (10300mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component GND1-TP - 5008 (Compact) (10900mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP6_2-DNP - DNP PAD 0603 (7495mil,1495mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP6_1-DNP - DNP PAD 0603 (7475mil,1995mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP5_2-DNP - DNP PAD 0603 (7085mil,1495mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP5_1-DNP - DNP PAD 0603 (7085mil,1995mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP4-DNP - DNP PAD 0603 (9655mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP3-DNP - DNP PAD 0603 (9365mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP2-DNP - DNP PAD 0603 (9075mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component DNP1-DNP - DNP PAD 0603 (8805mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component D4-D - LTST-C193KRKT-5A (8635mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component D3-D - LTST-C193KRKT-5A (8465mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component D2-D - SMAJ15CA (13680mil,1170mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C3_2-C - CAP CER 100nF 100V 10% 0603 (8195mil,1495mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C3_1-C - CAP CER 100nF 100V 10% 0603 (8135mil,1995mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_2-C - CAP CER 100nF 100V 10% 0603 (7905mil,1495mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_1-C - CAP CER 100nF 100V 10% 0603 (7865mil,1995mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C1_2-860020574012 (8910mil,1605mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C1_1-860020574012 (8810mil,2105mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component +11V2-TP - 5008 (Compact) (9970mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component +11V1-TP - 5008 (Compact) (10590mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component +3V3_2-TP - 5008 (Compact) (7105mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component +3V3_1-TP - 5008 (Compact) (7810mil,1055mil) on Top Layer - Component pads are OFF grid. No action taken.
+count : 51
