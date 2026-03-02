@@ -39,7 +39,7 @@ static void adc_init(void) {
 
     adc_oneshot_chan_cfg_t chan_cfg = {
         .bitwidth = ADC_BITWIDTH_DEFAULT,
-        .atten = ADC_ATTEN_DB_11, 
+        .atten = ADC_ATTEN_DB_12, 
     };
 
     // for the ESP32-C3 the GPIO0 corresponds to the ADC_CHANNEL_0 on ADC_UNIT_1 to check for uncertainty
