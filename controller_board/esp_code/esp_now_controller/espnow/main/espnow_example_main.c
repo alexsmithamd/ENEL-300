@@ -258,6 +258,7 @@ static void adc_task(void* arg){ // argument must be a void pointer, why?
 
                     float Vref = 3.3;
 
+                    
                     float voltage_x1 = ((float)values[0] / 4095.0) * Vref;
                     temp.raw[0] = voltage_x1;
 

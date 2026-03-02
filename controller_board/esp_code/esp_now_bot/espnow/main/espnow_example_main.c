@@ -580,9 +580,29 @@ static void pwm_task(void * arg){
 
         // for the REAL axis (not fake)
         if (creal(z) >= 0){ // turning right
-           turn_duty_r = -1.0 * map(creal(z) * 0.5, 0, 1.56, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+           turn_duty_r = -1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+           if (duty == 0){
+            turn_duty_r = 1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023);
+
+            // need to flip rotation
+            
+                    gpio_set_level(IN1, 0);
+            gpio_set_level(IN2, 1);
+
+            gpio_set_level(IN3, 0);
+            gpio_set_level(IN4, 1);
+
+            turn_duty_l = 1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023);
+           }
         } else{ // turning left
-            turn_duty_l = -1.0 * map(creal(z) * 0.5, 0, -1.74, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+            turn_duty_l = -1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+            if(duty == 0){
+                turn_duty_l = 1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023);
+
+                gpio_set_level(IN3, 1);
+                gpio_set_level(IN4, 0);
+                turn_duty_r = 1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023);
+            }
         }
         
 

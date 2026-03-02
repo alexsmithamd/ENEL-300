@@ -1,343 +1,157 @@
 # ninja log v5
+2464	2857	1771577861471247900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj	c3950af08a5b92bf
+1557	2284	1771577860897964400	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj	b1e913380b686f0c
+404	784	1771577859376375600	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj	b5b1d7f72e60028d
+207	562	1771577859186382900	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj	9d16b4c5ba68b392
+2291	2741	1771577861300826600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj	6c70c380776a4cac
+1086	1877	1771577860502474300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj	995a726cbb0b7e9
+4145	4631	1771577863240253800	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj	771b21329cbf87d4
+4353	4599	1771577863223064500	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj	5d20f22c6742d307
+2145	2518	1771577861132533200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj	31ccc72ce21466a0
+1004	1701	1771577860315304400	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj	a08771dda98381f9
+1125	2091	1771577860715426900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj	f51e6a0815d61ed2
+824	1003	1771577859613295000	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.obj	3baecd1884ef06f5
+1718	2456	1771577861070944100	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj	e04db9694c52f72c
+1469	1718	1771577860343858200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj	afc84505a96ef6af
+723	972	1771577859596033300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj	18f1514a5b0a0668
+2694	3315	1771577861938820900	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj	26edad6e0db0b452
+2084	2546	1771577861168459300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj	874b1f914e02a8e8
+29	58	1771560146621776900	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/project_elf_src_esp32s3.c	8a9852a7bcea9e8d
+3659	4469	1771577863094470000	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj	d1286f8c9a74f2a3
+1666	2144	1771577860772082800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj	c419122e35fead91
+2097	3019	1771577861643516400	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj	e261aff80ba92e5b
+4759	4895	1771577863516678500	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj	80576754aca35c65
+1296	1552	1771577860179053600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj	feda8188b62f59f9
+203	334	1771577858962079700	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj	84119871ea5a930a
+996	1757	1771577860384057800	esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj	60263b248b859c1
+1878	2176	1771577860802129100	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj	5135701c5d93efa0
+6281	6410	1771577865037627600	esp-idf/efuse/libefuse.a	c661dff9fa88ab94
+3671	4625	1771577863233694300	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj	260b6b2f440fde12
+963	1468	1771577860093478600	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj	de736069b7689f42
+8125	8227	1771577866855755900	esp-idf/main/libmain.a	573732df9f8fac7c
+215	461	1771577859069622600	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj	b328d3a23a4a2ea3
+386	718	1771577859346108400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj	372337b008907d53
+1149	1666	1771577860254462300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj	cbfd0424201394e3
+188	302	1771577858920283700	CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj	4f0fecc868f8701e
+1008	1301	1771577859927429200	esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj	98c82ac119b4693d
+927	1140	1771577859754482600	esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj	a95ad7be278de688
+200	398	1771577859010678100	esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj	7637787ac93eb8e8
+553	821	1771577859387905800	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj	4991478657cf7534
+310	485	1771577859093052200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj	68e6552a3442cb6c
+872	1085	1771577859708154500	esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj	2473b708ef6e83bc
+812	1121	1771577859741823700	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj	a40601312e363bdd
+210	472	1771577859088174200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj	d6c120a99e1a8f70
+5358	5650	1771577864272119900	esp-idf/log/liblog.a	e229a85d404d693f
+2733	3221	1771577861844737300	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj	96bacde5b3806119
+497	808	1771577859377528100	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj	cb7ba7987f8b0c62
+829	1008	1771577859617651400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj	ca79428ec0d7136
+3322	3917	1771577862541397500	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj	86c76dbe72b1601b
+2178	2721	1771577861295161900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj	db3465874be95d8c
+562	831	1771577859427366200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj	612e33a5763fb6c4
+3225	4127	1771577862750731800	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj	3be8fa1b305b4227
+214	476	1771577859096504500	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj	6b0eeaf0240b1241
+192	495	1771577859117788700	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj	590f4753b78efba5
+2546	3088	1771577861716234200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj	b1f3e99ad343be21
+202	383	1771577858998882500	esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj	438d5cc3364e1d01
+1301	1785	1771577860409274200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj	d6e84b233811b80a
+954	1296	1771577859921829300	esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj	5179d59cd53b4a09
+5651	5923	1771577864548469300	esp-idf/esp_rom/libesp_rom.a	7a185238e47cec7b
+768	869	1771577859486137200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj	6e0ec8975abbf718
+1660	2053	1771577860672988800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj	2004162018f5d232
+789	991	1771577859618183300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj	4459f661cb2970a6
+6037	6193	1771577864819427900	esp-idf/esp_hw_support/libesp_hw_support.a	e4cd8d4edcedb5f9
+334	746	1771577859352869100	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj	24ae75547f3d9b4
+4897	5218	1771577863844145400	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj	c8d97ab126fc3494
+479	797	1771577859400760200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj	bb7acfb0b4f20d01
+1758	2671	1771577861274206900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj	ecadc65867530319
+837	2084	1771577860698358200	esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj	72dae9caf4ab649b
+988	1613	1771577860219250100	esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj	49a72ff365dd4932
+3089	3759	1771577862376877200	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj	e439d917b3a2ecd0
+780	922	1771577859545275900	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj	a29976b697cefce4
+190	361	1771577858989588600	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj	90cd9886477e7780
+8228	9897	1771577868496682200	bootloader.elf	71fdf3eda5d93ff4
+3640	4442	1771577863069854900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj	6a80e92b663d4431
+2664	3325	1771577861942291200	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj	3ff6c9dc94f09b41
+4669	4936	1771577863564586200	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj	7c8c4f14468efa28
+6	2673	1772056270181335500	build.ninja	f3a6f8c998cb4ba9
+4474	4904	1771577863530975300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj	35db80f4fdb2191d
+4613	4717	1771577863337713800	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj	1545fd76ea6c04e4
+5924	6037	1771577864664390200	esp-idf/esp_common/libesp_common.a	ba1b345153786638
+3520	5256	1771577863880669400	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj	36b5d18d7f0f1621
+9898	10578	1771577869207059600	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/.bin_timestamp	eb5f368cf049c31d
+3316	3670	1771577862299034400	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj	3aaaaf4b396e7a38
+3922	5231	1771577863844759300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj	8e5a95d4ec05e634
+4470	4767	1771577863378843300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj	bfe4ecc6f571f523
+2525	3743	1771577862368405200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj	7fb9eb009d975bd6
+4517	5134	1771577863760513500	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj	fb7d22764be5a8ad
+4936	5272	1771577863889756900	esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj	294c220b453193dd
 748	938	1771577859555884500	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj	2115f96a82f26cab
 3352	3683	1771577862309085200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj	a14e6683687838f0
-7023	7216	1771577865841741000	esp-idf/spi_flash/libspi_flash.a	1096de6a044a5e5d
-4720	5346	1771577863968472100	esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj	98c1ad6a4293b32c
-7223	7358	1771577865985791000	esp-idf/hal/libhal.a	b7103aa0b94761d1
-4268	4665	1771577863293322000	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj	f2b390acbcb0f6f1
-4629	5166	1771577863771202100	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj	1ffaad2667eed03a
-3694	4144	1771577862760463800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj	7596c25a50013b50
-6881	7023	1771577865652095500	esp-idf/esp_bootloader_format/libesp_bootloader_format.a	99ea1b29a9c67304
 6193	6280	1771577864909800300	esp-idf/esp_system/libesp_system.a	32f28b91dbe15bdf
 2863	3599	1771577862220688900	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj	67aecc5ad3c11ea2
 7622	8047	1771577866672135100	esp-idf/soc/libsoc.a	2982debe4b2ede25
+4720	5346	1771577863968472100	esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj	98c1ad6a4293b32c
+7023	7216	1771577865841741000	esp-idf/spi_flash/libspi_flash.a	1096de6a044a5e5d
+6881	7023	1771577865652095500	esp-idf/esp_bootloader_format/libesp_bootloader_format.a	99ea1b29a9c67304
+3694	4144	1771577862760463800	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj	7596c25a50013b50
+4629	5166	1771577863771202100	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj	1ffaad2667eed03a
+7223	7358	1771577865985791000	esp-idf/hal/libhal.a	b7103aa0b94761d1
+4268	4665	1771577863293322000	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj	f2b390acbcb0f6f1
 4135	4268	1771577862897023300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj	28b4b2068ca71af4
-4936	5272	1771577863889756900	esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj	294c220b453193dd
-4517	5134	1771577863760513500	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj	fb7d22764be5a8ad
-2525	3743	1771577862368405200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj	7fb9eb009d975bd6
-4470	4767	1771577863378843300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj	bfe4ecc6f571f523
-3922	5231	1771577863844759300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj	8e5a95d4ec05e634
-3316	3670	1771577862299034400	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj	3aaaaf4b396e7a38
-3520	5256	1771577863880669400	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj	36b5d18d7f0f1621
-5924	6037	1771577864664390200	esp-idf/esp_common/libesp_common.a	ba1b345153786638
-4613	4717	1771577863337713800	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj	1545fd76ea6c04e4
-9898	10578	1771577869207059600	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/.bin_timestamp	eb5f368cf049c31d
-4474	4904	1771577863530975300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj	35db80f4fdb2191d
-12	9295	1771625382862169200	build.ninja	f3a6f8c998cb4ba9
-4669	4936	1771577863564586200	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj	7c8c4f14468efa28
-2664	3325	1771577861942291200	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj	3ff6c9dc94f09b41
-3640	4442	1771577863069854900	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj	6a80e92b663d4431
-8228	9897	1771577868496682200	bootloader.elf	71fdf3eda5d93ff4
 2056	3350	1771577861969312200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj	f69412bf62ef47b9
 4443	4740	1771577863363416300	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj	3b2a20193a38ee24
 6411	6881	1771577865510818900	esp-idf/bootloader_support/libbootloader_support.a	d3e7df7ea623087a
 3326	3657	1771577862285532200	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj	4b0d1eeb1593db92
 1702	2660	1771577861271857400	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj	54186e962cd2a7c7
 4466	4516	1771577863144863800	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj	5c832d4cdaa4a639
+21	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 3400	3638	1771577862266706700	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj	72acc4bc67219867
 1786	3321	1771577861938959800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj	2be73b5b2bbf4c76
-7358	7622	1771577866243075800	esp-idf/micro-ecc/libmicro-ecc.a	a0bccaee3e497f57
 3601	4474	1771577863097516700	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj	b7f6a922f33ada88
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+7358	7622	1771577866243075800	esp-idf/micro-ecc/libmicro-ecc.a	a0bccaee3e497f57
 4632	4969	1771577863598239400	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj	999f48cf6e05db57
 2741	3397	1771577862025168800	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj	e75c9dff225d5177
-780	922	1771577859545275900	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj	a29976b697cefce4
-190	361	1771577858989588600	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj	90cd9886477e7780
 362	754	1771577859359303400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj	f4a6b0e4bb0bcafb
 4906	5303	1771577863931037100	esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj	c57fe67ebd0a519f
 4894	5327	1771577863930028400	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj	4271b584051805ac
 486	777	1771577859346470400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj	b9b319af26170207
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+21	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+9898	10578	1771577869207059600	.bin_timestamp	eb5f368cf049c31d
 4776	4893	1771577863521574500	esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj	a94f8080a267856
 3024	3515	1771577862134957600	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj	9f2df67dab0467cd
 8054	8125	1771577866754766300	esp-idf/xtensa/libxtensa.a	e14ea0836c5d9e8a
-3763	4463	1771577863074014400	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj	d5d84b3886b7e840
 465	551	1771577859175056700	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj	da72d0f080590ab7
-3749	4352	1771577862979893800	esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj	f40f8214ebaaa0d3
+3763	4463	1771577863074014400	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj	d5d84b3886b7e840
 474	828	1771577859439269500	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj	cf8d0abfd20bdee7
+3749	4352	1771577862979893800	esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj	f40f8214ebaaa0d3
 29	58	1771560146621776900	project_elf_src_esp32s3.c	8a9852a7bcea9e8d
 798	961	1771577859577438300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_dwc_periph.c.obj	bbcf968c16156fbe
-9898	10578	1771577869207059600	.bin_timestamp	eb5f368cf049c31d
-3089	3759	1771577862376877200	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj	e439d917b3a2ecd0
-988	1613	1771577860219250100	esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj	49a72ff365dd4932
-837	2084	1771577860698358200	esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj	72dae9caf4ab649b
-1758	2671	1771577861274206900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj	ecadc65867530319
-479	797	1771577859400760200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj	bb7acfb0b4f20d01
-4897	5218	1771577863844145400	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj	c8d97ab126fc3494
-334	746	1771577859352869100	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj	24ae75547f3d9b4
-6037	6193	1771577864819427900	esp-idf/esp_hw_support/libesp_hw_support.a	e4cd8d4edcedb5f9
-789	991	1771577859618183300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj	4459f661cb2970a6
-1660	2053	1771577860672988800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj	2004162018f5d232
-768	869	1771577859486137200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj	6e0ec8975abbf718
-5651	5923	1771577864548469300	esp-idf/esp_rom/libesp_rom.a	7a185238e47cec7b
-954	1296	1771577859921829300	esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj	5179d59cd53b4a09
-1301	1785	1771577860409274200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj	d6e84b233811b80a
-202	383	1771577858998882500	esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj	438d5cc3364e1d01
-2546	3088	1771577861716234200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj	b1f3e99ad343be21
-192	495	1771577859117788700	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj	590f4753b78efba5
-214	476	1771577859096504500	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj	6b0eeaf0240b1241
-3225	4127	1771577862750731800	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj	3be8fa1b305b4227
-562	831	1771577859427366200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj	612e33a5763fb6c4
-2178	2721	1771577861295161900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj	db3465874be95d8c
-3322	3917	1771577862541397500	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj	86c76dbe72b1601b
-829	1008	1771577859617651400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj	ca79428ec0d7136
-497	808	1771577859377528100	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj	cb7ba7987f8b0c62
-2733	3221	1771577861844737300	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj	96bacde5b3806119
-5358	5650	1771577864272119900	esp-idf/log/liblog.a	e229a85d404d693f
-210	472	1771577859088174200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj	d6c120a99e1a8f70
-812	1121	1771577859741823700	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj	a40601312e363bdd
-872	1085	1771577859708154500	esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj	2473b708ef6e83bc
-310	485	1771577859093052200	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj	68e6552a3442cb6c
-553	821	1771577859387905800	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj	4991478657cf7534
-200	398	1771577859010678100	esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj	7637787ac93eb8e8
-927	1140	1771577859754482600	esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj	a95ad7be278de688
-1008	1301	1771577859927429200	esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj	98c82ac119b4693d
-188	302	1771577858920283700	CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj	4f0fecc868f8701e
-1149	1666	1771577860254462300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj	cbfd0424201394e3
-386	718	1771577859346108400	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj	372337b008907d53
-215	461	1771577859069622600	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj	b328d3a23a4a2ea3
-8125	8227	1771577866855755900	esp-idf/main/libmain.a	573732df9f8fac7c
-963	1468	1771577860093478600	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj	de736069b7689f42
-3671	4625	1771577863233694300	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj	260b6b2f440fde12
-6281	6410	1771577865037627600	esp-idf/efuse/libefuse.a	c661dff9fa88ab94
-1878	2176	1771577860802129100	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj	5135701c5d93efa0
-996	1757	1771577860384057800	esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj	60263b248b859c1
-203	334	1771577858962079700	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj	84119871ea5a930a
-1296	1552	1771577860179053600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj	feda8188b62f59f9
-4759	4895	1771577863516678500	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj	80576754aca35c65
-2097	3019	1771577861643516400	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj	e261aff80ba92e5b
-1666	2144	1771577860772082800	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj	c419122e35fead91
-3659	4469	1771577863094470000	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj	d1286f8c9a74f2a3
-29	58	1771560146621776900	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/project_elf_src_esp32s3.c	8a9852a7bcea9e8d
-2084	2546	1771577861168459300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj	874b1f914e02a8e8
-2694	3315	1771577861938820900	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj	26edad6e0db0b452
-723	972	1771577859596033300	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj	18f1514a5b0a0668
-1469	1718	1771577860343858200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj	afc84505a96ef6af
-1718	2456	1771577861070944100	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj	e04db9694c52f72c
-824	1003	1771577859613295000	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.obj	3baecd1884ef06f5
-1125	2091	1771577860715426900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj	f51e6a0815d61ed2
-1004	1701	1771577860315304400	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj	a08771dda98381f9
-2145	2518	1771577861132533200	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj	31ccc72ce21466a0
-4353	4599	1771577863223064500	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj	5d20f22c6742d307
-4145	4631	1771577863240253800	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj	771b21329cbf87d4
-1086	1877	1771577860502474300	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj	995a726cbb0b7e9
-2291	2741	1771577861300826600	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj	6c70c380776a4cac
-207	562	1771577859186382900	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj	9d16b4c5ba68b392
-404	784	1771577859376375600	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj	b5b1d7f72e60028d
-1557	2284	1771577860897964400	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj	b1e913380b686f0c
-2464	2857	1771577861471247900	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj	c3950af08a5b92bf
-6	2673	1771625382862169200	build.ninja	f3a6f8c998cb4ba9
-19	55	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-19	55	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	69	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	69	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	68	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	68	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	57	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	57	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	65	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	65	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	72	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	72	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+6	6305	1772056270181335500	build.ninja	f3a6f8c998cb4ba9
+106	172	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+106	172	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+21	68	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+21	68	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	59	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	59	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	65	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	65	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	72	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	72	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	69	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	69	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	59	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	59	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	64	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	64	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-30	69	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-30	69	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	58	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	58	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	76	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	76	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	64	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	64	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	75	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	75	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+31	71	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+31	71	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	58	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	58	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	68	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	68	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	69	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	69	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	71	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	71	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-28	82	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-28	82	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	74	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	74	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	68	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	68	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	72	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	72	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	73	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	73	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	65	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	65	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	62	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	62	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	69	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	69	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	65	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	65	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	68	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	68	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	64	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	64	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	64	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	64	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	74	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	74	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	65	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	65	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-28	74	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-28	74	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-30	85	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-30	85	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	57	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	57	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-29	69	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-29	69	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+27	77	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+27	77	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 21	59	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 21	59	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	68	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	68	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-28	70	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-28	70	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-19	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-19	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	72	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	72	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-30	74	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-30	74	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	59	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
 20	59	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-26	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-24	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	62	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	71	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	71	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	67	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	64	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	64	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-25	66	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	60	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	68	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-27	68	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-22	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	64	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	64	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	63	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	63	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	64	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-23	64	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-21	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	65	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	65	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	61	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
-20	61	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+20	59	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+20	59	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+28	69	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+28	69	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+20	57	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
+20	57	0	/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	9bddb3d7f710f710
