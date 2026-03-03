@@ -12,12 +12,25 @@
 #include "hal/adc_types.h"
 
 //pins
+// driving pins START
+// these are the direction pins
+#define IN1 GPIO_NUM_7
+#define IN2 GPIO_NUM_6
+#define IN3 GPIO_NUM_5
+#define IN4 GPIO_NUM_4
+
+// these are the PWM pins
+#define PWM_L GPIO_NUM_15
+#define PWM_R GPIO_NUM_16
+// driving pins END
+
 #define COIL_DRV_PIN   GPIO_NUM_10   // GPIO driving pulse for 430Ω->coil->GND
 #define LED_PIN        GPIO_NUM_8    // LED
 #define ADC_GPIO       GPIO_NUM_0    // GPIO0 is ADC reader for coil
 // Ultrasonic pins 
 #define US_TRIG_PIN   GPIO_NUM_4
 #define US_ECHO_PIN   GPIO_NUM_5
+
 //  Tuning knobs 
 #define SOUND_CM_PER_US  0.0343f
 #define PULSE_ON_US    8//70//20//1            // ms coil is at high state
