@@ -1,0 +1,8 @@
+Add component: Footprint Not Found D - DF2B5M4CT,L3F
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Change Net Name : Old Net Name=NetDNP9_1_2 New Net Name=MD_CURRSEN_1
+Change Net Name : Old Net Name=NetDNP9_2_2 New Net Name=MD_CURRSEN_2
+Add Class Member: Failed to add class member : Component D1 D - DF2B5M4CT,L3F

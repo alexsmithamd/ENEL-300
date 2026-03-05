@@ -1,0 +1,137 @@
+Removed Pin From Net: NetName=GND Pin=DNP5_1-1
+Removed Pin From Net: NetName=NetDNP5_1_2 Pin=DNP5_1-2
+Removed Pin From Net: NetName=GND Pin=DNP5_2-1
+Removed Pin From Net: NetName=NetDNP5_2_2 Pin=DNP5_2-2
+Removed Pin From Net: NetName=GND Pin=DNP6_1-1
+Removed Pin From Net: NetName=+11V Pin=DNP6_1-2
+Removed Pin From Net: NetName=GND Pin=DNP6_2-1
+Removed Pin From Net: NetName=+11V Pin=DNP6_2-2
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_1 Pin=J3-1
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_1 Pin=J3-2
+Removed Pin From Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=MI1_1-1
+Removed Pin From Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=MI1_2-1
+Removed Pin From Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=MI2_1-1
+Removed Pin From Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=MI2_2-1
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_1 Pin=MO1_2-1
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_1 Pin=MO2_2-1
+Removed Pin From Net: NetName=GND Pin=R3_1-1
+Removed Pin From Net: NetName=GND Pin=R3_2-1
+Removed Pin From Net: NetName=MOTOR_2_CURRENT_SENSE_1 Pin=R4_1-1
+Removed Pin From Net: NetName=MOTOR_1_CURRENT_SENSE_1 Pin=R4_2-1
+Removed Pin From Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=U1_1-2
+Removed Pin From Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=U1_1-3
+Removed Pin From Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=U1_2-2
+Removed Pin From Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=U1_2-3
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_1 Pin=U1_2-6
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_1 Pin=U1_2-8
+Removed Member From Class: ClassName=top_level Member=J5
+Removed Member From Class: ClassName=top_level Member=J6
+Change Component Comment : Designator=R4_1 Old Comment=R - RES 0R 0.1W N/A% 0603 New Comment=R - RES 620R 0.33W 1% 0603
+Change Component Comment : Designator=R4_2 Old Comment=R - RES 0R 0.1W N/A% 0603 New Comment=R - RES 620R 0.33W 1% 0603
+Change Component Comment : Designator=R3_1 Old Comment=R - RES 620R 0.33W 1% 0603 New Comment=R - RES 0R 0.1W N/A% 0603
+Change Component Comment : Designator=R3_2 Old Comment=R - RES 620R 0.33W 1% 0603 New Comment=R - RES 0R 0.1W N/A% 0603
+Change Component Designator: OldDesignator=GND? NewDesignator=GND4
+Change Component Designator: OldDesignator=J4 NewDesignator=J3
+Change Component Designator: OldDesignator=J5 NewDesignator=J4
+Change component parameters: Designator = "R3_1" ("R3"); Footprint = "RES 0603"; UniqueID = "\DCFPEGKT\HWQJOYBE" ("\DCFPEGKT\HWQJOYBE")
+Change component parameters (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3_2" ("R3"); Footprint = "RES 0603"; UniqueID = "\MFGACYKU\HWQJOYBE" ("\MFGACYKU\HWQJOYBE")
+Change component parameters (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4_1" ("R4"); Footprint = "RES 0603"; UniqueID = "\DCFPEGKT\OASOTIMK" ("\DCFPEGKT\OASOTIMK")
+Change component parameters (AddParameter): Name = "Value"; Value = "620"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4_2" ("R4"); Footprint = "RES 0603"; UniqueID = "\MFGACYKU\OASOTIMK" ("\MFGACYKU\OASOTIMK")
+Change component parameters (AddParameter): Name = "Value"; Value = "620"; VariantName = "[No Variations]"
+Add component: Footprint Not Found D - DF2B5M4CT,L3F
+Added Component: Designator=DNP7_1(DNP 0603)
+Added Component: Designator=DNP7_2(DNP 0603)
+Added Component: Designator=DNP8_1(DNP 0603)
+Added Component: Designator=DNP8_2(DNP 0603)
+Added Component: Designator=DNP9_1(DNP 0603)
+Added Component: Designator=DNP9_2(DNP 0603)
+Added Component: Designator=DNP10_1(DNP 0603)
+Added Component: Designator=DNP10_2(DNP 0603)
+Added Component: Designator=DNP11_1(DNP 0805)
+Added Component: Designator=DNP11_2(DNP 0805)
+Added Component: Designator=DNP12_1(DNP 0805)
+Added Component: Designator=DNP12_2(DNP 0805)
+Added Component: Designator=J5_1(J - 691137710002)
+Added Component: Designator=J5_2(J - 691137710002)
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=DNP5_1-1
+Added Pin To Net: NetName=+3V3 Pin=DNP5_1-2
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=DNP5_2-1
+Added Pin To Net: NetName=+3V3 Pin=DNP5_2-2
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=DNP6_1-1
+Added Pin To Net: NetName=+3V3 Pin=DNP6_1-2
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=DNP6_2-1
+Added Pin To Net: NetName=+3V3 Pin=DNP6_2-2
+Added Pin To Net: NetName=GND Pin=DNP7_1-1
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=DNP7_1-2
+Added Pin To Net: NetName=GND Pin=DNP7_2-1
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=DNP7_2-2
+Added Pin To Net: NetName=GND Pin=DNP8_1-1
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=DNP8_1-2
+Added Pin To Net: NetName=GND Pin=DNP8_2-1
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=DNP8_2-2
+Added Pin To Net: NetName=GND Pin=DNP9_1-1
+Added Pin To Net: NetName=NetDNP5_1_2 Pin=DNP9_1-2
+Added Pin To Net: NetName=GND Pin=DNP9_2-1
+Added Pin To Net: NetName=NetDNP5_2_2 Pin=DNP9_2-2
+Added Pin To Net: NetName=GND Pin=DNP10_1-1
+Added Pin To Net: NetName=+11V Pin=DNP10_1-2
+Added Pin To Net: NetName=GND Pin=DNP10_2-1
+Added Pin To Net: NetName=+11V Pin=DNP10_2-2
+Added Pin To Net: NetName=MOTOR_1_OUT_2_1 Pin=DNP11_1-1
+Added Pin To Net: NetName=GND Pin=DNP11_1-2
+Added Pin To Net: NetName=GND Pin=DNP11_2-2
+Added Pin To Net: NetName=MOTOR_1_OUT_1_1 Pin=DNP12_1-1
+Added Pin To Net: NetName=GND Pin=DNP12_1-2
+Added Pin To Net: NetName=GND Pin=DNP12_2-2
+Added Pin To Net: NetName=MOTOR_1_OUT_1_1 Pin=J5_1-1
+Added Pin To Net: NetName=MOTOR_1_OUT_2_1 Pin=J5_1-2
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=MI1_1-1
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=MI1_2-1
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=MI2_1-1
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=MI2_2-1
+Added Pin To Net: NetName=MOTOR_1_OUT_1_1 Pin=MO1_1-1
+Added Pin To Net: NetName=MOTOR_1_OUT_2_1 Pin=MO2_1-1
+Added Pin To Net: NetName=MOTOR_1_CURRENT_SENSE_1 Pin=R3_1-1
+Added Pin To Net: NetName=MOTOR_2_CURRENT_SENSE_1 Pin=R3_2-1
+Added Pin To Net: NetName=GND Pin=R4_1-1
+Added Pin To Net: NetName=GND Pin=R4_2-1
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=U1_1-2
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=U1_1-3
+Added Pin To Net: NetName=MOTOR_1_OUT_1_1 Pin=U1_1-6
+Added Pin To Net: NetName=MOTOR_1_OUT_2_1 Pin=U1_1-8
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=U1_2-2
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=U1_2-3
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Change Net Name : Old Net Name=NetDNP5_1_2 New Net Name=NetDNP9_1_2
+Change Net Name : Old Net Name=NetDNP5_2_2 New Net Name=NetDNP9_2_2
+Added Pin To Net: NetName=MOTOR_1_OUT_1_2 Pin=DNP12_2-1
+Added Pin To Net: NetName=MOTOR_1_OUT_1_2 Pin=J5_2-1
+Added Pin To Net: NetName=MOTOR_1_OUT_1_2 Pin=MO1_2-1
+Added Pin To Net: NetName=MOTOR_1_OUT_1_2 Pin=U1_2-6
+Added Net: Name=MOTOR_1_OUT_1_2
+Added Pin To Net: NetName=MOTOR_1_OUT_2_2 Pin=DNP11_2-1
+Added Pin To Net: NetName=MOTOR_1_OUT_2_2 Pin=J5_2-2
+Added Pin To Net: NetName=MOTOR_1_OUT_2_2 Pin=MO2_2-1
+Added Pin To Net: NetName=MOTOR_1_OUT_2_2 Pin=U1_2-8
+Added Net: Name=MOTOR_1_OUT_2_2
+Add Class Member: Failed to add class member : Component D1 D - DF2B5M4CT,L3F
+Added Member To Class: ClassName=U_motor_driver1 Member=Component DNP7_1 (DNP7) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver2 Member=Component DNP7_2 (DNP7) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver1 Member=Component DNP8_1 (DNP8) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver2 Member=Component DNP8_2 (DNP8) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver1 Member=Component DNP9_1 (DNP9) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver2 Member=Component DNP9_2 (DNP9) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver1 Member=Component DNP10_1 (DNP10) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver2 Member=Component DNP10_2 (DNP10) DNP - DNP PAD 0603
+Added Member To Class: ClassName=U_motor_driver1 Member=Component DNP11_1 (DNP11) DNP - DNP PAD 0805
+Added Member To Class: ClassName=U_motor_driver2 Member=Component DNP11_2 (DNP11) DNP - DNP PAD 0805
+Added Member To Class: ClassName=U_motor_driver1 Member=Component DNP12_1 (DNP12) DNP - DNP PAD 0805
+Added Member To Class: ClassName=U_motor_driver2 Member=Component DNP12_2 (DNP12) DNP - DNP PAD 0805
+Added Member To Class: ClassName=U_motor_driver1 Member=Component J5_1 (J5) J - 691137710002
+Added Member To Class: ClassName=U_motor_driver2 Member=Component J5_2 (J5) J - 691137710002

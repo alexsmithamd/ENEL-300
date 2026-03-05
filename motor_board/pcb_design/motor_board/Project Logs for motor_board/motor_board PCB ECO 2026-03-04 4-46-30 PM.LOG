@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_1 Pin=DNP11_1-1
+Removed Pin From Net: NetName=GND Pin=DNP11_1-2
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_2 Pin=DNP11_2-1
+Removed Pin From Net: NetName=GND Pin=DNP11_2-2
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_1 Pin=DNP12_1-1
+Removed Pin From Net: NetName=GND Pin=DNP12_1-2
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_2 Pin=DNP12_2-1
+Removed Pin From Net: NetName=GND Pin=DNP12_2-2
+Removed Member From Class: ClassName=U_motor_driver1 Member=DNP11_1
+Removed Member From Class: ClassName=U_motor_driver2 Member=DNP11_2
+Removed Member From Class: ClassName=U_motor_driver1 Member=DNP12_1
+Removed Member From Class: ClassName=U_motor_driver2 Member=DNP12_2
+Add component: Footprint Not Found D - DF2B5M4CT,L3F
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Add Class Member: Failed to add class member : Component D1 D - DF2B5M4CT,L3F
+Added Member To Class: ClassName=top_level Member=Component J3 J - 691137710002
+Added Member To Class: ClassName=top_level Member=Component J4 Copy of SMTC-TSW-106-07-X-D_1

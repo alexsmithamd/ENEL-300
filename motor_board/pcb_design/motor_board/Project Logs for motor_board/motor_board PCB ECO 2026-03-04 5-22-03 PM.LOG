@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=+3V3 Pin=J1-3
+Add component: Footprint Not Found D - DF2B5M4CT,L3F
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Added Pin To Net: NetName=+3V3 Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Add Class Member: Failed to add class member : Component D1 D - DF2B5M4CT,L3F
