@@ -39,8 +39,10 @@
 // timeouts
 #define ECHO_RISE_TIMEOUT_US   50000   // 30 ms (covers > 5m, but safe)
 #define ECHO_FALL_TIMEOUT_US   50000
-#define BASELINE_MS    800//1500          // baseline averaging time on boot
-#define THRESHOLD      5//10            // ADC counts; adjust after you see readings
+#define BASELINE_MS    1500//1500          // baseline averaging time on boot
+#define THRESHOLD      18//10            // ADC counts; adjust after you see readings
+
+#define BUZZER_PIN GPIO_NUM_7
 
 static adc_oneshot_unit_handle_t adc_handle;
 
@@ -127,6 +129,18 @@ static float ultrasonic_read_cm(void) {
     return cm;
 }
 
+static void buzzer_beep(int duration_ms)
+{
+    int cycles = duration_ms * 0.8;  // approx 2kHz tone
+
+    for (int i = 0; i < cycles; i++) {
+        gpio_set_level(BUZZER_PIN, 1);
+        esp_rom_delay_us(250);   // half period
+        gpio_set_level(BUZZER_PIN, 0);
+        esp_rom_delay_us(250);
+    }
+}
+
 void app_main(void)
 {
     gpio_reset_pin(LED_PIN);
@@ -136,6 +150,11 @@ void app_main(void)
     gpio_reset_pin(COIL_DRV_PIN);
     gpio_set_direction(COIL_DRV_PIN, GPIO_MODE_OUTPUT);
     gpio_set_level(COIL_DRV_PIN, 0);
+
+    // buzzer init
+    gpio_reset_pin(BUZZER_PIN);
+    gpio_set_direction(BUZZER_PIN, GPIO_MODE_OUTPUT);
+    gpio_set_level(BUZZER_PIN, 0);
 
     // ADC setup
     adc_init();
@@ -167,6 +186,10 @@ void app_main(void)
         bool detected = (diff >= THRESHOLD);
         gpio_set_level(LED_PIN, detected ? 1 : 0);
 
+        if(detected){
+            buzzer_beep(100);  
+        }
+
         // Small gap so ultrasonic isn't triggered right on switching noise
         vTaskDelay(pdMS_TO_TICKS(2));
         printf("ECHO=%d\n", gpio_get_level(US_ECHO_PIN));
@@ -188,7 +211,7 @@ void app_main(void)
 
         printf("metric=%d diff=%d detected=%d\n", gooner, diff, detected);
 
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
 
