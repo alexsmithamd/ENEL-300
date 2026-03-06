@@ -1,0 +1,6 @@
+Added Component: Designator=DNP5(DNP 0603)
+Added Pin To Net: NetName=GND Pin=DNP5-1
+Added Pin To Net: NetName=+3V3 Pin=DNP5-2
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Added Member To Class: ClassName=top_level Member=Component DNP5 DNP - DNP PAD 0603

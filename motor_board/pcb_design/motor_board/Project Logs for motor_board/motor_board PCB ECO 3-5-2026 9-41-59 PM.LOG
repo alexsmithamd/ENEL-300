@@ -1,0 +1,56 @@
+Removed Pin From Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=DNP5_1-1
+Removed Pin From Net: NetName=+3V3 Pin=DNP5_1-2
+Removed Pin From Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=DNP5_2-1
+Removed Pin From Net: NetName=+3V3 Pin=DNP5_2-2
+Removed Pin From Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=DNP6_1-1
+Removed Pin From Net: NetName=+3V3 Pin=DNP6_1-2
+Removed Pin From Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=DNP6_2-1
+Removed Pin From Net: NetName=+3V3 Pin=DNP6_2-2
+Removed Member From Class: ClassName=U_motor_driver1 Member=DNP5_1
+Removed Member From Class: ClassName=U_motor_driver2 Member=DNP5_2
+Removed Member From Class: ClassName=U_motor_driver1 Member=DNP6_1
+Removed Member From Class: ClassName=U_motor_driver2 Member=DNP6_2
+Change Component Designator: OldDesignator=C1_1 NewDesignator=C1_2
+Change Component Designator: OldDesignator=C1_2 NewDesignator=C1_1
+Change Component Designator: OldDesignator=C2_1 NewDesignator=C2_2
+Change Component Designator: OldDesignator=C2_2 NewDesignator=C2_1
+Change Component Designator: OldDesignator=C3_1 NewDesignator=C3_2
+Change Component Designator: OldDesignator=C3_2 NewDesignator=C3_1
+Change Component Designator: OldDesignator=DNP7_1 NewDesignator=DNP7_2
+Change Component Designator: OldDesignator=DNP7_2 NewDesignator=DNP7_1
+Change Component Designator: OldDesignator=DNP8_1 NewDesignator=DNP8_2
+Change Component Designator: OldDesignator=DNP8_2 NewDesignator=DNP8_1
+Change Component Designator: OldDesignator=DNP9_1 NewDesignator=DNP9_2
+Change Component Designator: OldDesignator=DNP9_2 NewDesignator=DNP9_1
+Change Component Designator: OldDesignator=DNP10_1 NewDesignator=DNP10_2
+Change Component Designator: OldDesignator=DNP10_2 NewDesignator=DNP10_1
+Change Component Designator: OldDesignator=J5_1 NewDesignator=J5_2
+Change Component Designator: OldDesignator=J5_2 NewDesignator=J5_1
+Change Component Designator: OldDesignator=MI1_1 NewDesignator=MI1_2
+Change Component Designator: OldDesignator=MI1_2 NewDesignator=MI1_1
+Change Component Designator: OldDesignator=MI2_1 NewDesignator=MI2_2
+Change Component Designator: OldDesignator=MI2_2 NewDesignator=MI2_1
+Change Component Designator: OldDesignator=MIS_1 NewDesignator=MIS_2
+Change Component Designator: OldDesignator=MIS_2 NewDesignator=MIS_1
+Change Component Designator: OldDesignator=MO1_1 NewDesignator=MO1_2
+Change Component Designator: OldDesignator=MO1_2 NewDesignator=MO1_1
+Change Component Designator: OldDesignator=MO2_1 NewDesignator=MO2_2
+Change Component Designator: OldDesignator=MO2_2 NewDesignator=MO2_1
+Change Component Designator: OldDesignator=R3_1 NewDesignator=R3_2
+Change Component Designator: OldDesignator=R3_2 NewDesignator=R3_1
+Change Component Designator: OldDesignator=R4_1 NewDesignator=R4_2
+Change Component Designator: OldDesignator=R4_2 NewDesignator=R4_1
+Change Component Designator: OldDesignator=U1_1 NewDesignator=U1_2
+Change Component Designator: OldDesignator=U1_2 NewDesignator=U1_1
+Add component: Footprint Not Found D - DF2B5M4CT,L3F
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9
+Change Net Name : Old Net Name=MD_CURRSEN_1 New Net Name=MD_CURRSEN_2
+Change Net Name : Old Net Name=MD_CURRSEN_2 New Net Name=MD_CURRSEN_1
+Change Net Name : Old Net Name=MOTOR_1_OUT_1_1 New Net Name=MOTOR_1_OUT_1_2
+Change Net Name : Old Net Name=MOTOR_1_OUT_1_2 New Net Name=MOTOR_1_OUT_1_1
+Change Net Name : Old Net Name=MOTOR_1_OUT_2_1 New Net Name=MOTOR_1_OUT_2_2
+Change Net Name : Old Net Name=MOTOR_1_OUT_2_2 New Net Name=MOTOR_1_OUT_2_1
+Add Class Member: Failed to add class member : Component D1 D - DF2B5M4CT,L3F
