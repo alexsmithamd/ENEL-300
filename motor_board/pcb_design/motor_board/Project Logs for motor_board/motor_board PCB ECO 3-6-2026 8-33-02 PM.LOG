@@ -1,0 +1,4 @@
+Change component parameters: Designator = "U1_1" ("U1"); Footprint = "U - DRV8251ADDAR"; UniqueID = "\MFGACYKU\VJSHDUYG" ("\MFGACYKU\VJSHDUYG")
+Change component parameters: Designator = "U1_2" ("U1"); Footprint = "U - DRV8251ADDAR"; UniqueID = "\DCFPEGKT\VJSHDUYG" ("\DCFPEGKT\VJSHDUYG")
+Add Pin To Net: Unknown Pin: Pin U1_1-9
+Add Pin To Net: Unknown Pin: Pin U1_2-9

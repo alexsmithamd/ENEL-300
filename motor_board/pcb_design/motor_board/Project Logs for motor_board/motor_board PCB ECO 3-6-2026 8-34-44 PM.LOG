@@ -1,0 +1,22 @@
+Added Component: Designator=U1_1(U - DRV8251ADDAR)
+Added Component: Designator=U1_2(U - DRV8251ADDAR)
+Added Pin To Net: NetName=MD_CURRSEN_1 Pin=U1_1-1
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=U1_1-2
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=U1_1-3
+Added Pin To Net: NetName=+3V3 Pin=U1_1-4
+Added Pin To Net: NetName=+11V Pin=U1_1-5
+Added Pin To Net: NetName=MOTOR_1_OUT_1_1 Pin=U1_1-6
+Added Pin To Net: NetName=GND Pin=U1_1-7
+Added Pin To Net: NetName=MOTOR_1_OUT_2_1 Pin=U1_1-8
+Added Pin To Net: NetName=GND Pin=U1_1-9
+Added Pin To Net: NetName=MD_CURRSEN_2 Pin=U1_2-1
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=U1_2-2
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=U1_2-3
+Added Pin To Net: NetName=+3V3 Pin=U1_2-4
+Added Pin To Net: NetName=+11V Pin=U1_2-5
+Added Pin To Net: NetName=MOTOR_1_OUT_1_2 Pin=U1_2-6
+Added Pin To Net: NetName=GND Pin=U1_2-7
+Added Pin To Net: NetName=MOTOR_1_OUT_2_2 Pin=U1_2-8
+Added Pin To Net: NetName=GND Pin=U1_2-9
+Added Member To Class: ClassName=U_motor_driver1 Member=Component U1_1 (U1) DRV8251ADDAR
+Added Member To Class: ClassName=U_motor_driver2 Member=Component U1_2 (U1) DRV8251ADDAR
