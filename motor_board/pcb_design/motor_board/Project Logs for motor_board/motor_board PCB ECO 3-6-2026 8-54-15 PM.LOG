@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_1 Pin=J5_1-1
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_1 Pin=J5_1-2
+Removed Pin From Net: NetName=MOTOR_1_OUT_1_2 Pin=J5_2-1
+Removed Pin From Net: NetName=MOTOR_1_OUT_2_2 Pin=J5_2-2
+Added Pin To Net: NetName=MOTOR_OUT_1_1 Pin=J5_1-1
+Added Net: Name=MOTOR_OUT_1_1
+Added Pin To Net: NetName=MOTOR_OUT_1_2 Pin=J5_2-1
+Added Net: Name=MOTOR_OUT_1_2
+Added Pin To Net: NetName=MOTOR_OUT_2_1 Pin=J5_1-2
+Added Net: Name=MOTOR_OUT_2_1
+Added Pin To Net: NetName=MOTOR_OUT_2_2 Pin=J5_2-2
+Added Net: Name=MOTOR_OUT_2_2

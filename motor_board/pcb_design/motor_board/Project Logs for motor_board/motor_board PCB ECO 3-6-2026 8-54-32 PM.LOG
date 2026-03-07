@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=MOTOR_OUT_1_1 Pin=MO1_1-1
+Added Pin To Net: NetName=MOTOR_OUT_1_2 Pin=MO1_2-1
+Added Pin To Net: NetName=MOTOR_OUT_2_1 Pin=MO2_1-1
+Added Pin To Net: NetName=MOTOR_OUT_2_2 Pin=MO2_2-1
+Added Pin To Net: NetName=MOTOR_OUT_1_1 Pin=U1_1-6
+Added Pin To Net: NetName=MOTOR_OUT_2_1 Pin=U1_1-8
+Added Pin To Net: NetName=MOTOR_OUT_1_2 Pin=U1_2-6
+Added Pin To Net: NetName=MOTOR_OUT_2_2 Pin=U1_2-8
