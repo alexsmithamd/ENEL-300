@@ -1,0 +1,18 @@
+Change Component Designator: OldDesignator=+11V_1 NewDesignator=+11V1
+Change Component Designator: OldDesignator=+11V_2 NewDesignator=+11V2
+Change Component Designator: OldDesignator=MI1_1 NewDesignator=TP1_1
+Change Component Designator: OldDesignator=MI1_2 NewDesignator=TP1_2
+Change Component Designator: OldDesignator=MI2_1 NewDesignator=TP2_1
+Change Component Designator: OldDesignator=MI2_2 NewDesignator=TP2_2
+Added Component: Designator=MIN1_1(TP - SMD Pad Testpoint)
+Added Component: Designator=MIN1_2(TP - SMD Pad Testpoint)
+Added Component: Designator=MIN2_1(TP - SMD Pad Testpoint)
+Added Component: Designator=MIN2_2(TP - SMD Pad Testpoint)
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_1_1 Pin=MIN1_1-1
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_1_1 Pin=MIN1_2-1
+Added Pin To Net: NetName=MOTOR_2_PWM_IN_2_1 Pin=MIN2_1-1
+Added Pin To Net: NetName=MOTOR_1_PWM_IN_2_1 Pin=MIN2_2-1
+Added Member To Class: ClassName=U_motor_driver1 Member=Component MIN1_1 (MIN1) TP - SMD Pad Test Point Circular
+Added Member To Class: ClassName=U_motor_driver2 Member=Component MIN1_2 (MIN1) TP - SMD Pad Test Point Circular
+Added Member To Class: ClassName=U_motor_driver1 Member=Component MIN2_1 (MIN2) TP - SMD Pad Test Point Circular
+Added Member To Class: ClassName=U_motor_driver2 Member=Component MIN2_2 (MIN2) TP - SMD Pad Test Point Circular

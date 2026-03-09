@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc
-Date     : 3/6/2026
-Time     : 10:21:35 PM
+Date     : 3/9/2026
+Time     : 5:23:49 PM
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -68,13 +68,13 @@ Processing Rule : Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component DNP7_2-DNP - DNP PAD 0603 (30.95mm,43.75mm) on BOTTOM 
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component DNP8_2-DNP - DNP PAD 0603 (27.05mm,43.75mm) on BOTTOM 
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component DNP9_2-DNP - DNP PAD 0603 (32.95mm,38.75mm) on TOP 
-   Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component MI1_2-SMD Pad Testpoint Rectangular (Signal) (31mm,32.25mm) on TOP 
-   Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component MI2_2-SMD Pad Testpoint Rectangular (Signal) (31mm,33.5mm) on TOP 
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component MIS_2-SMD Pad Testpoint Rectangular (Signal) (32.25mm,35.75mm) on TOP 
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component MO1_2-TP - SMD Pad Test Point Circular (40.75mm,32.25mm) on TOP 
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component MO2_2-TP - SMD Pad Test Point Circular (40.75mm,37.25mm) on TOP 
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component R3_2-R - RES 0R 0.1W N/A% 0603 (33.745mm,41.745mm) on BOTTOM 
    Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component R4_2-R - RES 620R 0.33W 1% 0603 (32.95mm,37.25mm) on TOP 
+   Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component TP1_2-SMD Pad Testpoint Rectangular (Signal) (31mm,32.25mm) on TOP 
+   Violation between Room Definition: Between Room U_motor_driver2 (Bounding Region = (25.4mm, 43.34mm, 54.9mm, 66.15mm) (InComponentClass('U_motor_driver2')) And SMT Small Component TP2_2-SMD Pad Testpoint Rectangular (Signal) (31mm,33.5mm) on TOP 
 Rule Violations :16
 
 Processing Rule : Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1'))
@@ -87,19 +87,21 @@ Processing Rule : Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4m
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component DNP7_1-DNP - DNP PAD 0603 (17.2mm,43.75mm) on BOTTOM 
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component DNP8_1-DNP - DNP PAD 0603 (13.3mm,43.75mm) on BOTTOM 
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component DNP9_1-DNP - DNP PAD 0603 (16.55mm,20mm) on TOP 
-   Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component MI1_1-SMD Pad Testpoint Rectangular (Signal) (19mm,27.5mm) on TOP 
-   Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component MI2_1-SMD Pad Testpoint Rectangular (Signal) (20.25mm,27.5mm) on TOP 
+   Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component MIN1_1-TP - SMD Pad Test Point Circular (19mm,31.5mm) on BOTTOM 
+   Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component MIN2_1-TP - SMD Pad Test Point Circular (20.25mm,32.5mm) on BOTTOM 
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component MIS_1-SMD Pad Testpoint Rectangular (Signal) (17.25mm,23mm) on TOP 
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component MO1_1-TP - SMD Pad Test Point Circular (9.25mm,26.5mm) on TOP 
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component MO2_1-TP - SMD Pad Test Point Circular (9.25mm,21.5mm) on TOP 
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component R3_1-R - RES 0R 0.1W N/A% 0603 (21.245mm,20.745mm) on BOTTOM 
    Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component R4_1-R - RES 620R 0.33W 1% 0603 (16.55mm,21.5mm) on TOP 
-Rule Violations :16
+   Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component TP1_1-SMD Pad Testpoint Rectangular (Signal) (19mm,27.5mm) on TOP 
+   Violation between Room Definition: Between Room U_motor_driver1 (Bounding Region = (45.9mm, 43.4mm, 75.4mm, 66.21mm) (InComponentClass('U_motor_driver1')) And SMT Small Component TP2_1-SMD Pad Testpoint Rectangular (Signal) (20.25mm,27.5mm) on TOP 
+Rule Violations :18
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 39
+Violations Detected : 41
 Waived Violations : 0
 Time Elapsed        : 00:00:00
