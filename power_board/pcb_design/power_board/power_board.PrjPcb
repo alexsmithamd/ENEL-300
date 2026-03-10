@@ -245,134 +245,198 @@ DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
+DocumentPath=Project Outputs for power_board\power_board_v0-Plated.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.EXTREP
+DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0.EXTREP
+DocumentPath=Project Outputs for power_board\power_board_v0.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.G1
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.G2
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBL
+DocumentPath=Project Outputs for power_board\power_board_v0.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBO
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.G1
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBP
+DocumentPath=Project Outputs for power_board\power_board_v0.G1
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBS
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.G2
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GM
+DocumentPath=Project Outputs for power_board\power_board_v0.G2
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTL
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTO
+DocumentPath=Project Outputs for power_board\power_board_v0.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTP
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTS
+DocumentPath=Project Outputs for power_board\power_board_v0.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
+DocumentPath=Project Outputs for power_board\power_board_v0.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.REP
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
+DocumentPath=Project Outputs for power_board\power_board_v0.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GM
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_1.gbr
+DocumentPath=Project Outputs for power_board\power_board_v0.GM
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_2.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Bot.gbr
+DocumentPath=Project Outputs for power_board\power_board_v0.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Top.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Bot.gbr
+DocumentPath=Project Outputs for power_board\power_board_v0.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Top.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_NPTH_Drill.gbr
+DocumentPath=Project Outputs for power_board\power_board_v0.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Bot.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Top.gbr
+DocumentPath=Project Outputs for power_board\power_board_v0.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Profile.gbr
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_PTH_Drill.gbr
+DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Soldermask_Bot.gbr
+DocumentPath=Project Outputs for power_board\power_board_v0.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument35]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_Gerber\power_board_v0.REP
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for power_board\power_board_v0.REP
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for Free Documents\power_board_fab\2026_2_14_NC Drill\power_board_v0.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_2.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_NPTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_PTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument51]
 DocumentPath=power_board_outputs\power_board_fab\2026_2_14_GerberX2\power_board_v0_Soldermask_Top.gbr
 DItemRevisionGUID=
 
@@ -656,22 +720,22 @@ Name=Fabrication Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=Board Stack Report
-OutputName1=Report Board Stack
+OutputType1=CompositeDrill
+OutputName1=Composite Drill Drawing
 OutputDocumentPath1=
-OutputVariantName1=
+OutputVariantName1=[No Variations]
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType2=CompositeDrill
-OutputName2=Composite Drill Drawing
+OutputType2=Drill
+OutputName2=Drill Drawing/Guides
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
 PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType3=Drill
-OutputName3=Drill Drawing/Guides
+OutputType3=Board Stack Report
+OutputName3=Report Board Stack
 OutputDocumentPath3=
-OutputVariantName3=[No Variations]
+OutputVariantName3=
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType4=Final
@@ -680,48 +744,56 @@ OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
 PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType5=Gerber
-OutputName5=Gerber Files
+OutputType5=Gerber X2
+OutputName5=Gerber X2 Files
 OutputDocumentPath5=
 OutputVariantName5=[No Variations]
 OutputDefault5=0
-OutputType6=Gerber X2
-OutputName6=Gerber X2 Files
+OutputType6=ODB
+OutputName6=ODB++ Files
 OutputDocumentPath6=
 OutputVariantName6=[No Variations]
 OutputDefault6=0
-OutputType7=IPC2581
-OutputName7=IPC-2581 Files
+OutputType7=Mask
+OutputName7=Solder/Paste Mask Prints
 OutputDocumentPath7=
 OutputVariantName7=[No Variations]
 OutputDefault7=0
-OutputType8=Mask
-OutputName8=Solder/Paste Mask Prints
+PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType8=NC Drill
+OutputName8=NC Drill Files
 OutputDocumentPath8=
-OutputVariantName8=[No Variations]
+OutputVariantName8=
 OutputDefault8=0
-PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType9=NC Drill
-OutputName9=NC Drill Files
+Configuration8_Name1=ForceUpdateSettings
+Configuration8_Item1=False
+Configuration8_Name2=OutputConfigurationParameter1
+Configuration8_Item2=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=True|GenerateSeparateViaTypeFiles=False|GenerateToolsByDrillSymbols=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Absolute|Record=DrillView|Units=Imperial|ZeroesMode=KeepLeadingAndTrailingZeroes|DocumentPath=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\power_board\pcb_design\power_board\power_board_v0.PcbDoc
+OutputType9=IPC2581
+OutputName9=IPC-2581 Files
 OutputDocumentPath9=
-OutputVariantName9=
+OutputVariantName9=[No Variations]
 OutputDefault9=0
-OutputType10=ODB
-OutputName10=ODB++ Files
+OutputType10=Plane
+OutputName10=Power-Plane Prints
 OutputDocumentPath10=
 OutputVariantName10=[No Variations]
 OutputDefault10=0
-OutputType11=Plane
-OutputName11=Power-Plane Prints
+PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType11=Test Points
+OutputName11=Test Point Report
 OutputDocumentPath11=
-OutputVariantName11=[No Variations]
+OutputVariantName11=
 OutputDefault11=0
-PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType12=Test Points
-OutputName12=Test Point Report
+OutputType12=Gerber
+OutputName12=Gerber Files
 OutputDocumentPath12=
-OutputVariantName12=
+OutputVariantName12=[No Variations]
 OutputDefault12=0
+Configuration12_Name1=ForceUpdateSettings
+Configuration12_Item1=False
+Configuration12_Name2=OutputConfigurationParameter1
+Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|BoardID=HNLVMIHV|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=False|GenerateDRCRulesFile=False|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|OutputFormat=Different|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16777217~1,16777218~1,16777219~1,16842751~1,16973830~1,16973831~1,16973834~1,16973835~1,16973832~1,16973833~1|PlotBoardProfile=True|PlotBoardProfileFileName= |PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|UncheckPlotDrillDrawingLayerPair0_Backdrill=False|UncheckPlotDrillDrawingLayerPair0_Checked=False|UncheckPlotDrillDrawingLayerPair0_DrillType=Regular|UncheckPlotDrillDrawingLayerPair0_FileName= |UncheckPlotDrillDrawingLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillDrawingLayerPair0_LowLayer=Top Layer|UncheckPlotDrillGuideLayerPair0_Backdrill=False|UncheckPlotDrillGuideLayerPair0_Checked=False|UncheckPlotDrillGuideLayerPair0_DrillType=Regular|UncheckPlotDrillGuideLayerPair0_FileName= |UncheckPlotDrillGuideLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillGuideLayerPair0_LowLayer=Top Layer|DocumentPath=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\power_board\pcb_design\power_board\power_board_v0.PcbDoc
 
 [OutputGroup6]
 Name=Report Outputs
