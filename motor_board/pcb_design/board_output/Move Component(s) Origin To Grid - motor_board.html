@@ -1,0 +1,356 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Move Component(s) Origin to Grid</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Move Component(s) Origin to Grid</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3/1/2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3:06:23 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc" class="file"><acronym title="E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc">E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc</acronym></a></td>
+</tr>
+</table><a name="ID5CB3A0JI1KMBM04DD15RKZN5WJGY3OILMMCJJZCSUY00U4SR4TNM"><h2>Components Origin</h2></a><a name="IDE40WJKUQ3XBKPRE42YPVTAZUAJMCJ1R1MUJ2SSBKMKZITZDVUKMJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning"></th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10525.5mil|Location2.X=10824mil|Location1.Y=1433.5mil|Location2.Y=1791.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10525.5mil|Location2.X=10824mil|Location1.Y=1433.5mil|Location2.Y=1791.481mil|Absolute=True">Component U1_2-DRV8251ADDAR (10675mil,1545mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10345.5mil|Location2.X=10644mil|Location1.Y=1933.5mil|Location2.Y=2291.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10345.5mil|Location2.X=10644mil|Location1.Y=1933.5mil|Location2.Y=2291.481mil|Absolute=True">Component U1_1-DRV8251ADDAR (10495mil,2045mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12453.268mil|Location2.X=12736.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12453.268mil|Location2.X=12736.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True">Small Component TH4-TH - M3 Mounting Hole (12595mil,1145mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12118.268mil|Location2.X=12401.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12118.268mil|Location2.X=12401.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True">Small Component TH3-TH - M3 Mounting Hole (12260mil,1145mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11788.268mil|Location2.X=12071.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11788.268mil|Location2.X=12071.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True">Small Component TH2-TH - M3 Mounting Hole (11930mil,1145mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11453.268mil|Location2.X=11736.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11453.268mil|Location2.X=11736.732mil|Location1.Y=1003.268mil|Location2.Y=1386.481mil|Absolute=True">Small Component TH1-TH - M3 Mounting Hole (11595mil,1145mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8451.5mil|Location2.X=8691.429mil|Location1.Y=1435.945mil|Location2.Y=1664.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8451.5mil|Location2.X=8691.429mil|Location1.Y=1435.945mil|Location2.Y=1664.481mil|Absolute=True">SMT Small Component R3_2-R - RES 620R 0.33W 1% 0603 (8485mil,1495mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8371.5mil|Location2.X=8591.435mil|Location1.Y=1935.945mil|Location2.Y=2164.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8371.5mil|Location2.X=8591.435mil|Location1.Y=1935.945mil|Location2.Y=2164.481mil|Absolute=True">SMT Small Component R3_1-R - RES 620R 0.33W 1% 0603 (8405mil,1995mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11285.5mil|Location2.X=11405.468mil|Location1.Y=1001.535mil|Location2.Y=1168.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11285.5mil|Location2.X=11405.468mil|Location1.Y=1001.535mil|Location2.Y=1168.481mil|Absolute=True">SMT Small Component R2-R - RES 220R 0.33W 1% 0603 (11345mil,1035mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11115.5mil|Location2.X=11234.055mil|Location1.Y=1001.535mil|Location2.Y=1168.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11115.5mil|Location2.X=11234.055mil|Location1.Y=1001.535mil|Location2.Y=1168.481mil|Absolute=True">SMT Small Component R1-ERJ-PB3B1001V (11175mil,1035mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9166.315mil|Location2.X=9466.409mil|Location1.Y=1436.315mil|Location2.Y=1593.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9166.315mil|Location2.X=9466.409mil|Location1.Y=1436.315mil|Location2.Y=1593.481mil|Absolute=True">SMT Small Component MO2_2-TP - SMD Pad Test Point Circular (9190mil,1460mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9066.315mil|Location2.X=9346.416mil|Location1.Y=1936.315mil|Location2.Y=2093.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9066.315mil|Location2.X=9346.416mil|Location1.Y=1936.315mil|Location2.Y=2093.481mil|Absolute=True">SMT Small Component MO2_1-TP - SMD Pad Test Point Circular (9090mil,1960mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10876.315mil|Location2.X=11166.413mil|Location1.Y=1436.315mil|Location2.Y=1593.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10876.315mil|Location2.X=11166.413mil|Location1.Y=1436.315mil|Location2.Y=1593.481mil|Absolute=True">SMT Small Component MO1_2-TP - SMD Pad Test Point Circular (10900mil,1460mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10696.315mil|Location2.X=10966.419mil|Location1.Y=1936.315mil|Location2.Y=2093.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10696.315mil|Location2.X=10966.419mil|Location1.Y=1936.315mil|Location2.Y=2093.481mil|Absolute=True">SMT Small Component MO1_1-TP - SMD Pad Test Point Circular (10720mil,1960mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9512mil|Location2.X=9802.413mil|Location1.Y=1433.315mil|Location2.Y=1586.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9512mil|Location2.X=9802.413mil|Location1.Y=1433.315mil|Location2.Y=1586.481mil|Absolute=True">SMT Small Component MIS_2-SMD Pad Testpoint Rectangular (Signal) (9520mil,1455mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9392mil|Location2.X=9662.419mil|Location1.Y=1933.315mil|Location2.Y=2086.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9392mil|Location2.X=9662.419mil|Location1.Y=1933.315mil|Location2.Y=2086.481mil|Absolute=True">SMT Small Component MIS_1-SMD Pad Testpoint Rectangular (Signal) (9400mil,1955mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9857mil|Location2.X=10147.413mil|Location1.Y=1433.315mil|Location2.Y=1586.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9857mil|Location2.X=10147.413mil|Location1.Y=1433.315mil|Location2.Y=1586.481mil|Absolute=True">SMT Small Component MI2_2-SMD Pad Testpoint Rectangular (Signal) (9865mil,1455mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9717mil|Location2.X=9987.419mil|Location1.Y=1933.315mil|Location2.Y=2086.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9717mil|Location2.X=9987.419mil|Location1.Y=1933.315mil|Location2.Y=2086.481mil|Absolute=True">SMT Small Component MI2_1-SMD Pad Testpoint Rectangular (Signal) (9725mil,1955mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10197mil|Location2.X=10477.416mil|Location1.Y=1433.315mil|Location2.Y=1586.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10197mil|Location2.X=10477.416mil|Location1.Y=1433.315mil|Location2.Y=1586.481mil|Absolute=True">SMT Small Component MI1_2-SMD Pad Testpoint Rectangular (Signal) (10205mil,1455mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10037mil|Location2.X=10297.422mil|Location1.Y=1933.315mil|Location2.Y=2086.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10037mil|Location2.X=10297.422mil|Location1.Y=1933.315mil|Location2.Y=2086.481mil|Absolute=True">SMT Small Component MI1_1-SMD Pad Testpoint Rectangular (Signal) (10045mil,1955mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12959.173mil|Location2.X=13236.732mil|Location1.Y=1004.173mil|Location2.Y=1650.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12959.173mil|Location2.X=13236.732mil|Location1.Y=1004.173mil|Location2.Y=1650.481mil|Absolute=True">Small Component J6-J - 1990009 (12970mil,1015mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12789.173mil|Location2.X=12910.827mil|Location1.Y=1001.535mil|Location2.Y=1545.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12789.173mil|Location2.X=12910.827mil|Location1.Y=1001.535mil|Location2.Y=1545.481mil|Absolute=True">SIP Component J5-Copy of SMTC-TSW-106-07-X-D_1 (12850mil,1235mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13284.173mil|Location2.X=13561.732mil|Location1.Y=1004.173mil|Location2.Y=1650.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13284.173mil|Location2.X=13561.732mil|Location1.Y=1004.173mil|Location2.Y=1650.481mil|Absolute=True">Small Component J4-J - 1990009 (13295mil,1015mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13799.173mil|Location2.X=14076.732mil|Location1.Y=1004.173mil|Location2.Y=1650.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13799.173mil|Location2.X=14076.732mil|Location1.Y=1004.173mil|Location2.Y=1650.481mil|Absolute=True">Small Component J3-J - 1990009 (13810mil,1015mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14299.173mil|Location2.X=14420.827mil|Location1.Y=1001.535mil|Location2.Y=1545.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14299.173mil|Location2.X=14420.827mil|Location1.Y=1001.535mil|Location2.Y=1545.481mil|Absolute=True">SIP Component J2-Copy of SMTC-TSW-106-07-X-D_1 (14360mil,1235mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14129.173mil|Location2.X=14250.827mil|Location1.Y=1001.535mil|Location2.Y=1545.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14129.173mil|Location2.X=14250.827mil|Location1.Y=1001.535mil|Location2.Y=1545.481mil|Absolute=True">SIP Component J1-Copy of SMTC-TSW-106-07-X-D_1 (14190mil,1235mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7465.079mil|Location2.X=7705.429mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7465.079mil|Location2.X=7705.429mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True">Small Component GND?-TP - 5008 (Compact) (7520mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8145.079mil|Location2.X=8385.429mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8145.079mil|Location2.X=8385.429mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True">Small Component GND3-TP - 5008 (Compact) (8200mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10245.079mil|Location2.X=10485.429mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10245.079mil|Location2.X=10485.429mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True">Small Component GND2-TP - 5008 (Compact) (10300mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10845.079mil|Location2.X=11065.435mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10845.079mil|Location2.X=11065.435mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True">Small Component GND1-TP - 5008 (Compact) (10900mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7461.5mil|Location2.X=7821.39mil|Location1.Y=1435.945mil|Location2.Y=1664.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7461.5mil|Location2.X=7821.39mil|Location1.Y=1435.945mil|Location2.Y=1664.481mil|Absolute=True">SMT Small Component DNP6_2-DNP - DNP PAD 0603 (7495mil,1495mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7441.5mil|Location2.X=7781.396mil|Location1.Y=1935.945mil|Location2.Y=2164.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7441.5mil|Location2.X=7781.396mil|Location1.Y=1935.945mil|Location2.Y=2164.481mil|Absolute=True">SMT Small Component DNP6_1-DNP - DNP PAD 0603 (7475mil,1995mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7051.5mil|Location2.X=7411.39mil|Location1.Y=1435.945mil|Location2.Y=1664.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7051.5mil|Location2.X=7411.39mil|Location1.Y=1435.945mil|Location2.Y=1664.481mil|Absolute=True">SMT Small Component DNP5_2-DNP - DNP PAD 0603 (7085mil,1495mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7051.5mil|Location2.X=7391.396mil|Location1.Y=1935.945mil|Location2.Y=2164.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7051.5mil|Location2.X=7391.396mil|Location1.Y=1935.945mil|Location2.Y=2164.481mil|Absolute=True">SMT Small Component DNP5_1-DNP - DNP PAD 0603 (7085mil,1995mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9621.5mil|Location2.X=9861.429mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9621.5mil|Location2.X=9861.429mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True">SMT Small Component DNP4-DNP - DNP PAD 0603 (9655mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9331.5mil|Location2.X=9571.429mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9331.5mil|Location2.X=9571.429mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True">SMT Small Component DNP3-DNP - DNP PAD 0603 (9365mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9041.5mil|Location2.X=9281.429mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9041.5mil|Location2.X=9281.429mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True">SMT Small Component DNP2-DNP - DNP PAD 0603 (9075mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8771.5mil|Location2.X=8991.435mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8771.5mil|Location2.X=8991.435mil|Location1.Y=1000.945mil|Location2.Y=1219.481mil|Absolute=True">SMT Small Component DNP1-DNP - DNP PAD 0603 (8805mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8601.5mil|Location2.X=8721.468mil|Location1.Y=1000.945mil|Location2.Y=1268.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8601.5mil|Location2.X=8721.468mil|Location1.Y=1000.945mil|Location2.Y=1268.481mil|Absolute=True">SMT Small Component D4-D - LTST-C193KRKT-5A (8635mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8431.5mil|Location2.X=8551.468mil|Location1.Y=1000.945mil|Location2.Y=1268.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8431.5mil|Location2.X=8551.468mil|Location1.Y=1000.945mil|Location2.Y=1268.481mil|Absolute=True">SMT Small Component D3-D - LTST-C193KRKT-5A (8465mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13612mil|Location2.X=13748mil|Location1.Y=1000.619mil|Location2.Y=1392.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13612mil|Location2.X=13748mil|Location1.Y=1000.619mil|Location2.Y=1392.481mil|Absolute=True">SMT Small Component D2-D - SMAJ15CA (13680mil,1170mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8161.5mil|Location2.X=8401.429mil|Location1.Y=1433.976mil|Location2.Y=1663.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8161.5mil|Location2.X=8401.429mil|Location1.Y=1433.976mil|Location2.Y=1663.481mil|Absolute=True">SMT Small Component C3_2-C - CAP CER 100nF 100V 10% 0603 (8195mil,1495mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8101.5mil|Location2.X=8321.435mil|Location1.Y=1933.976mil|Location2.Y=2163.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8101.5mil|Location2.X=8321.435mil|Location1.Y=1933.976mil|Location2.Y=2163.481mil|Absolute=True">SMT Small Component C3_1-C - CAP CER 100nF 100V 10% 0603 (8135mil,1995mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7871.5mil|Location2.X=8111.429mil|Location1.Y=1433.976mil|Location2.Y=1663.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7871.5mil|Location2.X=8111.429mil|Location1.Y=1433.976mil|Location2.Y=1663.481mil|Absolute=True">SMT Small Component C2_2-C - CAP CER 100nF 100V 10% 0603 (7905mil,1495mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7831.5mil|Location2.X=8051.435mil|Location1.Y=1933.976mil|Location2.Y=2163.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7831.5mil|Location2.X=8051.435mil|Location1.Y=1933.976mil|Location2.Y=2163.481mil|Absolute=True">SMT Small Component C2_1-C - CAP CER 100nF 100V 10% 0603 (7865mil,1995mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8740.5mil|Location2.X=9112.756mil|Location1.Y=1435.709mil|Location2.Y=1884.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8740.5mil|Location2.X=9112.756mil|Location1.Y=1435.709mil|Location2.Y=1884.481mil|Absolute=True">Small Component C1_2-860020574012 (8910mil,1605mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8640.5mil|Location2.X=9012.756mil|Location1.Y=1935.709mil|Location2.Y=2384.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8640.5mil|Location2.X=9012.756mil|Location1.Y=1935.709mil|Location2.Y=2384.481mil|Absolute=True">Small Component C1_1-860020574012 (8810mil,2105mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9915.079mil|Location2.X=10195.416mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9915.079mil|Location2.X=10195.416mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True">Small Component +11V2-TP - 5008 (Compact) (9970mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10535.079mil|Location2.X=10795.422mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10535.079mil|Location2.X=10795.422mil|Location1.Y=1000.079mil|Location2.Y=1209.481mil|Absolute=True">Small Component +11V1-TP - 5008 (Compact) (10590mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7050.079mil|Location2.X=7410.39mil|Location1.Y=1000.079mil|Location2.Y=1219.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7050.079mil|Location2.X=7410.39mil|Location1.Y=1000.079mil|Location2.Y=1219.481mil|Absolute=True">Small Component +3V3_2-TP - 5008 (Compact) (7105mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7755.079mil|Location2.X=8095.396mil|Location1.Y=1000.079mil|Location2.Y=1219.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Outpost Vault\Outpost Door\Outpost Quick Access\University Files\2026 Winter Semester\ENEL 300 Files\ENEL-300\motor_board\pcb_design\motor_board\motor_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7755.079mil|Location2.X=8095.396mil|Location1.Y=1000.079mil|Location2.Y=1219.481mil|Absolute=True">Small Component +3V3_1-TP - 5008 (Compact) (7810mil,1055mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
