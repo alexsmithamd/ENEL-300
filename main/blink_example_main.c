@@ -195,7 +195,7 @@ void app_main(void)
         printf("ECHO=%d\n", gpio_get_level(US_ECHO_PIN));
 
         gpio_set_level(COIL_DRV_PIN, 0);
-        vTaskDelay(pdMS_TO_TICKS(3));   // quiet time
+        vTaskDelay(pdMS_TO_TICKS(60));   // quiet time
 
         float d = ultrasonic_read_cm();
         if (d < 0) {
