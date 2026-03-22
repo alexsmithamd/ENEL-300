@@ -1,8 +1,0 @@
-Command: ninja all
-[1/9] Performing build step for 'bootloader'
-[1/1] cd "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/esp-idf/esptool_py" && /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /media/marcus/BCF853CFF8538714/Users/Marcus\ Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/bootloader.bin
-Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
-[2/9] No install step for 'bootloader'
-[3/9] Completed 'bootloader'
-[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/espnow_example_main.c.obj
-[5/9] Linking C static library esp-idf/main/libmain.a

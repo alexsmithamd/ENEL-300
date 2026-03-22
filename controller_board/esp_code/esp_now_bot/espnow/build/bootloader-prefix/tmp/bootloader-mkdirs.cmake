@@ -3,20 +3,25 @@
 
 cmake_minimum_required(VERSION 3.5)
 
+# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
+# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
+# would cause a fatal error, even though it would be a no-op.
+if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject")
+endif()
 file(MAKE_DIRECTORY
-  "/home/marcus/esp/esp-idf-v5.5.3/components/bootloader/subproject"
-  "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader"
-  "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix"
-  "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/tmp"
-  "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp"
-  "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src"
-  "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader"
+  "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix"
+  "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/tmp"
+  "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src"
+  "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

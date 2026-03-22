@@ -1,0 +1,303 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\marcu\enel_300\ENEL-300\build\Metal_Detector.elf C:\Users\marcu\enel_300\ENEL-300\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381e5a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x155c
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fa4
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar 21 2026 17:23:39[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=091d8h ( 37336) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=00019200 vaddr=3fc8bc00 size=017b4h (  6068) load[0m
+[0;32mI (91) esp_image: segment 2: paddr=0001a9bc vaddr=40380000 size=0565ch ( 22108) load[0m
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=15a64h ( 88676) map[0m
+[0;32mI (119) esp_image: segment 4: paddr=00035a8c vaddr=4038565c size=063c4h ( 25540) load[0m
+[0;32mI (124) esp_image: segment 5: paddr=0003be58 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (128) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (128) boot: Disabling RNG early entropy source...[0m
+[0;32mI (144) cpu_start: Unicore app[0m
+[0;32mI (152) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (153) cpu_start: Pro cpu start user code[0m
+[0;32mI (153) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (155) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     Metal_Detector[0m
+[0;32mI (163) app_init: App version:      7ed0a2d-dirty[0m
+[0;32mI (167) app_init: Compile time:     Mar 21 2026 17:23:24[0m
+[0;32mI (172) app_init: ELF file SHA256:  ce2660379...[0m
+[0;32mI (177) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (181) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (184) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (199) heap_init: At 3FC8E2D0 len 00031D30 (199 KiB): RAM[0m
+[0;32mI (204) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (210) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (222) spi_flash: detected chip: generic[0m
+[0;32mI (225) spi_flash: flash io: dio[0m
+[0;33mW (228) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+Baseline metric = 4095
+THRESHOLD=18 SAMPLES=400
+ECHO=0
+Ultrasonic: 37.0 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 33.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 30.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 26.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 51.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 46.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 45.2 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 44.2 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 53.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 46.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 38.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 30.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 26.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 94.9 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 16.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 12.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 11.0 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 14.2 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 10.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 10.9 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 10.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 11.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 15.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 23.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 30.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 31.3 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 30.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 27.0 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 27.5 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 35.0 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 36.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 35.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 33.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 32.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 31.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 30.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 31.5 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 33.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 32.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 31.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 39.2 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 45.9 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 46.2 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 28.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 27.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 39.5 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 38.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 38.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 44.3 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 27.3 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 43.2 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 40.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 40.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 43.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 40.2 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 38.7 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 41.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 42.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 40.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 30.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 38.6 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 34.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 32.3 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 31.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 26.3 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 24.5 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 25.5 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 37.8 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 36.3 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 42.9 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 47.5 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 50.9 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 46.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 28.9 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 40.3 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 29.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 40.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 37.9 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 37.1 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 33.4 cm
+metric=4095 diff=0 detected=0
+ECHO=0
+Ultrasonic: 28.1 cm
+metric=4095 diff=0 detected=0

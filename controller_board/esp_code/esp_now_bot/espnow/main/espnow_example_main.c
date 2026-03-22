@@ -13,6 +13,7 @@
    ESPNOW data.
 */
 #include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
 #include <time.h>
 #include <complex.h>
@@ -32,8 +33,37 @@
 #include "esp_crc.h"
 #include "espnow_example.h"
 
+#include "freertos/task.h"
+
+#include "driver/i2c_master.h"
+
 #include "driver/gpio.h"
 #include <driver/ledc.h>
+
+#define SDA GPIO_NUM_18
+#define SCL GPIO_NUM_17
+#define I2C_PORT I2C_NUM_0
+#define SLAVE_ADDR 0x28
+
+typedef struct __attribute__((packed)) {
+    uint8_t sof;
+    uint8_t version;
+    uint16_t seq;
+    int16_t ultrasonic_cm_x10;
+    int16_t coil_metric;
+    uint8_t coil_detected;
+    uint8_t checksum;
+} sensor_packet_t;
+
+static i2c_master_bus_handle_t bus;
+static i2c_master_dev_handle_t dev;
+
+uint8_t checksum(sensor_packet_t *p){
+    uint8_t *d=(uint8_t*)p, c=0;
+    for(int i=0;i<sizeof(sensor_packet_t)-1;i++) c^=d[i];
+    return c;
+}
+
 
 #define L_Y_OFFSET 1.56
 #define R_X_OFFSET 1.59
@@ -222,6 +252,23 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
 
 static void example_espnow_task(void *pvParameter)
 {
+    i2c_master_bus_config_t bus_cfg={
+        .clk_source=I2C_CLK_SRC_DEFAULT,
+        .i2c_port=I2C_PORT,
+        .sda_io_num=SDA,
+        .scl_io_num=SCL,
+        .flags.enable_internal_pullup=true,
+    };
+    i2c_new_master_bus(&bus_cfg,&bus);
+
+    i2c_device_config_t dev_cfg={
+        .device_address=SLAVE_ADDR,
+        .dev_addr_length=I2C_ADDR_BIT_LEN_7,
+        .scl_speed_hz=100000,
+    };
+    i2c_master_bus_add_device(bus,&dev_cfg,&dev);
+
+
     example_espnow_event_t evt;
     uint8_t recv_state = 0;
     uint16_t recv_seq = 0;
@@ -241,6 +288,15 @@ static void example_espnow_task(void *pvParameter)
     }
 
     while (xQueueReceive(s_example_espnow_queue, &evt, portMAX_DELAY) == pdTRUE) {
+        sensor_packet_t pkt;
+        if(i2c_master_receive(dev,(uint8_t*)&pkt,sizeof(pkt),100)==ESP_OK){
+            if(pkt.checksum==checksum(&pkt)){
+                ESP_LOGI("MASTER","Dist=%.1f cm, Coil=%d",
+                    pkt.ultrasonic_cm_x10/10.0f,
+                    pkt.coil_detected);
+            }
+        }
+
         switch (evt.id) {
             case EXAMPLE_ESPNOW_SEND_CB:
             {

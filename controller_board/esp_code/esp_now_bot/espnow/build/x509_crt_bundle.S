@@ -1,4 +1,4 @@
-/* * Data converted from /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)
