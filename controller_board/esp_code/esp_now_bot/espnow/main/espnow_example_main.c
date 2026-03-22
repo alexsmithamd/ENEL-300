@@ -279,6 +279,16 @@ static void example_espnow_task(void *pvParameter)
     vTaskDelay(5000 / portTICK_PERIOD_MS);
     ESP_LOGI(TAG, "Start sending broadcast data");
 
+    while(1){
+         sensor_packet_t pkt;
+        if(i2c_master_receive(dev,(uint8_t*)&pkt,sizeof(pkt),100)==ESP_OK){
+            if(pkt.checksum==checksum(&pkt)){
+                ESP_LOGI("MASTER","Dist=%.1f cm, Coil=%d",
+                    pkt.ultrasonic_cm_x10/10.0f,
+                    pkt.coil_detected);
+            }
+        }
+    }
     /* Start sending broadcast ESPNOW data. */
     example_espnow_send_param_t *send_param = (example_espnow_send_param_t *)pvParameter;
     if (esp_now_send(send_param->dest_mac, send_param->buffer, send_param->len) != ESP_OK) {
@@ -288,14 +298,7 @@ static void example_espnow_task(void *pvParameter)
     }
 
     while (xQueueReceive(s_example_espnow_queue, &evt, portMAX_DELAY) == pdTRUE) {
-        sensor_packet_t pkt;
-        if(i2c_master_receive(dev,(uint8_t*)&pkt,sizeof(pkt),100)==ESP_OK){
-            if(pkt.checksum==checksum(&pkt)){
-                ESP_LOGI("MASTER","Dist=%.1f cm, Coil=%d",
-                    pkt.ultrasonic_cm_x10/10.0f,
-                    pkt.coil_detected);
-            }
-        }
+       
 
         switch (evt.id) {
             case EXAMPLE_ESPNOW_SEND_CB:
