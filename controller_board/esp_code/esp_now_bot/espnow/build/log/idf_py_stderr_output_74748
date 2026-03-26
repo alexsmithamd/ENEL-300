@@ -1,0 +1,25 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\__main__.py", line 1, in <module>
+    from esp_idf_monitor.idf_monitor import main
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\idf_monitor.py", line 46, in <module>
+    from esp_idf_monitor.base.argument_parser import get_parser
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\base\argument_parser.py", line 13, in <module>
+    from .coredump import COREDUMP_DECODE_DISABLE
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\esp_idf_monitor\base\coredump.py", line 6, in <module>
+    import tempfile
+  File "tempfile.py", line 43, in <module>
+  File "shutil.py", line 29, in <module>
+  File "lzma.py", line 27, in <module>
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

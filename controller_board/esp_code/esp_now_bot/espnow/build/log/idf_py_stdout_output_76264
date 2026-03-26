@@ -1,0 +1,4095 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 26 2026 13:26:22[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=18db0h (101808) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00028dd8 vaddr=3fc9a300 size=04e30h ( 20016) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0002dc10 vaddr=40374000 size=02408h (  9224) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=806dch (526044) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000b0704 vaddr=40376408 size=13ed8h ( 81624) load[0m
+[0;32mI (226) esp_image: segment 5: paddr=000c45e4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (236) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (236) boot: Disabling RNG early entropy source...[0m
+[0;32mI (246) cpu_start: Multicore app[0m
+[0;32mI (254) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (255) cpu_start: Pro cpu start user code[0m
+[0;32mI (255) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (257) app_init: Application information:[0m
+[0;32mI (260) app_init: Project name:     espnow_example[0m
+[0;32mI (265) app_init: App version:      e36d85a-dirty[0m
+[0;32mI (269) app_init: Compile time:     Mar 26 2026 13:26:15[0m
+[0;32mI (274) app_init: ELF file SHA256:  1442cc4fc...[0m
+[0;32mI (279) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (282) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (286) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (290) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (294) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (301) heap_init: At 3FCA2E68 len 000468A8 (282 KiB): RAM[0m
+[0;32mI (306) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (311) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (316) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (322) spi_flash: detected chip: boya[0m
+[0;32mI (325) spi_flash: flash io: dio[0m
+[0;33mW (328) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (340) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (346) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (353) main_task: Started on CPU0[0m
+[0;32mI (373) main_task: Calling app_main()[0m
+[0;32mI (383) pp: pp rom version: e7ae62f[0m
+[0;32mI (383) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (393) wifi:wifi driver task: 3fcee17c, prio:23, stack:6656, core=0[0m
+[0;32mI (393) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (393) wifi:wifi certification version: v7.0[0m
+[0;32mI (393) wifi:config NVS flash: enabled[0m
+[0;32mI (393) wifi:config nano formatting: disabled[0m
+[0;32mI (403) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (403) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (413) wifi:Init management short buffer num: 32[0m
+[0;32mI (413) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (413) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (423) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (423) wifi:Init static rx buffer num: 10[0m
+[0;32mI (433) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (433) wifi_init: rx ba win: 6[0m
+[0;32mI (433) wifi_init: accept mbox: 6[0m
+[0;32mI (443) wifi_init: tcpip mbox: 32[0m
+[0;32mI (443) wifi_init: udp mbox: 6[0m
+[0;32mI (443) wifi_init: tcp mbox: 6[0m
+[0;32mI (443) wifi_init: tcp tx win: 5760[0m
+[0;32mI (453) wifi_init: tcp rx win: 5760[0m
+[0;32mI (453) wifi_init: tcp mss: 1440[0m
+[0;32mI (453) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (463) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (463) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (513) wifi:mode : sta (dc:b4:d9:0b:32:e0)[0m
+[0;32mI (513) wifi:enable tsf[0m
+[0;32mI (523) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (523) main_task: Returned from app_main()[0m
+[0;32mI (5523) espnow_example: Start sending broadcast data[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (5533) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (5553) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (5573) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (5593) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (5613) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (5633) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (5653) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (5673) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (5693) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (5713) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+[0;32mI (5733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (5993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6713) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6733) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6753) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6773) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6793) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6813) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6833) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6853) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (6873) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (6893) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (6913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+[0;32mI (6933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (6993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (7913) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (7933) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (7953) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (7973) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (7993) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (8013) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (8033) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (8053) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (8073) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (8093) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (8113) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (8133) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (8153) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (8173) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+[0;32mI (8193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (8993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (9173) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (9193) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9213) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9233) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9253) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (9273) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9293) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (9313) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9333) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (9353) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9373) : COMPLEX Values: 0.000000 0.758169[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9393) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9413) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (9433) : COMPLEX Values: 0.000000 -0.021099[0m
+Ultrasonic: 12.5 cm
+[0;32mI (9453) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9473) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9493) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9513) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9533) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9553) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9573) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9593) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9613) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9633) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9653) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9673) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9693) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9713) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9733) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9753) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9773) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9793) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9813) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9833) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9853) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9873) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9893) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9913) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9933) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9953) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9973) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (9993) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10013) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10033) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10053) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10073) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10093) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10113) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10133) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10153) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10173) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10193) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10213) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10233) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10253) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10273) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10293) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10313) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10333) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10353) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10373) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10393) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10413) : COMPLEX Values: 0.000000 -0.021099[0m
+[0;32mI (10433) : COMPLEX Values: 0.000000 -0.021099[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10453) : COMPLEX Values: 0.000000 -0.021099[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10473) : COMPLEX Values: 0.000000 -0.033187[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10493) : COMPLEX Values: 0.000000 -0.033187[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10513) : COMPLEX Values: 0.000000 -0.029963[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10533) : COMPLEX Values: 0.000000 -0.029963[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10553) : COMPLEX Values: 0.000000 -0.032381[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10573) : COMPLEX Values: 0.000000 -0.032381[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10593) : COMPLEX Values: 0.000000 1.207839[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10613) : COMPLEX Values: 0.000000 1.207839[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10633) : COMPLEX Values: 0.000000 -0.025128[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (10653) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+[0;32mI (10673) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10693) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10713) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10733) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10753) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10773) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10793) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10813) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10833) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10853) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10873) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10893) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10913) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10933) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10953) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10973) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (10993) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11013) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11033) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11053) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11073) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11093) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11113) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11133) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11153) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11173) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11193) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11213) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11233) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11253) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11273) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11293) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11313) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11333) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11353) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11373) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11393) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11413) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11433) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11453) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11473) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11493) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11513) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11533) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11553) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11573) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11593) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11613) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11633) : COMPLEX Values: 0.000000 -0.028352[0m
+[0;32mI (11653) : COMPLEX Values: 0.000000 -0.028352[0m
+ECHO=0
+[0;32mI (11673) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 6.8 cm
+ECHO=0
+Ultrasonic: 6.8 cm
+ECHO=0
+[0;32mI (11693) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 10.8 cm
+ECHO=0
+Ultrasonic: 12.2 cm
+ECHO=0
+[0;32mI (11713) : COMPLEX Values: 0.000000 -0.023516[0m
+Ultrasonic: 10.4 cm
+ECHO=0
+Ultrasonic: 8.8 cm
+ECHO=0
+[0;32mI (11733) : COMPLEX Values: 0.000000 -0.023516[0m
+Ultrasonic: 8.1 cm
+ECHO=0
+Ultrasonic: 6.8 cm
+ECHO=0
+[0;32mI (11753) : COMPLEX Values: 0.000000 -0.025128[0m
+Ultrasonic: 6.8 cm
+ECHO=0
+Ultrasonic: 7.7 cm
+ECHO=0
+[0;32mI (11773) : COMPLEX Values: 0.000000 -0.025128[0m
+Ultrasonic: 10.1 cm
+ECHO=0
+Ultrasonic: 10.1 cm
+ECHO=0
+[0;32mI (11793) : COMPLEX Values: 0.000000 -0.024322[0m
+Ultrasonic: 9.8 cm
+ECHO=0
+Ultrasonic: 10.9 cm
+ECHO=0
+[0;32mI (11813) : COMPLEX Values: 0.000000 -0.024322[0m
+Ultrasonic: 10.8 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (11833) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (11853) : COMPLEX Values: 0.000000 -0.022711[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 15.6 cm
+ECHO=0
+[0;32mI (11873) : COMPLEX Values: 0.000000 -0.022711[0m
+Ultrasonic: 8.0 cm
+[0;32mI (11893) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (11913) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (11933) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (11953) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (11973) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (11993) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12013) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12033) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12053) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12073) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12093) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12113) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12133) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12153) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12173) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12193) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12213) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12233) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12253) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12273) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12293) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12313) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12333) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12353) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12373) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12393) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12413) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12433) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12453) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12473) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12493) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12513) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12533) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12553) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12573) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12593) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12613) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12633) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12653) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12673) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12693) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12713) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12733) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12753) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12773) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12793) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12813) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12833) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12853) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (12873) : COMPLEX Values: 0.000000 -0.022711[0m
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (12893) : COMPLEX Values: 0.000000 -0.022711[0m
+Ultrasonic: 6.5 cm
+ECHO=0
+Ultrasonic: 6.5 cm
+ECHO=0
+[0;32mI (12913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.5 cm
+ECHO=0
+Ultrasonic: 6.5 cm
+ECHO=0
+[0;32mI (12933) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.5 cm
+ECHO=0
+Ultrasonic: 6.4 cm
+ECHO=0
+[0;32mI (12953) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.5 cm
+ECHO=0
+Ultrasonic: 6.4 cm
+ECHO=0
+[0;32mI (12973) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.4 cm
+ECHO=0
+Ultrasonic: 6.5 cm
+ECHO=0
+[0;32mI (12993) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 6.4 cm
+ECHO=0
+Ultrasonic: 6.5 cm
+ECHO=0
+[0;32mI (13013) : COMPLEX Values: 0.000000 -0.022711[0m
+Ultrasonic: 6.4 cm
+ECHO=0
+Ultrasonic: 6.5 cm
+[0;32mI (13033) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13053) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13073) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13093) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13113) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13133) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13153) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13173) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13193) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13213) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13233) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13253) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13273) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13293) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13313) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13333) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13353) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13373) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13393) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13413) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13433) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13453) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13473) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13493) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13513) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13533) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13553) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13573) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13593) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13613) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13633) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13653) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13673) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13693) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13713) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13733) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13753) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13773) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13793) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13813) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13833) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13853) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13873) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13893) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13913) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13933) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13953) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13973) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (13993) : COMPLEX Values: 0.000000 -0.022711[0m
+[0;32mI (14013) : COMPLEX Values: 0.000000 -0.022711[0m
+ECHO=0
+[0;32mI (14033) : COMPLEX Values: 0.000000 -0.022711[0m
+Ultrasonic: 8.7 cm
+ECHO=0
+Ultrasonic: 6.5 cm
+ECHO=0
+[0;32mI (14053) : COMPLEX Values: 0.000000 -0.022711[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 4.6 cm
+ECHO=0
+[0;32mI (14073) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 5.8 cm
+ECHO=0
+Ultrasonic: 4.9 cm
+ECHO=0
+[0;32mI (14093) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 3.9 cm
+ECHO=0
+Ultrasonic: 3.9 cm
+ECHO=0
+[0;32mI (14113) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 3.9 cm
+ECHO=0
+Ultrasonic: 2.9 cm
+ECHO=0
+[0;32mI (14133) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 4.2 cm
+ECHO=0
+Ultrasonic: 4.2 cm
+ECHO=0
+[0;32mI (14153) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 3.2 cm
+ECHO=0
+Ultrasonic: 3.3 cm
+ECHO=0
+[0;32mI (14173) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 3.2 cm
+ECHO=0
+Ultrasonic: 3.2 cm
+ECHO=0
+[0;32mI (14193) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 3.2 cm
+ECHO=0
+Ultrasonic: 3.2 cm
+ECHO=0
+[0;32mI (14213) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 3.2 cm
+ECHO=0
+Ultrasonic: 3.3 cm
+ECHO=0
+[0;32mI (14233) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 3.2 cm
+ECHO=0
+Ultrasonic: 3.3 cm
+ECHO=0
+[0;32mI (14253) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 3.2 cm
+[0;32mI (14273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (14993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15253) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (15273) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (15293) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (15313) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (15333) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (15353) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (15373) : COMPLEX Values: 0.000000 -0.025128[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (15393) : COMPLEX Values: 0.000000 -0.025128[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (15413) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (15433) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+[0;32mI (15453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (15993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (16433) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (16453) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (16473) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (16493) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (16513) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (16533) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (16553) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (16573) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (16593) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (16613) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (16633) : COMPLEX Values: 0.000000 -1.740000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (16653) : COMPLEX Values: 0.000000 -0.034799[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+[0;32mI (16673) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16693) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16713) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16733) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16753) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16773) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16793) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16813) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16833) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16853) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16873) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16893) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16913) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16933) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16953) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16973) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (16993) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17013) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17033) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17053) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17073) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17093) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17113) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17133) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17153) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17173) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17193) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17213) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17233) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17253) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17273) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17293) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17313) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17333) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17353) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17373) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17393) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17413) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17433) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17453) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17473) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17493) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17513) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17533) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17553) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17573) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17593) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17613) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17633) : COMPLEX Values: 0.000000 -0.034799[0m
+[0;32mI (17653) : COMPLEX Values: 0.000000 -0.034799[0m
+ECHO=0
+[0;32mI (17673) : COMPLEX Values: 0.000000 -0.034799[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17693) : COMPLEX Values: 0.000000 1.560000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17713) : COMPLEX Values: 0.000000 1.560000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17733) : COMPLEX Values: 0.000000 1.553553[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17753) : COMPLEX Values: 0.000000 1.553553[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17773) : COMPLEX Values: 0.000000 1.560000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17793) : COMPLEX Values: 0.000000 1.560000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17813) : COMPLEX Values: 0.040256 1.560000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17833) : COMPLEX Values: 0.040256 1.560000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17853) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17873) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (17893) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 12.5 cm
+[0;32mI (17913) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (17933) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (17953) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (17973) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (17993) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18013) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18033) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18053) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18073) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18093) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18113) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18133) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18153) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18173) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18193) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18213) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18233) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18253) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18273) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18293) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18313) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18333) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18353) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18373) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18393) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18413) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18433) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18453) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18473) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18493) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18513) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18533) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18553) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18573) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18593) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18613) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18633) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18653) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18673) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18693) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18713) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18733) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18753) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18773) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18793) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18813) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18833) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18853) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18873) : COMPLEX Values: 0.000000 -0.021905[0m
+[0;32mI (18893) : COMPLEX Values: 0.000000 -0.021905[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (18913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (18933) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (18953) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (18973) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (18993) : COMPLEX Values: 1.710000 -0.023516[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (19013) : COMPLEX Values: 1.710000 -0.023516[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (19033) : COMPLEX Values: 1.710000 -0.021905[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (19053) : COMPLEX Values: 1.710000 -0.021905[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (19073) : COMPLEX Values: 0.864652 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (19093) : COMPLEX Values: 0.864652 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (19113) : COMPLEX Values: 0.000000 -0.023516[0m
+Ultrasonic: 12.5 cm
+[0;32mI (19133) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19153) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19173) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19193) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19213) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19233) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19253) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19273) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19293) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19313) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19333) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19353) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19373) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19393) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19413) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19433) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19453) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19473) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19493) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19513) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19533) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19553) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19573) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19593) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19613) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19633) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19653) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19673) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19693) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19713) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19733) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19753) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19773) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19793) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19813) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19833) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19853) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19873) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19893) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19913) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19933) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19953) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19973) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (19993) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (20013) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (20033) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (20053) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (20073) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (20093) : COMPLEX Values: 0.000000 -0.023516[0m
+[0;32mI (20113) : COMPLEX Values: 0.000000 -0.023516[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (20133) : COMPLEX Values: 0.000000 -0.023516[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (20153) : COMPLEX Values: 0.000000 -0.023516[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (20173) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (20193) : COMPLEX Values: 0.000000 -0.021905[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (20213) : COMPLEX Values: 0.000000 -0.034799[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (20233) : COMPLEX Values: 0.000000 -0.034799[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (20253) : COMPLEX Values: -1.120183 -0.020293[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (20273) : COMPLEX Values: -1.121795 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (20293) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (20313) : COMPLEX Values: -1.531172 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (20333) : COMPLEX Values: -1.531172 0.000000[0m
+Ultrasonic: 12.5 cm
+[0;32mI (20353) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20373) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20393) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20413) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20433) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20453) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20473) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20493) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20513) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20533) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20553) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20573) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20593) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20613) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20633) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20653) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20673) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20693) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20713) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20733) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20753) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20773) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20793) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20813) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20833) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20853) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20873) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20893) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20913) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20933) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20953) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20973) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (20993) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21013) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21033) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21053) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21073) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21093) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21113) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21133) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21153) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21173) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21193) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21213) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21233) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21253) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21273) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21293) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21313) : COMPLEX Values: -1.531172 0.000000[0m
+[0;32mI (21333) : COMPLEX Values: -1.531172 0.000000[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (21353) : COMPLEX Values: -1.531172 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (21373) : COMPLEX Values: -1.426410 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (21393) : COMPLEX Values: -1.426410 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (21413) : COMPLEX Values: -1.299084 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (21433) : COMPLEX Values: -1.299084 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (21453) : COMPLEX Values: -0.847802 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (21473) : COMPLEX Values: -0.847802 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (21493) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (21513) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (21533) : COMPLEX Values: 0.657546 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (21553) : COMPLEX Values: 0.657546 0.000000[0m
+Ultrasonic: 12.5 cm
+[0;32mI (21573) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21593) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21613) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21633) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21653) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21673) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21693) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21713) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21733) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21753) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21773) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21793) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21813) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21833) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21853) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21873) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21893) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21913) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21933) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21953) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21973) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (21993) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22013) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22033) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22053) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22073) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22093) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22113) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22133) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22153) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22173) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22193) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22213) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22233) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22253) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22273) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22293) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22313) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22333) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22353) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22373) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22393) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22413) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22433) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22453) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22473) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22493) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22513) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22533) : COMPLEX Values: 0.657546 0.000000[0m
+[0;32mI (22553) : COMPLEX Values: 0.657546 0.000000[0m
+ECHO=0
+Ultrasonic: 10.4 cm
+ECHO=0
+[0;32mI (22573) : COMPLEX Values: 0.657546 0.000000[0m
+Ultrasonic: 10.5 cm
+ECHO=0
+Ultrasonic: 10.5 cm
+ECHO=0
+[0;32mI (22593) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 9.5 cm
+ECHO=0
+Ultrasonic: 10.8 cm
+ECHO=0
+[0;32mI (22613) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 12.2 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (22633) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 15.6 cm
+ECHO=0
+Ultrasonic: 16.9 cm
+ECHO=0
+[0;32mI (22653) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 11.2 cm
+ECHO=0
+Ultrasonic: 11.1 cm
+ECHO=0
+[0;32mI (22673) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 11.2 cm
+ECHO=0
+Ultrasonic: 11.2 cm
+ECHO=0
+[0;32mI (22693) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 11.2 cm
+ECHO=0
+Ultrasonic: 9.4 cm
+ECHO=0
+[0;32mI (22713) : COMPLEX Values: 1.426337 0.000000[0m
+Ultrasonic: 9.4 cm
+ECHO=0
+Ultrasonic: 9.4 cm
+ECHO=0
+[0;32mI (22733) : COMPLEX Values: 1.426337 0.000000[0m
+Ultrasonic: 9.4 cm
+ECHO=0
+Ultrasonic: 9.4 cm
+ECHO=0
+[0;32mI (22753) : COMPLEX Values: 1.490000 0.000000[0m
+Ultrasonic: 9.5 cm
+ECHO=0
+Ultrasonic: 9.4 cm
+ECHO=0
+[0;32mI (22773) : COMPLEX Values: 1.490000 0.000000[0m
+Ultrasonic: 9.4 cm
+ECHO=0
+Ultrasonic: 9.5 cm
+[0;32mI (22793) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22813) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22833) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22853) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22873) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22893) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22913) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22933) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22953) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22973) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (22993) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23013) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23033) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23053) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23073) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23093) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23113) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23133) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23153) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23173) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23193) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23213) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23233) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23253) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23273) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23293) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23313) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23333) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23353) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23373) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23393) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23413) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23433) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23453) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23473) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23493) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23513) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23533) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23553) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23573) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23593) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23613) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23633) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23653) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23673) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23693) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23713) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23733) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23753) : COMPLEX Values: 1.490000 0.000000[0m
+[0;32mI (23773) : COMPLEX Values: 1.490000 0.000000[0m
+ECHO=0
+[0;32mI (23793) : COMPLEX Values: 1.490000 0.000000[0m
+Ultrasonic: 9.8 cm
+ECHO=0
+Ultrasonic: 9.8 cm
+ECHO=0
+[0;32mI (23813) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 8.4 cm
+ECHO=0
+Ultrasonic: 8.4 cm
+ECHO=0
+[0;32mI (23833) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 8.4 cm
+ECHO=0
+Ultrasonic: 8.4 cm
+ECHO=0
+[0;32mI (23853) : COMPLEX Values: -1.288608 0.000000[0m
+Ultrasonic: 8.4 cm
+ECHO=0
+Ultrasonic: 8.8 cm
+ECHO=0
+[0;32mI (23873) : COMPLEX Values: -1.288608 0.000000[0m
+Ultrasonic: 8.8 cm
+ECHO=0
+Ultrasonic: 8.8 cm
+ECHO=0
+[0;32mI (23893) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 8.7 cm
+ECHO=0
+Ultrasonic: 8.8 cm
+ECHO=0
+[0;32mI (23913) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 8.7 cm
+ECHO=0
+Ultrasonic: 8.7 cm
+ECHO=0
+[0;32mI (23933) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 8.8 cm
+ECHO=0
+Ultrasonic: 8.8 cm
+ECHO=0
+[0;32mI (23953) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 10.5 cm
+ECHO=0
+Ultrasonic: 10.5 cm
+ECHO=0
+[0;32mI (23973) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+[0;32mI (23993) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24013) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24033) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24053) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24073) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24093) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24113) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24133) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24153) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24173) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24193) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24213) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24233) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24253) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24273) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24293) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24313) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24333) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24353) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24373) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24393) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24413) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24433) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24453) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24473) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24493) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24513) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24533) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24553) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24573) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24593) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24613) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24633) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24653) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24673) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24693) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24713) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24733) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24753) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24773) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24793) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24813) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24833) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24853) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24873) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24893) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24913) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24933) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24953) : COMPLEX Values: -1.590000 0.000000[0m
+[0;32mI (24973) : COMPLEX Values: -1.590000 0.000000[0m
+ECHO=0
+[0;32mI (24993) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 13.5 cm
+ECHO=0
+Ultrasonic: 13.6 cm
+ECHO=0
+[0;32mI (25013) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25033) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (25053) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25073) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25093) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25113) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25133) : COMPLEX Values: -1.590000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25153) : COMPLEX Values: 0.233663 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25173) : COMPLEX Values: 0.488315 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25193) : COMPLEX Values: 0.488315 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (25213) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 12.5 cm
+[0;32mI (25233) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25253) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25273) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25293) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25313) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25333) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25353) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25373) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25393) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25413) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25433) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25453) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25473) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25493) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25513) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25533) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25553) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25573) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25593) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25613) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25633) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25653) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25673) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25693) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25713) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25733) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25753) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25773) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25793) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25813) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25833) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25853) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25873) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25893) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25913) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25933) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25953) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25973) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (25993) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26013) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26033) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26053) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26073) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26093) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26113) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26133) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26153) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26173) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26193) : COMPLEX Values: 1.710000 0.000000[0m
+[0;32mI (26213) : COMPLEX Values: 1.710000 0.000000[0m
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (26233) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 12.2 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (26253) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 14.2 cm
+ECHO=0
+[0;32mI (26273) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 14.3 cm
+ECHO=0
+Ultrasonic: 14.2 cm
+ECHO=0
+[0;32mI (26293) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 14.3 cm
+ECHO=0
+Ultrasonic: 14.2 cm
+ECHO=0
+[0;32mI (26313) : COMPLEX Values: 1.710000 0.000000[0m
+Ultrasonic: 14.3 cm
+ECHO=0
+Ultrasonic: 14.2 cm
+ECHO=0
+[0;32mI (26333) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 14.3 cm
+ECHO=0
+Ultrasonic: 14.2 cm
+ECHO=0
+[0;32mI (26353) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 14.3 cm
+ECHO=0
+Ultrasonic: 14.2 cm
+ECHO=0
+[0;32mI (26373) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 14.2 cm
+ECHO=0
+Ultrasonic: 14.2 cm
+ECHO=0
+[0;32mI (26393) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.6 cm
+ECHO=0
+Ultrasonic: 15.6 cm
+ECHO=0
+[0;32mI (26413) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.6 cm
+ECHO=0
+Ultrasonic: 15.6 cm
+ECHO=0
+[0;32mI (26433) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.6 cm
+ECHO=0
+Ultrasonic: 15.6 cm
+ECHO=0
+[0;32mI (26453) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.6 cm
+ECHO=0
+Ultrasonic: 15.6 cm
+ECHO=0
+[0;32mI (26473) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.6 cm
+[0;32mI (26493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (26993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27473) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (27493) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (27513) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.6 cm
+ECHO=0
+Ultrasonic: 12.5 cm
+ECHO=0
+[0;32mI (27533) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.6 cm
+ECHO=0
+[0;32mI (27553) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.5 cm
+ECHO=0
+Ultrasonic: 12.8 cm
+ECHO=0
+[0;32mI (27573) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.8 cm
+ECHO=0
+Ultrasonic: 12.9 cm
+ECHO=0
+[0;32mI (27593) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.8 cm
+ECHO=0
+Ultrasonic: 14.3 cm
+ECHO=0
+[0;32mI (27613) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 14.6 cm
+ECHO=0
+Ultrasonic: 14.6 cm
+[0;32mI (27633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (27993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28613) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (28633) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 9.1 cm
+ECHO=0
+Ultrasonic: 3.9 cm
+ECHO=0
+[0;32mI (28653) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 2.9 cm
+ECHO=0
+Ultrasonic: 2.9 cm
+ECHO=0
+[0;32mI (28673) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 4.2 cm
+ECHO=0
+Ultrasonic: 3.2 cm
+ECHO=0
+[0;32mI (28693) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 3.2 cm
+ECHO=0
+Ultrasonic: 4.5 cm
+ECHO=0
+[0;32mI (28713) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 3.6 cm
+ECHO=0
+Ultrasonic: 3.9 cm
+ECHO=0
+[0;32mI (28733) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.2 cm
+ECHO=0
+Ultrasonic: 4.2 cm
+ECHO=0
+[0;32mI (28753) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 4.2 cm
+ECHO=0
+Ultrasonic: 3.2 cm
+ECHO=0
+[0;32mI (28773) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 3.2 cm
+ECHO=0
+Ultrasonic: 3.6 cm
+ECHO=0
+[0;32mI (28793) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 3.9 cm
+ECHO=0
+Ultrasonic: 5.2 cm
+ECHO=0
+[0;32mI (28813) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 4.2 cm
+[0;32mI (28833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (28993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (29813) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 18.8 cm
+ECHO=0
+[0;32mI (29833) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 37.6 cm
+ECHO=0
+Ultrasonic: 37.5 cm
+ECHO=0
+[0;32mI (29853) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 17.9 cm
+ECHO=0
+Ultrasonic: 17.8 cm
+ECHO=0
+[0;32mI (29873) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.9 cm
+ECHO=0
+Ultrasonic: 16.9 cm
+ECHO=0
+[0;32mI (29893) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.9 cm
+ECHO=0
+Ultrasonic: 16.9 cm
+ECHO=0
+[0;32mI (29913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.9 cm
+ECHO=0
+Ultrasonic: 17.8 cm
+ECHO=0
+[0;32mI (29933) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.9 cm
+ECHO=0
+Ultrasonic: 16.9 cm
+ECHO=0
+[0;32mI (29953) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 17.8 cm
+ECHO=0
+Ultrasonic: 17.9 cm
+ECHO=0
+[0;32mI (29973) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.9 cm
+ECHO=0
+Ultrasonic: 16.9 cm
+ECHO=0
+[0;32mI (29993) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.9 cm
+ECHO=0
+Ultrasonic: 17.9 cm
+ECHO=0
+[0;32mI (30013) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.5 cm
+[0;32mI (30033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (30993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31013) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 16.2 cm
+ECHO=0
+[0;32mI (31033) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.3 cm
+ECHO=0
+Ultrasonic: 16.2 cm
+ECHO=0
+[0;32mI (31053) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.3 cm
+ECHO=0
+Ultrasonic: 16.2 cm
+ECHO=0
+[0;32mI (31073) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.3 cm
+ECHO=0
+Ultrasonic: 16.2 cm
+ECHO=0
+[0;32mI (31093) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.3 cm
+ECHO=0
+Ultrasonic: 16.2 cm
+ECHO=0
+[0;32mI (31113) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.3 cm
+ECHO=0
+Ultrasonic: 16.2 cm
+ECHO=0
+[0;32mI (31133) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.3 cm
+ECHO=0
+Ultrasonic: 16.3 cm
+ECHO=0
+[0;32mI (31153) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.2 cm
+ECHO=0
+Ultrasonic: 16.3 cm
+ECHO=0
+[0;32mI (31173) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.2 cm
+ECHO=0
+Ultrasonic: 16.3 cm
+ECHO=0
+[0;32mI (31193) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.2 cm
+ECHO=0
+Ultrasonic: 16.3 cm
+ECHO=0
+[0;32mI (31213) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 16.2 cm
+[0;32mI (31233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (31993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32213) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 15.2 cm
+ECHO=0
+[0;32mI (32233) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.3 cm
+ECHO=0
+Ultrasonic: 15.2 cm
+ECHO=0
+[0;32mI (32253) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.3 cm
+ECHO=0
+Ultrasonic: 15.2 cm
+ECHO=0
+[0;32mI (32273) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.3 cm
+ECHO=0
+Ultrasonic: 15.2 cm
+ECHO=0
+[0;32mI (32293) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.3 cm
+ECHO=0
+Ultrasonic: 15.2 cm
+ECHO=0
+[0;32mI (32313) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 15.2 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (32333) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (32353) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (32373) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (32393) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.8 cm
+ECHO=0
+Ultrasonic: 14.3 cm
+ECHO=0
+[0;32mI (32413) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 14.2 cm
+ECHO=0
+Ultrasonic: 14.3 cm
+ECHO=0
+[0;32mI (32433) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 14.2 cm
+ECHO=0
+Ultrasonic: 14.3 cm
+[0;32mI (32453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (32993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33433) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (33453) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 12.8 cm
+ECHO=0
+Ultrasonic: 11.2 cm
+ECHO=0
+[0;32mI (33473) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 9.8 cm
+ECHO=0
+Ultrasonic: 10.2 cm
+ECHO=0
+[0;32mI (33493) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 10.5 cm
+ECHO=0
+Ultrasonic: 9.5 cm
+ECHO=0
+[0;32mI (33513) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 9.8 cm
+ECHO=0
+Ultrasonic: 10.5 cm
+ECHO=0
+[0;32mI (33533) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 9.4 cm
+ECHO=0
+Ultrasonic: 8.0 cm
+ECHO=0
+[0;32mI (33553) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 8.4 cm
+ECHO=0
+Ultrasonic: 10.1 cm
+ECHO=0
+[0;32mI (33573) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 10.2 cm
+ECHO=0
+Ultrasonic: 8.8 cm
+ECHO=0
+[0;32mI (33593) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 10.4 cm
+ECHO=0
+Ultrasonic: 9.1 cm
+ECHO=0
+[0;32mI (33613) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 9.1 cm
+ECHO=0
+Ultrasonic: 9.5 cm
+ECHO=0
+[0;32mI (33633) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 8.1 cm
+ECHO=0
+Ultrasonic: 9.8 cm
+ECHO=0
+[0;32mI (33653) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 9.8 cm
+[0;32mI (33673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (33993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34653) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 12.8 cm
+ECHO=0
+[0;32mI (34673) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.2 cm
+ECHO=0
+Ultrasonic: 13.2 cm
+ECHO=0
+[0;32mI (34693) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.2 cm
+ECHO=0
+Ultrasonic: 13.2 cm
+ECHO=0
+[0;32mI (34713) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.2 cm
+ECHO=0
+Ultrasonic: 13.5 cm
+ECHO=0
+[0;32mI (34733) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.6 cm
+ECHO=0
+Ultrasonic: 13.5 cm
+ECHO=0
+[0;32mI (34753) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.5 cm
+ECHO=0
+Ultrasonic: 13.6 cm
+ECHO=0
+[0;32mI (34773) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.5 cm
+ECHO=0
+Ultrasonic: 13.5 cm
+ECHO=0
+[0;32mI (34793) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.5 cm
+ECHO=0
+Ultrasonic: 13.6 cm
+ECHO=0
+[0;32mI (34813) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.5 cm
+ECHO=0
+Ultrasonic: 13.5 cm
+ECHO=0
+[0;32mI (34833) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.5 cm
+ECHO=0
+Ultrasonic: 13.5 cm
+ECHO=0
+[0;32mI (34853) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.5 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (34873) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+[0;32mI (34893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (34993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (35873) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (35893) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 48.8 cm
+ECHO=0
+Ultrasonic: 42.9 cm
+ECHO=0
+[0;32mI (35913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 42.8 cm
+ECHO=0
+Ultrasonic: 42.8 cm
+ECHO=0
+[0;32mI (35933) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 42.8 cm
+ECHO=0
+Ultrasonic: 41.1 cm
+ECHO=0
+[0;32mI (35953) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 37.6 cm
+ECHO=0
+Ultrasonic: 36.7 cm
+ECHO=0
+[0;32mI (35973) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.6 cm
+ECHO=0
+Ultrasonic: 36.7 cm
+ECHO=0
+[0;32mI (35993) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.6 cm
+ECHO=0
+Ultrasonic: 36.7 cm
+ECHO=0
+[0;32mI (36013) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 39.6 cm
+ECHO=0
+Ultrasonic: 36.2 cm
+ECHO=0
+[0;32mI (36033) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 35.7 cm
+ECHO=0
+Ultrasonic: 36.3 cm
+ECHO=0
+[0;32mI (36053) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 35.7 cm
+ECHO=0
+Ultrasonic: 38.3 cm
+ECHO=0
+[0;32mI (36073) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 41.2 cm
+ECHO=0
+Ultrasonic: 43.8 cm
+[0;32mI (36093) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 46.9 cm
+ECHO=0
+[0;32mI (36113) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 51.3 cm
+ECHO=0
+Ultrasonic: 39.0 cm
+[0;32mI (36133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (36993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37113) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 41.5 cm
+[0;32mI (37133) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 40.1 cm
+ECHO=0
+Ultrasonic: 36.9 cm
+ECHO=0
+[0;32mI (37153) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 35.2 cm
+ECHO=0
+Ultrasonic: 35.2 cm
+ECHO=0
+[0;32mI (37173) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 35.2 cm
+ECHO=0
+Ultrasonic: 42.4 cm
+ECHO=0
+[0;32mI (37193) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 35.7 cm
+ECHO=0
+Ultrasonic: 42.0 cm
+ECHO=0
+[0;32mI (37213) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 35.7 cm
+ECHO=0
+Ultrasonic: 35.7 cm
+ECHO=0
+[0;32mI (37233) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 42.0 cm
+ECHO=0
+Ultrasonic: 40.5 cm
+ECHO=0
+[0;32mI (37253) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 41.1 cm
+ECHO=0
+Ultrasonic: 40.1 cm
+ECHO=0
+[0;32mI (37273) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 40.1 cm
+ECHO=0
+Ultrasonic: 39.6 cm
+ECHO=0
+[0;32mI (37293) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 39.6 cm
+ECHO=0
+Ultrasonic: 35.7 cm
+ECHO=0
+[0;32mI (37313) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 39.7 cm
+ECHO=0
+Ultrasonic: 35.7 cm
+ECHO=0
+[0;32mI (37333) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 39.2 cm
+ECHO=0
+Ultrasonic: 35.8 cm
+[0;32mI (37353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (37993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38333) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (38353) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.6 cm
+ECHO=0
+Ultrasonic: 36.7 cm
+ECHO=0
+[0;32mI (38373) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 30.0 cm
+ECHO=0
+Ultrasonic: 37.9 cm
+ECHO=0
+[0;32mI (38393) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.6 cm
+ECHO=0
+Ultrasonic: 37.9 cm
+ECHO=0
+[0;32mI (38413) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 38.2 cm
+ECHO=0
+Ultrasonic: 30.0 cm
+ECHO=0
+[0;32mI (38433) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 38.3 cm
+ECHO=0
+Ultrasonic: 30.0 cm
+ECHO=0
+[0;32mI (38453) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.5 cm
+ECHO=0
+Ultrasonic: 30.0 cm
+ECHO=0
+[0;32mI (38473) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 30.0 cm
+ECHO=0
+Ultrasonic: 26.1 cm
+ECHO=0
+[0;32mI (38493) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 30.0 cm
+ECHO=0
+Ultrasonic: 25.3 cm
+ECHO=0
+[0;32mI (38513) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 26.9 cm
+ECHO=0
+Ultrasonic: 32.9 cm
+ECHO=0
+[0;32mI (38533) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 22.3 cm
+ECHO=0
+Ultrasonic: 31.6 cm
+[0;32mI (38553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (38993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39533) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (39553) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.9 cm
+ECHO=0
+Ultrasonic: 37.4 cm
+ECHO=0
+[0;32mI (39573) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 37.3 cm
+ECHO=0
+Ultrasonic: 38.8 cm
+ECHO=0
+[0;32mI (39593) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 38.7 cm
+ECHO=0
+Ultrasonic: 39.2 cm
+ECHO=0
+[0;32mI (39613) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 40.1 cm
+ECHO=0
+Ultrasonic: 36.9 cm
+ECHO=0
+[0;32mI (39633) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 37.8 cm
+ECHO=0
+Ultrasonic: 39.9 cm
+[0;32mI (39653) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 38.7 cm
+ECHO=0
+Ultrasonic: 35.8 cm
+ECHO=0
+[0;32mI (39673) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.6 cm
+ECHO=0
+Ultrasonic: 36.7 cm
+ECHO=0
+[0;32mI (39693) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 39.6 cm
+ECHO=0
+Ultrasonic: 39.7 cm
+ECHO=0
+[0;32mI (39713) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 38.5 cm
+ECHO=0
+Ultrasonic: 38.1 cm
+ECHO=0
+[0;32mI (39733) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 38.5 cm
+ECHO=0
+Ultrasonic: 38.5 cm
+ECHO=0
+[0;32mI (39753) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 39.0 cm
+ECHO=0
+Ultrasonic: 39.9 cm
+ECHO=0
+[0;32mI (39773) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 36.4 cm
+[0;32mI (39793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (39993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (40773) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 8.0 cm
+ECHO=0
+[0;32mI (40793) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 7.5 cm
+ECHO=0
+Ultrasonic: 7.8 cm
+ECHO=0
+[0;32mI (40813) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 8.4 cm
+ECHO=0
+[0;32mI (40833) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 8.8 cm
+ECHO=0
+Ultrasonic: 7.4 cm
+ECHO=0
+[0;32mI (40853) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 7.5 cm
+ECHO=0
+Ultrasonic: 6.4 cm
+ECHO=0
+[0;32mI (40873) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.4 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (40893) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (40913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.8 cm
+ECHO=0
+Ultrasonic: 5.8 cm
+ECHO=0
+[0;32mI (40933) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.8 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (40953) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (40973) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.5 cm
+ECHO=0
+Ultrasonic: 6.1 cm
+[0;32mI (40993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (41973) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (41993) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (42013) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (42033) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (42053) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 6.8 cm
+ECHO=0
+[0;32mI (42073) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.8 cm
+ECHO=0
+Ultrasonic: 6.8 cm
+ECHO=0
+[0;32mI (42093) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 6.8 cm
+ECHO=0
+[0;32mI (42113) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (42133) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (42153) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.5 cm
+[0;32mI (42173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (42993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43153) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 6.1 cm
+ECHO=0
+[0;32mI (43173) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.2 cm
+ECHO=0
+Ultrasonic: 6.1 cm
+ECHO=0
+[0;32mI (43193) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.1 cm
+ECHO=0
+Ultrasonic: 6.1 cm
+ECHO=0
+[0;32mI (43213) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.1 cm
+ECHO=0
+Ultrasonic: 6.1 cm
+ECHO=0
+[0;32mI (43233) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 6.2 cm
+ECHO=0
+Ultrasonic: 6.1 cm
+ECHO=0
+[0;32mI (43253) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 4.9 cm
+ECHO=0
+Ultrasonic: 4.8 cm
+ECHO=0
+[0;32mI (43273) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.8 cm
+ECHO=0
+Ultrasonic: 5.8 cm
+ECHO=0
+[0;32mI (43293) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 4.5 cm
+ECHO=0
+Ultrasonic: 4.5 cm
+ECHO=0
+[0;32mI (43313) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 4.5 cm
+ECHO=0
+Ultrasonic: 5.6 cm
+ECHO=0
+[0;32mI (43333) : COMPLEX Values: 0.000000 -0.025128[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 5.5 cm
+ECHO=0
+[0;32mI (43353) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 5.5 cm
+ECHO=0
+Ultrasonic: 6.5 cm
+ECHO=0
+[0;32mI (43373) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.1 cm
+ECHO=0
+Ultrasonic: 5.2 cm
+ECHO=0
+[0;32mI (43393) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 5.2 cm
+[0;32mI (43413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (43993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (44393) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (44413) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44433) : COMPLEX Values: 0.000000 -0.020293[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44453) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44473) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44493) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44513) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44533) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44553) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44573) : COMPLEX Values: 1.710000 -1.740000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (44593) : COMPLEX Values: 1.710000 -1.654579[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+[0;32mI (44613) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44633) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44653) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44673) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44693) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44713) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44733) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44753) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44773) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44793) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44813) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44833) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44853) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44873) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44893) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44913) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44933) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44953) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44973) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (44993) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45013) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45033) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45053) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45073) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45093) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45113) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45133) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45153) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45173) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45193) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45213) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45233) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45253) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45273) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45293) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45313) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45333) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45353) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45373) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45393) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45413) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45433) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45453) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45473) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45493) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45513) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45533) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45553) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45573) : COMPLEX Values: 1.710000 -1.654579[0m
+[0;32mI (45593) : COMPLEX Values: 1.710000 -1.654579[0m
+ECHO=0
+[0;32mI (45613) : COMPLEX Values: 1.710000 -1.654579[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45633) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45653) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45673) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45693) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45713) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45733) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45753) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45773) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (45793) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+[0;32mI (45813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (45993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (46793) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (46813) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (46833) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (46853) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (46873) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (46893) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (46913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (46933) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (46953) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (46973) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (46993) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (47013) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (47033) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+[0;32mI (47053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (47993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48033) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (48053) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (48073) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (48093) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (48113) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (48133) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (48153) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (48173) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (48193) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (48213) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (48233) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+[0;32mI (48253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (48993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49233) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49253) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49273) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49293) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49313) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49333) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49353) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49373) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49393) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49413) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49433) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (49453) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+[0;32mI (49473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49693) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (49993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50453) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+[0;32mI (50473) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50493) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50513) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50533) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.8 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50553) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.8 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50573) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50593) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50613) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.8 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50633) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50653) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50673) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (50693) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+[0;32mI (50713) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50733) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50753) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50773) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50793) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50813) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50833) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50853) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50873) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50893) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50913) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (50993) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51013) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51033) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51053) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51073) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51093) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51113) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51133) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51153) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51173) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51193) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51213) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51233) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51253) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51273) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51293) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51313) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51333) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51353) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51373) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51393) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51413) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51433) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51453) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51473) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51493) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51513) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51533) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51553) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51573) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51593) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51613) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51633) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51653) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51673) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51693) : COMPLEX Values: 0.000000 0.000000[0m
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51713) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (51733) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51753) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51773) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51793) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51813) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51833) : COMPLEX Values: 0.000000 -0.028352[0m
+Ultrasonic: 13.8 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51853) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.8 cm
+ECHO=0
+[0;32mI (51873) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51893) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+ECHO=0
+[0;32mI (51913) : COMPLEX Values: 0.000000 0.000000[0m
+Ultrasonic: 13.9 cm
+ECHO=0
+Ultrasonic: 13.9 cm
+[0;32mI (51933) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51953) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51973) : COMPLEX Values: 0.000000 0.000000[0m
+[0;32mI (51993) : COMPLEX Values: 0.000000 0.000000[0m

@@ -1,0 +1,673 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 26 2026 13:26:22[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=19c28h (105512) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00029c50 vaddr=3fc9a700 size=04e30h ( 20016) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0002ea88 vaddr=40374000 size=01590h (  5520) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=82970h (534896) map[0m
+[0;32mI (211) esp_image: segment 4: paddr=000b2998 vaddr=40375590 size=150e0h ( 86240) load[0m
+[0;32mI (230) esp_image: segment 5: paddr=000c7a80 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (239) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (239) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Multicore app[0m
+[0;32mI (257) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (260) app_init: Application information:[0m
+[0;32mI (264) app_init: Project name:     espnow_example[0m
+[0;32mI (268) app_init: App version:      e36d85a-dirty[0m
+[0;32mI (273) app_init: Compile time:     Mar 26 2026 13:26:15[0m
+[0;32mI (278) app_init: ELF file SHA256:  705981ad9...[0m
+[0;32mI (282) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (286) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (290) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (294) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (297) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (304) heap_init: At 3FCA3288 len 00046488 (281 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (314) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (319) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (326) spi_flash: detected chip: boya[0m
+[0;32mI (328) spi_flash: flash io: dio[0m
+[0;33mW (331) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (343) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (350) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (357) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) pp: pp rom version: e7ae62f[0m
+[0;32mI (387) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (397) wifi:wifi driver task: 3fcee17c, prio:23, stack:6656, core=0[0m
+[0;32mI (397) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (397) wifi:wifi certification version: v7.0[0m
+[0;32mI (397) wifi:config NVS flash: enabled[0m
+[0;32mI (397) wifi:config nano formatting: disabled[0m
+[0;32mI (407) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (407) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (417) wifi:Init management short buffer num: 32[0m
+[0;32mI (417) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (417) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (427) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (427) wifi:Init static rx buffer num: 10[0m
+[0;32mI (437) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (437) wifi_init: accept mbox: 6[0m
+[0;32mI (447) wifi_init: tcpip mbox: 32[0m
+[0;32mI (447) wifi_init: udp mbox: 6[0m
+[0;32mI (447) wifi_init: tcp mbox: 6[0m
+[0;32mI (447) wifi_init: tcp tx win: 5760[0m
+[0;32mI (457) wifi_init: tcp rx win: 5760[0m
+[0;32mI (457) wifi_init: tcp mss: 1440[0m
+[0;32mI (457) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (467) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (467) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (537) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (597) wifi:mode : sta (dc:b4:d9:0b:32:e0)[0m
+[0;32mI (597) wifi:enable tsf[0m
+[0;32mI (597) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (597) main_task: Returned from app_main()[0m
+[0;32mI (5597) espnow_example: Start sending broadcast data[0m
+[0;32mI (5597) MASTER: Dist=41.5 cm, Coil=165[0m
+[1;31mE (5617) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5637) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5747) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (5857) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (5857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5977) i2c.master: I2C bus is still busy but software timeout detected[0m
+E (6087) i2c.master: I2C bus is still busy but software timeout detected
+[1;31mE (6087) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6147) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6167) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6197) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6317) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6427) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6547) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6577) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6687) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6797) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6937) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6957) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7087) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7127) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7237) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7357) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7467) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7477) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7497) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7647) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7757) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7867) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7877) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7997) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8007) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8027) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8037) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8147) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8257) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8257) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8297) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8417) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8527) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8537) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8577) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8587) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8707) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8817) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8837) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8847) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8867) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8887) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8897) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9007) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9017) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9037) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9047) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9057) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9077) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9087) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9097) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9117) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (9117) MASTER: Dist=64.1 cm, Coil=1[0m
+[1;31mE (9137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9157) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9167) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9177) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9187) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9197) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9217) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9337) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9347) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9367) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9377) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9487) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9507) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9557) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9567) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9577) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9717) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9827) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9937) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10047) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10057) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10067) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10177) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10287) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (10287) MASTER: Dist=43.8 cm, Coil=1[0m
+[1;31mE (10287) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10407) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10537) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10647) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10667) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10677) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10687) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10717) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10827) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (10887) MASTER: Dist=-0.1 cm, Coil=255[0m
+[0;32mI (10887) MASTER: Dist=-0.1 cm, Coil=255[0m
+[0;32mI (10897) MASTER: Dist=-0.1 cm, Coil=255[0m
+[0;32mI (10907) MASTER: Dist=-0.1 cm, Coil=255[0m
+[1;31mE (10927) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10957) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10967) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (11947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12317) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (12607) MASTER: Dist=-0.1 cm, Coil=255[0m
+[1;31mE (12727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (12837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (12947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13067) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13177) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13287) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13397) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13507) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13617) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14067) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14177) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14287) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14397) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14507) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14617) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15057) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (15057) MASTER: Dist=0.0 cm, Coil=255[0m
+[1;31mE (15167) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15177) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15287) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15297) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15307) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15337) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15457) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15617) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15727) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15797) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15927) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16047) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16067) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16197) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16217) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16327) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16337) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16357) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16467) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16587) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16697) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16717) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (16837) MASTER: Dist=25.4 cm, Coil=0[0m
+[1;31mE (16867) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17007) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17017) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17037) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17167) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17277) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17387) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17407) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17407) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17437) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17457) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17587) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17617) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17747) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17877) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17887) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17997) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18007) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18117) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18147) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18267) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18267) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18287) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18327) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18457) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18457) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18477) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18477) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18497) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18507) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18537) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18537) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18657) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18667) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18787) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18907) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18917) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18927) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19047) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (19057) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19077) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19197) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (19207) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19227) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19337) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (19457) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (19567) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (19567) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19587) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19607) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19627) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19637) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19647) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19657) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19797) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (19807) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19897) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19907) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (19937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20057) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (20057) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20087) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20117) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20127) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20247) i2c.master: I2C bus is still busy but software timeout detected[0m
+E (20357) i2c.master: I2C bus is still busy but software timeout detected
+[1;31mE (20467) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (20467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20577) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (20587) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (20737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20847) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (20857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (20967) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (20977) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21097) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21217) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21227) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21337) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21457) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21567) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (21567) MASTER: Dist=33.4 cm, Coil=1[0m
+[1;31mE (21577) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21617) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21637) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21757) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21837) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21847) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (21957) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22067) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22077) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22087) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22197) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22217) i2c.master: I2C transaction timeout detected[0m
+E (22327) i2c.master: I2C bus is still busy but software timeout detected
+[1;31mE (22327) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22337) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22357) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22387) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22417) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22417) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22437) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22447) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22577) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22587) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22717) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22727) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22897) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22907) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22917) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22917) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (22967) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23077) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23097) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23117) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23237) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23247) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23257) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23397) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23507) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23547) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23657) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23667) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23667) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23687) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23707) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (23717) MASTER: Dist=32.9 cm, Coil=1[0m
+[1;31mE (23737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23897) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24007) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24027) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24057) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24067) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24177) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24287) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24407) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24517) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24547) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24557) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24667) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24687) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24697) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24707) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24727) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24797) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24837) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24847) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24897) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24917) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24927) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25067) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25067) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25117) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25257) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25267) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25397) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25517) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25537) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25547) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25567) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25687) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25797) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (25797) MASTER: Dist=32.3 cm, Coil=1[0m
+[1;31mE (25907) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25917) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25977) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26087) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26087) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26227) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26237) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26347) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26387) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26397) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26457) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26477) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26607) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26897) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26907) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27027) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27137) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27257) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27287) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27307) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27327) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27337) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27347) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27357) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27367) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27487) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27597) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27607) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27717) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27827) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27957) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27967) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27987) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27987) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28107) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (28127) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28147) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28167) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28197) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28207) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28217) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28337) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (28347) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28377) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28387) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28507) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (28517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28537) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28547) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28557) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28567) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28577) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28637) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28767) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (28787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28797) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28807) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28807) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28837) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28867) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28897) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (28907) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29037) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (29037) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29157) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (29267) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (29277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29297) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29317) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29427) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (29437) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29447) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29607) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (29717) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (29727) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (29857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (29867) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30027) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (30137) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (30137) MASTER: Dist=39.0 cm, Coil=1[0m
+[1;31mE (30157) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30187) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30197) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30217) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30227) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30247) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30257) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30267) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30397) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (30397) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30417) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30537) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (30577) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30707) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (30717) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (30887) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (30897) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (31007) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31117) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31227) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31227) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (31357) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31477) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31587) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31697) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31717) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (31727) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (31837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (31947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (32057) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (32067) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32197) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (32307) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (32417) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (32427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32447) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32507) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32617) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (32627) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32697) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (32857) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32867) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (32997) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (33007) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33017) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33027) i2c.master: I2C transaction timeout detected[0m
+E (33137) i2c.master: I2C bus is still busy but software timeout detected
+[1;31mE (33137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33257) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (33267) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33377) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (33387) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33497) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (33497) MASTER: Dist=39.9 cm, Coil=1[0m
+[1;31mE (33607) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (33717) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (33727) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33797) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (33907) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (34017) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (34037) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34167) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (34167) MASTER: Dist=37.2 cm, Coil=1[0m
+[1;31mE (34297) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (34307) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34317) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34327) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34437) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (34477) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34617) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (34737) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (34747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34807) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34837) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (34947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (35057) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (35077) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35187) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (35197) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35207) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35227) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35247) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35377) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (35377) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35397) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35407) i2c.master: I2C transaction timeout detected[0m

@@ -1,0 +1,149 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381dd5: [0;33mblock_size[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m87[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m618[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40381dd2: [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m616[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x403817ed: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40375f59: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40376061: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40376091: [0;33mheap_caps_malloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x40375c7c: [0;33mheap_caps_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x4037cc25: [0;33mpvPortMalloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/heap_idf.c[0m[0m:[1;31m55[0m
+[0m--- 0x4037f32e: [0;33mxTaskCreatePinnedToCore[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/freertos_tasks_c_additions.h[0m[0m:[1;31m231[0m
+[0m--- 0x42057ff5: [0;33msys_thread_new[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m390[0m
+[0m--- 0x4204a10d: [0;33mtcpip_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m665[0m
+[0m--- 0x420130d4: [0;33mesp_netif_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif/lwip/esp_netif_lwip.c[0m[0m:[1;31m560[0m
+[0m--- 0x4200aab3: [0;33mexample_wifi_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m156[0m
+[0m--- 0x4200b7b2: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m745[0m
+[0m--- 0x4207f8b0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037c63d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037bb0c: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381dd5: [0;33mblock_size[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m87[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m618[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40381dd2: [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m616[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x403817ed: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40375f59: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40376061: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40376091: [0;33mheap_caps_malloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x40375c7c: [0;33mheap_caps_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x4037cc25: [0;33mpvPortMalloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/heap_idf.c[0m[0m:[1;31m55[0m
+[0m--- 0x4037f32e: [0;33mxTaskCreatePinnedToCore[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/freertos_tasks_c_additions.h[0m[0m:[1;31m231[0m
+[0m--- 0x42057ff5: [0;33msys_thread_new[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m390[0m
+[0m--- 0x4204a10d: [0;33mtcpip_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m665[0m
+[0m--- 0x420130d4: [0;33mesp_netif_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif/lwip/esp_netif_lwip.c[0m[0m:[1;31m560[0m
+[0m--- 0x4200aab3: [0;33mexample_wifi_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m156[0m
+[0m--- 0x4200b7b2: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m745[0m
+[0m--- 0x4207f8b0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037c63d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037bb0c: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381dd5: [0;33mblock_size[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m87[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m618[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40381dd2: [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m616[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x403817ed: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40375f59: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40376061: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40376091: [0;33mheap_caps_malloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x40375c7c: [0;33mheap_caps_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x4037cc25: [0;33mpvPortMalloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/heap_idf.c[0m[0m:[1;31m55[0m
+[0m--- 0x4037f32e: [0;33mxTaskCreatePinnedToCore[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/freertos_tasks_c_additions.h[0m[0m:[1;31m231[0m
+[0m--- 0x42057ff5: [0;33msys_thread_new[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m390[0m
+[0m--- 0x4204a10d: [0;33mtcpip_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m665[0m
+[0m--- 0x420130d4: [0;33mesp_netif_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif/lwip/esp_netif_lwip.c[0m[0m:[1;31m560[0m
+[0m--- 0x4200aab3: [0;33mexample_wifi_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m156[0m
+[0m--- 0x4200b7b2: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m745[0m
+[0m--- 0x4207f8b0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037c63d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037bb0c: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381dd5: [0;33mblock_size[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m87[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m618[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40381dd2: [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m616[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x403817ed: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40375f59: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40376061: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40376091: [0;33mheap_caps_malloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x40375c7c: [0;33mheap_caps_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x4037cc25: [0;33mpvPortMalloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/heap_idf.c[0m[0m:[1;31m55[0m
+[0m--- 0x4037f32e: [0;33mxTaskCreatePinnedToCore[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/freertos_tasks_c_additions.h[0m[0m:[1;31m231[0m
+[0m--- 0x42057ff5: [0;33msys_thread_new[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m390[0m
+[0m--- 0x4204a10d: [0;33mtcpip_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m665[0m
+[0m--- 0x420130d4: [0;33mesp_netif_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif/lwip/esp_netif_lwip.c[0m[0m:[1;31m560[0m
+[0m--- 0x4200aab3: [0;33mexample_wifi_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m156[0m
+[0m--- 0x4200b7b2: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m745[0m
+[0m--- 0x4207f8b0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037c63d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037bb0c: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381dd5: [0;33mblock_size[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m87[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m618[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40381dd2: [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m616[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x403817ed: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40375f59: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40376061: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40376091: [0;33mheap_caps_malloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x40375c7c: [0;33mheap_caps_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x4037cc25: [0;33mpvPortMalloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/heap_idf.c[0m[0m:[1;31m55[0m
+[0m--- 0x4037f32e: [0;33mxTaskCreatePinnedToCore[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/freertos_tasks_c_additions.h[0m[0m:[1;31m231[0m
+[0m--- 0x42057ff5: [0;33msys_thread_new[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m390[0m
+[0m--- 0x4204a10d: [0;33mtcpip_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m665[0m
+[0m--- 0x420130d4: [0;33mesp_netif_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif/lwip/esp_netif_lwip.c[0m[0m:[1;31m560[0m
+[0m--- 0x4200aab3: [0;33mexample_wifi_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m156[0m
+[0m--- 0x4200b7b2: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m745[0m
+[0m--- 0x4207f8b0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037c63d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037bb0c: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381dd5: [0;33mblock_size[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m87[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m618[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40381dd2: [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m616[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x403817ed: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40375f59: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40376061: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40376091: [0;33mheap_caps_malloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x40375c7c: [0;33mheap_caps_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x4037cc25: [0;33mpvPortMalloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/heap_idf.c[0m[0m:[1;31m55[0m
+[0m--- 0x4037f32e: [0;33mxTaskCreatePinnedToCore[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/freertos_tasks_c_additions.h[0m[0m:[1;31m231[0m
+[0m--- 0x42057ff5: [0;33msys_thread_new[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m390[0m
+[0m--- 0x4204a10d: [0;33mtcpip_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m665[0m
+[0m--- 0x420130d4: [0;33mesp_netif_init[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif/lwip/esp_netif_lwip.c[0m[0m:[1;31m560[0m
+[0m--- 0x4200aab3: [0;33mexample_wifi_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m156[0m
+[0m--- 0x4200b7b2: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c[0m[0m:[1;31m745[0m
+[0m--- 0x4207f8b0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037c63d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m

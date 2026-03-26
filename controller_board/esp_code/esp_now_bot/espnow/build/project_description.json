@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "espnow_example",
-    "project_version":    "ddcd5dd-dirty",
+    "project_version":    "e36d85a-dirty",
     "project_path":       "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.3",
     "build_dir":          "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build",
@@ -576,11 +576,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "nvs_flash", "esp_event", "esp_netif", "esp_wifi", "esp_driver_gpio", "esp_driver_ledc", "esp_driver_i2c" ],
+            "priv_reqs": [ "nvs_flash", "esp_event", "esp_netif", "esp_wifi", "esp_driver_gpio", "esp_driver_ledc", "esp_driver_i2c", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main.c" ],
+            "sources": [ "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -2050,7 +2050,7 @@
             "dir": "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "nvs_flash", "esp_event", "esp_netif", "esp_wifi", "esp_driver_gpio", "esp_driver_ledc", "esp_driver_i2c" ],
+            "priv_reqs": [ "nvs_flash", "esp_event", "esp_netif", "esp_wifi", "esp_driver_gpio", "esp_driver_ledc", "esp_driver_i2c", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "." ]

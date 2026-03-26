@@ -280,7 +280,7 @@ static void example_espnow_task(void *pvParameter)
     ESP_LOGI(TAG, "Start sending broadcast data");
 
     while(1){
-         sensor_packet_t pkt;
+        sensor_packet_t pkt;
         if(i2c_master_receive(dev,(uint8_t*)&pkt,sizeof(pkt),100)==ESP_OK){
             if(pkt.checksum==checksum(&pkt)){
                 ESP_LOGI("MASTER","Dist=%.1f cm, Coil=%d",
@@ -288,6 +288,7 @@ static void example_espnow_task(void *pvParameter)
                     pkt.coil_detected);
             }
         }
+        vTaskDelay(60);
     }
     /* Start sending broadcast ESPNOW data. */
     example_espnow_send_param_t *send_param = (example_espnow_send_param_t *)pvParameter;

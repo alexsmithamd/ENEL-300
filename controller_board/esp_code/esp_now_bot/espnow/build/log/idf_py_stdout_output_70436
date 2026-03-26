@@ -1,0 +1,846 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 26 2026 13:26:22[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=19c28h (105512) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00029c50 vaddr=3fc9a700 size=04e30h ( 20016) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0002ea88 vaddr=40374000 size=01590h (  5520) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=82970h (534896) map[0m
+[0;32mI (211) esp_image: segment 4: paddr=000b2998 vaddr=40375590 size=150e0h ( 86240) load[0m
+[0;32mI (230) esp_image: segment 5: paddr=000c7a80 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (239) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (239) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Multicore app[0m
+[0;32mI (257) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (260) app_init: Application information:[0m
+[0;32mI (264) app_init: Project name:     espnow_example[0m
+[0;32mI (268) app_init: App version:      e36d85a-dirty[0m
+[0;32mI (273) app_init: Compile time:     Mar 26 2026 13:26:15[0m
+[0;32mI (278) app_init: ELF file SHA256:  705981ad9...[0m
+[0;32mI (282) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (286) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (290) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (294) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (297) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (304) heap_init: At 3FCA3288 len 00046488 (281 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (314) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (319) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (326) spi_flash: detected chip: boya[0m
+[0;32mI (328) spi_flash: flash io: dio[0m
+[0;33mW (331) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (343) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (350) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (357) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) pp: pp rom version: e7ae62f[0m
+[0;32mI (387) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (397) wifi:wifi driver task: 3fcee17c, prio:23, stack:6656, core=0[0m
+[0;32mI (397) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (397) wifi:wifi certification version: v7.0[0m
+[0;32mI (397) wifi:config NVS flash: enabled[0m
+[0;32mI (397) wifi:config nano formatting: disabled[0m
+[0;32mI (407) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (407) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (417) wifi:Init management short buffer num: 32[0m
+[0;32mI (417) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (417) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (427) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (427) wifi:Init static rx buffer num: 10[0m
+[0;32mI (437) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (437) wifi_init: accept mbox: 6[0m
+[0;32mI (447) wifi_init: tcpip mbox: 32[0m
+[0;32mI (447) wifi_init: udp mbox: 6[0m
+[0;32mI (447) wifi_init: tcp mbox: 6[0m
+[0;32mI (447) wifi_init: tcp tx win: 5760[0m
+[0;32mI (457) wifi_init: tcp rx win: 5760[0m
+[0;32mI (457) wifi_init: tcp mss: 1440[0m
+[0;32mI (457) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (467) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (467) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (527) wifi:mode : sta (dc:b4:d9:0b:32:e0)[0m
+[0;32mI (527) wifi:enable tsf[0m
+[0;32mI (527) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (527) main_task: Returned from app_main()[0m
+[0;32mI (5527) espnow_example: Start sending broadcast data[0m
+[0;32mI (6247) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6287) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6387) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6397) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6427) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6507) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6507) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6547) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6637) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6687) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (6927) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7037) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7087) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7087) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7167) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7167) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7257) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7267) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7447) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7587) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (7607) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8127) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8217) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8347) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8657) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8677) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8707) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8707) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8757) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8787) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8907) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (8987) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9017) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9037) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9077) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9097) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9157) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9287) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9497) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9517) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9557) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9827) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (9887) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10057) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10157) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10317) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10327) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10597) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10607) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10627) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10897) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (10997) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11287) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11347) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11357) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11387) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11457) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11517) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11527) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11667) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11857) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (11997) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (12147) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (12157) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (12247) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (12757) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (12807) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13117) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13147) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13277) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13307) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13307) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13397) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13407) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13457) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13477) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13867) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13877) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13917) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (13957) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (14037) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (14297) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (14557) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (14597) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (14847) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (14937) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (14957) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (15027) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (15137) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (15417) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (15437) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (15537) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (15587) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (15817) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16007) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16047) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16117) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16157) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16167) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16277) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16287) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16457) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16697) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (16977) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (17127) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (17167) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (17197) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (17337) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (17447) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (17467) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (18017) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (18067) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (18137) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19087) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19107) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19167) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19167) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19177) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19177) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19177) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19177) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19187) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19187) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19187) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19197) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19197) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19197) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19207) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19207) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19217) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19217) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19217) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19227) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19227) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19227) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19237) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19237) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19247) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19247) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19247) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19257) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19257) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19257) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19267) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19267) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19277) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19277) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19277) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19287) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19287) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19287) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19297) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19297) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19307) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19307) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19307) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19317) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19317) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19317) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19327) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19327) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19327) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19337) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19337) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19347) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19347) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19347) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19357) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19357) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19357) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19367) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19367) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19377) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19377) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19377) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19387) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19387) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19387) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19397) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19397) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19407) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19407) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19407) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19417) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19417) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19417) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19427) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19427) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19437) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19437) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19437) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19447) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19447) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19447) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19457) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19457) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19467) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19467) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19467) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19477) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19477) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19477) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19487) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19487) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19497) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19497) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19497) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19507) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19507) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19507) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19517) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19517) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19527) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19527) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19527) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19537) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19537) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19537) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19547) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19547) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19557) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19557) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19557) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19567) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19567) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19567) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19577) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19577) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19577) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19587) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19587) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19597) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19597) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19597) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19607) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19607) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19607) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19617) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19617) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19627) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19627) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19627) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19637) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19637) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19637) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19647) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19647) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19657) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19657) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19657) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19667) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19667) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19667) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19677) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19677) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19687) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19687) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19687) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19697) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19697) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19697) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19707) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19707) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19717) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19717) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19717) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19727) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19727) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19727) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19737) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19737) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19747) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19747) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19747) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19757) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19757) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19757) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19767) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19767) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19777) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19777) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19777) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19787) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19787) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19787) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19797) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19797) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19807) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19807) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19807) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19817) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19817) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19817) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19827) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19827) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19837) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19837) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19837) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19847) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19847) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19847) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19857) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19857) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19857) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19867) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19867) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19877) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19877) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19877) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19887) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19887) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19887) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19897) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19897) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19907) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19907) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19907) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19917) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19917) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19917) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19927) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19927) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19937) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19937) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19937) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19947) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19947) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19947) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19957) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19957) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19967) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19967) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19967) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19977) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19977) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19977) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19987) MASTER: Dist=2390.1 cm, Coil=93[0m
+[0;32mI (19997) MASTER: Dist=2390.1 cm, Coil=93[0m
+[1;31mE (20897) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21007) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21117) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21227) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21337) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21447) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21557) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21667) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21777) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21887) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (21997) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22107) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22217) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22327) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22437) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22547) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22657) i2c.master: I2C bus is still busy but software timeout detected[0m
+E (22767) i2c.master: I2C bus is still busy but software timeout detected
+[1;31mE (22877) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (22987) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23097) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23207) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23317) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23337) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23347) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23357) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23487) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23607) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (23727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (23727) MASTER: Dist=-0.1 cm, Coil=255[0m
+[1;31mE (23737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (23927) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24037) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (24037) MASTER: Dist=-0.1 cm, Coil=0[0m
+[1;31mE (24037) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24077) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24097) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24117) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24247) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24257) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24267) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24287) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24297) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24417) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24437) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24477) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24597) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24607) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (24727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24837) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24957) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (24957) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25087) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25097) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25117) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25127) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25157) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25287) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25397) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25517) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25627) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25637) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25647) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (25797) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25907) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (25907) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26017) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26027) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26167) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26277) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26387) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26397) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26507) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26517) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26547) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26567) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26687) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26717) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (26717) MASTER: Dist=-0.1 cm, Coil=0[0m
+[1;31mE (26727) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26857) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26967) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (26977) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (26997) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27007) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27017) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27137) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27157) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27177) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27187) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27207) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27337) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27447) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27547) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27557) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27677) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (27687) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27807) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (27877) i2c.master: I2C transaction timeout detected[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 26 2026 13:26:22[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=19c28h (105512) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00029c50 vaddr=3fc9a700 size=04e30h ( 20016) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0002ea88 vaddr=40374000 size=01590h (  5520) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=82970h (534896) map[0m
+[0;32mI (211) esp_image: segment 4: paddr=000b2998 vaddr=40375590 size=150e0h ( 86240) load[0m
+[0;32mI (230) esp_image: segment 5: paddr=000c7a80 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (239) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (239) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Multicore app[0m
+[0;32mI (257) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (260) app_init: Application information:[0m
+[0;32mI (264) app_init: Project name:     espnow_example[0m
+[0;32mI (268) app_init: App version:      e36d85a-dirty[0m
+[0;32mI (273) app_init: Compile time:     Mar 26 2026 13:26:15[0m
+[0;32mI (278) app_init: ELF file SHA256:  705981ad9...[0m
+[0;32mI (282) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (286) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (290) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (294) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (297) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (304) heap_init: At 3FCA3288 len 00046488 (281 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (314) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (319) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (326) spi_flash: detected chip: boya[0m
+[0;32mI (328) spi_flash: flash io: dio[0m
+[0;33mW (331) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (343) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (350) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (357) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) pp: pp rom version: e7ae62f[0m
+[0;32mI (387) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (397) wifi:wifi driver task: 3fcee17c, prio:23, stack:6656, core=0[0m
+[0;32mI (397) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (397) wifi:wifi certification version: v7.0[0m
+[0;32mI (397) wifi:config NVS flash: enabled[0m
+[0;32mI (397) wifi:config nano formatting: disabled[0m
+[0;32mI (407) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (407) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (417) wifi:Init management short buffer num: 32[0m
+[0;32mI (417) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (417) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (427) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (427) wifi:Init static rx buffer num: 10[0m
+[0;32mI (437) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (437) wifi_init: accept mbox: 6[0m
+[0;32mI (447) wifi_init: tcpip mbox: 32[0m
+[0;32mI (447) wifi_init: udp mbox: 6[0m
+[0;32mI (447) wifi_init: tcp mbox: 6[0m
+[0;32mI (447) wifi_init: tcp tx win: 5760[0m
+[0;32mI (457) wifi_init: tcp rx win: 5760[0m
+[0;32mI (457) wifi_init: tcp mss: 1440[0m
+[0;32mI (457) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (467) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (467) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (517) wifi:mode : sta (dc:b4:d9:0b:32:e0)[0m
+[0;32mI (517) wifi:enable tsf[0m
+[0;32mI (517) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (527) main_task: Returned from app_main()[0m
+[0;32mI (5527) espnow_example: Start sending broadcast data[0m
+[0;32mI (5527) MASTER: Dist=2790.3 cm, Coil=217[0m
+[0;32mI (5527) MASTER: Dist=36.4 cm, Coil=165[0m
+[1;31mE (5557) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5567) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5627) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5647) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (5647) MASTER: Dist=55.1 cm, Coil=0[0m
+[1;31mE (5757) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (5787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5827) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (5967) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (5997) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (6007) MASTER: Dist=18.7 cm, Coil=0[0m
+[0;32mI (6177) MASTER: Dist=20.7 cm, Coil=0[0m
+[1;31mE (6327) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6447) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (6537) MASTER: Dist=12.1 cm, Coil=0[0m
+[1;31mE (6557) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6587) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6747) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (6807) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (6957) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7017) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (7077) MASTER: Dist=15.7 cm, Coil=0[0m
+[1;31mE (7097) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7197) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7247) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7297) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7347) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7437) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7437) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (7437) MASTER: Dist=12.1 cm, Coil=0[0m
+[1;31mE (7447) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7597) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7617) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7647) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (7767) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (7977) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8047) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8247) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8317) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8347) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (8347) MASTER: Dist=12.6 cm, Coil=0[0m
+[1;31mE (8467) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (8667) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8687) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8707) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8717) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (8867) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (8877) MASTER: Dist=17.2 cm, Coil=0[0m
+[0;32mI (9057) MASTER: Dist=17.2 cm, Coil=0[0m
+[1;31mE (9107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9127) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9247) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9287) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9377) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9457) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9587) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9707) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (9717) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (9897) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (9967) MASTER: Dist=18.0 cm, Coil=0[0m
+[1;31mE (9977) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10057) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (10137) MASTER: Dist=16.2 cm, Coil=0[0m
+[1;31mE (10157) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10167) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10197) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10357) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10367) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10477) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (10497) MASTER: Dist=17.0 cm, Coil=0[0m
+[1;31mE (10527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10537) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10737) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (10757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (10977) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (11047) MASTER: Dist=17.9 cm, Coil=0[0m
+[1;31mE (11107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (11267) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (11277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (11297) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (11367) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (11407) MASTER: Dist=21.6 cm, Coil=0[0m
+[1;31mE (11667) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (11697) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (11757) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (11777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (11887) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (11947) MASTER: Dist=23.6 cm, Coil=0[0m
+[1;31mE (12077) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12087) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12127) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12257) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (12317) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12477) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (12487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12497) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12607) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (12627) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12657) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12697) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12767) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12827) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (12837) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (12847) MASTER: Dist=23.9 cm, Coil=0[0m
+[1;31mE (12967) i2c.master: I2C bus is still busy but software timeout detected[0m
+[0;32mI (13027) MASTER: Dist=23.5 cm, Coil=0[0m
+[1;31mE (13167) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13287) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13327) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (13487) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (13537) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (13667) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (13777) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (13827) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (13947) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14057) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14167) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14187) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (14207) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (14287) MASTER: Dist=23.8 cm, Coil=0[0m
+[1;31mE (14327) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (14387) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (14427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (14457) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (14467) MASTER: Dist=23.2 cm, Coil=0[0m
+[1;31mE (14527) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (14647) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (14747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (14927) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15067) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15077) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15137) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15287) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15427) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15467) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15517) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (15547) MASTER: Dist=14.5 cm, Coil=0[0m
+[1;31mE (15607) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15637) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15667) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (15727) MASTER: Dist=14.5 cm, Coil=0[0m
+[1;31mE (15737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15887) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (15907) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15947) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15977) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15987) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (15997) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16007) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16097) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16167) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16187) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16297) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16307) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16417) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16427) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16587) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16597) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16607) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16617) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16727) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16737) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16747) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16787) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16797) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16917) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (16927) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16937) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (16957) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17077) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17107) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17117) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17237) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17247) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17257) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17287) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17307) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17317) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17327) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17447) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17567) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17687) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17797) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (17807) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17817) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17847) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (17957) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18087) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18087) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18207) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (18217) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18227) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18267) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18277) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18307) i2c.master: I2C transaction timeout detected[0m
+[0;32mI (18307) MASTER: Dist=47.7 cm, Coil=1[0m
+[1;31mE (18317) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18347) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18357) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18367) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (18507) i2c.master: I2C bus is still busy but software timeout detected[0m
