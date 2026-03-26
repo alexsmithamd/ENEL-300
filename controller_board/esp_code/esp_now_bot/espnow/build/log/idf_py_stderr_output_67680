@@ -1,0 +1,2 @@
+Command: ninja all
+ninja: error: 'C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/espnow_example_main_ultrasonic.c', needed by 'esp-idf/main/CMakeFiles/__idf_main.dir/espnow_example_main_ultrasonic.c.obj', missing and no known rule to make it
