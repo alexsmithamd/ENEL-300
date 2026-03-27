@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "espnow_example",
-    "project_version":    "c4e6d6a-dirty",
+    "project_version":    "ae5497c-dirty",
     "project_path":       "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.3",
     "build_dir":          "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build",
@@ -850,7 +850,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller.c" ],
+            "sources": [ "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
