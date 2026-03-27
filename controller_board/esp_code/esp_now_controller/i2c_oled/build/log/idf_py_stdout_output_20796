@@ -1,0 +1,189 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM14 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\i2c_oled\build\i2c_oled.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\i2c_oled\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 26 2026 18:09:45[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0fc0ch ( 64524) map[0m
+[0;32mI (98) esp_image: segment 1: paddr=0001fc34 vaddr=3fc93d00 size=003e4h (   996) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2d22ch (184876) map[0m
+[0;32mI (134) esp_image: segment 3: paddr=0004d254 vaddr=3fc940e4 size=02b9ch ( 11164) load[0m
+[0;32mI (137) esp_image: segment 4: paddr=0004fdf8 vaddr=40374000 size=0fc34h ( 64564) load[0m
+[0;32mI (152) esp_image: segment 5: paddr=0005fa34 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (159) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Multicore app[0m
+[0;32mI (178) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (179) cpu_start: Pro cpu start user code[0m
+[0;32mI (179) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     i2c_oled[0m
+[0;32mI (188) app_init: App version:      2779b10[0m
+[0;32mI (192) app_init: Compile time:     Mar 26 2026 18:17:55[0m
+[0;32mI (197) app_init: ELF file SHA256:  fca91b258...[0m
+[0;32mI (202) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (205) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 3FC9F980 len 00049D90 (295 KiB): RAM[0m
+[0;32mI (229) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (234) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (245) spi_flash: detected chip: boya[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (263) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (273) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (279) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) example: Initialize I2C bus[0m
+[0;32mI (296) example: Install panel IO[0m
+[0;32mI (296) example: Install SSD1306 panel driver[0m
+[1;31mE (306) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (306) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (316) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (326) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (326) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (336) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (346) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (356) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (356) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (366) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (376) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (376) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (386) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (396) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (396) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (406) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (416) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (416) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (426) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (436) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (436) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (446) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (456) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (466) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (466) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[0;32mI (476) example: Initialize LVGL[0m
+[0;32mI (476) LVGL: Starting LVGL task[0m
+[1;31mE (486) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (486) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (496) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (506) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[0;32mI (506) example: Display LVGL Scroll Text[0m
+[0;32mI (516) main_task: Returned from app_main()[0m
+[1;31mE (976) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (986) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (986) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (986) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (996) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1006) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1016) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1016) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1026) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1036) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1036) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1046) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1056) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1056) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1066) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1076) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1076) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1086) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1096) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1106) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1106) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1116) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1126) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1126) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1136) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1146) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1146) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1156) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1166) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1166) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1176) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1186) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1196) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1196) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1206) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1216) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1216) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1226) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1236) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1236) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1246) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1256) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1266) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1266) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1276) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1286) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1286) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1296) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1306) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1306) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1316) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1326) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1326) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1336) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1346) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1356) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1356) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1366) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1376) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1376) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1386) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1396) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1396) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (1406) lcd_panel.io.i2c: panel_io_i2c_tx_buffer(181): i2c transaction failed[0m
+[1;31mE (6406) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (6406) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (6406) task_wdt: Tasks currently running:[0m
+[1;31mE (6406) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (6406) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (6406) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42020DF2:0x3FC94EC0 0x42021208:0x3FC94EE0 0x40376F09:0x3FC94F10 0x4201104C:0x3FCEB890 0x42011221:0x3FCEB8F0 0x42011414:0x3FCEB920 0x420115BA:0x3FCEB940 0x42015EF1:0x3FCEB970 0x42015F9B:0x3FCEB990 0x4200A4AC:0x3FCEB9B0 0x4037B531:0x3FCEB9D0
+
+[1;31mE (11406) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (11406) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (11406) task_wdt: Tasks currently running:[0m
+[1;31mE (11406) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (11406) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (11406) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42020DF2:0x3FC94EC0 0x42021208:0x3FC94EE0 0x40376F09:0x3FC94F10 0x4201104C:0x3FCEB890 0x42011221:0x3FCEB8F0 0x42011414:0x3FCEB920 0x420115BA:0x3FCEB940 0x42015EF1:0x3FCEB970 0x42015F9B:0x3FCEB990 0x4200A4AC:0x3FCEB9B0 0x4037B531:0x3FCEB9D0
+
+[1;31mE (16406) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (16406) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (16406) task_wdt: Tasks currently running:[0m
+[1;31mE (16406) task_wdt: CPU 0: taskLVGL[0m
+[1;31mE (16406) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (16406) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42020DF2:0x3FC94EC0 0x42021208:0x3FC94EE0 0x40376F09:0x3FC94F10 0x4201104C:0x3FCEB890 0x42011221:0x3FCEB8F0 0x42011414:0x3FCEB920 0x420115BA:0x3FCEB940 0x42015EF1:0x3FCEB970 0x42015F9B:0x3FCEB990 0x4200A4AC:0x3FCEB9B0 0x4037B531:0x3FCEB9D0
+
