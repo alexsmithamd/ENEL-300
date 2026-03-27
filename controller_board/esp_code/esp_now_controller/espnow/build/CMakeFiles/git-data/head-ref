@@ -1,1 +1,7 @@
-ae5497c903a3b08905d5a5cadd57ba0b2c2bc3f8
+0000000000000000000000000000000000000000 24295e130d2975121ffa9dc687e4c17c32a59373 Marcus Meyer <mm7472889@gmail.com> 1774139961 -0600	branch: Created from refs/remotes/origin/controller_board
+24295e130d2975121ffa9dc687e4c17c32a59373 ddcd5dda5b72b0328b58265291d9c3dceeec434a Marcus Meyer <mm7472889@gmail.com> 1774141390 -0600	commit: added i2c
+ddcd5dda5b72b0328b58265291d9c3dceeec434a e36d85a5d7b8efe99e2ef4151f994300858c6ee7 Marcus Meyer <mm7472889@gmail.com> 1774143025 -0600	commit: forced i2c testing
+e36d85a5d7b8efe99e2ef4151f994300858c6ee7 c4e6d6ae3cce5d8ae07bd03fb7267795a636660b Marcus Meyer <mm7472889@gmail.com> 1774561304 -0600	commit: ultrasonic running with pwm
+c4e6d6ae3cce5d8ae07bd03fb7267795a636660b ae5497c903a3b08905d5a5cadd57ba0b2c2bc3f8 Marcus Meyer <mm7472889@gmail.com> 1774566861 -0600	commit: transmits a few ultrasonics
+ae5497c903a3b08905d5a5cadd57ba0b2c2bc3f8 2779b107049b48dba1706dfd0753c1e35ec8a242 Marcus Meyer <mm7472889@gmail.com> 1774569617 -0600	commit: reliable control & ultrasonic transmission
+2779b107049b48dba1706dfd0753c1e35ec8a242 e2db61f7715de3199092f099b497578d3771c4c7 Marcus Meyer <mm7472889@gmail.com> 1774640254 -0600	commit: started oled code on controller

@@ -114,5 +114,10 @@ $<TARGET_FILE:__idf_esp_driver_ledc>
 $<TARGET_FILE:__idf_esp_driver_twai>
 $<TARGET_FILE:idf::esp_adc>
 $<TARGET_FILE:__idf_driver>
+$<TARGET_FILE:idf::esp_lcd>
+$<TARGET_FILE:idf::lvgl__lvgl>
+$<TARGET_FILE:__idf_esp_lcd>
+$<TARGET_FILE:__idf_lvgl__lvgl>
+$<TARGET_FILE:lvgl_port_lib>
 $<TARGET_FILE:idf::main>
 $<TARGET_FILE:__idf_esp_adc>

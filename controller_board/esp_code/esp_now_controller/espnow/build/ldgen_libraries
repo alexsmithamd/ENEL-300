@@ -114,5 +114,10 @@ C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/es
 C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/esp_driver_twai/libesp_driver_twai.a
 C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/esp_adc/libesp_adc.a
 C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/driver/libdriver.a
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/esp_lcd/libesp_lcd.a
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/lvgl__lvgl/liblvgl__lvgl.a
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/esp_lcd/libesp_lcd.a
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/lvgl__lvgl/liblvgl__lvgl.a
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/espressif__esp_lvgl_port/liblvgl_port_lib.a
 C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/main/libmain.a
 C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/esp-idf/esp_adc/libesp_adc.a

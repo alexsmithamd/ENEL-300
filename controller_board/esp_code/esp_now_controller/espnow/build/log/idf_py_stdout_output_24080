@@ -1,0 +1,83 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 27 2026 16:35:37[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=20b20h (133920) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00030b48 vaddr=3fc9c100 size=04f4ch ( 20300) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00035a9c vaddr=40374000 size=0a57ch ( 42364) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c7af4h (817908) map[0m
+[0;32mI (268) esp_image: segment 4: paddr=00107b1c vaddr=4037e57c size=0db10h ( 56080) load[0m
+[0;32mI (281) esp_image: segment 5: paddr=00115634 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (291) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (291) boot: Disabling RNG early entropy source...[0m
+[0;32mI (301) cpu_start: Multicore app[0m
+[0;32mI (310) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (310) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (312) app_init: Application information:[0m
+[0;32mI (316) app_init: Project name:     espnow_example[0m
+[0;32mI (320) app_init: App version:      e2db61f7-dirty[0m
+[0;32mI (325) app_init: Compile time:     Mar 27 2026 16:35:24[0m
+[0;32mI (330) app_init: ELF file SHA256:  f346ebb8c...[0m
+[0;32mI (334) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (338) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (342) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (346) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (350) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (356) heap_init: At 3FCB50F8 len 00034618 (209 KiB): RAM[0m
+[0;32mI (361) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (366) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (372) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (378) spi_flash: detected chip: boya[0m
+[0;32mI (380) spi_flash: flash io: dio[0m
+[0;33mW (383) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (393) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (399) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (406) main_task: Started on CPU0[0m
+[0;32mI (436) main_task: Calling app_main()[0m
+[0;32mI (436) oled_display: Initialize I2C bus[0m
+[0;32mI (436) oled_display: Install panel IO[0m
+[0;32mI (436) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (576) oled_display: Initialize LVGL[0m
+[0;32mI (576) LVGL: Starting LVGL task[0m
+[1;31mE (5586) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (5586) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (5586) task_wdt: Tasks currently running:[0m
+[1;31mE (5586) task_wdt: CPU 0: main[0m
+[1;31mE (5586) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (5586) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42050472:0x3FC9E550 0x4205088C:0x3FC9E570 0x403779C9:0x3FC9E5A0 0x42014980:0x3FCB86C0 0x420107A7:0x3FCB8700 0x420107DF:0x3FCB8720 0x42010899:0x3FCB8760 0x42016046:0x3FCB8790 0x420160E3:0x3FCB87C0 0x4200B44F:0x3FCB87E0 0x4200BC4B:0x3FCB88B0 0x420C69AC:0x3FCB88E0 0x4037DBE9:0x3FCB8910
+
+[1;31mE (10586) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (10586) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (10586) task_wdt: Tasks currently running:[0m
+[1;31mE (10586) task_wdt: CPU 0: main[0m
+[1;31mE (10586) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (10586) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42050472:0x3FC9E550 0x4205088C:0x3FC9E570 0x403779C9:0x3FC9E5A0 0x42014980:0x3FCB86C0 0x420107A7:0x3FCB8700 0x420107DF:0x3FCB8720 0x42010899:0x3FCB8760 0x42016046:0x3FCB8790 0x420160E3:0x3FCB87C0 0x4200B44F:0x3FCB87E0 0x4200BC4B:0x3FCB88B0 0x420C69AC:0x3FCB88E0 0x4037DBE9:0x3FCB8910
+

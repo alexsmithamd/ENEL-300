@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "i2c_oled",
-    "project_version":    "2779b10",
+    "project_version":    "e2db61f7-dirty",
     "project_path":       "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/i2c_oled",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.3",
     "build_dir":          "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/i2c_oled/build",
