@@ -1,0 +1,11 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM14 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\i2c_oled\build\i2c_oled.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\i2c_oled\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM14 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM14 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Connection to \\.\COM14 failed. Available ports:
+--- COM12
+--- COM4
+--- COM13
+--- COM15[0m
+[0m

@@ -1,0 +1,6 @@
+Command: ninja all
+CMake Error at CMakeLists.txt:5 (idf_component_register):
+  Unknown CMake command "idf_component_register".
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

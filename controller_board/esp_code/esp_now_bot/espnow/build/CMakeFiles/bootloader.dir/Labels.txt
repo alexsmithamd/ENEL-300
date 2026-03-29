@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/CMakeFiles/bootloader
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/CMakeFiles/bootloader.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/CMakeFiles/bootloader-complete.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

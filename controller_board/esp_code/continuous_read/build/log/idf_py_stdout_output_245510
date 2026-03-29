@@ -1,0 +1,156 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd "/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/esp-idf/esptool_py" && /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /media/marcus/BCF853CFF8538714/Users/Marcus\ Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.bin
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj 
+/home/marcus/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I"/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/config" -I"/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main" -I/home/marcus/esp/esp-idf-v5.5/components/newlib/platform_include -I/home/marcus/esp/esp-idf-v5.5/components/freertos/config/include -I/home/marcus/esp/esp-idf-v5.5/components/freertos/config/include/freertos -I/home/marcus/esp/esp-idf-v5.5/components/freertos/config/xtensa/include -I/home/marcus/esp/esp-idf-v5.5/components/freertos/FreeRTOS-Kernel/include -I/home/marcus/esp/esp-idf-v5.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/marcus/esp/esp-idf-v5.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/marcus/esp/esp-idf-v5.5/components/freertos/esp_additions/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/include/soc -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/include/soc/esp32s3 -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/dma/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/ldo/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/debug_probe/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/mspi_timing_tuning/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/power_supply/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/port/esp32s3/. -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/port/esp32s3/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/home/marcus/esp/esp-idf-v5.5/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/home/marcus/esp/esp-idf-v5.5/components/heap/include -I/home/marcus/esp/esp-idf-v5.5/components/heap/tlsf -I/home/marcus/esp/esp-idf-v5.5/components/log/include -I/home/marcus/esp/esp-idf-v5.5/components/soc/include -I/home/marcus/esp/esp-idf-v5.5/components/soc/esp32s3 -I/home/marcus/esp/esp-idf-v5.5/components/soc/esp32s3/include -I/home/marcus/esp/esp-idf-v5.5/components/soc/esp32s3/register -I/home/marcus/esp/esp-idf-v5.5/components/hal/platform_port/include -I/home/marcus/esp/esp-idf-v5.5/components/hal/esp32s3/include -I/home/marcus/esp/esp-idf-v5.5/components/hal/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_rom/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_rom/esp32s3/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_rom/esp32s3/include/esp32s3 -I/home/marcus/esp/esp-idf-v5.5/components/esp_rom/esp32s3 -I/home/marcus/esp/esp-idf-v5.5/components/esp_common/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_system/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_system/port/soc -I/home/marcus/esp/esp-idf-v5.5/components/esp_system/port/include/private -I/home/marcus/esp/esp-idf-v5.5/components/xtensa/esp32s3/include -I/home/marcus/esp/esp-idf-v5.5/components/xtensa/include -I/home/marcus/esp/esp-idf-v5.5/components/xtensa/deprecated_include -I/home/marcus/esp/esp-idf-v5.5/components/esp_adc/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_adc/interface -I/home/marcus/esp/esp-idf-v5.5/components/esp_adc/esp32s3/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_adc/deprecated/include -I/home/marcus/esp/esp-idf-v5.5/components/esp_timer/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap "-fmacro-prefix-map=/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read=." -fmacro-prefix-map=/home/marcus/esp/esp-idf-v5.5=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/continuous_read_main.c.obj -c '/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c'
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c: In function 'app_main':
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:119:30: warning: unused variable 'chan_num' [-Wunused-variable]
+  119 |                     uint32_t chan_num = EXAMPLE_ADC_GET_CHANNEL(p);
+      |                              ^~~~~~~~
+In file included from /home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:20,
+                 from /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:10:
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:121: error: expected ')' before 'values'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                                                                                                                         ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:220:72: note: to match this '('
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:121: error: expected ')' before 'values'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                                                                                                                         ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:221:72: note: to match this '('
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:121: error: expected ')' before 'values'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                                                                                                                         ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:222:72: note: to match this '('
+  222 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:121: error: expected ')' before 'values'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                                                                                                                         ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:223:72: note: to match this '('
+  223 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:121: error: expected ')' before 'values'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                                                                                                                         ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:224:72: note: to match this '('
+  224 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/marcus/esp/esp-idf-v5.5/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:129:18: note: in expansion of macro 'ESP_LOGI'
+  129 |                  ESP_LOGI("JOY1 :: ""X_Value: %"PRIu32" Y_Value: %"PRIu32"JOY2 :: X_value: %"PRIu32 "Y_value: %"PRIu32, values[0], values[1], values[2], values[3]);
+      |                  ^~~~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:114:26: warning: variable 'values' set but not used [-Wunused-but-set-variable]
+  114 |                 uint32_t values[4] = {-1, -1, -1, -1};
+      |                          ^~~~~~
+/media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/main/continuous_read_main.c:106:10: warning: unused variable 'unit' [-Wunused-variable]
+  106 |     char unit[] = EXAMPLE_ADC_UNIT_STR(EXAMPLE_ADC_UNIT);
+      |          ^~~~
+[3/9] No install step for 'bootloader'
+ninja: build stopped: subcommand failed.

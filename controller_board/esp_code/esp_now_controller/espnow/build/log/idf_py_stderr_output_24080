@@ -1,0 +1,34 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42050472: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x4205088c: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x403779c9: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42014980: [0;33mlv_inv_area[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x420107a7: [0;33minvalidate_area_core[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- 0x420107df: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x42010899: [0;33mlv_obj_invalidate[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x42016046: [0;33mupdate_resolution[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420160e3: [0;33mlv_display_set_rotation[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x4200b44f: [0;33mdisplay_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c[0m[0m:[1;31m185[0m
+[0m--- 0x4200bc4b: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c[0m[0m:[1;31m581[0m
+[0m--- 0x420c69ac: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037dbe9: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x42050472: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x4205088c: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x403779c9: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42014980: [0;33mlv_inv_area[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x420107a7: [0;33minvalidate_area_core[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- 0x420107df: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x42010899: [0;33mlv_obj_invalidate[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x42016046: [0;33mupdate_resolution[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420160e3: [0;33mlv_display_set_rotation[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x4200b44f: [0;33mdisplay_init[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c[0m[0m:[1;31m185[0m
+[0m--- 0x4200bc4b: [0;33mapp_main[0m[0m at [0;32mC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c[0m[0m:[1;31m581[0m
+[0m--- 0x420c69ac: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037dbe9: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m

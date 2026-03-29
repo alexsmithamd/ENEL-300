@@ -1,0 +1,540 @@
+Command: /home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/marcus/esp/esp-idf-v5.5/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/continuous_read.elf /media/marcus/BCF853CFF8538714/Users/Marcus Meyer/Desktop/enel_300/ENEL-300/controller_board/esp_code/continuous_read/build/bootloader/bootloader.elf -m '/home/marcus/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/marcus/esp/esp-idf-v5.5/tools/idf.py'
+*��ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x159c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f48
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Feb 19 2026 13:47:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09f28h ( 40744) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=00019f50 vaddr=3fc93b00 size=02978h ( 10616) load[0m
+[0;32mI (96) esp_image: segment 2: paddr=0001c8d0 vaddr=40374000 size=03748h ( 14152) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17e74h ( 97908) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=00037e9c vaddr=40377748 size=0c3a4h ( 50084) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=00044248 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (144) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Multicore app[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (164) app_init: Application information:[0m
+[0;32mI (164) app_init: Project name:     continuous_read[0m
+[0;32mI (169) app_init: App version:      0b20aa1[0m
+[0;32mI (173) app_init: Compile time:     Feb 19 2026 13:47:04[0m
+[0;32mI (178) app_init: ELF file SHA256:  178f4a03b...[0m
+[0;32mI (182) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 3FC96D30 len 000529E0 (330 KiB): RAM[0m
+[0;32mI (209) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (220) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (226) spi_flash: detected chip: boya[0m
+[0;32mI (229) spi_flash: flash io: dio[0m
+[0;33mW (232) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (244) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (250) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (257) main_task: Started on CPU0[0m
+[0;32mI (267) main_task: Calling app_main()[0m
+[0;32mI (347) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1944[0m
+[0;32mI (427) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (507) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (587) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (667) : JOY1 :: X_Value: 1929 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (747) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (827) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (907) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (987) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (1067) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (1147) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (1227) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (1307) : JOY1 :: X_Value: 1933 Y_Value: 1944JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (1387) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1934Y_value: 1942[0m
+[0;32mI (1467) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (1547) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (1627) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (1707) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (1787) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (1867) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (1947) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (2027) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (2107) : JOY1 :: X_Value: 1929 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (2187) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (2267) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (2347) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (2427) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (2507) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (2587) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (2667) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (2747) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (2827) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (2907) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (2987) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (3067) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (3147) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (3227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (3307) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (3387) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (3467) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (3547) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (3627) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (3707) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (3787) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1941[0m
+[0;32mI (3867) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (3947) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (4027) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (4107) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (4187) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (4267) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (4347) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (4427) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (4507) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (4587) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (4667) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (4747) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (4827) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (4907) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (4987) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (5067) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (5147) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (5227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (5307) : JOY1 :: X_Value: 1932 Y_Value: 1945JOY2 :: X_value: 1933Y_value: 1944[0m
+[0;32mI (5387) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (5467) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1934Y_value: 1943[0m
+[0;32mI (5547) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (5627) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (5707) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (5787) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (5867) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (5947) : JOY1 :: X_Value: 1933 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (6027) : JOY1 :: X_Value: 1931 Y_Value: 1944JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (6107) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (6187) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (6267) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (6347) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (6427) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (6507) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (6587) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (6667) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (6747) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1941[0m
+[0;32mI (6827) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (6907) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (6987) : JOY1 :: X_Value: 1931 Y_Value: 1944JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (7067) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1934Y_value: 1943[0m
+[0;32mI (7147) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (7227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1944[0m
+[0;32mI (7307) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (7387) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (7467) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (7547) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (7627) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (7707) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1935Y_value: 1943[0m
+[0;32mI (7787) : JOY1 :: X_Value: 1929 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (7867) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (7947) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (8027) : JOY1 :: X_Value: 1931 Y_Value: 1944JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (8107) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (8187) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (8267) : JOY1 :: X_Value: 1932 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (8347) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (8427) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (8507) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (8587) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1944[0m
+[0;32mI (8667) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (8747) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1934Y_value: 1943[0m
+[0;32mI (8827) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1944[0m
+[0;32mI (8907) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (8987) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1934Y_value: 1942[0m
+[0;32mI (9067) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (9147) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (9227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (9307) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (9387) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (9467) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (9547) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (9627) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (9707) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (9787) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (9867) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (9947) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (10027) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (10107) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (10187) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (10267) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (10347) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (10427) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (10507) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (10587) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (10667) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (10747) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (10827) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (10907) : JOY1 :: X_Value: 1929 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (10987) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1944[0m
+[0;32mI (11067) : JOY1 :: X_Value: 1931 Y_Value: 1944JOY2 :: X_value: 1932Y_value: 1941[0m
+[0;32mI (11147) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1941[0m
+[0;32mI (11227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (11307) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (11387) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (11467) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (11547) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (11627) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (11707) : JOY1 :: X_Value: 1931 Y_Value: 1944JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (11787) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (11867) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (11947) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (12027) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (12107) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (12187) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1939[0m
+[0;32mI (12267) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (12347) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (12427) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (12507) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (12587) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (12667) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1945[0m
+[0;32mI (12747) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (12827) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (12907) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1934Y_value: 1941[0m
+[0;32mI (12987) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (13067) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (13147) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (13227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (13307) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (13387) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (13467) : JOY1 :: X_Value: 1931 Y_Value: 1944JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (13547) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (13627) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1939[0m
+[0;32mI (13707) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (13787) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (13867) : JOY1 :: X_Value: 1929 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (13947) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (14027) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (14107) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (14187) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (14267) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (14347) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (14427) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (14507) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (14587) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (14667) : JOY1 :: X_Value: 1930 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (14747) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (14827) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (14907) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (14987) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (15067) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (15147) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (15227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (15307) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (15387) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (15467) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (15547) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (15627) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (15707) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (15787) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (15867) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (15947) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (16027) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (16107) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (16187) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (16267) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (16347) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (16427) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (16507) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (16587) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (16667) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (16747) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (16827) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (16907) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (16987) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (17067) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (17147) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (17227) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (17307) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1944[0m
+[0;32mI (17387) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (17467) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (17547) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (17627) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (17707) : JOY1 :: X_Value: 1929 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (17787) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (17867) : JOY1 :: X_Value: 1929 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (17947) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (18027) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (18107) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (18187) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (18267) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (18347) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (18427) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (18507) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (18587) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (18667) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (18747) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (18827) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (18907) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (18987) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (19067) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (19147) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (19227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (19307) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (19387) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (19467) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (19547) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (19627) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (19707) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1941[0m
+[0;32mI (19787) : JOY1 :: X_Value: 1933 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (19867) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1945[0m
+[0;32mI (19947) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (20027) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (20107) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (20187) : JOY1 :: X_Value: 1931 Y_Value: 1940JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (20267) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1945[0m
+[0;32mI (20347) : JOY1 :: X_Value: 1933 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (20427) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (20507) : JOY1 :: X_Value: 3574 Y_Value: 0JOY2 :: X_value: 3575Y_value: 0[0m
+[0;32mI (20587) : JOY1 :: X_Value: 3571 Y_Value: 0JOY2 :: X_value: 3575Y_value: 0[0m
+[0;32mI (20667) : JOY1 :: X_Value: 3627 Y_Value: 0JOY2 :: X_value: 3630Y_value: 0[0m
+[0;32mI (20747) : JOY1 :: X_Value: 3636 Y_Value: 0JOY2 :: X_value: 3639Y_value: 0[0m
+[0;32mI (20827) : JOY1 :: X_Value: 3629 Y_Value: 0JOY2 :: X_value: 3629Y_value: 0[0m
+[0;32mI (20907) : JOY1 :: X_Value: 3447 Y_Value: 0JOY2 :: X_value: 3413Y_value: 0[0m
+[0;32mI (20987) : JOY1 :: X_Value: 2427 Y_Value: 0JOY2 :: X_value: 2413Y_value: 0[0m
+[0;32mI (21067) : JOY1 :: X_Value: 2377 Y_Value: 0JOY2 :: X_value: 2381Y_value: 0[0m
+[0;32mI (21147) : JOY1 :: X_Value: 2313 Y_Value: 0JOY2 :: X_value: 2319Y_value: 0[0m
+[0;32mI (21227) : JOY1 :: X_Value: 2295 Y_Value: 0JOY2 :: X_value: 2293Y_value: 0[0m
+[0;32mI (21307) : JOY1 :: X_Value: 2293 Y_Value: 0JOY2 :: X_value: 2295Y_value: 0[0m
+[0;32mI (21387) : JOY1 :: X_Value: 2303 Y_Value: 0JOY2 :: X_value: 2311Y_value: 0[0m
+[0;32mI (21467) : JOY1 :: X_Value: 2303 Y_Value: 0JOY2 :: X_value: 2311Y_value: 0[0m
+[0;32mI (21547) : JOY1 :: X_Value: 2303 Y_Value: 0JOY2 :: X_value: 2309Y_value: 0[0m
+[0;32mI (21627) : JOY1 :: X_Value: 2304 Y_Value: 0JOY2 :: X_value: 2303Y_value: 0[0m
+[0;32mI (21707) : JOY1 :: X_Value: 2302 Y_Value: 0JOY2 :: X_value: 2303Y_value: 0[0m
+[0;32mI (21787) : JOY1 :: X_Value: 2309 Y_Value: 0JOY2 :: X_value: 2311Y_value: 0[0m
+[0;32mI (21867) : JOY1 :: X_Value: 2297 Y_Value: 0JOY2 :: X_value: 2300Y_value: 0[0m
+[0;32mI (21947) : JOY1 :: X_Value: 2297 Y_Value: 0JOY2 :: X_value: 2299Y_value: 0[0m
+[0;32mI (22027) : JOY1 :: X_Value: 2301 Y_Value: 0JOY2 :: X_value: 2300Y_value: 0[0m
+[0;32mI (22107) : JOY1 :: X_Value: 2300 Y_Value: 0JOY2 :: X_value: 2301Y_value: 0[0m
+[0;32mI (22187) : JOY1 :: X_Value: 2316 Y_Value: 0JOY2 :: X_value: 2347Y_value: 0[0m
+[0;32mI (22267) : JOY1 :: X_Value: 2503 Y_Value: 0JOY2 :: X_value: 2501Y_value: 0[0m
+[0;32mI (22347) : JOY1 :: X_Value: 1930 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1939[0m
+[0;32mI (22427) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (22507) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (22587) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (22667) : JOY1 :: X_Value: 1929 Y_Value: 1945JOY2 :: X_value: 1929Y_value: 1943[0m
+[0;32mI (22747) : JOY1 :: X_Value: 1916 Y_Value: 1941JOY2 :: X_value: 1917Y_value: 1941[0m
+[0;32mI (22827) : JOY1 :: X_Value: 1932 Y_Value: 1942JOY2 :: X_value: 1934Y_value: 1945[0m
+[0;32mI (22907) : JOY1 :: X_Value: 1927 Y_Value: 1945JOY2 :: X_value: 1926Y_value: 1947[0m
+[0;32mI (22987) : JOY1 :: X_Value: 1919 Y_Value: 2019JOY2 :: X_value: 1919Y_value: 2139[0m
+[0;32mI (23067) : JOY1 :: X_Value: 1933 Y_Value: 4095JOY2 :: X_value: 1941Y_value: 4095[0m
+[0;32mI (23147) : JOY1 :: X_Value: 1919 Y_Value: 4095JOY2 :: X_value: 1917Y_value: 4095[0m
+[0;32mI (23227) : JOY1 :: X_Value: 1927 Y_Value: 4095JOY2 :: X_value: 1929Y_value: 4095[0m
+[0;32mI (23307) : JOY1 :: X_Value: 1913 Y_Value: 4095JOY2 :: X_value: 1916Y_value: 4095[0m
+[0;32mI (23387) : JOY1 :: X_Value: 1899 Y_Value: 4095JOY2 :: X_value: 1910Y_value: 4095[0m
+[0;32mI (23467) : JOY1 :: X_Value: 1926 Y_Value: 4095JOY2 :: X_value: 1927Y_value: 4095[0m
+[0;32mI (23547) : JOY1 :: X_Value: 1930 Y_Value: 4095JOY2 :: X_value: 1931Y_value: 4095[0m
+[0;32mI (23627) : JOY1 :: X_Value: 1919 Y_Value: 2239JOY2 :: X_value: 1929Y_value: 1943[0m
+[0;32mI (23707) : JOY1 :: X_Value: 1943 Y_Value: 1943JOY2 :: X_value: 1941Y_value: 1942[0m
+[0;32mI (23787) : JOY1 :: X_Value: 1915 Y_Value: 1943JOY2 :: X_value: 1911Y_value: 1942[0m
+[0;32mI (23867) : JOY1 :: X_Value: 1915 Y_Value: 783JOY2 :: X_value: 1917Y_value: 615[0m
+[0;32mI (23947) : JOY1 :: X_Value: 1934 Y_Value: 0JOY2 :: X_value: 1931Y_value: 0[0m
+[0;32mI (24027) : JOY1 :: X_Value: 1933 Y_Value: 0JOY2 :: X_value: 1929Y_value: 0[0m
+[0;32mI (24107) : JOY1 :: X_Value: 1943 Y_Value: 0JOY2 :: X_value: 1933Y_value: 0[0m
+[0;32mI (24187) : JOY1 :: X_Value: 1931 Y_Value: 0JOY2 :: X_value: 1925Y_value: 0[0m
+[0;32mI (24267) : JOY1 :: X_Value: 1899 Y_Value: 0JOY2 :: X_value: 1904Y_value: 0[0m
+[0;32mI (24347) : JOY1 :: X_Value: 1913 Y_Value: 0JOY2 :: X_value: 1916Y_value: 0[0m
+[0;32mI (24427) : JOY1 :: X_Value: 1915 Y_Value: 0JOY2 :: X_value: 1925Y_value: 0[0m
+[0;32mI (24507) : JOY1 :: X_Value: 1933 Y_Value: 0JOY2 :: X_value: 1929Y_value: 0[0m
+[0;32mI (24587) : JOY1 :: X_Value: 1947 Y_Value: 0JOY2 :: X_value: 1945Y_value: 0[0m
+[0;32mI (24667) : JOY1 :: X_Value: 1913 Y_Value: 0JOY2 :: X_value: 1913Y_value: 0[0m
+[0;32mI (24747) : JOY1 :: X_Value: 1919 Y_Value: 0JOY2 :: X_value: 1932Y_value: 0[0m
+[0;32mI (24827) : JOY1 :: X_Value: 1930 Y_Value: 0JOY2 :: X_value: 1932Y_value: 0[0m
+[0;32mI (24907) : JOY1 :: X_Value: 1926 Y_Value: 0JOY2 :: X_value: 1928Y_value: 0[0m
+[0;32mI (24987) : JOY1 :: X_Value: 1941 Y_Value: 0JOY2 :: X_value: 1930Y_value: 0[0m
+[0;32mI (25067) : JOY1 :: X_Value: 1910 Y_Value: 0JOY2 :: X_value: 1899Y_value: 0[0m
+[0;32mI (25147) : JOY1 :: X_Value: 1903 Y_Value: 0JOY2 :: X_value: 1911Y_value: 0[0m
+[0;32mI (25227) : JOY1 :: X_Value: 1925 Y_Value: 0JOY2 :: X_value: 1919Y_value: 0[0m
+[0;32mI (25307) : JOY1 :: X_Value: 1908 Y_Value: 0JOY2 :: X_value: 1911Y_value: 0[0m
+[0;32mI (25387) : JOY1 :: X_Value: 1935 Y_Value: 0JOY2 :: X_value: 1938Y_value: 0[0m
+[0;32mI (25467) : JOY1 :: X_Value: 1927 Y_Value: 0JOY2 :: X_value: 1927Y_value: 0[0m
+[0;32mI (25547) : JOY1 :: X_Value: 1909 Y_Value: 0JOY2 :: X_value: 1915Y_value: 0[0m
+[0;32mI (25627) : JOY1 :: X_Value: 1928 Y_Value: 1101JOY2 :: X_value: 1930Y_value: 1117[0m
+[0;32mI (25707) : JOY1 :: X_Value: 1917 Y_Value: 1622JOY2 :: X_value: 1926Y_value: 1643[0m
+[0;32mI (25787) : JOY1 :: X_Value: 1927 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (25867) : JOY1 :: X_Value: 1935 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (25947) : JOY1 :: X_Value: 1909 Y_Value: 1943JOY2 :: X_value: 1900Y_value: 1941[0m
+[0;32mI (26027) : JOY1 :: X_Value: 1903 Y_Value: 1942JOY2 :: X_value: 1913Y_value: 1943[0m
+[0;32mI (26107) : JOY1 :: X_Value: 1912 Y_Value: 1943JOY2 :: X_value: 1917Y_value: 1941[0m
+[0;32mI (26187) : JOY1 :: X_Value: 3160 Y_Value: 1936JOY2 :: X_value: 3339Y_value: 1939[0m
+[0;32mI (26267) : JOY1 :: X_Value: 4095 Y_Value: 1941JOY2 :: X_value: 4095Y_value: 1942[0m
+[0;32mI (26347) : JOY1 :: X_Value: 4095 Y_Value: 1941JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (26427) : JOY1 :: X_Value: 4095 Y_Value: 1941JOY2 :: X_value: 4095Y_value: 1943[0m
+[0;32mI (26507) : JOY1 :: X_Value: 4095 Y_Value: 1945JOY2 :: X_value: 4095Y_value: 1942[0m
+[0;32mI (26587) : JOY1 :: X_Value: 4095 Y_Value: 1940JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (26667) : JOY1 :: X_Value: 4095 Y_Value: 1943JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (26747) : JOY1 :: X_Value: 4095 Y_Value: 1942JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (26827) : JOY1 :: X_Value: 4095 Y_Value: 1941JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (26907) : JOY1 :: X_Value: 4095 Y_Value: 1943JOY2 :: X_value: 4095Y_value: 1943[0m
+[0;32mI (26987) : JOY1 :: X_Value: 1897 Y_Value: 1943JOY2 :: X_value: 1907Y_value: 1942[0m
+[0;32mI (27067) : JOY1 :: X_Value: 1919 Y_Value: 1939JOY2 :: X_value: 1929Y_value: 1939[0m
+[0;32mI (27147) : JOY1 :: X_Value: 0 Y_Value: 1941JOY2 :: X_value: 0Y_value: 1943[0m
+[0;32mI (27227) : JOY1 :: X_Value: 0 Y_Value: 1942JOY2 :: X_value: 0Y_value: 1942[0m
+[0;32mI (27307) : JOY1 :: X_Value: 0 Y_Value: 1941JOY2 :: X_value: 0Y_value: 1941[0m
+[0;32mI (27387) : JOY1 :: X_Value: 0 Y_Value: 1496JOY2 :: X_value: 0Y_value: 1477[0m
+[0;32mI (27467) : JOY1 :: X_Value: 0 Y_Value: 1357JOY2 :: X_value: 0Y_value: 1354[0m
+[0;32mI (27547) : JOY1 :: X_Value: 0 Y_Value: 1355JOY2 :: X_value: 0Y_value: 1354[0m
+[0;32mI (27627) : JOY1 :: X_Value: 1919 Y_Value: 1943JOY2 :: X_value: 1916Y_value: 1942[0m
+[0;32mI (27707) : JOY1 :: X_Value: 1911 Y_Value: 1942JOY2 :: X_value: 1915Y_value: 1943[0m
+[0;32mI (27787) : JOY1 :: X_Value: 1919 Y_Value: 1944JOY2 :: X_value: 1918Y_value: 1943[0m
+[0;32mI (27867) : JOY1 :: X_Value: 1913 Y_Value: 1943JOY2 :: X_value: 1908Y_value: 1943[0m
+[0;32mI (27947) : JOY1 :: X_Value: 1925 Y_Value: 1943JOY2 :: X_value: 1928Y_value: 1941[0m
+[0;32mI (28027) : JOY1 :: X_Value: 1933 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (28107) : JOY1 :: X_Value: 1911 Y_Value: 1941JOY2 :: X_value: 1917Y_value: 1941[0m
+[0;32mI (28187) : JOY1 :: X_Value: 1925 Y_Value: 1943JOY2 :: X_value: 1926Y_value: 1941[0m
+[0;32mI (28267) : JOY1 :: X_Value: 1920 Y_Value: 1943JOY2 :: X_value: 1919Y_value: 1943[0m
+[0;32mI (28347) : JOY1 :: X_Value: 1927 Y_Value: 1943JOY2 :: X_value: 1935Y_value: 1941[0m
+[0;32mI (28427) : JOY1 :: X_Value: 1943 Y_Value: 1944JOY2 :: X_value: 1933Y_value: 1945[0m
+[0;32mI (28507) : JOY1 :: X_Value: 1918 Y_Value: 1943JOY2 :: X_value: 1912Y_value: 1942[0m
+[0;32mI (28587) : JOY1 :: X_Value: 1919 Y_Value: 1943JOY2 :: X_value: 1919Y_value: 1943[0m
+[0;32mI (28667) : JOY1 :: X_Value: 1915 Y_Value: 1942JOY2 :: X_value: 1915Y_value: 1941[0m
+[0;32mI (28747) : JOY1 :: X_Value: 1911 Y_Value: 1942JOY2 :: X_value: 1910Y_value: 1942[0m
+[0;32mI (28827) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1941Y_value: 1943[0m
+[0;32mI (28907) : JOY1 :: X_Value: 1929 Y_Value: 1943JOY2 :: X_value: 1927Y_value: 1942[0m
+[0;32mI (28987) : JOY1 :: X_Value: 1919 Y_Value: 1941JOY2 :: X_value: 1926Y_value: 1941[0m
+[0;32mI (29067) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1928Y_value: 1943[0m
+[0;32mI (29147) : JOY1 :: X_Value: 1917 Y_Value: 1944JOY2 :: X_value: 1919Y_value: 1944[0m
+[0;32mI (29227) : JOY1 :: X_Value: 1933 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (29307) : JOY1 :: X_Value: 1941 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (29387) : JOY1 :: X_Value: 1918 Y_Value: 1942JOY2 :: X_value: 1913Y_value: 1941[0m
+[0;32mI (29467) : JOY1 :: X_Value: 1919 Y_Value: 1943JOY2 :: X_value: 1925Y_value: 1942[0m
+[0;32mI (29547) : JOY1 :: X_Value: 1911 Y_Value: 1941JOY2 :: X_value: 1911Y_value: 1941[0m
+[0;32mI (29627) : JOY1 :: X_Value: 1916 Y_Value: 1942JOY2 :: X_value: 1917Y_value: 1942[0m
+[0;32mI (29707) : JOY1 :: X_Value: 1933 Y_Value: 1942JOY2 :: X_value: 1934Y_value: 1941[0m
+[0;32mI (29787) : JOY1 :: X_Value: 1912 Y_Value: 1942JOY2 :: X_value: 1911Y_value: 1941[0m
+[0;32mI (29867) : JOY1 :: X_Value: 1917 Y_Value: 1941JOY2 :: X_value: 1917Y_value: 1943[0m
+[0;32mI (29947) : JOY1 :: X_Value: 1917 Y_Value: 1944JOY2 :: X_value: 1917Y_value: 1944[0m
+[0;32mI (30027) : JOY1 :: X_Value: 1911 Y_Value: 1942JOY2 :: X_value: 1925Y_value: 1941[0m
+[0;32mI (30107) : JOY1 :: X_Value: 1939 Y_Value: 1941JOY2 :: X_value: 1949Y_value: 1943[0m
+[0;32mI (30187) : JOY1 :: X_Value: 1927 Y_Value: 1943JOY2 :: X_value: 1917Y_value: 1943[0m
+[0;32mI (30267) : JOY1 :: X_Value: 1913 Y_Value: 1942JOY2 :: X_value: 1914Y_value: 1941[0m
+[0;32mI (30347) : JOY1 :: X_Value: 1926 Y_Value: 1943JOY2 :: X_value: 1919Y_value: 1945[0m
+[0;32mI (30427) : JOY1 :: X_Value: 1899 Y_Value: 1944JOY2 :: X_value: 1900Y_value: 1941[0m
+[0;32mI (30507) : JOY1 :: X_Value: 1916 Y_Value: 1943JOY2 :: X_value: 1918Y_value: 1941[0m
+[0;32mI (30587) : JOY1 :: X_Value: 1928 Y_Value: 1941JOY2 :: X_value: 1929Y_value: 1942[0m
+[0;32mI (30667) : JOY1 :: X_Value: 1911 Y_Value: 1939JOY2 :: X_value: 1919Y_value: 1941[0m
+[0;32mI (30747) : JOY1 :: X_Value: 1926 Y_Value: 1943JOY2 :: X_value: 1930Y_value: 1945[0m
+[0;32mI (30827) : JOY1 :: X_Value: 1919 Y_Value: 1942JOY2 :: X_value: 1913Y_value: 1943[0m
+[0;32mI (30907) : JOY1 :: X_Value: 1914 Y_Value: 1943JOY2 :: X_value: 1925Y_value: 1942[0m
+[0;32mI (30987) : JOY1 :: X_Value: 1941 Y_Value: 1943JOY2 :: X_value: 1941Y_value: 1943[0m
+[0;32mI (31067) : JOY1 :: X_Value: 1929 Y_Value: 1943JOY2 :: X_value: 1919Y_value: 1944[0m
+[0;32mI (31147) : JOY1 :: X_Value: 1927 Y_Value: 1941JOY2 :: X_value: 1931Y_value: 1942[0m
+[0;32mI (31227) : JOY1 :: X_Value: 1919 Y_Value: 1945JOY2 :: X_value: 1915Y_value: 1942[0m
+[0;32mI (31307) : JOY1 :: X_Value: 1906 Y_Value: 1942JOY2 :: X_value: 1901Y_value: 1943[0m
+[0;32mI (31387) : JOY1 :: X_Value: 1929 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1944[0m
+[0;32mI (31467) : JOY1 :: X_Value: 1919 Y_Value: 1942JOY2 :: X_value: 1918Y_value: 1941[0m
+[0;32mI (31547) : JOY1 :: X_Value: 1911 Y_Value: 1941JOY2 :: X_value: 1926Y_value: 1942[0m
+[0;32mI (31627) : JOY1 :: X_Value: 1928 Y_Value: 1941JOY2 :: X_value: 1926Y_value: 1943[0m
+[0;32mI (31707) : JOY1 :: X_Value: 1911 Y_Value: 1356JOY2 :: X_value: 1914Y_value: 1299[0m
+[0;32mI (31787) : JOY1 :: X_Value: 1927 Y_Value: 0JOY2 :: X_value: 1930Y_value: 0[0m
+[0;32mI (31867) : JOY1 :: X_Value: 1931 Y_Value: 0JOY2 :: X_value: 1930Y_value: 0[0m
+[0;32mI (31947) : JOY1 :: X_Value: 1933 Y_Value: 0JOY2 :: X_value: 1929Y_value: 0[0m
+[0;32mI (32027) : JOY1 :: X_Value: 1932 Y_Value: 0JOY2 :: X_value: 1933Y_value: 0[0m
+[0;32mI (32107) : JOY1 :: X_Value: 1917 Y_Value: 0JOY2 :: X_value: 1917Y_value: 0[0m
+[0;32mI (32187) : JOY1 :: X_Value: 1917 Y_Value: 0JOY2 :: X_value: 1926Y_value: 0[0m
+[0;32mI (32267) : JOY1 :: X_Value: 1932 Y_Value: 0JOY2 :: X_value: 1934Y_value: 0[0m
+[0;32mI (32347) : JOY1 :: X_Value: 1926 Y_Value: 0JOY2 :: X_value: 1928Y_value: 0[0m
+[0;32mI (32427) : JOY1 :: X_Value: 1927 Y_Value: 0JOY2 :: X_value: 1933Y_value: 0[0m
+[0;32mI (32507) : JOY1 :: X_Value: 1931 Y_Value: 0JOY2 :: X_value: 1927Y_value: 0[0m
+[0;32mI (32587) : JOY1 :: X_Value: 1916 Y_Value: 0JOY2 :: X_value: 1929Y_value: 0[0m
+[0;32mI (32667) : JOY1 :: X_Value: 1930 Y_Value: 0JOY2 :: X_value: 1943Y_value: 0[0m
+[0;32mI (32747) : JOY1 :: X_Value: 1934 Y_Value: 0JOY2 :: X_value: 1942Y_value: 0[0m
+[0;32mI (32827) : JOY1 :: X_Value: 1931 Y_Value: 0JOY2 :: X_value: 1933Y_value: 0[0m
+[0;32mI (32907) : JOY1 :: X_Value: 1933 Y_Value: 0JOY2 :: X_value: 1931Y_value: 0[0m
+[0;32mI (32987) : JOY1 :: X_Value: 1918 Y_Value: 0JOY2 :: X_value: 1927Y_value: 0[0m
+[0;32mI (33067) : JOY1 :: X_Value: 1927 Y_Value: 0JOY2 :: X_value: 1931Y_value: 0[0m
+[0;32mI (33147) : JOY1 :: X_Value: 1933 Y_Value: 1945JOY2 :: X_value: 1934Y_value: 1943[0m
+[0;32mI (33227) : JOY1 :: X_Value: 1927 Y_Value: 1939JOY2 :: X_value: 1931Y_value: 1940[0m
+[0;32mI (33307) : JOY1 :: X_Value: 1933 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (33387) : JOY1 :: X_Value: 1927 Y_Value: 1939JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (33467) : JOY1 :: X_Value: 1930 Y_Value: 1941JOY2 :: X_value: 1935Y_value: 1944[0m
+[0;32mI (33547) : JOY1 :: X_Value: 1947 Y_Value: 1946JOY2 :: X_value: 1947Y_value: 1944[0m
+[0;32mI (33627) : JOY1 :: X_Value: 1939 Y_Value: 2167JOY2 :: X_value: 1943Y_value: 2185[0m
+[0;32mI (33707) : JOY1 :: X_Value: 1941 Y_Value: 4095JOY2 :: X_value: 1947Y_value: 4095[0m
+[0;32mI (33787) : JOY1 :: X_Value: 1934 Y_Value: 4095JOY2 :: X_value: 1927Y_value: 4095[0m
+[0;32mI (33867) : JOY1 :: X_Value: 1926 Y_Value: 4095JOY2 :: X_value: 1918Y_value: 4095[0m
+[0;32mI (33947) : JOY1 :: X_Value: 1936 Y_Value: 4095JOY2 :: X_value: 1934Y_value: 4095[0m
+[0;32mI (34027) : JOY1 :: X_Value: 1933 Y_Value: 4095JOY2 :: X_value: 1929Y_value: 4095[0m
+[0;32mI (34107) : JOY1 :: X_Value: 1932 Y_Value: 4095JOY2 :: X_value: 1934Y_value: 4095[0m
+[0;32mI (34187) : JOY1 :: X_Value: 1933 Y_Value: 4095JOY2 :: X_value: 1938Y_value: 4095[0m
+[0;32mI (34267) : JOY1 :: X_Value: 1918 Y_Value: 4095JOY2 :: X_value: 1915Y_value: 4095[0m
+[0;32mI (34347) : JOY1 :: X_Value: 1939 Y_Value: 4095JOY2 :: X_value: 1947Y_value: 4095[0m
+[0;32mI (34427) : JOY1 :: X_Value: 1940 Y_Value: 4095JOY2 :: X_value: 1947Y_value: 4095[0m
+[0;32mI (34507) : JOY1 :: X_Value: 1939 Y_Value: 4095JOY2 :: X_value: 1933Y_value: 4095[0m
+[0;32mI (34587) : JOY1 :: X_Value: 1943 Y_Value: 4095JOY2 :: X_value: 1945Y_value: 4095[0m
+[0;32mI (34667) : JOY1 :: X_Value: 1934 Y_Value: 4095JOY2 :: X_value: 1929Y_value: 4095[0m
+[0;32mI (34747) : JOY1 :: X_Value: 1927 Y_Value: 4095JOY2 :: X_value: 1930Y_value: 4095[0m
+[0;32mI (34827) : JOY1 :: X_Value: 1941 Y_Value: 1943JOY2 :: X_value: 1939Y_value: 1942[0m
+[0;32mI (34907) : JOY1 :: X_Value: 1929 Y_Value: 1942JOY2 :: X_value: 1928Y_value: 1943[0m
+[0;32mI (34987) : JOY1 :: X_Value: 1929 Y_Value: 1561JOY2 :: X_value: 1935Y_value: 1487[0m
+[0;32mI (35067) : JOY1 :: X_Value: 1935 Y_Value: 0JOY2 :: X_value: 1934Y_value: 0[0m
+[0;32mI (35147) : JOY1 :: X_Value: 1919 Y_Value: 0JOY2 :: X_value: 1929Y_value: 0[0m
+[0;32mI (35227) : JOY1 :: X_Value: 1939 Y_Value: 0JOY2 :: X_value: 1943Y_value: 0[0m
+[0;32mI (35307) : JOY1 :: X_Value: 1935 Y_Value: 0JOY2 :: X_value: 1935Y_value: 0[0m
+[0;32mI (35387) : JOY1 :: X_Value: 1935 Y_Value: 0JOY2 :: X_value: 1945Y_value: 0[0m
+[0;32mI (35467) : JOY1 :: X_Value: 1947 Y_Value: 0JOY2 :: X_value: 1943Y_value: 0[0m
+[0;32mI (35547) : JOY1 :: X_Value: 1927 Y_Value: 0JOY2 :: X_value: 1925Y_value: 0[0m
+[0;32mI (35627) : JOY1 :: X_Value: 1933 Y_Value: 0JOY2 :: X_value: 1935Y_value: 0[0m
+[0;32mI (35707) : JOY1 :: X_Value: 1933 Y_Value: 0JOY2 :: X_value: 1931Y_value: 0[0m
+[0;32mI (35787) : JOY1 :: X_Value: 1928 Y_Value: 0JOY2 :: X_value: 1929Y_value: 0[0m
+[0;32mI (35867) : JOY1 :: X_Value: 1943 Y_Value: 0JOY2 :: X_value: 1939Y_value: 0[0m
+[0;32mI (35947) : JOY1 :: X_Value: 1927 Y_Value: 1943JOY2 :: X_value: 1919Y_value: 1942[0m
+[0;32mI (36027) : JOY1 :: X_Value: 1915 Y_Value: 1941JOY2 :: X_value: 1927Y_value: 1943[0m
+[0;32mI (36107) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1941Y_value: 1945[0m
+[0;32mI (36187) : JOY1 :: X_Value: 2639 Y_Value: 1941JOY2 :: X_value: 2791Y_value: 1934[0m
+[0;32mI (36267) : JOY1 :: X_Value: 4095 Y_Value: 1942JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (36347) : JOY1 :: X_Value: 4095 Y_Value: 1941JOY2 :: X_value: 4095Y_value: 1943[0m
+[0;32mI (36427) : JOY1 :: X_Value: 4095 Y_Value: 1943JOY2 :: X_value: 4095Y_value: 1943[0m
+[0;32mI (36507) : JOY1 :: X_Value: 4095 Y_Value: 1943JOY2 :: X_value: 4095Y_value: 1944[0m
+[0;32mI (36587) : JOY1 :: X_Value: 4095 Y_Value: 1941JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (36667) : JOY1 :: X_Value: 4095 Y_Value: 1942JOY2 :: X_value: 4095Y_value: 1941[0m
+[0;32mI (36747) : JOY1 :: X_Value: 4095 Y_Value: 1941JOY2 :: X_value: 4095Y_value: 1943[0m
+[0;32mI (36827) : JOY1 :: X_Value: 3162 Y_Value: 1943JOY2 :: X_value: 2551Y_value: 1941[0m
+[0;32mI (36907) : JOY1 :: X_Value: 1918 Y_Value: 1942JOY2 :: X_value: 1928Y_value: 1943[0m
+[0;32mI (36987) : JOY1 :: X_Value: 0 Y_Value: 1943JOY2 :: X_value: 0Y_value: 1941[0m
+[0;32mI (37067) : JOY1 :: X_Value: 0 Y_Value: 1914JOY2 :: X_value: 0Y_value: 1913[0m
+[0;32mI (37147) : JOY1 :: X_Value: 0 Y_Value: 1631JOY2 :: X_value: 0Y_value: 1629[0m
+[0;32mI (37227) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1935Y_value: 1943[0m
+[0;32mI (37307) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1944[0m
+[0;32mI (37387) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (37467) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (37547) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1934Y_value: 1943[0m
+[0;32mI (37627) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (37707) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1941[0m
+[0;32mI (37787) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (37867) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (37947) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (38027) : JOY1 :: X_Value: 1932 Y_Value: 1943JOY2 :: X_value: 1934Y_value: 1942[0m
+[0;32mI (38107) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1933Y_value: 1942[0m
+[0;32mI (38187) : JOY1 :: X_Value: 1930 Y_Value: 1941JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (38267) : JOY1 :: X_Value: 1930 Y_Value: 1943JOY2 :: X_value: 1931Y_value: 1943[0m
+[0;32mI (38347) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1931Y_value: 1941[0m
+[0;32mI (38427) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1932Y_value: 1942[0m
+[0;32mI (38507) : JOY1 :: X_Value: 1933 Y_Value: 1941JOY2 :: X_value: 1933Y_value: 1941[0m
+[0;32mI (38587) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (38667) : JOY1 :: X_Value: 1931 Y_Value: 1942JOY2 :: X_value: 1933Y_value: 1943[0m
+[0;32mI (38747) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
+[0;32mI (38827) : JOY1 :: X_Value: 1931 Y_Value: 1941JOY2 :: X_value: 1934Y_value: 1942[0m
+[0;32mI (38907) : JOY1 :: X_Value: 1931 Y_Value: 1943JOY2 :: X_value: 1932Y_value: 1943[0m
