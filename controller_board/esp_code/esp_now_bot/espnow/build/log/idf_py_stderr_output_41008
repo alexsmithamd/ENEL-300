@@ -1,0 +1,10 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4004c97e: [0;33mspi_flash_mmap_dump[0m[0m in [0;32mROM[0m
+[0m--- 0x403cbf10: [0;33mbootloader_flash_read_sfdp[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m877[0m
+[0m--- 0x403cbf1a: [0;33mbootloader_read_flash_id[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m887[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is db4067b57af0734f8dab0ab80e6680f6c062c64baea03d530b7e472f5a2d94e2[0m
+[0m

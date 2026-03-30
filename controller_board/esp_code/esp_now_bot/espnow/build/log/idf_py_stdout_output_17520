@@ -1,0 +1,929 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c976
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x155c
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fa4
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar 26 2026 13:06:04[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a248h ( 41544) map[0m
+[0;32mI (90) esp_image: segment 1: paddr=0001a270 vaddr=3fc8d000 size=017e4h (  6116) load[0m
+[0;32mI (91) esp_image: segment 2: paddr=0001ba5c vaddr=40380000 size=045bch ( 17852) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17028h ( 94248) map[0m
+[0;32mI (120) esp_image: segment 4: paddr=00037050 vaddr=403845bc size=088cch ( 35020) load[0m
+[0;32mI (127) esp_image: segment 5: paddr=0003f924 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (131) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (131) boot: Disabling RNG early entropy source...[0m
+[0;32mI (145) cpu_start: Unicore app[0m
+[0;32mI (153) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (154) cpu_start: Pro cpu start user code[0m
+[0;32mI (154) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (156) app_init: Application information:[0m
+[0;32mI (159) app_init: Project name:     Metal_Detector[0m
+[0;32mI (164) app_init: App version:      724ccf5[0m
+[0;32mI (168) app_init: Compile time:     Mar 26 2026 13:05:55[0m
+[0;32mI (173) app_init: ELF file SHA256:  557488bb9...[0m
+[0;32mI (177) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (181) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (185) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (189) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (193) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (199) heap_init: At 3FC8F710 len 000308F0 (194 KiB): RAM[0m
+[0;32mI (204) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (210) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (222) spi_flash: detected chip: generic[0m
+[0;32mI (225) spi_flash: flash io: dio[0m
+[0;33mW (228) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (241) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (247) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+Baseline metric = 364
+THRESHOLD=18 SAMPLES=400
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+ECHO=1
+Ultrasonic: timeout
+metric=365 diff=1 detected=0
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (4363) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (4363) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (4663) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (4663) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (4963) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (4963) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (5263) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (5263) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (5563) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (5563) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (5863) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (5863) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (6163) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (6163) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=356 diff=8 detected=0
+[1;31mE (6463) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (6463) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=334 diff=30 detected=1
+[1;31mE (6803) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (6803) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=324 diff=40 detected=1
+[1;31mE (7143) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (7143) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=331 diff=33 detected=1
+[1;31mE (7483) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (7483) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=330 diff=34 detected=1
+[1;31mE (7823) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (7823) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=331 diff=33 detected=1
+[1;31mE (8163) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (8163) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (8463) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (8463) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (8763) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (8763) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (9063) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (9063) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (9363) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (9363) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (9663) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (9663) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=361 diff=3 detected=0
+[1;31mE (9963) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (9963) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=344 diff=20 detected=1
+[1;31mE (10303) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (10303) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=343 diff=21 detected=1
+[1;31mE (10643) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (10643) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=344 diff=20 detected=1
+[1;31mE (10983) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (10983) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=344 diff=20 detected=1
+[1;31mE (11323) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (11323) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=345 diff=19 detected=1
+[1;31mE (11663) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (11663) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=345 diff=19 detected=1
+[1;31mE (12003) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (12003) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=345 diff=19 detected=1
+[1;31mE (12343) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (12343) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=350 diff=14 detected=0
+[1;31mE (12643) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (12643) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (12943) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (12943) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (13243) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (13243) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (13543) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (13543) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (13843) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (13843) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=360 diff=4 detected=0
+[1;31mE (14143) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (14143) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=345 diff=19 detected=1
+[1;31mE (14483) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (14483) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=332 diff=32 detected=1
+[1;31mE (14823) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (14823) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=345 diff=19 detected=1
+[1;31mE (15163) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (15163) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (15463) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (15463) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=365 diff=1 detected=0
+[1;31mE (15763) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (15763) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (16063) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (16063) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (16363) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (16363) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (16663) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (16663) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (16963) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (16963) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (17263) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (17263) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (17563) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (17563) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (17863) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (17863) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (18163) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (18163) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (18463) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (18463) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (18763) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (18763) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (19063) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (19063) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (19363) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (19363) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (19663) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (19663) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (19963) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (19963) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=361 diff=3 detected=0
+[1;31mE (20263) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (20263) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=347 diff=17 detected=0
+[1;31mE (20563) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (20563) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=344 diff=20 detected=1
+[1;31mE (20903) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (20903) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=341 diff=23 detected=1
+[1;31mE (21243) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (21243) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=340 diff=24 detected=1
+[1;31mE (21583) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (21583) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=343 diff=21 detected=1
+[1;31mE (21923) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (21923) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=342 diff=22 detected=1
+[1;31mE (22263) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (22263) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=343 diff=21 detected=1
+[1;31mE (22603) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (22603) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=344 diff=20 detected=1
+[1;31mE (22943) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (22943) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=345 diff=19 detected=1
+[1;31mE (23283) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (23283) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (23583) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (23583) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (23883) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (23883) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (24183) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (24183) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (24483) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (24483) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (24783) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (24783) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (25083) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (25083) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (25383) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (25383) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (25683) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (25683) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (25983) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (25983) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (26283) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (26283) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (26583) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (26583) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (26883) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (26883) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (27183) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (27183) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (27483) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (27483) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (27783) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (27783) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (28083) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (28083) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (28383) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (28383) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (28683) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (28683) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (28983) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (28983) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (29283) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (29283) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (29583) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (29583) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (29883) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (29883) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (30183) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (30183) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (30483) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (30483) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (30783) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (30783) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (31083) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (31083) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (31383) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (31383) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (31683) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (31683) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (31983) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (31983) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (32283) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (32283) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (32583) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (32583) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (32883) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (32883) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=345 diff=19 detected=1
+[1;31mE (33223) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (33223) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (33523) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (33523) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (33823) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (33823) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (34123) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (34123) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (34423) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (34423) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=365 diff=1 detected=0
+[1;31mE (34723) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (34723) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=365 diff=1 detected=0
+[1;31mE (35023) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (35023) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (35323) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (35323) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (35623) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (35623) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=361 diff=3 detected=0
+[1;31mE (35923) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (35923) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=362 diff=2 detected=0
+[1;31mE (36223) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (36223) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (36523) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (36523) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (36823) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (36823) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (37123) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (37123) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (37423) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (37423) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (37723) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (37723) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (38023) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (38023) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (38323) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (38323) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (38623) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (38623) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=363 diff=1 detected=0
+[1;31mE (38923) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (38923) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=361 diff=3 detected=0
+[1;31mE (39223) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (39223) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (39523) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (39523) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=365 diff=1 detected=0
+[1;31mE (39823) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (39823) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=365 diff=1 detected=0
+[1;31mE (40123) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (40123) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (40423) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (40423) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (40723) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (40723) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (41023) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (41023) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=360 diff=4 detected=0
+[1;31mE (41323) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (41323) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=358 diff=6 detected=0
+[1;31mE (41623) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (41623) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=365 diff=1 detected=0
+[1;31mE (41923) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (41923) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=364 diff=0 detected=0
+[1;31mE (42223) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (42223) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=4 diff=360 detected=1
+[1;31mE (42563) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (42563) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=3 diff=361 detected=1
+[1;31mE (42903) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (42903) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=4 diff=360 detected=1
+[1;31mE (43243) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (43243) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=4 diff=360 detected=1
+[1;31mE (43583) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (43583) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=4 diff=360 detected=1
+[1;31mE (43923) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (43923) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1140 diff=776 detected=1
+[1;31mE (44263) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (44263) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1145 diff=781 detected=1
+[1;31mE (44603) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (44603) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1144 diff=780 detected=1
+[1;31mE (44943) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (44943) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1149 diff=785 detected=1
+[1;31mE (45283) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (45283) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1145 diff=781 detected=1
+[1;31mE (45623) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (45623) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (45963) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (45963) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1143 diff=779 detected=1
+[1;31mE (46303) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (46303) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1143 diff=779 detected=1
+[1;31mE (46643) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (46643) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1147 diff=783 detected=1
+[1;31mE (46983) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (46983) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1145 diff=781 detected=1
+[1;31mE (47323) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (47323) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1145 diff=781 detected=1
+[1;31mE (47663) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (47663) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1144 diff=780 detected=1
+[1;31mE (48003) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (48003) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1143 diff=779 detected=1
+[1;31mE (48343) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (48343) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1144 diff=780 detected=1
+[1;31mE (48683) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (48683) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1144 diff=780 detected=1
+[1;31mE (49023) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (49023) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (49363) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (49363) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1147 diff=783 detected=1
+[1;31mE (49703) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (49703) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1152 diff=788 detected=1
+[1;31mE (50043) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (50043) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1151 diff=787 detected=1
+[1;31mE (50383) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (50383) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1150 diff=786 detected=1
+[1;31mE (50723) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (50723) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1150 diff=786 detected=1
+[1;31mE (51063) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (51063) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1149 diff=785 detected=1
+[1;31mE (51403) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (51403) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1149 diff=785 detected=1
+[1;31mE (51743) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (51743) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1149 diff=785 detected=1
+[1;31mE (52083) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (52083) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1149 diff=785 detected=1
+[1;31mE (52423) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (52423) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1149 diff=785 detected=1
+[1;31mE (52763) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (52763) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (53103) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (53103) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (53443) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (53443) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1147 diff=783 detected=1
+[1;31mE (53783) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (53783) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1147 diff=783 detected=1
+[1;31mE (54123) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (54123) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (54463) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (54463) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (54803) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (54803) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (55143) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (55143) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (55483) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (55483) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (55823) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (55823) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (56163) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (56163) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (56503) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (56503) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (56843) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (56843) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1147 diff=783 detected=1
+[1;31mE (57183) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (57183) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1146 diff=782 detected=1
+[1;31mE (57523) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (57523) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1
+Ultrasonic: timeout
+metric=1145 diff=781 detected=1
+[1;31mE (57863) i2c.slave: i2c_slave_transmit(350): no space in ringbuffer[0m
+[0;33mW (57863) slave_v1: i2c_slave_transmit failed: ESP_ERR_INVALID_STATE[0m
+ECHO=1

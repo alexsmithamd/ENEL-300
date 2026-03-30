@@ -41,19 +41,19 @@
 #define R_X_OFFSET 1.59
 
 // these are the direction pins
-#define IN1 GPIO_NUM_7
+#define IN1 GPIO_NUM_0
 #define IN2 GPIO_NUM_6
-#define IN3 GPIO_NUM_5
+#define IN3 GPIO_NUM_0
 #define IN4 GPIO_NUM_4
 
 // these are the PWM pins
-#define PWM_L GPIO_NUM_15
-#define PWM_R GPIO_NUM_16
+#define PWM_L GPIO_NUM_4
+#define PWM_R GPIO_NUM_6
 
 #define PWM_L_CHANNEL LEDC_CHANNEL_0
 #define PWM_R_CHANNEL LEDC_CHANNEL_1
 
-#define LED_PIN 15           
+#define LED_PIN 4           
 #define LEDC_CHANNEL LEDC_CHANNEL_0
 #define LEDC_TIMER LEDC_TIMER_0
 #define LEDC_MODE LEDC_LOW_SPEED_MODE
@@ -688,6 +688,12 @@ static void ultrasonic_task(void *params)
 
 void app_main(void)
 {
+    gpio_set_direction(GPIO_NUM_5, GPIO_MODE_OUTPUT);
+    gpio_set_level(GPIO_NUM_5, 0);
+
+    gpio_set_direction(GPIO_NUM_7, GPIO_MODE_OUTPUT);
+    gpio_set_level(GPIO_NUM_7, 0);
+
     gpio_set_direction(METAL_DETECT, GPIO_MODE_INPUT);
     gpio_set_pull_mode(METAL_DETECT, GPIO_PULLDOWN_ENABLE);
 
