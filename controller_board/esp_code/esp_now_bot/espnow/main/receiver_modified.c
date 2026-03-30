@@ -32,6 +32,7 @@
 #include "esp_crc.h"
 #include "espnow_example.h"
 
+
 #include "esp_timer.h"
 #include "driver/gpio.h"
 #include <driver/ledc.h>
@@ -72,6 +73,10 @@
 #define ECHO_FALL_TIMEOUT_US   50000
 #define BASELINE_MS    1500//1500          // baseline averaging time on boot
 #define THRESHOLD      18//10            // ADC counts; adjust after you see readings
+
+#define HEADLIGHT_GPIO GPIO_NUM_10
+#define METAL_DETECT GPIO_NUM_11
+
 
 
 typedef struct {
@@ -232,6 +237,8 @@ static void example_espnow_recv_cb(const esp_now_recv_info_t *recv_info, const u
 // lock
 static portMUX_TYPE adc_struct_mux = portMUX_INITIALIZER_UNLOCKED; 
 
+int light_state = 0;
+
 int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, uint16_t *seq, uint32_t *magic)
 {
     example_espnow_data_t *buf = (example_espnow_data_t *)data;
@@ -249,10 +256,16 @@ int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, 
     buf->crc = 0;
     crc_cal = esp_crc16_le(UINT16_MAX, (uint8_t const *)buf, data_len);
 
-    float control_data[4] = {-1.0, -1.0, -1.0, -1.0};
-    memcpy(control_data, buf->payload, sizeof(control_data));
+    float temp_arr [5] = {-1.0, -1.0, -1.0, -1.0, -1.0};
+    memcpy(temp_arr, buf->payload, sizeof(temp_arr));
+    light_state = (int)temp_arr[4];
 
-    adc_snap_t temp = {{-1.0, -1.0, -1.0, -1.0}};
+    gpio_set_level(HEADLIGHT_GPIO, light_state);
+
+    float control_data[4] = {-1.0, -1.0, -1.0, -1.0};
+    memcpy(control_data, temp_arr, sizeof(temp_arr) - 1); // copy the first four elements
+   
+    adc_snap_t temp = {{-1.0, -1.0, -1.0, -1.0}}; // kind of forgot what the purpose of this is
     memcpy(temp.raw, control_data, sizeof(control_data));
 
     taskENTER_CRITICAL(&adc_struct_mux);
@@ -290,7 +303,13 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
     ultrasonic_cm = g_ultrasonic_cm;
     taskEXIT_CRITICAL(&g_ultrasonic_mux);
 
-    memcpy(buf->payload, &ultrasonic_cm, sizeof(ultrasonic_cm));
+    int metal_state = gpio_get_level(METAL_DETECT);
+
+    float combined_pay[2] = {-1.0, -1.0};
+    combined_pay[0] = ultrasonic_cm; 
+    combined_pay[1] = (float)metal_state;
+
+    memcpy(buf->payload, combined_pay, sizeof(combined_pay));
 
     buf->crc = esp_crc16_le(UINT16_MAX, (uint8_t const *)buf, send_param->len);
 }
@@ -669,6 +688,13 @@ static void ultrasonic_task(void *params)
 
 void app_main(void)
 {
+    gpio_set_direction(METAL_DETECT, GPIO_MODE_INPUT);
+    gpio_set_pull_mode(METAL_DETECT, GPIO_PULLDOWN_ENABLE);
+
+
+    gpio_set_direction(HEADLIGHT_GPIO, GPIO_MODE_OUTPUT);
+    gpio_set_level(HEADLIGHT_GPIO, 0);
+
      ultrasonic_init();
     configure_PWM();
     xTaskCreate(ultrasonic_task, "ultrasonic_task", 4096, NULL, 2, NULL);

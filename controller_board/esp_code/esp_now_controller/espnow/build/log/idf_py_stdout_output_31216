@@ -1,0 +1,1309 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;32mI (110) esp_image: segment 1: paddr=00030c80 vaddr=3fc9c300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a69e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar 29 2026 18:22:42[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=20c58h (134232) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00030c80 vaddr=3fc9c300 size=04f4ch ( 20300) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00035bd4 vaddr=40374000 size=0a444h ( 42052) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c7d10h (818448) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00107d38 vaddr=4037e444 size=0de14h ( 56852) load[0m
+[0;32mI (281) esp_image: segment 5: paddr=00115b54 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (291) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (292) boot: Disabling RNG early entropy source...[0m
+[0;32mI (302) cpu_start: Multicore app[0m
+[0;32mI (310) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (313) app_init: Application information:[0m
+[0;32mI (316) app_init: Project name:     espnow_example[0m
+[0;32mI (321) app_init: App version:      5386761b-dirty[0m
+[0;32mI (325) app_init: Compile time:     Mar 29 2026 18:22:19[0m
+[0;32mI (331) app_init: ELF file SHA256:  80bf02677...[0m
+[0;32mI (335) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (339) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (342) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (346) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (350) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (357) heap_init: At 3FCB5310 len 00034400 (209 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (372) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (379) spi_flash: detected chip: boya[0m
+[0;32mI (381) spi_flash: flash io: dio[0m
+[0;33mW (384) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (394) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (400) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (417) main_task: Calling app_main()[0m
+[0;32mI (417) oled_display: Initialize I2C bus[0m
+[0;32mI (417) oled_display: Install panel IO[0m
+[0;32mI (417) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (557) oled_display: Initialize LVGL[0m
+[0;32mI (557) LVGL: Starting LVGL task[0m
+[0;32mI (1737) pp: pp rom version: e7ae62f[0m
+[0;32mI (1737) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1747) wifi:wifi driver task: 3fcc75d0, prio:23, stack:6656, core=0[0m
+[0;32mI (1747) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1747) wifi:wifi certification version: v7.0[0m
+[0;32mI (1747) wifi:config NVS flash: enabled[0m
+[0;32mI (1747) wifi:config nano formatting: disabled[0m
+[0;32mI (1757) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1757) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1767) wifi:Init management short buffer num: 32[0m
+[0;32mI (1767) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1767) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1777) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1777) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1787) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1787) wifi_init: rx ba win: 6[0m
+[0;32mI (1787) wifi_init: accept mbox: 6[0m
+[0;32mI (1797) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1797) wifi_init: udp mbox: 6[0m
+[0;32mI (1797) wifi_init: tcp mbox: 6[0m
+[0;32mI (1807) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1807) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1807) wifi_init: tcp mss: 1440[0m
+[0;32mI (1807) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1817) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1817) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1867) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1867) wifi:enable tsf[0m
+[0;32mI (1877) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1877) espnow_example: Controller RX task started[0m
+[0;32mI (1877) main_task: Returned from app_main()[0m
+[0;32mI (1877) espnow_example: Controller TX task started[0m
+[0;32mI (1887) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (1907) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (2007) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (2107) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (2207) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (2307) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (2407) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (2507) US: received ultrasonic distance: 42.82 cm[0m
+[0;32mI (2607) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (2707) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (2807) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (2917) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3017) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3117) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3207) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3307) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3407) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3507) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3607) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3707) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3807) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (3907) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4017) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4117) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4207) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4307) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4407) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4507) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4607) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4707) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4807) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (4917) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (5007) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (5107) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (5217) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (5307) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (5407) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (5527) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (5607) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 1 times.
+[0;32mI (5707) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (5807) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 2 times.
+[0;32mI (5907) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (6007) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (6107) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 3 times.
+[0;32mI (6207) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (6307) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 4 times.
+[0;32mI (6407) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (6507) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (6607) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (6707) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 5 times.
+[0;32mI (6807) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (6907) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7007) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 6 times.
+[0;32mI (7107) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7207) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7317) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7417) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7507) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 7 times.
+[0;32mI (7607) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7707) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7807) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (7907) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (8007) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (8107) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (8217) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (8317) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 8 times.
+[0;32mI (8407) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (8507) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 9 times.
+[0;32mI (8607) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (8707) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (8807) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (8907) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9007) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9107) US: received ultrasonic distance: 55.21 cm[0m
+Button pressed 10 times.
+[0;32mI (9207) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9307) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9407) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9507) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9607) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9707) US: received ultrasonic distance: 55.21 cm[0m
+Button pressed 11 times.
+[0;32mI (9807) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (9907) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10007) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10107) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10207) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10307) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10407) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10507) US: received ultrasonic distance: 55.21 cm[0m
+Button pressed 12 times.
+[0;32mI (10607) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10707) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10807) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (10907) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (11007) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (11107) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (11207) US: received ultrasonic distance: 55.21 cm[0m
+Button pressed 13 times.
+[0;32mI (11307) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (11407) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (11517) US: received ultrasonic distance: 55.21 cm[0m
+[0;32mI (11617) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (11717) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (11817) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (11907) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 14 times.
+[0;32mI (12007) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12107) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12207) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12307) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12417) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12517) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 15 times.
+[0;32mI (12607) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12707) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12807) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (12907) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13007) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13127) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13207) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13307) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13407) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13517) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13617) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13707) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13807) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (13907) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (14007) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (14107) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (14207) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (14307) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (14417) US: received ultrasonic distance: 55.74 cm[0m
+[0;32mI (14507) US: received ultrasonic distance: 55.74 cm[0m
+Button pressed 16 times.
+[0;32mI (14607) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (14707) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (14807) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (14907) US: received ultrasonic distance: 56.20 cm[0m
+Button pressed 17 times.
+[0;32mI (15007) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (15117) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (15207) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (15307) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (15407) US: received ultrasonic distance: 56.20 cm[0m
+Button pressed 18 times.
+[0;32mI (15507) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (15607) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (15717) US: received ultrasonic distance: 56.20 cm[0m
+Button pressed 19 times.
+[0;32mI (15817) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (15907) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16007) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16107) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16207) US: received ultrasonic distance: 56.20 cm[0m
+Button pressed 20 times.
+[0;32mI (16307) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16407) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16507) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16607) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16707) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16817) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (16917) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (17007) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (17107) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (17207) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (17307) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (17407) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (17507) US: received ultrasonic distance: 56.20 cm[0m
+Button pressed 21 times.
+[0;32mI (17617) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (17707) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (17817) US: received ultrasonic distance: 54.86 cm[0m
+Button pressed 22 times.
+[0;32mI (17907) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (18007) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (18107) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (18207) US: received ultrasonic distance: 54.86 cm[0m
+Button pressed 23 times.
+[0;32mI (18307) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (18407) US: received ultrasonic distance: 54.86 cm[0m
+Button pressed 24 times.
+[0;32mI (18507) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (18607) US: received ultrasonic distance: 54.86 cm[0m
+Button pressed 25 times.
+[0;32mI (18707) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (18807) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (18907) US: received ultrasonic distance: 54.86 cm[0m
+Button pressed 26 times.
+[0;32mI (19007) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19107) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19207) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19307) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19407) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19507) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19607) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19707) US: received ultrasonic distance: 54.86 cm[0m
+Button pressed 27 times.
+[0;32mI (19807) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (19907) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (20017) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (20117) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (20217) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (20307) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (20407) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (20507) US: received ultrasonic distance: 54.86 cm[0m
+Button pressed 28 times.
+[0;32mI (20607) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (20707) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (20807) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (20907) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21027) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21107) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21207) US: received ultrasonic distance: 56.18 cm[0m
+Button pressed 29 times.
+[0;32mI (21307) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21407) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21507) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21607) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21707) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21807) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (21907) US: received ultrasonic distance: 56.18 cm[0m
+Button pressed 30 times.
+[0;32mI (22007) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22117) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22217) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22307) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22407) US: received ultrasonic distance: 56.18 cm[0m
+Button pressed 31 times.
+[0;32mI (22507) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22607) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22707) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22807) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (22907) US: received ultrasonic distance: 56.18 cm[0m
+Button pressed 32 times.
+[0;32mI (23007) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (23117) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (23207) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (23307) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (23407) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (23517) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (23607) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (23707) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (23807) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (23907) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24007) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24107) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24207) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24317) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24417) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24517) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24607) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24707) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24807) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (24907) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (25007) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (25107) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (25207) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (25977) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26077) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26177) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26277) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26377) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26477) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26577) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26677) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26777) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26877) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (26977) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27077) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27177) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27287) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27377) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27467) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27577) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27677) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (27777) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (269) esp_image: segment 4: paddr=00107d38 vaddr=4037e444 sizeI (1762) pp: pp rom version: e7ae62f[0m
+[0;32mI (1762) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1772) wifi:wifi driver task: 3fcc75d0, prio:23, stack:6656, core=0[0m
+[0;32mI (1772) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1772) wifi:wifi certification version: v7.0[0m
+[0;32mI (1772) wifi:config NVS flash: enabled[0m
+[0;32mI (1772) wifi:config nano formatting: disabled[0m
+[0;32mI (1782) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1782) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1792) wifi:Init management short buffer num: 32[0m
+[0;32mI (1792) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1792) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1802) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1802) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1812) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1812) wifi_init: rx ba win: 6[0m
+[0;32mI (1812) wifi_init: accept mbox: 6[0m
+[0;32mI (1822) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1822) wifi_init: udp mbox: 6[0m
+[0;32mI (1822) wifi_init: tcp mbox: 6[0m
+[0;32mI (1832) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1832) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1832) wifi_init: tcp mss: 1440[0m
+[0;32mI (1832) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1842) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1842) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1902) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1962) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1962) wifi:enable tsf[0m
+[0;32mI (1962) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1962) espnow_example: Controller RX task started[0m
+[0;32mI (1962) main_task: Returned from app_main()[0m
+[0;32mI (1962) espnow_example: Controller TX task started[0m
+[0;32mI (1962) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2062) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2152) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2252) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2352) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2452) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2552) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2652) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2752) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2862) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (2962) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (3052) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (3152) US: received ultrasonic distance: 55.91 cm[0m
+[0;32mI (3252) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (3372) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (3452) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (3552) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (3652) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (3752) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (3852) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (3952) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4052) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4152) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4252) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4352) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4452) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4552) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4652) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4752) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4852) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (4952) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5052) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5152) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5252) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5352) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5452) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5552) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5652) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5752) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5852) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (5952) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (6052) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (6152) US: received ultrasonic distance: 54.54 cm[0m
+[0;32mI (6252) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (6362) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (6452) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (6552) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (6652) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (6752) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (6852) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (6952) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7062) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7162) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7252) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7362) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7452) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7552) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7652) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7752) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7862) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (7952) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8052) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8152) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8252) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8352) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8452) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8552) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8652) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8752) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8852) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (8962) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (9052) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (9152) US: received ultrasonic distance: 54.88 cm[0m
+[0;32mI (9252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (9352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (9452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (9552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (9652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (9752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (9852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (9952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10062) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10362) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (10952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11052) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (11952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (12052) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (12152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (12252) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (12362) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (12462) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (12552) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (12652) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (12752) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (12852) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (12952) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13052) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13152) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13252) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13362) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13462) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13552) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13652) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13752) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13852) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (13952) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14052) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14152) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14252) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14352) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14452) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14552) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14652) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14752) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14862) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (14952) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (15052) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (15152) US: received ultrasonic distance: 55.41 cm[0m
+[0;32mI (15252) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (15352) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (15452) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (15552) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (15652) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (15762) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (15852) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (15952) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16052) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16152) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16252) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16362) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16452) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16552) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16652) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16752) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16852) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (16952) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17052) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17152) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17252) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17362) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17452) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17552) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17652) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17752) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17852) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (17952) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (18052) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (18152) US: received ultrasonic distance: 56.22 cm[0m
+[0;32mI (18252) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (18352) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (18452) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (18562) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (18652) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (18752) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (18852) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (18952) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19052) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19162) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19252) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19352) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19452) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19552) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19652) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19762) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19852) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (19962) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20062) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20152) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20262) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20352) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20452) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20552) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20652) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20752) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20862) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (20952) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (21052) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (21152) US: received ultrasonic distance: 54.35 cm[0m
+[0;32mI (21252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (21352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (21452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (21552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (21652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (21752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (21852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (21952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (22952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (23952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (24052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (24162) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (24262) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (24372) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (24452) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (24552) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (24652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (24752) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (24852) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (24952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25252) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25352) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25452) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25552) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25762) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25852) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (25952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26252) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26352) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26452) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26552) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26752) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26852) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (26952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27162) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27252) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27352) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27452) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27552) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27752) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27852) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (27952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28252) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28352) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28462) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28562) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28752) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28872) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (28952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29252) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29352) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29452) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29562) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29752) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29852) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (29952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30262) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30362) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30462) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30552) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30752) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30852) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (30952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31252) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31352) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31452) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31552) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31652) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31752) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31852) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (31952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32252) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32352) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32452) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32552) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32662) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32762) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32862) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (32952) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (33052) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (33152) US: received ultrasonic distance: 55.05 cm[0m
+[0;32mI (33252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (33352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (33452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (33552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (33662) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (33752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (33852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (33952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34052) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (34952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35052) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35762) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (35952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (36052) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (36152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (36252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (36352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (36452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (36552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (36652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (36752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (36852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (36952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37062) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37162) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (37952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (38962) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (39052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (39152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (39252) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (39352) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (39452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (39552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (39652) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (39752) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (39852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (39952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40152) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40252) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40352) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40652) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40752) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (40952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41162) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41262) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41362) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41672) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41752) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (41952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (42052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (42162) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (42252) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (42352) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (42452) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (42552) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (42652) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (42752) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (42852) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (42952) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43052) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43152) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43252) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43352) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43452) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43552) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43652) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43752) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43852) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (43952) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44052) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44152) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44252) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44352) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44452) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44552) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44652) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44752) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44852) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (44952) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (45052) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (45152) US: received ultrasonic distance: 56.77 cm[0m
+[0;32mI (45262) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (45352) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (45452) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (45562) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (45662) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (45752) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (45852) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (45952) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46062) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46152) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46262) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46352) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46452) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46552) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46652) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46752) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46852) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (46952) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47052) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47152) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47262) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47352) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47452) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47552) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47652) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47752) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47852) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (47952) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (48052) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (48152) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (48252) US: received ultrasonic distance: 56.35 cm[0m
+I (48352) US: received ultrasonic distance: 56.35 cm
+[0;32mI (48452) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (48552) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (48652) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (48752) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (48852) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (48962) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49052) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49152) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49252) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49352) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49452) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49552) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49662) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49762) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49852) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (49952) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50072) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50152) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50262) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50352) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50452) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50552) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50652) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50752) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50852) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (50952) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (51052) US: received ultrasonic distance: 56.35 cm[0m
+[0;32mI (51152) US: received ultrasonic distance: 56.35 cm[0m
+Button pressed 1 times.
+[0;32mI (51252) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (51352) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (51452) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (51552) US: received ultrasonic distance: 55.36 cm[0m
+Button pressed 2 times.
+[0;32mI (51652) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (51752) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (51862) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (51952) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (52052) US: received ultrasonic distance: 55.36 cm[0m
+Button pressed 3 times.
+[0;32mI (52152) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (52252) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (52352) US: received ultrasonic distance: 55.36 cm[0m
+Button pressed 4 times.
+[0;32mI (52452) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (52552) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (52652) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (52752) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (52852) US: received ultrasonic distance: 55.36 cm[0m
+Button pressed 5 times.
+[0;32mI (52952) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53052) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53152) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53252) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53352) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53452) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53552) US: received ultrasonic distance: 55.36 cm[0m
+Button pressed 6 times.
+[0;32mI (53652) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53752) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53852) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (53952) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (54052) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (54152) US: received ultrasonic distance: 55.36 cm[0m
+[0;32mI (54252) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (54352) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (54452) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (54552) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (54652) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (54752) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (54852) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (54952) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55052) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55152) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55252) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55352) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55452) US: received ultrasonic distance: 53.66 cm[0m
+I (55552) US: received ultrasonic distance: 53.66 cm
+[0;32mI (55652) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55762) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55852) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (55962) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56052) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56152) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56252) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56352) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56452) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56552) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56652) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56752) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56852) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (56952) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (57052) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (57152) US: received ultrasonic distance: 53.66 cm[0m
+[0;32mI (57252) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (57352) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (57452) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (57552) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (57652) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (57752) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (57852) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (57952) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58052) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58152) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58262) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58372) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58462) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58552) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58652) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58752) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58852) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (58962) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59052) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59152) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59262) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59352) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59452) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59552) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59652) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59752) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59852) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (59952) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (60052) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (60152) US: received ultrasonic distance: 50.11 cm[0m
+[0;32mI (60252) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (60362) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (60452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (60552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (60652) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (60752) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (60852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (60952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61152) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61252) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61352) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61652) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61752) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (61952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62152) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62252) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62352) US: received ultrasonic distance: 56.32 cm[0m
+I (62462) US: received ultrasonic distance: 56.32 cm
+[0;32mI (62552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62662) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62752) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62862) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (62952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (63052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (63152) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (63252) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (63352) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (63462) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (63552) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (63652) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (63752) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (63852) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (63952) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64052) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64152) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64262) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64362) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64452) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64562) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64652) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64752) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64852) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (64952) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65052) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65152) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65252) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65352) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65452) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65552) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65652) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65752) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65852) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (65952) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (66052) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (66152) US: received ultrasonic distance: 53.68 cm[0m
+[0;32mI (66252) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (66352) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (66452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (66562) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (66652) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (66762) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (66852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (66962) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67062) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67152) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67252) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67352) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67652) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67762) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (67952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68152) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68262) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68352) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68452) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68552) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68652) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68752) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68852) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (68952) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (69052) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (69152) US: received ultrasonic distance: 56.32 cm[0m
+[0;32mI (69252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (69352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (69452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (69552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (69652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (69752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (69852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (69952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70052) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (70952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71062) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71162) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71252) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71352) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71452) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71552) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71652) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71752) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71852) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (71952) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (72062) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (72152) US: received ultrasonic distance: 55.38 cm[0m
+[0;32mI (72252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (72352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (72452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (72552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (72652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (72752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (72852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (72952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73062) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (73952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74762) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (74952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (75052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (75182) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (75262) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (75352) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (75452) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (75562) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (75652) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (75762) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (75872) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (75952) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76052) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76162) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76262) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76352) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76452) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76552) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76652) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76752) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76852) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (76962) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77052) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77152) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77252) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77352) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77462) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77552) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77652) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77752) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77852) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (77952) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (78052) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (78152) US: received ultrasonic distance: 56.20 cm[0m
+[0;32mI (78252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (78352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (78452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (78552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (78652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (78752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (78862) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (78952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79252) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79562) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79662) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79762) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (79962) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80262) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80352) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80452) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80552) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80652) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80752) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80852) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (80952) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (81052) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (81152) US: received ultrasonic distance: 55.39 cm[0m
+[0;32mI (81252) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (81352) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (81452) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (81552) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (81652) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (81752) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (81852) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (81952) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82052) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82152) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82252) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82352) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82462) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82552) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82652) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82752) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82852) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (82952) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83062) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83152) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83252) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83352) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83452) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83552) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83652) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83752) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83862) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (83952) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (84052) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (84152) US: received ultrasonic distance: 56.34 cm[0m
+[0;32mI (84252) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (84382) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (84452) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (84552) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (84652) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (84752) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (84852) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (84952) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85052) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85152) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85252) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85352) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85452) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85552) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85652) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85752) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85852) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (85952) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86052) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86152) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86252) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86352) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86452) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86552) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86652) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86752) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86852) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (86952) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (87052) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (87152) US: received ultrasonic distance: 54.86 cm[0m
+[0;32mI (87252) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (87352) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (87452) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (87552) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (87652) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (87752) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (87852) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (87952) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (88062) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (88152) US: received ultrasonic distance: 56.18 cm[0m
+Button pressed 7 times.
+[0;32mI (88252) US: received ultrasonic distance: 56.18 cm[0m
+I (88352) US: received ultrasonic distance: 56.18 cm
+[0;32mI (88452) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (88572) US: received ultrasonic distance: 56.18 cm[0m
+Button pressed 8 times.
+[0;32mI (88652) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (88752) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (88852) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (88952) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89052) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89152) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89252) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89352) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89452) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89552) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89652) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89752) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89852) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (89962) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (90062) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (90162) US: received ultrasonic distance: 56.18 cm[0m
+[0;32mI (90252) US: received ultrasonic distance: 56.37 cm[0m
+[0;32mI (90352) US: received ultrasonic distance: 56.37 cm[0m
+[0;32mI (90452) US: received ultrasonic distance: 56.37 cm[0m

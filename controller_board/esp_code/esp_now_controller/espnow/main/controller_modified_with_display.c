@@ -44,6 +44,41 @@
 
 #include "espnow_example.h"
 #include "read_adc.h"
+#include <driver/ledc.h>
+
+#define BUZZER_PIN      GPIO_NUM_21
+#define LEDC_TIMER      LEDC_TIMER_0
+#define LEDC_MODE       LEDC_LOW_SPEED_MODE
+#define LEDC_CHANNEL    LEDC_CHANNEL_0
+#define LEDC_DUTY_RES   LEDC_TIMER_10_BIT // 1024 duty resolution
+#define FREQ            (2000)            // 2 kHz sound
+
+// isr code
+#define BUTTON_GPIO GPIO_NUM_38
+#define DEBOUNCE_DELAY_US 200000ULL
+
+static volatile uint64_t last_isr_time = 0;
+static volatile uint32_t counter = 0;
+static QueueHandle_t button_queue;
+
+uint32_t button_counter;
+
+//button isr
+static void IRAM_ATTR button_isr(void *arg) {
+    uint64_t now = esp_timer_get_time(); // Get current time in microseconds
+    // Check if debounce period has passed, then process the button press
+    if (now - last_isr_time > DEBOUNCE_DELAY_US) {
+        counter++;
+        uint32_t cnt = counter;
+        BaseType_t higher_priority_task_woken = pdFALSE;
+        xQueueSendFromISR(button_queue, &cnt, &higher_priority_task_woken); // Send counter to queue from ISR
+        last_isr_time = now;
+        if (higher_priority_task_woken) {
+            portYIELD_FROM_ISR();
+        }
+    }
+}
+
 
 #define ESPNOW_MAXDELAY 512
 
@@ -74,6 +109,8 @@ typedef struct {
 #define EXAMPLE_LCD_V_RES           64
 #define EXAMPLE_LCD_CMD_BITS        8
 #define EXAMPLE_LCD_PARAM_BITS      8
+
+
 
 static lv_disp_t *s_disp = NULL;
 static lv_obj_t *s_distance_label = NULL;
@@ -281,6 +318,8 @@ static void example_espnow_recv_cb(const esp_now_recv_info_t *recv_info, const u
     }
 }
 
+
+
 // receive distance data
 int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, uint16_t *seq, uint32_t *magic)
 {
@@ -305,15 +344,27 @@ int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, 
     }
 
     float rx_ultrasonic_cm = -1.0f;
+    int metal_detected = 0;
+    float recv_pay[2] = {-1.0, -1.0};
+
     size_t payload_len = data_len - sizeof(example_espnow_data_t);
 
     if (payload_len >= sizeof(float)) {
-        memcpy(&rx_ultrasonic_cm, buf->payload, sizeof(float));
+        memcpy(recv_pay, buf->payload, 2*sizeof(float));
 
         taskENTER_CRITICAL(&ultrasonic_mux);
-        g_ultrasonic_cm = rx_ultrasonic_cm;
+        g_ultrasonic_cm = recv_pay[0];
+        metal_detected = recv_pay[1];
         taskEXIT_CRITICAL(&ultrasonic_mux);
-        ESP_LOGI("US", "received ultrasonic distance: %.2f cm", rx_ultrasonic_cm);
+        if(metal_detected){
+            ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, 512);
+            ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+        } else{
+            ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, 0);
+            ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+        }
+        ESP_LOGI("US", "received ultrasonic distance: %.2f cm", g_ultrasonic_cm);
+        
     } else {
         ESP_LOGW(TAG, "Payload too small for ultrasonic float");
     }
@@ -340,7 +391,7 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
     snap_copy = adc_struct;
     taskEXIT_CRITICAL(&adc_struct_mux);
 
-    float control_data[4] = {snap_copy.raw[0], snap_copy.raw[1], snap_copy.raw[2], snap_copy.raw[3]};
+    float control_data[5] = {snap_copy.raw[0], snap_copy.raw[1], snap_copy.raw[2], snap_copy.raw[3], counter % 2};
     uint8_t payload[sizeof(control_data)];
 
     memcpy(payload, control_data, sizeof(control_data));
@@ -349,8 +400,25 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
     buf->crc = esp_crc16_le(UINT16_MAX, (uint8_t const *)buf, send_param->len);
 }
 
+
 static void adc_task(void* arg)
 {
+    button_queue = xQueueCreate(10, sizeof(uint32_t));
+
+    gpio_config_t io_conf = {
+        .intr_type = GPIO_INTR_POSEDGE, // Rising edge interrupt trigger
+        .mode = GPIO_MODE_INPUT,
+        .pin_bit_mask = (1ULL << BUTTON_GPIO),
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,
+        .pull_up_en = GPIO_PULLUP_ENABLE
+    };
+
+    gpio_config(&io_conf);
+
+    gpio_install_isr_service(0);
+    gpio_isr_handler_add(BUTTON_GPIO, button_isr, NULL);
+
+
     adc_snap_t *snap = (adc_snap_t *)arg;
     assert(snap != NULL);
 
@@ -372,6 +440,10 @@ static void adc_task(void* arg)
     ESP_ERROR_CHECK(adc_continuous_start(handle));
 
     while (1) {
+        if (xQueueReceive(button_queue, &button_counter, 1)) {
+            printf("Button pressed %lu times.\n", button_counter);
+        }
+
         vTaskDelay(pdMS_TO_TICKS(10));
         ret_adc = adc_continuous_read(handle, result, EXAMPLE_READ_LEN, &ret_num, pdMS_TO_TICKS(200));
 
@@ -576,8 +648,29 @@ static void comms_task(void)
     ESP_ERROR_CHECK(example_espnow_init());
 }
 
+
 void app_main(void)
 {
+     ledc_timer_config_t ledc_timer = {
+        .speed_mode       = LEDC_MODE,
+        .timer_num        = LEDC_TIMER,
+        .duty_resolution  = LEDC_DUTY_RES,
+        .freq_hz          = FREQ,
+        .clk_cfg          = LEDC_AUTO_CLK,
+    };
+    ledc_timer_config(&ledc_timer);
+
+    // 2. Prepare Channel Configuration
+    ledc_channel_config_t ledc_channel = {
+        .gpio_num       = BUZZER_PIN,
+        .speed_mode     = LEDC_MODE,
+        .channel        = LEDC_CHANNEL,
+        .timer_sel      = LEDC_TIMER,
+        .duty           = 0, // Set duty to 0 initially
+        .hpoint         = 0,
+    };
+    ledc_channel_config(&ledc_channel);
+    
     display_init();
     xTaskCreatePinnedToCore(display_task, "display_task", 4096, NULL, 2, NULL, 1);
     xTaskCreatePinnedToCore(adc_task, "adc_task", 4096, &adc_struct, 5, NULL, 1);

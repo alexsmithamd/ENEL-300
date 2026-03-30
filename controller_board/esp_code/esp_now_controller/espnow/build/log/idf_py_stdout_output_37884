@@ -1,0 +1,208 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\windows\system32\cmd.exe /C "cd /D C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/controller_modified_with_display.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/controller_modified_with_display.c.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20251107\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5.3\" -DLV_CONF_INCLUDE_SIMPLE -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/build/config -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/debug_probe/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/power_supply/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/port/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32s3/register -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32s3/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include/sys -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_wifi/include/local -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_wifi/wifi_apps/nan_app/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/deprecated/include -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/espressif__esp_lvgl_port/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_lcd/rgb/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/driver/touch_sensor/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_ana_cmpr/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_i2s/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdspi/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdio/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_dac/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_tsens/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdm/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_i2c/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_uart/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_ledc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_parlio/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_twai/include -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/src -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/examples -IC:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/managed_components/lvgl__lvgl/demos -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.5.3=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/controller_modified_with_display.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\controller_modified_with_display.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/controller_modified_with_display.c.obj -c C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c: In function 'example_espnow_data_parse':
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:359:13: error: implicit declaration of function 'ledc_set_duty' [-Wimplicit-function-declaration]
+  359 |             ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, 512);
+      |             ^~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:50:25: error: 'LEDC_LOW_SPEED_MODE' undeclared (first use in this function)
+   50 | #define LEDC_MODE       LEDC_LOW_SPEED_MODE
+      |                         ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:359:27: note: in expansion of macro 'LEDC_MODE'
+  359 |             ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, 512);
+      |                           ^~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:50:25: note: each undeclared identifier is reported only once for each function it appears in
+   50 | #define LEDC_MODE       LEDC_LOW_SPEED_MODE
+      |                         ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:359:27: note: in expansion of macro 'LEDC_MODE'
+  359 |             ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, 512);
+      |                           ^~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:51:25: error: 'LEDC_CHANNEL_0' undeclared (first use in this function); did you mean 'ADC_CHANNEL_0'?
+   51 | #define LEDC_CHANNEL    LEDC_CHANNEL_0
+      |                         ^~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:359:38: note: in expansion of macro 'LEDC_CHANNEL'
+  359 |             ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, 512);
+      |                                      ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:360:13: error: implicit declaration of function 'ledc_update_duty' [-Wimplicit-function-declaration]
+  360 |             ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
+      |             ^~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:345:11: warning: unused variable 'rx_ultrasonic_cm' [-Wunused-variable]
+  345 |     float rx_ultrasonic_cm = -1.0f;
+      |           ^~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c: In function 'app_main':
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:653:6: error: unknown type name 'ledc_timer_config_t'
+  653 |      ledc_timer_config_t ledc_timer = {
+      |      ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:654:9: error: field name not in record or union initializer
+  654 |         .speed_mode       = LEDC_MODE,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:654:9: note: (near initialization for 'ledc_timer')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:50:25: error: 'LEDC_LOW_SPEED_MODE' undeclared (first use in this function)
+   50 | #define LEDC_MODE       LEDC_LOW_SPEED_MODE
+      |                         ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:654:29: note: in expansion of macro 'LEDC_MODE'
+  654 |         .speed_mode       = LEDC_MODE,
+      |                             ^~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:655:9: error: field name not in record or union initializer
+  655 |         .timer_num        = LEDC_TIMER,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:655:9: note: (near initialization for 'ledc_timer')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:49:25: error: 'LEDC_TIMER_0' undeclared (first use in this function); did you mean 'LEDC_TIMER'?
+   49 | #define LEDC_TIMER      LEDC_TIMER_0
+      |                         ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:655:29: note: in expansion of macro 'LEDC_TIMER'
+  655 |         .timer_num        = LEDC_TIMER,
+      |                             ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:49:25: warning: excess elements in scalar initializer
+   49 | #define LEDC_TIMER      LEDC_TIMER_0
+      |                         ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:655:29: note: in expansion of macro 'LEDC_TIMER'
+  655 |         .timer_num        = LEDC_TIMER,
+      |                             ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:49:25: note: (near initialization for 'ledc_timer')
+   49 | #define LEDC_TIMER      LEDC_TIMER_0
+      |                         ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:655:29: note: in expansion of macro 'LEDC_TIMER'
+  655 |         .timer_num        = LEDC_TIMER,
+      |                             ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:656:9: error: field name not in record or union initializer
+  656 |         .duty_resolution  = LEDC_DUTY_RES,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:656:9: note: (near initialization for 'ledc_timer')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:52:25: error: 'LEDC_TIMER_10_BIT' undeclared (first use in this function)
+   52 | #define LEDC_DUTY_RES   LEDC_TIMER_10_BIT // 1024 duty resolution
+      |                         ^~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:656:29: note: in expansion of macro 'LEDC_DUTY_RES'
+  656 |         .duty_resolution  = LEDC_DUTY_RES,
+      |                             ^~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:52:25: warning: excess elements in scalar initializer
+   52 | #define LEDC_DUTY_RES   LEDC_TIMER_10_BIT // 1024 duty resolution
+      |                         ^~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:656:29: note: in expansion of macro 'LEDC_DUTY_RES'
+  656 |         .duty_resolution  = LEDC_DUTY_RES,
+      |                             ^~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:52:25: note: (near initialization for 'ledc_timer')
+   52 | #define LEDC_DUTY_RES   LEDC_TIMER_10_BIT // 1024 duty resolution
+      |                         ^~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:656:29: note: in expansion of macro 'LEDC_DUTY_RES'
+  656 |         .duty_resolution  = LEDC_DUTY_RES,
+      |                             ^~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:657:9: error: field name not in record or union initializer
+  657 |         .freq_hz          = FREQ,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:657:9: note: (near initialization for 'ledc_timer')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:53:25: warning: excess elements in scalar initializer
+   53 | #define FREQ            (2000)            // 2 kHz sound
+      |                         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:657:29: note: in expansion of macro 'FREQ'
+  657 |         .freq_hz          = FREQ,
+      |                             ^~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:53:25: note: (near initialization for 'ledc_timer')
+   53 | #define FREQ            (2000)            // 2 kHz sound
+      |                         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:657:29: note: in expansion of macro 'FREQ'
+  657 |         .freq_hz          = FREQ,
+      |                             ^~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:658:9: error: field name not in record or union initializer
+  658 |         .clk_cfg          = LEDC_AUTO_CLK,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:658:9: note: (near initialization for 'ledc_timer')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:658:29: warning: excess elements in scalar initializer
+  658 |         .clk_cfg          = LEDC_AUTO_CLK,
+      |                             ^~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:658:29: note: (near initialization for 'ledc_timer')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:660:5: error: implicit declaration of function 'ledc_timer_config' [-Wimplicit-function-declaration]
+  660 |     ledc_timer_config(&ledc_timer);
+      |     ^~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:663:5: error: unknown type name 'ledc_channel_config_t'; did you mean 'esp_etm_channel_config_t'?
+  663 |     ledc_channel_config_t ledc_channel = {
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     esp_etm_channel_config_t
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:664:9: error: field name not in record or union initializer
+  664 |         .gpio_num       = BUZZER_PIN,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:664:9: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:665:9: error: field name not in record or union initializer
+  665 |         .speed_mode     = LEDC_MODE,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:665:9: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:50:25: warning: excess elements in scalar initializer
+   50 | #define LEDC_MODE       LEDC_LOW_SPEED_MODE
+      |                         ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:665:27: note: in expansion of macro 'LEDC_MODE'
+  665 |         .speed_mode     = LEDC_MODE,
+      |                           ^~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:50:25: note: (near initialization for 'ledc_channel')
+   50 | #define LEDC_MODE       LEDC_LOW_SPEED_MODE
+      |                         ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:665:27: note: in expansion of macro 'LEDC_MODE'
+  665 |         .speed_mode     = LEDC_MODE,
+      |                           ^~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:666:9: error: field name not in record or union initializer
+  666 |         .channel        = LEDC_CHANNEL,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:666:9: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:51:25: error: 'LEDC_CHANNEL_0' undeclared (first use in this function); did you mean 'ADC_CHANNEL_0'?
+   51 | #define LEDC_CHANNEL    LEDC_CHANNEL_0
+      |                         ^~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:666:27: note: in expansion of macro 'LEDC_CHANNEL'
+  666 |         .channel        = LEDC_CHANNEL,
+      |                           ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:51:25: warning: excess elements in scalar initializer
+   51 | #define LEDC_CHANNEL    LEDC_CHANNEL_0
+      |                         ^~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:666:27: note: in expansion of macro 'LEDC_CHANNEL'
+  666 |         .channel        = LEDC_CHANNEL,
+      |                           ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:51:25: note: (near initialization for 'ledc_channel')
+   51 | #define LEDC_CHANNEL    LEDC_CHANNEL_0
+      |                         ^~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:666:27: note: in expansion of macro 'LEDC_CHANNEL'
+  666 |         .channel        = LEDC_CHANNEL,
+      |                           ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:667:9: error: field name not in record or union initializer
+  667 |         .timer_sel      = LEDC_TIMER,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:667:9: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:49:25: warning: excess elements in scalar initializer
+   49 | #define LEDC_TIMER      LEDC_TIMER_0
+      |                         ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:667:27: note: in expansion of macro 'LEDC_TIMER'
+  667 |         .timer_sel      = LEDC_TIMER,
+      |                           ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:49:25: note: (near initialization for 'ledc_channel')
+   49 | #define LEDC_TIMER      LEDC_TIMER_0
+      |                         ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:667:27: note: in expansion of macro 'LEDC_TIMER'
+  667 |         .timer_sel      = LEDC_TIMER,
+      |                           ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:668:9: error: field name not in record or union initializer
+  668 |         .duty           = 0, // Set duty to 0 initially
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:668:9: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:668:27: warning: excess elements in scalar initializer
+  668 |         .duty           = 0, // Set duty to 0 initially
+      |                           ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:668:27: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:669:9: error: field name not in record or union initializer
+  669 |         .hpoint         = 0,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:669:9: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:669:27: warning: excess elements in scalar initializer
+  669 |         .hpoint         = 0,
+      |                           ^
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:669:27: note: (near initialization for 'ledc_channel')
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:671:5: error: implicit declaration of function 'ledc_channel_config' [-Wimplicit-function-declaration]
+  671 |     ledc_channel_config(&ledc_channel);
+      |     ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c: At top level:
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_controller/espnow/main/controller_modified_with_display.c:618:13: warning: 'example_espnow_deinit' defined but not used [-Wunused-function]
+  618 | static void example_espnow_deinit(example_espnow_send_param_t *send_param)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
