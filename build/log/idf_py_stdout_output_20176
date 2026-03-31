@@ -1,0 +1,114 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/led_strip (2.5.5)
+NOTICE: [2/2] idf (5.5.3)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+-- Project sdkconfig file C:/Users/marcu/enel_300/ENEL-300/sdkconfig
+Loading defaults file C:/Users/marcu/enel_300/ENEL-300/sdkconfig.defaults...
+Loading defaults file C:/Users/marcu/enel_300/ENEL-300/sdkconfig.defaults.esp32c3...
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/riscv/ld/rom.api.ld
+-- USING O3
+-- App "Metal_Detector" version: d24c6379-dirty
+-- Adding linker script C:/Users/marcu/enel_300/ENEL-300/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/marcu/enel_300/ENEL-300/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.bt_funcs.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_master.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_50.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_smp.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_dtm.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_test.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_scan.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3_bt_funcs.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.libc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.libc-suboptimal_for_misaligned_mem.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ieee802154 esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__led_strip esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.5.3/components/app_trace C:/Espressif/frameworks/esp-idf-v5.5.3/components/app_update C:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader C:/Espressif/frameworks/esp-idf-v5.5.3/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.5.3/components/bt C:/Espressif/frameworks/esp-idf-v5.5.3/components/cmock C:/Espressif/frameworks/esp-idf-v5.5.3/components/console C:/Espressif/frameworks/esp-idf-v5.5.3/components/cxx C:/Espressif/frameworks/esp-idf-v5.5.3/components/driver C:/Espressif/frameworks/esp-idf-v5.5.3/components/efuse C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_bootloader_format C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_coex C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_ana_cmpr C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_bitscrambler C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_cam C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_dac C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_gpio C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_gptimer C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_i2c C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_i2s C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_isp C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_jpeg C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_ledc C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_mcpwm C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_parlio C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_pcnt C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_ppa C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_rmt C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdio C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdm C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdmmc C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_sdspi C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_spi C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_touch_sens C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_tsens C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_twai C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_uart C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_usb_serial_jtag C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_event C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hal_ieee802154 C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_mm C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_netif_stack C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_security C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_vfs_console C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.5.3/components/espcoredump C:/Users/marcu/enel_300/ENEL-300/managed_components/espressif__led_strip C:/Espressif/frameworks/esp-idf-v5.5.3/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.5.3/components/fatfs C:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos C:/Espressif/frameworks/esp-idf-v5.5.3/components/hal C:/Espressif/frameworks/esp-idf-v5.5.3/components/heap C:/Espressif/frameworks/esp-idf-v5.5.3/components/http_parser C:/Espressif/frameworks/esp-idf-v5.5.3/components/idf_test C:/Espressif/frameworks/esp-idf-v5.5.3/components/ieee802154 C:/Espressif/frameworks/esp-idf-v5.5.3/components/json C:/Espressif/frameworks/esp-idf-v5.5.3/components/log C:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip C:/Users/marcu/enel_300/ENEL-300/main C:/Espressif/frameworks/esp-idf-v5.5.3/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.5.3/components/mqtt C:/Espressif/frameworks/esp-idf-v5.5.3/components/newlib C:/Espressif/frameworks/esp-idf-v5.5.3/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.5.3/components/nvs_sec_provider C:/Espressif/frameworks/esp-idf-v5.5.3/components/openthread C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table C:/Espressif/frameworks/esp-idf-v5.5.3/components/protobuf-c C:/Espressif/frameworks/esp-idf-v5.5.3/components/protocomm C:/Espressif/frameworks/esp-idf-v5.5.3/components/pthread C:/Espressif/frameworks/esp-idf-v5.5.3/components/riscv C:/Espressif/frameworks/esp-idf-v5.5.3/components/rt C:/Espressif/frameworks/esp-idf-v5.5.3/components/sdmmc C:/Espressif/frameworks/esp-idf-v5.5.3/components/soc C:/Espressif/frameworks/esp-idf-v5.5.3/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.5.3/components/spiffs C:/Espressif/frameworks/esp-idf-v5.5.3/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.5.3/components/ulp C:/Espressif/frameworks/esp-idf-v5.5.3/components/unity C:/Espressif/frameworks/esp-idf-v5.5.3/components/usb C:/Espressif/frameworks/esp-idf-v5.5.3/components/vfs C:/Espressif/frameworks/esp-idf-v5.5.3/components/wear_levelling C:/Espressif/frameworks/esp-idf-v5.5.3/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.5.3/components/wpa_supplicant
+-- Configuring done (11.3s)
+-- Generating done (0.6s)
+-- Build files have been written to: C:/Users/marcu/enel_300/ENEL-300/build
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\windows\system32\cmd.exe /C "cd /D C:\Users\marcu\enel_300\ENEL-300\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/marcu/enel_300/ENEL-300/build/bootloader/bootloader.bin"
+Bootloader binary size 0x51e0 bytes. 0x2e20 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj 
+ccache C:\Espressif\tools\riscv32-esp-elf\esp-14.2.0_20251107\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5.3\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/marcu/enel_300/ENEL-300/build/config -IC:/Users/marcu/enel_300/ENEL-300/main -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/soc/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/debug_probe/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/power_supply/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/port/esp32c3/. -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/port/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32c3/register -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/include/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/include/riscv -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include/sys -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/deprecated/include -IC:/Users/marcu/enel_300/ENEL-300/managed_components/espressif__led_strip/include -IC:/Users/marcu/enel_300/ENEL-300/managed_components/espressif__led_strip/interface -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_pm/include -march=rv32imc_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/marcu/enel_300/ENEL-300=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.5.3=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\slave.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj -c C:/Users/marcu/enel_300/ENEL-300/main/slave.c
+In file included from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/esp_cpu.h:21,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h:11,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:65,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from C:/Users/marcu/enel_300/ENEL-300/main/slave.c:5:
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'adc_init':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:27:54: error: 'adc_handle' undeclared (first use in this function)
+   27 |     ESP_ERROR_CHECK(adc_oneshot_new_unit(&init_cfg, &adc_handle));
+      |                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:27:54: note: each undeclared identifier is reported only once for each function it appears in
+   27 |     ESP_ERROR_CHECK(adc_oneshot_new_unit(&init_cfg, &adc_handle));
+      |                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:31:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   31 |         .atten = ADC_ATTEN_DB_11,
+      |         ^
+In file included from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/include/esp_adc/adc_oneshot.h:12,
+                 from C:/Users/marcu/enel_300/ENEL-300/main/slave.c:11:
+C:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/include/hal/adc_types.h:52:5: note: declared here
+   52 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'read_metric_once':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:41:25: error: 'SAMPLES_PER_MEAS' undeclared (first use in this function)
+   41 |     for (int i = 0; i < SAMPLES_PER_MEAS; i++) {
+      |                         ^~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:43:26: error: 'PULSE_ON_US' undeclared (first use in this function)
+   43 |         esp_rom_delay_us(PULSE_ON_US);
+      |                          ^~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:46:42: error: 'adc_handle' undeclared (first use in this function)
+   46 |         ESP_ERROR_CHECK(adc_oneshot_read(adc_handle, ADC_CHANNEL_0, &adc_raw));
+      |                                          ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:50:26: error: 'PULSE_OFF_US' undeclared (first use in this function)
+   50 |         esp_rom_delay_us(PULSE_OFF_US);
+      |                          ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'app_main':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:88:20: error: 'BUZZER_PIN' undeclared (first use in this function)
+   88 |     gpio_reset_pin(BUZZER_PIN);
+      |                    ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:96:26: error: 'BASELINE_MS' undeclared (first use in this function)
+   96 |     int baseline_ticks = BASELINE_MS / 50;
+      |                          ^~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:108:41: error: 'THRESHOLD' undeclared (first use in this function)
+  108 |     printf("THRESHOLD=%d SAMPLES=%d\n", THRESHOLD, SAMPLES_PER_MEAS);
+      |                                         ^~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:108:52: error: 'SAMPLES_PER_MEAS' undeclared (first use in this function)
+  108 |     printf("THRESHOLD=%d SAMPLES=%d\n", THRESHOLD, SAMPLES_PER_MEAS);
+      |                                                    ^~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'read_metric_once':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:54:1: error: control reaches end of non-void function [-Werror=return-type]
+   54 | }
+      | ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: At top level:
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:57:16: warning: 'pulse_in_us' defined but not used [-Wunused-function]
+   57 | static int64_t pulse_in_us(gpio_num_t pin, int level, int64_t timeout_us)
+      |                ^~~~~~~~~~~
+cc1.exe: some warnings being treated as errors
+[4/10] Completed 'bootloader'
+ninja: build stopped: subcommand failed.

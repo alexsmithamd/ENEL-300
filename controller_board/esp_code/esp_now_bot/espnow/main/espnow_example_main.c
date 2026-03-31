@@ -75,8 +75,8 @@ uint8_t checksum(sensor_packet_t *p){
 #define IN4 GPIO_NUM_4
 
 // these are the PWM pins
-#define PWM_L GPIO_NUM_15
-#define PWM_R GPIO_NUM_16
+#define PWM_L GPIO_NUM_7
+#define PWM_R GPIO_NUM_5
 
 #define PWM_L_CHANNEL LEDC_CHANNEL_0
 #define PWM_R_CHANNEL LEDC_CHANNEL_1
@@ -565,15 +565,15 @@ static void pwm_task(void * arg){
     // for setting directionadc_struct
 
     // Motor_L Clockwise
-    gpio_set_level(IN1, 1);
-    gpio_set_level(IN2, 0);
+    gpio_set_level(IN1, 0);
+    //gpio_set_level(IN2, 0);
 
     // Motor_L Counter-Clockwise
     //gpio_set_level(IN1, 0);
     //gpio_set_level(IN2, 1);
 
     // Motor_R Clockwise
-    gpio_set_level(IN3, 1);
+    //gpio_set_level(IN3, 1);
     gpio_set_level(IN4, 0);
 
     // Motor_R Counter-Clockwise
@@ -620,10 +620,10 @@ static void pwm_task(void * arg){
             // move forward
             duty = map(cimag(z), 0, 1.56, 0, 1023);
             gpio_set_level(IN1, 1);
-            gpio_set_level(IN2, 0);
+            //gpio_set_level(IN2, 0);
 
             gpio_set_level(IN3, 0);
-            gpio_set_level(IN4, 1);
+            //gpio_set_level(IN4, 1);
 
     
         } else{

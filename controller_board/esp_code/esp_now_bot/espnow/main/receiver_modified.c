@@ -41,17 +41,20 @@
 #define R_X_OFFSET 1.59
 
 // these are the direction pins
-#define IN1 GPIO_NUM_0
+#define IN1 GPIO_NUM_7
 #define IN2 GPIO_NUM_6
-#define IN3 GPIO_NUM_0
+#define IN3 GPIO_NUM_5
 #define IN4 GPIO_NUM_4
 
 // these are the PWM pins
 #define PWM_L GPIO_NUM_4
 #define PWM_R GPIO_NUM_6
 
-#define PWM_L_CHANNEL LEDC_CHANNEL_0
-#define PWM_R_CHANNEL LEDC_CHANNEL_1
+#define PWM_1_CHANNEL LEDC_CHANNEL_0
+#define PWM_2_CHANNEL LEDC_CHANNEL_1
+#define PWM_3_CHANNEL LEDC_CHANNEL_2
+#define PWM_4_CHANNEL LEDC_CHANNEL_3
+
 
 #define LED_PIN 4           
 #define LEDC_CHANNEL LEDC_CHANNEL_0
@@ -489,29 +492,63 @@ static void configure_PWM(void){
         .freq_hz = LEDC_FREQUENCY
     };
 
+    ledc_timer_config_t motorc_timer = {
+        .speed_mode = LEDC_MODE,
+        .duty_resolution = LEDC_DUTY_RES,
+        .timer_num = LEDC_TIMER,
+        .freq_hz = LEDC_FREQUENCY
+    };
+
+    ledc_timer_config_t motord_timer = {
+        .speed_mode = LEDC_MODE,
+        .duty_resolution = LEDC_DUTY_RES,
+        .timer_num = LEDC_TIMER,
+        .freq_hz = LEDC_FREQUENCY
+    };
+    
     ledc_timer_config(&motora_timer);
     ledc_timer_config(&motorb_timer);
+    ledc_timer_config(&motorc_timer);
+    ledc_timer_config(&motord_timer);
 
 
 
     ledc_channel_config_t motora_channel = {
-        .gpio_num = PWM_L,
+        .gpio_num = IN1,
         .speed_mode = LEDC_MODE,
-        .channel = PWM_L_CHANNEL,
+        .channel = PWM_1_CHANNEL,
         .timer_sel = LEDC_TIMER,
         .duty = 0
     };
 
     ledc_channel_config_t motorb_channel = {
-        .gpio_num = PWM_R,
+        .gpio_num = IN2,
         .speed_mode = LEDC_MODE,
-        .channel = PWM_R_CHANNEL,
+        .channel = PWM_2_CHANNEL,
+        .timer_sel = LEDC_TIMER,
+        .duty = 0
+    };
+
+    ledc_channel_config_t motorc_channel = {
+        .gpio_num = IN3,
+        .speed_mode = LEDC_MODE,
+        .channel = PWM_3_CHANNEL,
+        .timer_sel = LEDC_TIMER,
+        .duty = 0
+    };
+
+    ledc_channel_config_t motord_channel = {
+        .gpio_num = IN4,
+        .speed_mode = LEDC_MODE,
+        .channel = PWM_4_CHANNEL,
         .timer_sel = LEDC_TIMER,
         .duty = 0
     };
 
     ledc_channel_config(&motora_channel);
     ledc_channel_config(&motorb_channel);
+    ledc_channel_config(&motorc_channel);
+    ledc_channel_config(&motord_channel);
 
     return;
 }
@@ -528,16 +565,16 @@ static void pwm_task(void * arg){
     // for setting directionadc_struct
 
     // Motor_L Clockwise
-    gpio_set_level(IN1, 1);
-    gpio_set_level(IN2, 0);
+    //gpio_set_level(IN1, 1);
+    //gpio_set_level(IN2, 0);
 
     // Motor_L Counter-Clockwise
     //gpio_set_level(IN1, 0);
     //gpio_set_level(IN2, 1);
 
     // Motor_R Clockwise
-    gpio_set_level(IN3, 1);
-    gpio_set_level(IN4, 0);
+    //gpio_set_level(IN3, 1);
+    //gpio_set_level(IN4, 0);
 
     // Motor_R Counter-Clockwise
     //gpio_set_level(IN3, 0);
@@ -583,21 +620,41 @@ static void pwm_task(void * arg){
         if(cimag(z) >= 0.00){
             // move forward
             duty = map(cimag(z), 0, 1.56, 0, 1023);
-            gpio_set_level(IN1, 1);
-            gpio_set_level(IN2, 0);
+            //gpio_set_level(IN1, 1);
+            //gpio_set_level(IN2, 0);
 
-            gpio_set_level(IN3, 0);
-            gpio_set_level(IN4, 1);
+            //gpio_set_level(IN3, 0);
+            //gpio_set_level(IN4, 1);
+
+            ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, 0);
+            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, 0);
+            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
 
     
         } else{
             // move backwards
             duty = map(cimag(z), 0, -1.74, 0, 1023);
-            gpio_set_level(IN1, 0);
-            gpio_set_level(IN2, 1);
 
-            gpio_set_level(IN3, 1);
-            gpio_set_level(IN4, 0);
+
+            ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
+            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
+            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
         }
 
         int turn_duty_r = 0, turn_duty_l = 0;
@@ -629,13 +686,13 @@ static void pwm_task(void * arg){
             }
         }
         
-
+        /*
         ledc_set_duty(LEDC_MODE, PWM_L_CHANNEL, duty + turn_duty_l);
         ledc_update_duty(LEDC_MODE, PWM_L_CHANNEL);
 
         ledc_set_duty(LEDC_MODE, PWM_R_CHANNEL, duty + turn_duty_r);
         ledc_update_duty(LEDC_MODE, PWM_R_CHANNEL);
-
+        */
 
 
 

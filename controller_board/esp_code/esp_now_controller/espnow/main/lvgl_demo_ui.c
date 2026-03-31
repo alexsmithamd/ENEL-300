@@ -29,6 +29,11 @@ void example_lvgl_demo_ui(lv_disp_t *disp)
     lv_obj_align(label, LV_ALIGN_TOP_LEFT, 0, 0);
 
     lv_obj_t *metal_dec_label = lv_label_create(scr);
-    lv_label_set_text(metal_dec_label, "Detected: YES");
+    if (metal_detected == 1){
+        lv_label_set_text(metal_dec_label, "Detected: YES");
+    } else{
+        lv_label_set_text(metal_dec_label, "Detected: NO");
+    }
+    
     lv_obj_align(metal_dec_label, LV_ALIGN_TOP_LEFT, 0, 32); 
 }

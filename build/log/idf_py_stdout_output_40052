@@ -1,0 +1,159 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\windows\system32\cmd.exe /C "cd /D C:\Users\marcu\enel_300\ENEL-300\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/marcu/enel_300/ENEL-300/build/bootloader/bootloader.bin"
+Bootloader binary size 0x51e0 bytes. 0x2e20 bytes (36%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj 
+ccache C:\Espressif\tools\riscv32-esp-elf\esp-14.2.0_20251107\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5.3\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/marcu/enel_300/ENEL-300/build/config -IC:/Users/marcu/enel_300/ENEL-300/main -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/config/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/soc/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/debug_probe/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/power_supply/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/port/esp32c3/. -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/port/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/heap/tlsf -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/soc/esp32c3/register -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3/include/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_rom/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/include/riscv -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/lwip/port/esp32xx/include/sys -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/deprecated/include -IC:/Users/marcu/enel_300/ENEL-300/managed_components/espressif__led_strip/include -IC:/Users/marcu/enel_300/ENEL-300/managed_components/espressif__led_strip/interface -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_pm/include -march=rv32imc_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/marcu/enel_300/ENEL-300=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.5.3=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\slave.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj -c C:/Users/marcu/enel_300/ENEL-300/main/slave.c
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'adc_init':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:33:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   33 |         .atten = ADC_ATTEN_DB_11,
+      |         ^
+In file included from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_adc/include/esp_adc/adc_oneshot.h:12,
+                 from C:/Users/marcu/enel_300/ENEL-300/main/slave.c:11:
+C:/Espressif/frameworks/esp-idf-v5.5.3/components/hal/include/hal/adc_types.h:52:5: note: declared here
+   52 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'read_metric_once':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:43:25: error: 'SAMPLES_PER_MEAS' undeclared (first use in this function)
+   43 |     for (int i = 0; i < SAMPLES_PER_MEAS; i++) {
+      |                         ^~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:43:25: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:45:26: error: 'PULSE_ON_US' undeclared (first use in this function)
+   45 |         esp_rom_delay_us(PULSE_ON_US);
+      |                          ^~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:52:26: error: 'PULSE_OFF_US' undeclared (first use in this function)
+   52 |         esp_rom_delay_us(PULSE_OFF_US);
+      |                          ^~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'app_main':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:90:20: error: 'BUZZER_PIN' undeclared (first use in this function)
+   90 |     gpio_reset_pin(BUZZER_PIN);
+      |                    ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:95:5: error: implicit declaration of function 'ultrasonic_init' [-Wimplicit-function-declaration]
+   95 |     ultrasonic_init();
+      |     ^~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:99:26: error: 'BASELINE_MS' undeclared (first use in this function)
+   99 |     int baseline_ticks = BASELINE_MS / 50;
+      |                          ^~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:111:41: error: 'THRESHOLD' undeclared (first use in this function)
+  111 |     printf("THRESHOLD=%d SAMPLES=%d\n", THRESHOLD, SAMPLES_PER_MEAS);
+      |                                         ^~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:111:52: error: 'SAMPLES_PER_MEAS' undeclared (first use in this function)
+  111 |     printf("THRESHOLD=%d SAMPLES=%d\n", THRESHOLD, SAMPLES_PER_MEAS);
+      |                                                    ^~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:113:5: error: unknown type name 'i2c_slave_config_t'
+  113 |     i2c_slave_config_t cfg = {
+      |     ^~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:114:9: error: field name not in record or union initializer
+  114 |         .addr_bit_len = I2C_ADDR_BIT_LEN_7,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:114:9: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:114:25: error: 'I2C_ADDR_BIT_LEN_7' undeclared (first use in this function)
+  114 |         .addr_bit_len = I2C_ADDR_BIT_LEN_7,
+      |                         ^~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:115:9: error: field name not in record or union initializer
+  115 |         .clk_source = I2C_CLK_SRC_DEFAULT,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:115:9: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:115:23: warning: excess elements in scalar initializer
+  115 |         .clk_source = I2C_CLK_SRC_DEFAULT,
+      |                       ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:115:23: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:116:9: error: field name not in record or union initializer
+  116 |         .i2c_port = I2C_PORT,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:116:9: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:116:21: error: 'I2C_PORT' undeclared (first use in this function)
+  116 |         .i2c_port = I2C_PORT,
+      |                     ^~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:116:21: warning: excess elements in scalar initializer
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:116:21: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:117:9: error: field name not in record or union initializer
+  117 |         .sda_io_num = SDA,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:117:9: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:117:23: error: 'SDA' undeclared (first use in this function)
+  117 |         .sda_io_num = SDA,
+      |                       ^~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:117:23: warning: excess elements in scalar initializer
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:117:23: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:118:9: error: field name not in record or union initializer
+  118 |         .scl_io_num = SCL,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:118:9: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:118:23: error: 'SCL' undeclared (first use in this function)
+  118 |         .scl_io_num = SCL,
+      |                       ^~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:118:23: warning: excess elements in scalar initializer
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:118:23: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:119:9: error: field name not in record or union initializer
+  119 |         .slave_addr = SLAVE_ADDR,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:119:9: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:119:23: error: 'SLAVE_ADDR' undeclared (first use in this function)
+  119 |         .slave_addr = SLAVE_ADDR,
+      |                       ^~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:119:23: warning: excess elements in scalar initializer
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:119:23: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:120:9: error: field name not in record or union initializer
+  120 |         .send_buf_depth = sizeof(sensor_packet_t) * 4,
+      |         ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:120:9: note: (near initialization for 'cfg')
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:120:34: error: 'sensor_packet_t' undeclared (first use in this function)
+  120 |         .send_buf_depth = sizeof(sensor_packet_t) * 4,
+      |                                  ^~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:120:27: warning: excess elements in scalar initializer
+  120 |         .send_buf_depth = sizeof(sensor_packet_t) * 4,
+      |                           ^~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:120:27: note: (near initialization for 'cfg')
+In file included from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/esp_cpu.h:21,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_hw_support/include/spinlock.h:11,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:65,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.3/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from C:/Users/marcu/enel_300/ENEL-300/main/slave.c:5:
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:124:21: error: implicit declaration of function 'i2c_new_slave_device' [-Wimplicit-function-declaration]
+  124 |     ESP_ERROR_CHECK(i2c_new_slave_device(&cfg, &slave));
+      |                     ^~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:124:49: error: 'slave' undeclared (first use in this function)
+  124 |     ESP_ERROR_CHECK(i2c_new_slave_device(&cfg, &slave));
+      |                                                 ^~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:127:5: error: 'pkt' undeclared (first use in this function)
+  127 |     pkt.checksum = checksum(&pkt);
+      |     ^~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:127:20: error: implicit declaration of function 'checksum' [-Wimplicit-function-declaration]
+  127 |     pkt.checksum = checksum(&pkt);
+      |                    ^~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:128:5: error: implicit declaration of function 'push_packet_to_i2c' [-Wimplicit-function-declaration]
+  128 |     push_packet_to_i2c();
+      |     ^~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:139:13: error: implicit declaration of function 'buzzer_beep' [-Wimplicit-function-declaration]
+  139 |             buzzer_beep(100);
+      |             ^~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:143:44: error: 'US_ECHO_PIN' undeclared (first use in this function)
+  143 |         printf("ECHO=%d\n", gpio_get_level(US_ECHO_PIN));
+      |                                            ^~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:148:19: error: implicit declaration of function 'ultrasonic_read_cm' [-Wimplicit-function-declaration]
+  148 |         float d = ultrasonic_read_cm();
+      |                   ^~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:162:9: error: implicit declaration of function 'update_packet' [-Wimplicit-function-declaration]
+  162 |         update_packet(gooner, detected, d);
+      |         ^~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: In function 'read_metric_once':
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:56:1: error: control reaches end of non-void function [-Werror=return-type]
+   56 | }
+      | ^
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c: At top level:
+C:/Users/marcu/enel_300/ENEL-300/main/slave.c:59:16: warning: 'pulse_in_us' defined but not used [-Wunused-function]
+   59 | static int64_t pulse_in_us(gpio_num_t pin, int level, int64_t timeout_us)
+      |                ^~~~~~~~~~~
+cc1.exe: some warnings being treated as errors
+[3/9] No install step for 'bootloader'
+ninja: build stopped: subcommand failed.

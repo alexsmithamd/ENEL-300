@@ -18,6 +18,8 @@
 #include <assert.h>
 #include <stdio.h>
 
+  int metal_detected = 0;
+  
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
 #include "freertos/timers.h"
@@ -344,7 +346,7 @@ int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, 
     }
 
     float rx_ultrasonic_cm = -1.0f;
-    int metal_detected = 0;
+  
     float recv_pay[2] = {-1.0, -1.0};
 
     size_t payload_len = data_len - sizeof(example_espnow_data_t);
@@ -451,6 +453,7 @@ static void adc_task(void* arg)
             uint32_t values[4] = {-1, -1, -1, -1};
             int j = 0;
 
+            // CHANGE THE CONTROLLER ORIENTATION before competition 
             for (int i = 0; i < ret_num; i += SOC_ADC_DIGI_RESULT_BYTES, j++) {
                 adc_digi_output_data_t *p = (adc_digi_output_data_t*)&result[i];
                 uint32_t data = EXAMPLE_ADC_GET_DATA(p) & 0xFFF;
