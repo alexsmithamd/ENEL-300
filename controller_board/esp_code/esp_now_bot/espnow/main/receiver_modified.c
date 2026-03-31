@@ -46,9 +46,6 @@
 #define IN3 GPIO_NUM_5
 #define IN4 GPIO_NUM_4
 
-// these are the PWM pins
-#define PWM_L GPIO_NUM_4
-#define PWM_R GPIO_NUM_6
 
 #define PWM_1_CHANNEL LEDC_CHANNEL_0
 #define PWM_2_CHANNEL LEDC_CHANNEL_1
@@ -633,10 +630,10 @@ static void pwm_task(void * arg){
             ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
 
             ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+            ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
 
             ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+            ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
 
     
         } else{
@@ -651,10 +648,10 @@ static void pwm_task(void * arg){
             ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
 
             ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+            ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
 
             ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+            ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
         }
 
         int turn_duty_r = 0, turn_duty_l = 0;
