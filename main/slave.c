@@ -29,7 +29,7 @@
 #define ECHO_RISE_TIMEOUT_US  50000
 #define ECHO_FALL_TIMEOUT_US  50000
 #define BASELINE_MS           1500
-#define THRESHOLD             18
+#define THRESHOLD             9
 
 
 
