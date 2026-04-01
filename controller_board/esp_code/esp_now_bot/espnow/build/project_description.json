@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "espnow_example",
-    "project_version":    "aa061945-dirty",
+    "project_version":    "fee35e04-dirty",
     "project_path":       "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.3",
     "build_dir":          "C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build",

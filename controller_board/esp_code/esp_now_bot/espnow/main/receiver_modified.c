@@ -591,7 +591,7 @@ static void pwm_task(void * arg){
         ESP_LOGI("","COMPLEX Values: %f %f \t TRIM: %d %d", creal(z), cimag(z), trim_l, trim_r);
 
         if(creal(z) >= 0){ // turning right 
-            turn_duty = map(creal(z), 0, 1.56, 0, 500); 
+            turn_duty = map(creal(z), 0, 1.56, 0, 1023); 
 
 
             // motor 1 left side
@@ -645,10 +645,10 @@ static void pwm_task(void * arg){
                 ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
                 ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
 
-                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty);
+                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty  - turn_duty);
                 ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
 
-                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty - turn_duty);
+                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty);
                 ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
 
                 ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
