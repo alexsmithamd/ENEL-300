@@ -28,8 +28,8 @@
 #define SAMPLES_PER_MEAS      400
 #define ECHO_RISE_TIMEOUT_US  50000
 #define ECHO_FALL_TIMEOUT_US  50000
-#define BASELINE_MS           1500
-#define THRESHOLD             9
+#define BASELINE_MS           2000
+#define THRESHOLD             13
 
 
 
