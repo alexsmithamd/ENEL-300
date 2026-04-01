@@ -576,7 +576,7 @@ static void pwm_task(void * arg){
         adc_snap_t temp = *adc_struct; // copy the struct
 
         // now we need to write the code that copies the values from esp now into this struct
-        double z_real =  adc_struct->raw[2] - R_X_OFFSET;
+        double z_real =  adc_struct->raw[0] - R_X_OFFSET;
         if(fabsf(z_real) < 0.02)
             z_real = 0.00;
         
@@ -586,56 +586,129 @@ static void pwm_task(void * arg){
 
         z = z_real + z_imm*I;
 
-        int duty, turn_duty;
+        int duty = 0, turn_duty = 0;
 
         ESP_LOGI("","COMPLEX Values: %f %f \t TRIM: %d %d", creal(z), cimag(z), trim_l, trim_r);
 
-        if(turn_duty >= 0){
-            turn_duty = map(creal(z) , 0, 1.56, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+        if(creal(z) >= 0){ // turning right 
+            turn_duty = map(creal(z), 0, 1.56, 0, 500); 
 
-        } else if(turn_duty < 0){
 
+            // motor 1 left side
+            //  IN1 pin 6
+            //  IN2 pin 7
+
+            // motor 2 right side
+            //  IN1 pin 4
+            //  IN2 pin 5
+
+            if(cimag(z) >= 0.00){
+                duty = map(cimag(z), 0, 1.71, 0, 1023);
+
+                ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty - turn_duty);
+                ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
+                // moving right between 0 and 1.76 works
+            } else {
+                // move backwards
+                duty = map(cimag(z), 0, -1.74, 0, 1023);
+
+                ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, duty - turn_duty);
+                ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
+
+            }
+
+
+        } else if (creal(z) < 0){ // turning left 
+            turn_duty = map(abs(creal(z)), 0, 1.56, 0, 1023);
+
+            if(cimag(z) >= 0.00){
+                duty = map(cimag(z), 0, 1.56, 0, 1023);
+
+                ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty - turn_duty);
+                ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
+                // moving right between 0 and 1.76 works
+            } else {
+                // move backwards
+                duty = map(cimag(z), 0, -1.74, 0, 1023);
+
+                ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, duty - turn_duty);
+                ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
+
+            }
+        }
+        else { // no turning
+                // fwd/bckwd code
+            // for the immaginary axis
+            if(cimag(z) >= 0.00){
+                duty = map(cimag(z), 0, 1.56, 0, 1023);
+
+                ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
+                // moving right between 0 and 1.76 works
+            } else {
+                // move backwards
+                duty = map(cimag(z), 0, -1.74, 0, 1023);
+
+                ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, 0);
+                ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
+
+                ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, duty);
+                ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
+
+            }
         }
 
-        
-
-        // fwd/bckwd code
-        // for the immaginary axis
-        if(cimag(z) >= 0.00){
-            duty = map(cimag(z) * 0.75, 0, 1.56, 0, 1023);
-
-            ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty + turn_duty);
-            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
-            // moving right between 0 and 1.76 works
-        } else{
-            // move backwards
-            duty = map(cimag(z) * 0.75, 0, -1.74, 0, 1023);
-
-            ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, duty + turn_duty);
-            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
-
-        }
-
-    
-        
         vTaskDelay(20 / portTICK_PERIOD_MS);
     }
 

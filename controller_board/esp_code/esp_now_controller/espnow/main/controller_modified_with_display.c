@@ -404,6 +404,8 @@ int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, 
 
     size_t payload_len = data_len - sizeof(example_espnow_data_t);
 
+    
+
     if (payload_len >= sizeof(float)) {
         memcpy(recv_pay, buf->payload, 2*sizeof(float));
 
@@ -529,9 +531,6 @@ static void adc_task(void* arg)
         if (xQueueReceive(button_queue_r, &button_counter_r, 1)) {
             printf("Right trim: %lu\n", button_counter_r);
         }
-
-
-
 
 
         vTaskDelay(pdMS_TO_TICKS(10));
