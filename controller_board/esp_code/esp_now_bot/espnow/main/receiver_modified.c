@@ -586,17 +586,18 @@ static void pwm_task(void * arg){
 
         z = z_real + z_imm*I;
 
-        int duty;
+        int duty, turn_duty;
 
         ESP_LOGI("","COMPLEX Values: %f %f \t TRIM: %d %d", creal(z), cimag(z), trim_l, trim_r);
+
+        duty = map(cimag(z))
+        turn_duty = -1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
 
         // fwd/bckwd code
 
         // for the immaginary axis
         if(cimag(z) >= 0.00){
-            // move forward
-            duty = map(cimag(z), 0, 1.56, 0, 1023);
-            
+            duty = map(cimag(z) * 0.75, 0, 1.56, 0, 1023);
             ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
             ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
 
@@ -611,7 +612,7 @@ static void pwm_task(void * arg){
 
         } else{
             // move backwards
-            duty = map(cimag(z), 0, -1.74, 0, 1023);
+            duty = map(cimag(z) * 0.75, 0, -1.74, 0, 1023);
 
             ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, duty);
             ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
@@ -627,26 +628,7 @@ static void pwm_task(void * arg){
 
         }
 
-        // turning code
-        int turn_duty_r = 0, turn_duty_l = 0;
-
-        if (creal(z) >= 0){ // turning right
-           turn_duty_r = -1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
-           
-           if (duty == 0){
-                turn_duty_r = 1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023);
-            }
-
-        } else{ // turning left
-            turn_duty_l = -1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
-            if(duty == 0){
-                turn_duty_l = 1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023);
-
-                gpio_set_level(IN3, 1);
-                gpio_set_level(IN4, 0);
-                turn_duty_r = 1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023);
-            }
-        }
+        
 
         
         vTaskDelay(20 / portTICK_PERIOD_MS);
