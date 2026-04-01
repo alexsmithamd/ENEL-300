@@ -1,0 +1,90 @@
+Command: ninja flash
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/receiver_modified.c.obj
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c: In function 'pwm_task':
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:581:12: warning: absolute value function 'fabsf' given an argument of type 'double' but has parameter of type 'float' which may cause truncation of value [-Wabsolute-value]
+  581 |         if(fabsf(z_real) < 0.02)
+      |            ^~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:585:12: warning: absolute value function 'fabsf' given an argument of type 'double' but has parameter of type 'float' which may cause truncation of value [-Wabsolute-value]
+  585 |         if(fabsf(z_imm) < 0.02)
+      |            ^~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:576:20: warning: unused variable 'temp' [-Wunused-variable]
+  576 |         adc_snap_t temp = *adc_struct; // copy the struct
+      |                    ^~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c: At top level:
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:661:13: warning: 'ultrasonic_task' defined but not used [-Wunused-function]
+  661 | static void ultrasonic_task(void *params)
+      |             ^~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:554:13: warning: 'pwm_task' defined but not used [-Wunused-function]
+  554 | static void pwm_task(void * arg){
+      |             ^~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:468:13: warning: 'configure_PWM' defined but not used [-Wunused-function]
+  468 | static void configure_PWM(void){
+      |             ^~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:459:13: warning: 'example_espnow_deinit' defined but not used [-Wunused-function]
+  459 | static void example_espnow_deinit(example_espnow_send_param_t *send_param)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:385:18: warning: 'example_espnow_init' defined but not used [-Wunused-function]
+  385 | static esp_err_t example_espnow_init(void)
+      |                  ^~~~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:161:13: warning: 'example_wifi_init' defined but not used [-Wunused-function]
+  161 | static void example_wifi_init(void)
+      |             ^~~~~~~~~~~~~~~~~
+C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/main/receiver_modified.c:111:13: warning: 'ultrasonic_init' defined but not used [-Wunused-function]
+  111 | static void ultrasonic_init(void) {
+      |             ^~~~~~~~~~~~~~~
+[2/10] Linking C static library esp-idf\main\libmain.a
+[3/10] Performing build step for 'bootloader'
+[1/1] C:\windows\system32\cmd.exe /C "cd /D C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[4/10] No install step for 'bootloader'
+[5/10] Completed 'bootloader'
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable espnow_example.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/espnow_example.bin
+[9/10] C:\windows\system32\cmd.exe /C "cd /D C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/partition_table/partition-table.bin C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build/espnow_example.bin"
+espnow_example.bin binary size 0x2e0d0 bytes. Smallest app partition is 0x100000 bytes. 0xd1f30 bytes (82%) free.
+[9/10] C:\windows\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.3\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.3 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.3/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/marcu/enel_300/ENEL-300/controller_board/esp_code/esp_now_bot/espnow/build -P C:/Espressif/frameworks/esp-idf-v5.5.3/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM14 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 espnow_example.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.dev1
+Serial port COM14
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: dc:b4:d9:09:f9:80
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0003efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20832 bytes to 13345...
+Writing at 0x00000000... (100 %)
+Wrote 20832 bytes (13345 compressed) at 0x00000000 in 0.7 seconds (effective 251.9 kbit/s)...
+Hash of data verified.
+Compressed 188624 bytes to 104042...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001c84c... (28 %)
+Writing at 0x000224c1... (42 %)
+Writing at 0x000287d8... (57 %)
+Writing at 0x0002f6f6... (71 %)
+Writing at 0x00035568... (85 %)
+Writing at 0x0003b91c... (100 %)
+Wrote 188624 bytes (104042 compressed) at 0x00010000 in 2.9 seconds (effective 518.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 534.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -52,8 +52,7 @@
 #define PWM_3_CHANNEL LEDC_CHANNEL_2
 #define PWM_4_CHANNEL LEDC_CHANNEL_3
 
-
-#define LED_PIN 4           
+         
 #define LEDC_CHANNEL LEDC_CHANNEL_0
 #define LEDC_TIMER LEDC_TIMER_0
 #define LEDC_MODE LEDC_LOW_SPEED_MODE
@@ -77,7 +76,8 @@
 #define HEADLIGHT_GPIO GPIO_NUM_10
 #define METAL_DETECT GPIO_NUM_11
 
-
+int trim_r = 0;
+int trim_l = 0;
 
 typedef struct {
     float raw[4];
@@ -94,9 +94,9 @@ static const char *TAG = "espnow_example";
 
 static QueueHandle_t s_example_espnow_queue = NULL;
 
-// mac address of the master <-_->
-static uint8_t s_peer_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x0B, 0x64, 0x5C };
-static uint8_t s_example_broadcast_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x0B, 0x64, 0x5C };
+// mac address of the master <-_-> dc:b4:d9:09:f9:80
+static uint8_t s_peer_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x09, 0xf9, 0x80 };
+static uint8_t s_example_broadcast_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x09, 0xf9, 0x80 };
 static uint16_t s_example_espnow_seq[EXAMPLE_ESPNOW_DATA_MAX] = { 0, 0 };
 
 static void example_espnow_deinit(example_espnow_send_param_t *send_param);
@@ -256,14 +256,16 @@ int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, 
     buf->crc = 0;
     crc_cal = esp_crc16_le(UINT16_MAX, (uint8_t const *)buf, data_len);
 
-    float temp_arr [5] = {-1.0, -1.0, -1.0, -1.0, -1.0};
+    float temp_arr [7] = {-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0}; // last two are trim params
     memcpy(temp_arr, buf->payload, sizeof(temp_arr));
     light_state = (int)temp_arr[4];
+    trim_l = (int)temp_arr[5];
+    trim_r = (int)temp_arr[6];
 
     gpio_set_level(HEADLIGHT_GPIO, light_state);
 
     float control_data[4] = {-1.0, -1.0, -1.0, -1.0};
-    memcpy(control_data, temp_arr, sizeof(temp_arr) - 1); // copy the first four elements
+    memcpy(control_data, temp_arr, sizeof(temp_arr) - 3); // copy the first four elements
    
     adc_snap_t temp = {{-1.0, -1.0, -1.0, -1.0}}; // kind of forgot what the purpose of this is
     memcpy(temp.raw, control_data, sizeof(control_data));
@@ -273,8 +275,6 @@ int example_espnow_data_parse(uint8_t *data, uint16_t data_len, uint8_t *state, 
     taskEXIT_CRITICAL(&adc_struct_mux);
 
     //ESP_LOGI("RECIEVED ADC DATA", "%f %f %f %f", temp.raw[0], temp.raw[1], temp.raw[2], temp.raw[3]);
-
-
 
     if (crc_cal == crc) {
         return buf->type;
@@ -333,6 +333,7 @@ static void ultrasonic_tx_task(void *arg)
         vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
+
 
 static void example_espnow_task(void *pvParameter)
 {
@@ -551,33 +552,10 @@ static void configure_PWM(void){
 }
 
 static void pwm_task(void * arg){
+    
     adc_snap_t *adc_struct = (adc_snap_t *) arg;
     assert(adc_struct != NULL);
 
-    //s_task_handle = xTaskGetCurrentTaskHandle();
-
-    // ** NOTE **
-    // Direction is uncertain at the momentprintf("LED duty cycle: %d\n", duty);
-
-    // for setting directionadc_struct
-
-    // Motor_L Clockwise
-    //gpio_set_level(IN1, 1);
-    //gpio_set_level(IN2, 0);
-
-    // Motor_L Counter-Clockwise
-    //gpio_set_level(IN1, 0);
-    //gpio_set_level(IN2, 1);
-
-    // Motor_R Clockwise
-    //gpio_set_level(IN3, 1);
-    //gpio_set_level(IN4, 0);
-
-    // Motor_R Counter-Clockwise
-    //gpio_set_level(IN3, 0);
-    //gpio_set_level(IN4, 1);
-
-    // waiting for command, if negs then we don't start
     while (1){
         int count = 0;
         // check to make ALL values are not -1.0
@@ -591,14 +569,13 @@ static void pwm_task(void * arg){
         vTaskDelay(1);
     }
 
-    double complex z = 0 + 0*I;
+
+    double complex z = 0 + 0*I; // if I move this into the while will it add deadman stop?
 
     while (1) {
-
         adc_snap_t temp = *adc_struct; // copy the struct
-        // now we need to write the code that copies the values from esp now into this struct
-        
 
+        // now we need to write the code that copies the values from esp now into this struct
         double z_real =  adc_struct->raw[2] - R_X_OFFSET;
         if(fabsf(z_real) < 0.02)
             z_real = 0.00;
@@ -611,17 +588,30 @@ static void pwm_task(void * arg){
 
         int duty;
 
-        ESP_LOGI("","COMPLEX Values: %f %f", creal(z), cimag(z));
+        ESP_LOGI("","COMPLEX Values: %f %f \t TRIM: %d %d", creal(z), cimag(z), trim_l, trim_r);
+
+        // fwd/bckwd code
 
         // for the immaginary axis
         if(cimag(z) >= 0.00){
             // move forward
             duty = map(cimag(z), 0, 1.56, 0, 1023);
-            //gpio_set_level(IN1, 1);
-            //gpio_set_level(IN2, 0);
+            
+            ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
+            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
 
-            //gpio_set_level(IN3, 0);
-            //gpio_set_level(IN4, 1);
+            ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty);
+            ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
+
+            ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
+            ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
+
+        } else{
+            // move backwards
+            duty = map(cimag(z), 0, -1.74, 0, 1023);
 
             ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, duty);
             ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
@@ -635,43 +625,18 @@ static void pwm_task(void * arg){
             ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, duty);
             ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
 
-    
-        } else{
-            // move backwards
-            duty = map(cimag(z), 0, -1.74, 0, 1023);
-
-
-            ledc_set_duty(LEDC_MODE, PWM_1_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_1_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_2_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, PWM_2_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_3_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, PWM_3_CHANNEL);
-
-            ledc_set_duty(LEDC_MODE, PWM_4_CHANNEL, 0);
-            ledc_update_duty(LEDC_MODE, PWM_4_CHANNEL);
         }
 
+        // turning code
         int turn_duty_r = 0, turn_duty_l = 0;
 
-        // for the REAL axis (not fake)
         if (creal(z) >= 0){ // turning right
            turn_duty_r = -1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
+           
            if (duty == 0){
-            turn_duty_r = 1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023);
+                turn_duty_r = 1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023);
+            }
 
-            // need to flip rotation
-            
-                    gpio_set_level(IN1, 0);
-            gpio_set_level(IN2, 1);
-
-            gpio_set_level(IN3, 0);
-            gpio_set_level(IN4, 1);
-
-            turn_duty_l = 1.0 * map(creal(z) * 0.75, 0, 1.56, 0, 1023);
-           }
         } else{ // turning left
             turn_duty_l = -1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023); // 0.5 is the weight that the turning has on the PWM signal
             if(duty == 0){
@@ -682,32 +647,8 @@ static void pwm_task(void * arg){
                 turn_duty_r = 1.0 * map(creal(z) * 0.75, 0, -1.74, 0, 1023);
             }
         }
+
         
-        /*
-        ledc_set_duty(LEDC_MODE, PWM_L_CHANNEL, duty + turn_duty_l);
-        ledc_update_duty(LEDC_MODE, PWM_L_CHANNEL);
-
-        ledc_set_duty(LEDC_MODE, PWM_R_CHANNEL, duty + turn_duty_r);
-        ledc_update_duty(LEDC_MODE, PWM_R_CHANNEL);
-        */
-
-
-
-        /*
-        for (int duty = 0; duty <= 1023; duty += 10) {
-            ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
-            vTaskDelay(20 / portTICK_PERIOD_MS);
-            
-        }
-        
-        for (int duty = 1023; duty >= 0; duty -= 10) {
-            ledc_set_duty(LEDC_MODE, LEDC_CHANNEL, duty);
-            ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
-            vTaskDelay(20 / portTICK_PERIOD_MS);
-            
-        }
-            */
         vTaskDelay(20 / portTICK_PERIOD_MS);
     }
 
@@ -755,7 +696,7 @@ void app_main(void)
     gpio_set_direction(HEADLIGHT_GPIO, GPIO_MODE_OUTPUT);
     gpio_set_level(HEADLIGHT_GPIO, 0);
 
-     ultrasonic_init();
+    ultrasonic_init();
     configure_PWM();
     xTaskCreate(ultrasonic_task, "ultrasonic_task", 4096, NULL, 2, NULL);
     xTaskCreate(pwm_task, "pwm_task", 4096, &adc_struct, 5, NULL);

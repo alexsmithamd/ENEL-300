@@ -59,6 +59,36 @@
 #define BUTTON_GPIO GPIO_NUM_38
 #define DEBOUNCE_DELAY_US 200000ULL
 
+int trim_r = 0;
+int trim_l = 0;
+
+// trim ISRs
+
+// trim_l isr
+static volatile uint64_t last_isr_time_l = 0;
+static volatile uint32_t counter_l = 0;
+static QueueHandle_t button_queue_l;
+
+uint32_t button_counter_l;
+
+static void IRAM_ATTR button_isr_l(void *arg) {
+    uint64_t now = esp_timer_get_time(); // Get current time in microseconds
+    // Check if debounce period has passed, then process the button press
+    if (now - last_isr_time > DEBOUNCE_DELAY_US) {
+        counter++;
+        uint32_t cnt = counter;
+        BaseType_t higher_priority_task_woken = pdFALSE;
+        xQueueSendFromISR(button_queue, &cnt, &higher_priority_task_woken); // Send counter to queue from ISR
+        last_isr_time = now;
+        if (higher_priority_task_woken) {
+            portYIELD_FROM_ISR();
+        }
+    }
+}
+
+
+
+// headlight toggle ISR
 static volatile uint64_t last_isr_time = 0;
 static volatile uint32_t counter = 0;
 static QueueHandle_t button_queue;
@@ -89,9 +119,9 @@ static const char *DISP_TAG = "oled_display";
 
 static QueueHandle_t s_example_espnow_queue = NULL;
 
-// mac addr of the SALVIA
-static uint8_t s_example_broadcast_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x0B, 0x32, 0xE0 };
-static uint8_t s_peer_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x0B, 0x32, 0xE0 };
+// mac addr of the slave
+static uint8_t s_example_broadcast_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x09, 0xf9, 0x80 }; //dc:b4:d9:09:f9:80
+static uint8_t s_peer_mac[ESP_NOW_ETH_ALEN] = { 0xDC, 0xB4, 0xD9, 0x09, 0xf9, 0x80 };
 static uint16_t s_example_espnow_seq[EXAMPLE_ESPNOW_DATA_MAX] = { 0, 0 };
 
 static void example_espnow_deinit(example_espnow_send_param_t *send_param);
@@ -393,7 +423,7 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
     snap_copy = adc_struct;
     taskEXIT_CRITICAL(&adc_struct_mux);
 
-    float control_data[5] = {snap_copy.raw[0], snap_copy.raw[1], snap_copy.raw[2], snap_copy.raw[3], counter % 2};
+    float control_data[7] = {snap_copy.raw[0], snap_copy.raw[1], snap_copy.raw[2], snap_copy.raw[3], counter % 2, trim_l, trim_r};
     uint8_t payload[sizeof(control_data)];
 
     memcpy(payload, control_data, sizeof(control_data));

@@ -1,0 +1,270 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c72a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x155c
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fa4
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar 30 2026 14:42:00[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=091c8h ( 37320) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=000191f0 vaddr=3fc8bc00 size=017b4h (  6068) load[0m
+[0;32mI (91) esp_image: segment 2: paddr=0001a9ac vaddr=40380000 size=0566ch ( 22124) load[0m
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=15708h ( 87816) map[0m
+[0;32mI (119) esp_image: segment 4: paddr=00035730 vaddr=4038566c size=063b4h ( 25524) load[0m
+[0;32mI (124) esp_image: segment 5: paddr=0003baec vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (128) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (128) boot: Disabling RNG early entropy source...[0m
+[0;32mI (144) cpu_start: Unicore app[0m
+[0;32mI (152) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (153) cpu_start: Pro cpu start user code[0m
+[0;32mI (153) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (155) app_init: Application information:[0m
+[0;32mI (158) app_init: Project name:     Metal_Detector[0m
+[0;32mI (163) app_init: App version:      d5b391b7[0m
+[0;32mI (167) app_init: Compile time:     Mar 30 2026 15:03:00[0m
+[0;32mI (172) app_init: ELF file SHA256:  4aa7800dd...[0m
+[0;32mI (176) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (184) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 3FC8E2D0 len 00031D30 (199 KiB): RAM[0m
+[0;32mI (203) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (209) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (215) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (221) spi_flash: detected chip: generic[0m
+[0;32mI (224) spi_flash: flash io: dio[0m
+[0;33mW (227) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (252) main_task: Started on CPU0[0m
+[0;32mI (252) main_task: Calling app_main()[0m
+Baseline metric = 4095
+THRESHOLD=18 SAMPLES=400
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=2804 diff=1291 detected=1
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=718 diff=3377 detected=1
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=4095 diff=0 detected=0
+metric=446 diff=3649 detected=1
+metric=424 diff=3671 detected=1
+metric=252 diff=3843 detected=1
+metric=143 diff=3952 detected=1
+metric=138 diff=3957 detected=1
+metric=214 diff=3881 detected=1
+metric=295 diff=3800 detected=1
+metric=254 diff=3841 detected=1
+metric=237 diff=3858 detected=1
+metric=324 diff=3771 detected=1
+metric=344 diff=3751 detected=1
+metric=404 diff=3691 detected=1
+metric=428 diff=3667 detected=1
+metric=391 diff=3704 detected=1
+metric=411 diff=3684 detected=1
+metric=445 diff=3650 detected=1
+metric=439 diff=3656 detected=1
+metric=348 diff=3747 detected=1
+metric=351 diff=3744 detected=1
+metric=378 diff=3717 detected=1
+metric=367 diff=3728 detected=1
+metric=392 diff=3703 detected=1
+metric=398 diff=3697 detected=1
+metric=410 diff=3685 detected=1
+metric=476 diff=3619 detected=1
+metric=498 diff=3597 detected=1
+metric=483 diff=3612 detected=1
+metric=437 diff=3658 detected=1
+metric=461 diff=3634 detected=1
+metric=587 diff=3508 detected=1
+metric=630 diff=3465 detected=1
+metric=693 diff=3402 detected=1
+metric=611 diff=3484 detected=1
+metric=568 diff=3527 detected=1
+metric=586 diff=3509 detected=1
+metric=424 diff=3671 detected=1
+metric=978 diff=3117 detected=1
+metric=706 diff=3389 detected=1
+metric=2 diff=4093 detected=1
+metric=2 diff=4093 detected=1
+metric=265 diff=3830 detected=1
+metric=200 diff=3895 detected=1
+metric=229 diff=3866 detected=1
+metric=342 diff=3753 detected=1
+metric=298 diff=3797 detected=1
+metric=432 diff=3663 detected=1
+metric=383 diff=3712 detected=1
+metric=266 diff=3829 detected=1
+metric=314 diff=3781 detected=1
+metric=281 diff=3814 detected=1
+metric=242 diff=3853 detected=1
+metric=316 diff=3779 detected=1
+metric=169 diff=3926 detected=1
+metric=297 diff=3798 detected=1
+metric=306 diff=3789 detected=1
+metric=343 diff=3752 detected=1
+metric=358 diff=3737 detected=1
+metric=219 diff=3876 detected=1
+metric=282 diff=3813 detected=1
+metric=269 diff=3826 detected=1
+metric=297 diff=3798 detected=1
+metric=306 diff=3789 detected=1
+metric=338 diff=3757 detected=1
+metric=308 diff=3787 detected=1
+metric=334 diff=3761 detected=1
+metric=370 diff=3725 detected=1
+metric=375 diff=3720 detected=1
+metric=276 diff=3819 detected=1
+metric=241 diff=3854 detected=1
+metric=274 diff=3821 detected=1
+metric=295 diff=3800 detected=1
+metric=280 diff=3815 detected=1
+metric=215 diff=3880 detected=1
+metric=179 diff=3916 detected=1
+metric=239 diff=3856 detected=1
+metric=332 diff=3763 detected=1
+metric=294 diff=3801 detected=1
+metric=289 diff=3806 detected=1
+metric=228 diff=3867 detected=1
+metric=243 diff=3852 detected=1
+metric=282 diff=3813 detected=1
+metric=288 diff=3807 detected=1
+metric=269 diff=3826 detected=1
+metric=206 diff=3889 detected=1
+metric=210 diff=3885 detected=1
+metric=218 diff=3877 detected=1
+metric=222 diff=3873 detected=1
+metric=195 diff=3900 detected=1
+metric=151 diff=3944 detected=1
+metric=144 diff=3951 detected=1
+metric=216 diff=3879 detected=1
+metric=281 diff=3814 detected=1
+metric=230 diff=3865 detected=1
+metric=187 diff=3908 detected=1
+metric=228 diff=3867 detected=1
+metric=291 diff=3804 detected=1
+metric=311 diff=3784 detected=1
+metric=295 diff=3800 detected=1
+metric=248 diff=3847 detected=1
+metric=264 diff=3831 detected=1
+metric=359 diff=3736 detected=1
+metric=381 diff=3714 detected=1
+metric=332 diff=3763 detected=1
+metric=257 diff=3838 detected=1

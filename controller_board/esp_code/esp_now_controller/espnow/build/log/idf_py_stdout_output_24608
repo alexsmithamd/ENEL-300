@@ -1,0 +1,1307 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 00:24:39[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=213d8h (136152) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031400 vaddr=3fc9c500 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=0003639c vaddr=40374000 size=09c7ch ( 40060) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c90e8h (823528) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109110 vaddr=4037dc7c size=0e7c0h ( 59328) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=001178d8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (292) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (317) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      7438bd0c-dirty[0m
+[0;32mI (326) app_init: Compile time:     Mar 31 2026 17:28:16[0m
+[0;32mI (332) app_init: ELF file SHA256:  ddd2a925d...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (347) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (351) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB5588 len 00034188 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (379) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc78c8, prio:23, stack:6656, core=0[0m
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1788) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1828) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1898) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1898) wifi:enable tsf[0m
+[0;32mI (1898) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1898) espnow_example: Controller RX task started[0m
+[0;32mI (1898) main_task: Returned from app_main()[0m
+[0;32mI (1898) espnow_example: Controller TX task started[0m
+Button pressed 1 times.
+Button pressed 2 times.
+Button pressed 3 times.
+Button pressed 4 times.
+Button pressed 5 times.
+Button pressed 6 times.
+Button pressed 7 times.
+Button pressed 8 times.
+Button pressed 9 times.
+Button pressed 10 times.
+Button pressed 11 times.
+Button pressed 12 times.
+Button pressed 13 times.
+Button pressed 14 times.
+Button pressed 15 times.
+Button pressed 16 times.
+Button pressed 17 times.
+Button pressed 18 times.
+Button pressed 19 times.
+[0;33mW (104358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (104508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (104708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (104808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (104958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (105108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (105258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (105358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (105458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (105558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (105658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (105858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (106858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (107008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (107158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (107308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (107408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (107508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (107708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (107908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (108058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (108158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (108358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (108558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (108758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (108958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (109208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (109458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (109608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (109758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (109858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (110008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (110158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (110358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (110608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (110708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (110858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (111008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (111158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (111358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (111508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (111708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (111908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (112958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (113108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (113258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (113358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (113458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (113608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (113758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (113958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (114058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (114258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (114408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (114458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (114558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (114758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (114858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (115908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (116108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (116208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (116358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (116508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (116608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (116758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (116908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (117958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (118108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (118208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (118358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (118408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (118508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (118708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (118858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (119008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (119108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (119408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (119508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (119658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (119758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (119908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (120958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (121908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (122908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (123958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (124908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (125958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (126108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (126258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (126358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (126508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (126658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (126758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (126858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (127958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (128958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (129858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (130958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (131108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (131258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (131358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (131508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (131608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (131758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (131958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (132958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (133908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (134958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (135908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (136908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (137958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (138958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (139908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (140908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (141908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (142908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (143908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (144058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (144258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (144358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 20 times.
+[0;33mW (144458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (144558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (144608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (144708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (144908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (145108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (145258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 21 times.
+[0;33mW (145408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (145608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (145808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 22 times.
+[0;33mW (146008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (146158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (146258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (146408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (146608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (146708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (146858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (147908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (148958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (149958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (150908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (151908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (152108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (152258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (152508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (152558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (152708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (152858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (153958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (154258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (154408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (154558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (154658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (154858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (154958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (155258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (155408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (155558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (155708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (155858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (156008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (156208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (156308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (156408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (156558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (156808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (156958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (157058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (157258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (157358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (157458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (157608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (157808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (157958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (158158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (158358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (158508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (158658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (158808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (159008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (159308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (159458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (159608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (159808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (159908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (160008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (160158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (160358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (160508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (160658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (160758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (160908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (161908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (162858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (163958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (164908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (165008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (165108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (165208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (165308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (165608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (165758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (165958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (166908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (167008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (167158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (167308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (167508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (167658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (167758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (167958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (168108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (168308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (168388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (168468) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (168578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (168678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (168778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (168868) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (168988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169198) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169768) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (169978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170188) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 23 times.
+[0;32mI (170278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170618) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170908) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (170988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171178) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171398) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171468) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 24 times.
+[0;32mI (171588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171668) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171778) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 25 times.
+[0;32mI (171888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (171978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172168) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172298) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172718) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (172758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (172818) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (172888) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (172908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (172958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (172988) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173078) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (173398) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173478) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173568) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173668) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173878) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (173908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (173968) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (174088) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (174158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (174178) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (174278) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (174308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (174378) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (174458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (174478) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (174558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (174598) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (174658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (174678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (174758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (174818) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (174908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (174908) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (174978) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175078) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175198) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175268) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175368) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175488) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175578) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (175778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (175908) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (175958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (176008) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (176058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (176078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (176178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (176208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (176268) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (176368) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (176498) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (176508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (176578) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (176608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 26 times.
+[0;32mI (176738) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (176758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (176778) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 27 times.
+[0;32mI (176878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (176968) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (177058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (177078) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (177208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (177208) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (177268) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (177358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (177368) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (177458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (177478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (177568) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (177608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (177658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (177678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (177778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (177808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (177878) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (177958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (177988) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (178088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (178178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (178268) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 28 times.
+[0;32mI (178378) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (178498) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (178568) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (178678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (178778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (178878) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (178908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179008) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (179058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179088) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (179158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (179258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (179388) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (179408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 29 times.
+[0;33mW (179508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179508) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (179608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179628) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (179678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (179708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (179858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179888) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 30 times.
+[0;33mW (179958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (179978) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180068) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180188) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 31 times.
+[0;32mI (180278) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180378) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180478) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180568) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180668) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180768) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (180808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (180908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (180918) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (180968) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (181008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181088) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (181108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (181208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (181308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (181388) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (181408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (181458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181468) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (181558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181568) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (181658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181678) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 32 times.
+[0;33mW (181758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181788) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (181858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181878) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 33 times.
+[0;33mW (181958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (181978) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182078) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182178) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 34 times.
+[0;33mW (182258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182278) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182388) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182468) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182578) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182878) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (182908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (182988) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183068) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183288) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183378) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183478) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (183558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183578) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183768) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183878) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (183958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (183998) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184078) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184278) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184408) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184468) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184608) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (184678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184768) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (184808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (184858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (184898) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185008) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (185068) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185278) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185368) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185478) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (185678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185768) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (185858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (185868) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 35 times.
+[0;32mI (185988) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (186008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (186098) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (186158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (186178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (186258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (186318) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 36 times.
+[0;33mW (186408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (186408) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (186478) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (186558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (186578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (186698) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (186708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 37 times.
+[0;32mI (186778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (186858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 38 times.
+[0;32mI (186918) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (186968) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187098) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (187308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187318) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187428) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (187498) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (187568) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187788) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187878) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (187958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (187978) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188068) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188168) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188268) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188368) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188498) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (188568) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188688) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188768) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (188858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (188878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (188978) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 39 times.
+[0;33mW (189008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (189108) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (189158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (189188) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 40 times.
+[0;33mW (189258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (189288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (189388) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (189458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 41 times.
+[0;32mI (189468) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (189558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (189588) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (189658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 42 times.
+[0;32mI (189668) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (189758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (189778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (189888) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (189958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (189988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (190078) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (190108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (190178) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (190258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (190278) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (190358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (190378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (190488) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (190508) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (190608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (190608) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (190678) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (190708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (190778) US: received ultrasonic distance: -1.00 cm[0m
+[0;33mW (190808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (190958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (191058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (191208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (191308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (191558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (191808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (192008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc78c8, prio:23, stack:6656, core=0[0m
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1788) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1828) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1888) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1898) wifi:enable tsf[0m
+[0;32mI (1898) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1898) espnow_example: Controller RX task started[0m
+[0;32mI (1898) main_task: Returned from app_main()[0m
+[0;32mI (1898) espnow_example: Controller TX task started[0m
+[0;33mW (7658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (7808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (7908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (8158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (8408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (8558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (8708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (8908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9958) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10158) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12658) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12858) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Button pressed 1 times.
+Button pressed 2 times.
+Button pressed 3 times.
+Button pressed 4 times.
+Button pressed 5 times.
+[0;32mI (70078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70158) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70448) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70648) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70758) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70838) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (70948) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71038) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71138) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 6 times.
+[0;32mI (71238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71448) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71638) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 7 times.
+[0;32mI (71738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71838) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (71938) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 8 times.
+[0;32mI (72058) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (72138) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (72238) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 9 times.
+[0;32mI (72338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (72448) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 10 times.
+[0;32mI (72568) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (72638) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (72738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (72848) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 11 times.
+[0;32mI (72958) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73048) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73138) US: received ultrasonic distance: -1.00 cm[0m
+Button pressed 12 times.
+[0;32mI (73238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73668) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73848) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (73978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74058) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74358) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74638) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74858) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (74938) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75038) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75148) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75648) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75768) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75848) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (75938) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76048) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76138) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76638) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76838) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (76948) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77038) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77148) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77248) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77468) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77648) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77838) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (77978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78048) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78138) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78248) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78358) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78468) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78638) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78758) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78838) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (78938) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79038) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79138) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79348) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79658) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79838) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (79948) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80038) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80148) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80548) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80638) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80838) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (80938) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81038) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81138) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81548) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81638) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81858) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (81948) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82048) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82138) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82248) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82338) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82438) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82668) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82738) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82848) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (82938) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83038) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83138) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83238) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83358) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83448) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83538) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83648) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83748) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83848) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (83938) US: received ultrasonic distance: -1.00 cm[0m
+
+���2�00 len 00001FE8 (7 KiB): RTCRAM
+[0;32mI (379) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc78c8, prio:23, stack:6656, core=0[0m
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1788) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1828) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1908) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1908) wifi:enable tsf[0m
+[0;32mI (1908) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1908) espnow_example: Controller RX task started[0m
+[0;32mI (1908) main_task: Returned from app_main()[0m
+[0;32mI (1908) espnow_example: Controller TX task started[0m
+[0;33mW (10668) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10818) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10968) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11118) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11218) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11368) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11468) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11568) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11668) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11818) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11918) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12018) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12118) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12268) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12368) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12468) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12668) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12818) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12918) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13168) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13318) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
