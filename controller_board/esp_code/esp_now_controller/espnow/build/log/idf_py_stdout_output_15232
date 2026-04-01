@@ -1,0 +1,639 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_controller\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 22:18:03[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21438h (136248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031460 vaddr=3fc9c600 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000363fc vaddr=40374000 size=09c1ch ( 39964) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c9200h (823808) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109228 vaddr=4037dc1c size=0e918h ( 59672) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=00117b48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (312) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      fa035bb5-dirty[0m
+[0;32mI (327) app_init: Compile time:     Mar 31 2026 22:18:03[0m
+[0;32mI (332) app_init: ELF file SHA256:  b252deb28...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (348) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB56C0 len 00034050 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7afc, prio:23, stack:6656, core=0[0m
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1788) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1828) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+Right trim: 1
+[0;32mI (1898) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1898) wifi:enable tsf[0m
+[0;32mI (1898) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1898) espnow_example: Controller RX task started[0m
+[0;32mI (1898) main_task: Returned from app_main()[0m
+[0;32mI (1898) espnow_example: Controller TX task started[0m
+Left trim: 1 times.
+Right trim: 2
+Left trim: 2 times.
+Right trim: 3
+Left trim: 3 times.
+Left trim: 4 times.
+Left trim: 5 times.
+Right trim: 4
+Left trim: 6 times.
+Right trim: 5
+Left trim: 7 times.
+Right trim: 6
+Right trim: 7
+Left trim: 8 times.
+Left trim: 9 times.
+Right trim: 8
+Left trim: 10 times.
+Right trim: 9
+Left trim: 11 times.
+Right trim: 10
+Left trim: 12 times.
+Right trim: 11
+Right trim: 12
+Right trim: 13
+Right trim: 14
+Right trim: 15
+[0;33mW (15758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 16
+[0;33mW (16408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 17
+[0;33mW (16758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 13 times.
+Left trim: 14 times.
+[0;33mW (17458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 15 times.
+[0;33mW (17808) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (18108) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 16 times.
+[0;33mW (18458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 17 times.
+Left trim: 18 times.
+[0;33mW (19058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 18
+[0;33mW (19358) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (19758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (20008) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 19 times.
+[0;33mW (20608) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 20 times.
+Left trim: 21 times.
+Left trim: 22 times.
+Left trim: 23 times.
+Left trim: 24 times.
+Left trim: 25 times.
+Left trim: 26 times.
+Left trim: 27 times.
+Left trim: 28 times.
+Right trim: 19
+[0;33mW (23408) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 20
+Right trim: 21
+Right trim: 22
+Right trim: 23
+[0;33mW (24258) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 24
+Left trim: 29 times.
+[0;33mW (24908) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 30 times.
+Left trim: 31 times.
+Right trim: 25
+[0;33mW (25758) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (26208) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 26
+[0;33mW (26458) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 27
+[0;33mW (26708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 28
+[0;33mW (27058) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 29
+[0;33mW (27308) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (27558) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (27708) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 22:18:03[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21438h (136248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031460 vaddr=3fc9c600 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000363fc vaddr=40374000 size=09c1ch ( 39964) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c9200h (823808) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109228 vaddr=4037dc1c size=0e918h ( 59672) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=00117b48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (312) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      fa035bb5-dirty[0m
+[0;32mI (327) app_init: Compile time:     Mar 31 2026 22:18:03[0m
+[0;32mI (332) app_init: ELF file SHA256:  b252deb28...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (348) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB56C0 len 00034050 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7b0c, prio:23, stack:6656, core=0[0m
+Right trim: 1
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1798) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1838) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1888) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1908) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1908) wifi:enable tsf[0m
+[0;32mI (1908) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1908) espnow_example: Controller RX task started[0m
+[0;32mI (1908) main_task: Returned from app_main()[0m
+[0;32mI (1918) espnow_example: Controller TX task started[0m
+Right trim: 2
+Left trim: 1 times.
+Right trim: 3
+Right trim: 4
+Left trim: 2 times.
+[0;33mW (8418) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (8718) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (8918) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 5
+[0;33mW (9118) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9318) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9618) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (9968) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10268) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10468) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 3 times.
+[0;33mW (10768) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11068) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11418) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11668) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11868) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12018) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 6
+Left trim: 4 times.
+[0;33mW (12418) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Left trim: 5 times.
+[0;33mW (12568) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12818) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13018) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13268) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13618) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13868) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (14118) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (14318) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 22:18:03[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21438h (136248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031460 vaddr=3fc9c600 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000363fc vaddr=40374000 size=09c1ch ( 39964) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c9200h (823808) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109228 vaddr=4037dc1c size=0e918h ( 59672) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=00117b48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (312) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      fa035bb5-dirty[0m
+[0;32mI (327) app_init: Compile time:     Mar 31 2026 22:18:03[0m
+[0;32mI (332) app_init: ELF file SHA256:  b252deb28...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (348) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB56C0 len 00034050 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7afc, prio:23, stack:6656, core=0[0m
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1788) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1828) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1888) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1958) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1958) wifi:enable tsf[0m
+[0;32mI (1958) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1958) espnow_example: Controller RX task started[0m
+[0;32mI (1958) main_task: Returned from app_main()[0m
+[0;32mI (1968) espnow_example: Controller TX task started[0m
+Right trim: 1
+Right trim: 2
+[0;33mW (9968) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10368) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (10768) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11068) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11368) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11618) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (11818) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 3
+[0;33mW (12168) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12318) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 4
+[0;33mW (12618) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (12918) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13168) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 5
+[0;33mW (13368) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13568) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 6
+[0;33mW (13768) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (13918) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 7
+[0;33mW (14118) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (14268) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (14468) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 8
+[0;33mW (14718) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 9
+[0;33mW (14968) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 10
+[0;33mW (15218) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 11
+[0;33mW (15418) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 12
+[0;33mW (15618) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (15818) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 13
+[0;33mW (16018) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (16218) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (16418) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (16568) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (16818) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+Right trim: 14
+[0;33mW (16968) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (17168) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (17468) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (17618) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (17718) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (17968) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+[0;33mW (18268) espnow_example: controller esp_now_send failed: ESP_ERR_ESPNOW_NO_MEM[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 22:18:03[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21438h (136248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031460 vaddr=3fc9c600 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000363fc vaddr=40374000 size=09c1ch ( 39964) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c9200h (823808) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109228 vaddr=4037dc1c size=0e918h ( 59672) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=00117b48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (312) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      fa035bb5-dirty[0m
+[0;32mI (327) app_init: Compile time:     Mar 31 2026 22:18:03[0m
+[0;32mI (332) app_init: ELF file SHA256:  b252deb28...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (348) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB56C0 len 00034050 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7b08, prio:23, stack:6656, core=0[0m
+Right trim: 1
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1798) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1838) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1888) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1908) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1908) wifi:enable tsf[0m
+[0;32mI (1908) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1908) espnow_example: Controller RX task started[0m
+[0;32mI (1908) main_task: Returned from app_main()[0m
+[0;32mI (1918) espnow_example: Controller TX task started[0m
+Right trim: 2
+Right trim: 3
+Right trim: 4
+Left trim: 1 times.
+Right trim: 5
+Right trim: 6
+Right trim: 7
+Left trim: 2 times.
+Left trim: 3 times.
+Right trim: 8
+Right trim: 9
+Left trim: 4 times.
+Right trim: 10
+Right trim: 11
+Right trim: 12
+Left trim: 5 times.
+Right trim: 13
+Right trim: 14
+Left trim: 6 times.
+Left trim: 7 times.
+Right trim: 15
+Left trim: 8 times.
+Right trim: 16
+Left trim: 9 times.
+Right trim: 17
+Left trim: 10 times.
+Right trim: 18
+Left trim: 11 times.
+Right trim: 19
+Left trim: 12 times.
+Right trim: 20
+Left trim: 13 times.
+Right trim: 21
+Left trim: 14 times.
+Left trim: 15 times.
+Left trim: 16 times.
+Left trim: 17 times.
+Left trim: 18 times.
+Left trim: 19 times.
+Right trim: 22
+Left trim: 20 times.
+Right trim: 23
+Right trim: 24
+Right trim: 25
+Right trim: 26
+Right trim: 27
+Right trim: 28
+:A%=�sleep configuration
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7b0c, prio:23, stack:6656, core=0[0m
+Right trim: 1
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1798) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1838) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1888) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1908) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1908) wifi:enable tsf[0m
+[0;32mI (1908) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1908) espnow_example: Controller RX task started[0m
+[0;32mI (1908) main_task: Returned from app_main()[0m
+[0;32mI (1918) espnow_example: Controller TX task started[0m

@@ -69,13 +69,13 @@ static volatile uint64_t last_isr_time_l = 0;
 static volatile uint32_t counter_l = 0;
 static QueueHandle_t button_queue_l;
 
-uint32_t button_counter_l;
+uint32_t button_counter_l = 0;
 
 static void IRAM_ATTR button_isr_l(void *arg) {
     uint64_t now = esp_timer_get_time(); // Get current time in microseconds
     // Check if debounce period has passed, then process the button press
     if (now - last_isr_time_l > DEBOUNCE_DELAY_US) {
-        button_counter_l++;
+        counter_l++;
         uint32_t cnt = counter_l;
         BaseType_t higher_priority_task_woken = pdFALSE;
         xQueueSendFromISR(button_queue_l, &cnt, &higher_priority_task_woken); // Send counter to queue from ISR
@@ -92,13 +92,13 @@ static volatile uint64_t last_isr_time_r = 0;
 static volatile uint32_t counter_r = 0;
 static QueueHandle_t button_queue_r;
 
-uint32_t button_counter_r;
+uint32_t button_counter_r = 0;
 
 static void IRAM_ATTR button_isr_r(void *arg) {
     uint64_t now = esp_timer_get_time(); // Get current time in microseconds
     // Check if debounce period has passed, then process the button press
     if (now - last_isr_time_r > DEBOUNCE_DELAY_US) {
-        button_counter_r++;
+        counter_r++;
         uint32_t cnt = counter_r;
         BaseType_t higher_priority_task_woken = pdFALSE;
         xQueueSendFromISR(button_queue_r, &cnt, &higher_priority_task_woken); // Send counter to queue from ISR

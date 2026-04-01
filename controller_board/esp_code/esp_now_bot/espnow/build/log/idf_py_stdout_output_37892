@@ -1,0 +1,344 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 22:18:03[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21438h (136248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031460 vaddr=3fc9c600 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000363fc vaddr=40374000 size=09c1ch ( 39964) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c9200h (823808) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109228 vaddr=4037dc1c size=0e918h ( 59672) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=00117b48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (312) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      fa035bb5-dirty[0m
+[0;32mI (327) app_init: Compile time:     Mar 31 2026 22:18:03[0m
+[0;32mI (332) app_init: ELF file SHA256:  b252deb28...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (348) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB56C0 len 00034050 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7afc, prio:23, stack:6656, core=0[0m
+Right trim: 1
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1798) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1838) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1898) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1958) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1958) wifi:enable tsf[0m
+[0;32mI (1958) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1958) espnow_example: Controller RX task started[0m
+[0;32mI (1958) main_task: Returned from app_main()[0m
+[0;32mI (1968) espnow_example: Controller TX task started[0m
+[0;32mI (1988) US: received ultrasonic distance: -1.00 cm[0m
+I (2088) US: received ultrasonic distance: -1.00 cm
+[0;32mI (2188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3688) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 2
+[0;32mI (3788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4088) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 3
+[0;32mI (4188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5288) US: received ultrasonic distance: -1.00 cm[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 22:18:03[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21438h (136248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031460 vaddr=3fc9c600 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000363fc vaddr=40374000 size=09c1ch ( 39964) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c9200h (823808) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109228 vaddr=4037dc1c size=0e918h ( 59672) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=00117b48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (312) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      fa035bb5-dirty[0m
+[0;32mI (327) app_init: Compile time:     Mar 31 2026 22:18:03[0m
+[0;32mI (332) app_init: ELF file SHA256:  b252deb28...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (348) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB56C0 len 00034050 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7afc, prio:23, stack:6656, core=0[0m
+Right trim: 1
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1798) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1838) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1898) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1898) wifi:enable tsf[0m
+[0;32mI (1898) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1898) espnow_example: Controller RX task started[0m
+[0;32mI (1898) main_task: Returned from app_main()[0m
+[0;32mI (1898) espnow_example: Controller TX task started[0m
+[0;32mI (1898) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (1978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3178) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4078) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 2
+[0;32mI (4178) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4278) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 3
+[0;32mI (4378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4578) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 4
+[0;32mI (4678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4988) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 5
+[0;32mI (5078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5178) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6178) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 6
+[0;32mI (6278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6478) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 7
+[0;32mI (6578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6678) US: received ultrasonic distance: -1.00 cm[0m
+Right trim: 8
+[0;32mI (6778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7178) US: received ultrasonic distance: -1.00 cm[0m
+Left trim: 1 times.
+[0;32mI (7278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7478) US: received ultrasonic distance: -1.00 cm[0m
+Left trim: 2 times.
+[0;32mI (7578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7678) US: received ultrasonic distance: -1.00 cm[0m
+Left trim: 3 times.
+[0;32mI (7778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7978) US: received ultrasonic distance: -1.00 cm[0m
+Left trim: 4 times.
+[0;32mI (8078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8178) US: received ultrasonic distance: -1.00 cm[0m
+Left trim: 5 times.
+[0;32mI (8278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8378) US: received ultrasonic distance: -1.00 cm[0m
+Left trim: 6 times.
+[0;32mI (8478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9198) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9398) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10178) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11078) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11178) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11278) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11378) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11478) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11578) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11678) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11778) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11878) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11978) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12078) US: received ultrasonic distance: -1.00 cm[0m
