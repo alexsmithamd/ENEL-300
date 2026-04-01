@@ -18,7 +18,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-  int metal_detected = 0;
+int metal_detected = 0;
   
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
@@ -74,12 +74,35 @@ uint32_t button_counter_l;
 static void IRAM_ATTR button_isr_l(void *arg) {
     uint64_t now = esp_timer_get_time(); // Get current time in microseconds
     // Check if debounce period has passed, then process the button press
-    if (now - last_isr_time > DEBOUNCE_DELAY_US) {
-        counter++;
-        uint32_t cnt = counter;
+    if (now - last_isr_time_l > DEBOUNCE_DELAY_US) {
+        button_counter_l++;
+        uint32_t cnt = counter_l;
         BaseType_t higher_priority_task_woken = pdFALSE;
-        xQueueSendFromISR(button_queue, &cnt, &higher_priority_task_woken); // Send counter to queue from ISR
-        last_isr_time = now;
+        xQueueSendFromISR(button_queue_l, &cnt, &higher_priority_task_woken); // Send counter to queue from ISR
+        last_isr_time_l = now;
+        if (higher_priority_task_woken) {
+            portYIELD_FROM_ISR();
+        }
+    }
+}
+
+
+// trim_r isr
+static volatile uint64_t last_isr_time_r = 0;
+static volatile uint32_t counter_r = 0;
+static QueueHandle_t button_queue_r;
+
+uint32_t button_counter_r;
+
+static void IRAM_ATTR button_isr_r(void *arg) {
+    uint64_t now = esp_timer_get_time(); // Get current time in microseconds
+    // Check if debounce period has passed, then process the button press
+    if (now - last_isr_time_r > DEBOUNCE_DELAY_US) {
+        button_counter_r++;
+        uint32_t cnt = counter_r;
+        BaseType_t higher_priority_task_woken = pdFALSE;
+        xQueueSendFromISR(button_queue_r, &cnt, &higher_priority_task_woken); // Send counter to queue from ISR
+        last_isr_time_r = now;
         if (higher_priority_task_woken) {
             portYIELD_FROM_ISR();
         }
@@ -436,6 +459,8 @@ void example_espnow_data_prepare(example_espnow_send_param_t *send_param)
 static void adc_task(void* arg)
 {
     button_queue = xQueueCreate(10, sizeof(uint32_t));
+    button_queue_l = xQueueCreate(10, sizeof(uint32_t));
+    button_queue_r = xQueueCreate(10, sizeof(uint32_t));
 
     gpio_config_t io_conf = {
         .intr_type = GPIO_INTR_POSEDGE, // Rising edge interrupt trigger
@@ -445,10 +470,33 @@ static void adc_task(void* arg)
         .pull_up_en = GPIO_PULLUP_ENABLE
     };
 
+    gpio_config_t io_conf_l = {
+        .intr_type = GPIO_INTR_POSEDGE, // Rising edge interrupt trigger
+        .mode = GPIO_MODE_INPUT,
+        .pin_bit_mask = (1ULL << GPIO_NUM_10),
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,
+        .pull_up_en = GPIO_PULLUP_ENABLE
+    };
+
+    gpio_config_t io_conf_r = {
+        .intr_type = GPIO_INTR_POSEDGE, // Rising edge interrupt trigger
+        .mode = GPIO_MODE_INPUT,
+        .pin_bit_mask = (1ULL << GPIO_NUM_11),
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,
+        .pull_up_en = GPIO_PULLUP_ENABLE
+    };
+
+
     gpio_config(&io_conf);
+    gpio_config(&io_conf_l);
+    gpio_config(&io_conf_r);
+
 
     gpio_install_isr_service(0);
+
     gpio_isr_handler_add(BUTTON_GPIO, button_isr, NULL);
+    gpio_isr_handler_add(GPIO_NUM_10, button_isr_l, NULL);
+    gpio_isr_handler_add(GPIO_NUM_11, button_isr_r, NULL);
 
 
     adc_snap_t *snap = (adc_snap_t *)arg;
@@ -475,6 +523,16 @@ static void adc_task(void* arg)
         if (xQueueReceive(button_queue, &button_counter, 1)) {
             printf("Button pressed %lu times.\n", button_counter);
         }
+        if (xQueueReceive(button_queue_l, &button_counter_l, 1)) {
+            printf("Left trim: %lu times.\n", button_counter_l);
+        }
+        if (xQueueReceive(button_queue_r, &button_counter_r, 1)) {
+            printf("Right trim: %lu\n", button_counter_r);
+        }
+
+
+
+
 
         vTaskDelay(pdMS_TO_TICKS(10));
         ret_adc = adc_continuous_read(handle, result, EXAMPLE_READ_LEN, &ret_num, pdMS_TO_TICKS(200));
@@ -702,6 +760,7 @@ void app_main(void)
         .duty           = 0, // Set duty to 0 initially
         .hpoint         = 0,
     };
+
     ledc_channel_config(&ledc_channel);
     
     display_init();

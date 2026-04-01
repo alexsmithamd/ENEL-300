@@ -1,0 +1,367 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\espnow_example.elf C:\Users\marcu\enel_300\ENEL-300\controller_board\esp_code\esp_now_bot\espnow\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 31 2026 20:50:48[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=21438h (136248) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00031460 vaddr=3fc9c600 size=04f94h ( 20372) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000363fc vaddr=40374000 size=09c1ch ( 39964) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c9200h (823808) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00109228 vaddr=4037dc1c size=0e918h ( 59672) load[0m
+[0;32mI (283) esp_image: segment 5: paddr=00117b48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (303) cpu_start: Multicore app[0m
+[0;32mI (312) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) app_init: Application information:[0m
+[0;32mI (318) app_init: Project name:     espnow_example[0m
+[0;32mI (322) app_init: App version:      1f1e53cd-dirty[0m
+[0;32mI (327) app_init: Compile time:     Mar 31 2026 20:50:32[0m
+[0;32mI (332) app_init: ELF file SHA256:  f4aa586a5...[0m
+[0;32mI (336) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (340) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (344) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (348) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (358) heap_init: At 3FCB56C0 len 00034050 (208 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: boya[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;33mW (385) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (395) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (401) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (438) oled_display: Initialize I2C bus[0m
+[0;32mI (438) oled_display: Install panel IO[0m
+[0;32mI (438) oled_display: Install SSD1306 panel driver[0m
+[0;32mI (578) oled_display: Initialize LVGL[0m
+[0;32mI (578) LVGL: Starting LVGL task[0m
+[0;32mI (1758) pp: pp rom version: e7ae62f[0m
+[0;32mI (1758) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1768) wifi:wifi driver task: 3fcc7afc, prio:23, stack:6656, core=0[0m
+Right trim: 0
+[0;32mI (1768) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (1768) wifi:wifi certification version: v7.0[0m
+[0;32mI (1768) wifi:config NVS flash: enabled[0m
+[0;32mI (1768) wifi:config nano formatting: disabled[0m
+[0;32mI (1778) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1778) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1788) wifi:Init management short buffer num: 32[0m
+[0;32mI (1788) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1798) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1798) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1798) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1808) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1808) wifi_init: rx ba win: 6[0m
+[0;32mI (1808) wifi_init: accept mbox: 6[0m
+[0;32mI (1818) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1818) wifi_init: udp mbox: 6[0m
+[0;32mI (1818) wifi_init: tcp mbox: 6[0m
+[0;32mI (1828) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1828) wifi_init: tcp mss: 1440[0m
+[0;32mI (1838) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1838) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1838) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1898) wifi:mode : sta (dc:b4:d9:0b:64:5c)[0m
+[0;32mI (1898) wifi:enable tsf[0m
+[0;32mI (1898) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1898) espnow_example: Controller RX task started[0m
+[0;32mI (1898) main_task: Returned from app_main()[0m
+[0;32mI (1898) espnow_example: Controller TX task started[0m
+[0;32mI (1908) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (1998) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2498) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2898) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (2988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3098) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3198) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3308) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3498) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (3988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4098) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4598) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4698) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (4988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5298) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (5988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6098) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6198) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6398) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (6988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7298) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7398) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7898) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (7988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8098) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8198) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8898) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (8988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9298) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9798) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (9998) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (10988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11498) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11598) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (11988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (12988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13498) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13598) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13698) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13898) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (13988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14098) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14198) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14598) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (14988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15898) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (15998) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (16088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (16188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (16288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (16388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (16488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (16588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (16688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (20788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (20888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (20988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21098) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21898) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (21988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22398) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (22988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23098) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (23988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24398) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (24988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (25988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26498) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26798) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (26988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27398) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (27888) US: received ultrasonic distance: -1.00 cm[0m
+I (27988) US: received ultrasonic distance: -1.00 cm
+[0;32mI (28088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (28988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (29988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (30998) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31298) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31598) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31698) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31788) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31888) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (31988) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32088) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32188) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32288) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32388) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32488) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32588) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32688) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32798) US: received ultrasonic distance: -1.00 cm[0m
+[0;32mI (32888) US: received ultrasonic distance: -1.00 cm[0m
