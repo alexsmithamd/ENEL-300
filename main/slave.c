@@ -17,7 +17,7 @@
 
 
 #define COIL_DRV_PIN GPIO_NUM_10
-#define LED_PIN      GPIO_NUM_1
+#define LED_PIN      GPIO_NUM_8
 #define ADC_GPIO     GPIO_NUM_0
 
 
@@ -29,7 +29,7 @@
 #define ECHO_RISE_TIMEOUT_US  50000
 #define ECHO_FALL_TIMEOUT_US  50000
 #define BASELINE_MS           2000
-#define THRESHOLD             13
+#define THRESHOLD             20
 
 
 
@@ -75,7 +75,7 @@ void app_main(void)
 {
     gpio_reset_pin(LED_PIN);
     gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
-    gpio_set_level(LED_PIN, 0);
+    gpio_set_level(LED_PIN, 1);
 
     gpio_reset_pin(COIL_DRV_PIN);
     gpio_set_direction(COIL_DRV_PIN, GPIO_MODE_OUTPUT);
@@ -108,7 +108,7 @@ void app_main(void)
         if (diff < 0) diff = -diff;
 
         bool detected = (diff >= THRESHOLD);
-        gpio_set_level(LED_PIN, detected ? 1 : 0);
+        gpio_set_level(LED_PIN, detected ? 0 : 1);
 
 
         vTaskDelay(pdMS_TO_TICKS(2));
