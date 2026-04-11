@@ -77,6 +77,10 @@ void app_main(void)
     gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
     gpio_set_level(LED_PIN, 1);
 
+    gpio_reset_pin(1);
+    gpio_set_direction(1, GPIO_MODE_OUTPUT);
+    gpio_set_level(1, 0);
+
     gpio_reset_pin(COIL_DRV_PIN);
     gpio_set_direction(COIL_DRV_PIN, GPIO_MODE_OUTPUT);
     gpio_set_level(COIL_DRV_PIN, 0);
@@ -109,6 +113,7 @@ void app_main(void)
 
         bool detected = (diff >= THRESHOLD);
         gpio_set_level(LED_PIN, detected ? 0 : 1);
+        gpio_set_level(1, detected ? 1 : 0);
 
 
         vTaskDelay(pdMS_TO_TICKS(2));
